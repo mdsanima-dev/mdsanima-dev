@@ -1,0 +1,135 @@
+{
+  "name": "mdsanima-dev",
+  "version": "0.1.0",
+  "author": {
+    "name": "Marcin Różewski",
+    "email": "marcinrozewski@gmail.com"
+  },
+  "description": "MDSANIMA Python Development Tools",
+  "repository": "https://github.com/mdsanima-dev/mdsanima-dev.git",
+  "homepage": "https://github.com/mdsanima-dev/mdsanima-dev#readme",
+  "license": "MIT",
+  "keywords": [
+    "mdsanima",
+    "python",
+    "development",
+    "tools",
+    "changelog",
+    "automatic",
+    "versioning"
+  ],
+  "extra_require": {
+    "docs": [
+      "sphinx",
+      "sphinx-autoapi",
+      "sphinx-rtd-theme",
+      "sphinx-bootstrap-theme",
+      "sphinx-prompt",
+      "sphinx-tabs",
+      "recommonmark"
+    ]
+  },
+  "project_urls": {
+    "Documentation": "https://github.com/mdsanima-dev/mdsanima-dev.git",
+    "Source": "https://github.com/mdsanima-dev/mdsanima-dev",
+    "Bug Tracker": "https://github.com/mdsanima-dev/mdsanima-dev/issues"
+  },
+  "classifiers": [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Natural Language :: Polish",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Desktop Environment",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Education :: Testing",
+    "Topic :: Home Automation",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System",
+    "Topic :: System :: Console Fonts",
+    "Topic :: System :: Shells",
+    "Topic :: System :: System Shells",
+    "Topic :: Terminals",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Markup :: reStructuredText"
+  ],
+  "devDependencies": {
+    "standard-version": "^9.3.0"
+  },
+  "standard-version": {
+    "scripts": {
+      "prebump": "echo 0.1.0",
+      "release": "standard-version --sign"
+    },
+    "skip": {
+      "bump": true,
+      "changelog": true,
+      "commit": true,
+      "tag": true
+    },
+    "infile": "CHANGELOG.md",
+    "bumpFiles": [
+      {
+        "filename": "package.json",
+        "type": "json"
+      }
+    ],
+    "types": [
+      {
+        "type": "feat",
+        "section": "Features"
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes"
+      },
+      {
+        "type": "docs",
+        "section": "Documentation"
+      },
+      {
+        "type": "test",
+        "section": "Tests"
+      },
+      {
+        "type": "build",
+        "section": "Build System",
+        "hidden": true
+      },
+      {
+        "type": "ci",
+        "hidden": true
+      },
+      {
+        "type": "refactor",
+        "hidden": true
+      },
+      {
+        "type": "chore",
+        "hidden": true
+      }
+    ],
+    "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nfor commit guidelines.\n\nWszystkie zmiany jakie nastapily w tym repozytorium, beda tutaj umieszczne.\nDokumentacja **mdsanima-dev** znajduje sie\npod tym [linkiem](https://dev.mdsanima.com) sprawdz to koniecznie.\n"
+  },
+  "scripts": {
+    "release": "standard-version --sign",
+    "release-tag": "standard-version -s -t mdsanima-dev-",
+    "alpha": "standard-version --prerelease alpha",
+    "beta": "standard-version --prerelease beta",
+    "test": "echo testing...",
+    "test-blink": "ssh mdsanima@jet-1 'cd ~/blink && ./mds_blink.py -v'",
+    "test-skip": "npm run release -- --skip.changelog",
+    "test-first": "npm run release -- --first-release"
+  }
+}
