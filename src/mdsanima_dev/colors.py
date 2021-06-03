@@ -25,7 +25,7 @@ def complex_color():
 
 def show_complex_color(number:bool=False):
     """
-    Function prints all available colors with a number.
+    Function prints all available colors with a number or only text.
 
     Args:
         number (boot): Show color number. Defaults to False.
@@ -34,25 +34,35 @@ def show_complex_color(number:bool=False):
     Usage:
         Function calling.
     .. code::
+        show_complex_color()
         show_complex_color(True)
     """
     sx, xm, ex = complex_color()
+    col = [251, 246, 243, 197, 161]
+    cna = (sx + str(col[0]-1) + xm + '[' + ex)
+    cnb = (sx + str(col[0]-1) + xm + '\n\n[' + ex)
+    csh = (sx + str(col[1]-1) + xm + 'SHOW COMPLEX COLOR ' + ex)
+    cdo = (sx + str(col[2]-1) + xm + 'DONE COMPLEX COLOR ' + ex)
+    cmd = (sx + str(col[3]-1) + xm + 'MDSANIMA' + ex)
+    cnu = (sx + str(col[4]-1) + xm + 'NUMBER' + ex)
+    cnc = (sx + str(col[0]-1) + xm + ']' + ex)
+    cne = (sx + str(col[0]-1) + xm + ']\n' + ex)
 
     # Print info options.
     if number == False:
-        print('[SHOW COMPLEX COLOR ONLY]\n')
         show = 'mdsanima'.ljust(9)
-        done = '\n\n[DONE MDSANIMA]'
+        print(cna + csh + cmd + cne)
+        done = (cnb + cdo + cmd + cnc)
     else:
-        print('[SHOW COMPLEX COLOR NUMBER]\n')
-        done = '\n\n[DONE NUMBER]'
+        print(cna + csh + cnu + cne)
+        done = (cnb + cdo + cnu + cnc)
 
-    # Print all colors with numbers.
+    # Print all colors.
     for i in range(255):
         if number == True:
             show = '--> ' + str(i+1).ljust(5)
         color = (sx + str(i) + xm + show + ex)
-        print(color, sep = ' ', end = '   ', flush = True)
+        print(color, sep = ' ', end = '', flush = True)
 
     return print(done)
 
