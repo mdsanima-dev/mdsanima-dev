@@ -23,25 +23,38 @@ def complex_color():
     return sx, xm, ex
 
 
-def show_complex_color():
+def show_complex_color(number:bool=False):
     """
     Function prints all available colors with a number.
 
+    Args:
+        number (boot): Show color number. Defaults to False.
     Returns:
         print: Show all colors.
     Usage:
         Function calling.
     .. code::
-        show_complex_color()
+        show_complex_color(True)
     """
     sx, xm, ex = complex_color()
 
+    # Print info options.
+    if number == False:
+        print('[SHOW COMPLEX COLOR ONLY]\n')
+        show = 'mdsanima'.ljust(9)
+        done = '\n\n[DONE MDSANIMA]'
+    else:
+        print('[SHOW COMPLEX COLOR NUMBER]\n')
+        done = '\n\n[DONE NUMBER]'
+
     # Print all colors with numbers.
     for i in range(255):
-        color = (sx + str(i) + xm + 'color -> ' + str(i+1).ljust(3) + ex)
+        if number == True:
+            show = '--> ' + str(i+1).ljust(5)
+        color = (sx + str(i) + xm + show + ex)
         print(color, sep = ' ', end = '   ', flush = True)
 
-    return print('\n\nDONE')
+    return print(done)
 
 
 def get_complex_color(text:str='mdsanima', color:int=255):
