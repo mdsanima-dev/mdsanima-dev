@@ -62,14 +62,15 @@ def show_complex_color(number:bool=False):
         if number == True:
             show = '--> ' + str(i+1).ljust(5)
         color = (sx + str(i) + xm + show + ex)
-        print(color, sep = ' ', end = '', flush = True)
+        print(color, sep=' ', end='', flush=True)
 
     return print(done)
 
 
-def get_complex_color(text:str='mdsanima', color:int=255):
+def get_complex_color(text:str='mdsanima', color:int=255, ends=None):
     """
-    This function allows you to print colored text to the console output.
+    This feature allows you to print colored text to the output of the
+    console. Now the function works the same like print function.
 
     Args:
         text (str, optional): The text you want to use for color output
@@ -77,7 +78,7 @@ def get_complex_color(text:str='mdsanima', color:int=255):
         color (int, optional): The color number you want to use for color
                                 output in the console. Defaults to 255.
     Returns:
-        str: Colored text output in the console.
+        print: Colored text output in the console.
     Usage:
         Assigning function to variable.
     .. code::
@@ -85,14 +86,15 @@ def get_complex_color(text:str='mdsanima', color:int=255):
 
         Printing colored text on the same line by function calling.
     .. code::
-        print(
-            mds(),
-            mds('example text', 77),
-            mds(text='more example', color=99),
-            mds(color=187) + mds('-dev', 86),
-            mds('check it', 196)
-        )
+        mds = get_complex_color
+        mds(color=44)
+        mds('mdsa', 160, ' ')
+        mds('mdsn', 160, '\n')
+        mds('mds', 88, ' ')
+        mds(text='mds', color=99, ends=' ')
+        mds('mds', 86)
+        mds(ends=' mdsanima-dev\n', color=85, text='mds')
     """
     sx, xm, ex = complex_color()
 
-    return (sx + str(color) + xm + text + ex)
+    return print(sx + str(color-1) + xm + text + ex, end=ends)
