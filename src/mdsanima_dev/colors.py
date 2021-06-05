@@ -67,7 +67,7 @@ def show_complex_color(number:bool=False):
     return print(done)
 
 
-def get_complex_color(text:str='mdsanima', color:int=255, ends=None):
+def get_complex_color(text:str='mdsanima', color:int=255, ends=None) -> str:
     """
     This feature allows you to print colored text to the output of the
     console. Now the function works the same like print function.
@@ -78,7 +78,7 @@ def get_complex_color(text:str='mdsanima', color:int=255, ends=None):
         color (int, optional): The color number you want to use for color
                                 output in the console. Defaults to 255.
     Returns:
-        print: Colored text output in the console.
+        str: Colored text output in the console.
     Usage:
         Assigning function to variable.
     .. code::
@@ -96,5 +96,6 @@ def get_complex_color(text:str='mdsanima', color:int=255, ends=None):
         mds(ends=' mdsanima-dev\n', color=85, text='mds')
     """
     sx, xm, ex = complex_color()
+    print(sx + str(color-1) + xm + text + ex, end=ends)
 
-    return print(sx + str(color-1) + xm + text + ex, end=ends)
+    return str
