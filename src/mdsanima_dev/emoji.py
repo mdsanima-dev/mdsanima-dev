@@ -8,7 +8,7 @@ import json
 import requests
 import pathlib
 from datetime import datetime
-from colors import get_complex_color
+from mdsanima_dev import colors
 
 HERE = pathlib.Path(__file__).parent
 
@@ -69,7 +69,7 @@ def emoji_clean_url_data(
         emoji_clean_url_data(emoji_url=emoji_mod_url)
         emoji_clean_url_data(bhead=True)
     """
-    mds = get_complex_color
+    mds = colors.get_complex_color
 
     # Assigning function calling to a variable.
     eud = emoji_get_url_data(emoji_url)
