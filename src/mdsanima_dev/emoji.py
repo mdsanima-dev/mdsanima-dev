@@ -15,14 +15,6 @@ HERE = pathlib.Path(__file__).parent
 emoji_lis_url = 'http://www.unicode.org/emoji/charts/full-emoji-list.html'
 emoji_mod_url = 'http://www.unicode.org/emoji/charts/full-emoji-modifiers.html'
 
-# emo_data = 'json/emoji-list-test.txt'
-
-# def read_file(path_file):
-#     with open(path_file, 'r', encoding='utf-8') as r:
-#         lines = r.read().splitlines()
-#     lines_len = len(lines)
-#     return lines, lines_len
-
 
 def emoji_get_url_data(emoji_url):
     """
