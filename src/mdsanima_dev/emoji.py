@@ -9,6 +9,8 @@ import requests
 import pathlib
 from datetime import datetime
 from mdsanima_dev import colors
+from mdsanima_dev.utils.table import table
+from mdsanima_dev.utils.table import table_elem
 
 HERE = pathlib.Path(__file__).parent
 
@@ -233,3 +235,158 @@ def emoji_clean_url_data(
     with open(HERE / wri_emo, 'w', encoding='utf-8') as w:
         json.dump(emo_dic, w, ensure_ascii=False)
 
+
+def emoji_load_json_data() -> dict:
+    with open(HERE / 'json/emoji-list.json', 'r', encoding='utf-8') as dt:
+        emo_lis = json.load(dt)
+    with open(HERE / 'json/emoji-modifiers.json', 'r', encoding='utf-8') as dt:
+        emo_mod = json.load(dt)
+
+    # Joining two json dictionary.
+    emo = {'emoji_list': emo_lis, 'emoji_modifiers': emo_mod}
+
+    return emo
+
+
+class emoji:
+    def __init__(self):
+        self.mds = colors.get_complex_color
+
+    def emo_stats(self):
+        e_stats = self.emo[self.emo_list]['src']['emoji_stats']
+        e_data = self.emo[self.emo_list]['src']['emoji_data']
+        e_heder = str(self.emo_list).replace("_", ' ').upper().ljust(21)
+
+        # Initial table color variable.
+        t_col = 82
+
+        # Make table.
+        self.head(e_heder.ljust(46), 32, False, True, t_col)
+        self.cont('BIG HEAD'.ljust(13), str(e_stats['big_head'])\
+            .ljust(29), 149, 107, True, True, t_col)
+        self.cont('MEDIUM HEAD'.ljust(13), str(e_stats['medium_head'])\
+            .ljust(29), 215, 179, True, True, t_col)
+        self.cont('EMOJI COUNTS'.ljust(13), str(e_stats['emoji'])\
+            .ljust(29), 203, 167, True, True, t_col)
+        self.cont('VERSION'.ljust(13), str(e_data['emoji_version'])[1:]\
+            .ljust(29), 161, 125, True, True, t_col)
+        self.cont('LIST'.ljust(13), str(e_data['emoji_src'])\
+            .ljust(29), 111, 104, True, True, t_col)
+        self.cont('JSON DATA GEN'.ljust(13), str(e_data['json_generated_dt'])\
+            .ljust(29), 111, 104, True, False, t_col)
+
+    def emo_big_head(self):
+        e_head = self.emo[self.emo_list]['emo']
+        e_heder = str('BIG HEAD').upper().ljust(21)
+
+        # Initial table color variable.
+        t_col = 106
+
+        # Make table.
+        self.head(e_heder.ljust(30), 64, False, True, t_col)
+        for key_bh in e_head:
+            self.cont(str(key_bh).ljust(23),
+                str(len(e_head[key_bh]))\
+                .ljust(3), 149, 215, True, True, t_col)
+        self.tab(t_col).bot(32)
+
+    def emo_medium_head(self):
+        e_head = self.emo[self.emo_list]['emo']
+        e_heder = str('MEDIUM HEAD').upper().ljust(21)
+
+        # Initial table color variable.
+        t_col = 106
+
+        # Make table.
+        self.head(e_heder.ljust(30), 64, False, False, t_col)
+        for key_bh in e_head:
+            self.tab(t_col).top(32)
+            self.cont(str(key_bh).ljust(23),
+                str(len(e_head[key_bh]))\
+                .ljust(3), 149, 215, True, True, t_col)
+            for key_mh in e_head[key_bh]:
+                self.cont(str(key_mh).ljust(23),
+                    str(len(e_head[key_bh][key_mh]))\
+                    .ljust(3), 215, 167, True, True, t_col)
+            self.tab(t_col).bot(32)
+
+    def emo_all(self, number:bool=False, names:bool=False):
+        e_head = self.emo[self.emo_list]['emo']
+        e_heder = str('EMOJI').upper().ljust(21)
+
+        # Initial table color variable.
+        t_col = 197
+
+        # Make table.
+        self.head(e_heder.ljust(30), 86, False, False, t_col)
+        for key_bh in e_head:
+            for key_mh in e_head[key_bh]:
+                self.tab(t_col).top(32)
+                self.cont(str(key_mh).ljust(23),
+                     str(len(e_head[key_bh][key_mh]))\
+                     .ljust(3), 215, 167, True, True, t_col)
+                self.tab(t_col).bot(32)
+                for name in e_head[key_bh][key_mh]:
+                    emo_num = str(e_head[key_bh][key_mh][name]['number'])
+                    emo_emo = str(e_head[key_bh][key_mh][name]['emoji'])
+                    check = (self.mds('[', 197, ''),\
+                        self.mds(emo_num, 62, ' -> '),\
+                        self.mds(emo_emo, ends=''),\
+                        self.mds(']', 197, '')) if number else print(emo_emo,\
+                        end='')
+                    check_name = (print(' => ', end=''),\
+                        self.mds(str(name), 243, '\n')) if names else ''
+                print('\n')
+
+    def emo_head(self, bhead, mhead, number:bool=False, names:bool=False):
+        e_head = self.emo[self.emo_list]['emo']
+
+        # Initial table color variable.
+        t_col = 34
+        length = len(mhead) + 11
+
+        # Make table.
+        self.tab(t_col).top(length)
+        self.tab(t_col).con(length, 'EMOJI', mhead, 86, 197)
+        self.tab(t_col).bot(length)
+        name = e_head[bhead][mhead]
+        for emo in name:
+            # print(emo)
+            emo_num = str(name[emo]['number'])
+            emo_emo = str(name[emo]['emoji'])
+            check = (self.mds('[', 197, ''),\
+                self.mds(emo_num, 62, ' -> '),\
+                self.mds(emo_emo, ends=''),\
+                self.mds(']', 197, '')) if number else print(emo_emo, end='')
+            check_name = (print(' => ', end=''),\
+                self.mds(str(emo), 243, '\n')) if names else ''
+        # chk = '' if names else '\r'
+        chk = 1 if names else print('\r')
+
+    def emoji(self, number:int):
+        e_head = self.emo[self.emo_list]['emo']
+        for key_bh in e_head:
+            for key_mh in e_head[key_bh]:
+                for key_name in e_head[key_bh][key_mh]:
+                    for val in e_head[key_bh][key_mh][key_name].values():
+                        if val == number:
+                            print(e_head[key_bh][key_mh][key_name]['emoji'])
+                            break
+
+
+class show(emoji):
+    def __init__(self, emo_list) -> emoji:
+        self.emo = emoji_load_json_data()
+        self.mds = colors.get_complex_color
+        self.head = table().headers
+        self.cont = table().content
+        self.emo_list = emo_list
+        self.tab = table_elem
+
+
+# show('emoji_list').emo_stats()
+# show('emoji_list').emo_big_head()
+# show('emoji_list').emo_medium_head()
+# show('emoji_list').emo_all(True, False)
+# show('emoji_list').emo_head('objects', 'music', True, True)
+# show('emoji_list').emoji(1813)
