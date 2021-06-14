@@ -163,4 +163,3 @@ class progress:
             self.progress_conf(i, width)
             sleep(speed)
         self.mds(' ' + self.txt_end.upper(), self.txt_end_clr)
-
