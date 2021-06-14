@@ -52,7 +52,6 @@ def get_response_json(url: str):
 
     Args:
         url (str): Url address to get response json.
-
     Returns:
         (json): Dictionary.
     """
@@ -80,11 +79,39 @@ def machine(text: str, speed: int = 0.1) -> str:
 
 
 class progress:
+    """
+    Progress bar animation.
+
+    Usage:
+        Animation progress bar.
+    .. code::
+        progress().progress_bar(100, 0.01)
+
+        Animation progress bar with indiwidual percent color.
+    .. code::
+        progress(percent_color=232).progress_bar(100, 0.01)
+    """
     def __init__(self,
             txt_first: str = 'get data', txt_end: str = 'done',
             txt_first_color: int = 112, txt_end_color: int = 192,
             bar_sten_color: int = 203, bar_color: int = 113,
-            percent_color: int = 243) -> str:
+            percent_color: int = 243
+        ) -> str:
+        """
+        Initial function. These values can be set individually to the
+        different progress bar.
+
+        Args:
+            txt_first (str, optional): First text. Defaults to 'get data'.
+            txt_end (str, optional): End text. Defaults to 'done'.
+            txt_first_color (int, optional): Color first text. Defaults to 112.
+            txt_end_color (int, optional): Color end text. Defaults to 192.
+            bar_sten_color (int, optional): Color parenthesis. Defaults to 203.
+            bar_color (int, optional): Color bar progress. Defaults to 113.
+            percent_color (int, optional): Color percent text. Defaults to 243.
+        Returns:
+            str: One line progress bar animation.
+        """
         self.mds = get_complex_color
         self.txt_first = txt_first
         self.txt_end = txt_end
@@ -98,6 +125,16 @@ class progress:
         bar_en = '\u2590'
 
     def progress_conf(self, percent: int, width: int) -> str:
+        """
+        This function is a configuration of the progress bar. You can use
+        this function if you want to make your own loop for.
+
+        Args:
+            percent (int): Percent value of the progress bar.
+            width (int): Width of the progress bar.
+        Returns:
+            str: One line progress bar.
+        """
         start = width * percent // 100
         end = width - start
 
@@ -113,11 +150,17 @@ class progress:
         self.mds(' ' + perc, self.percent_clr, '')
 
     def progress_bar(self, width: int, speed: int) -> str:
+        """
+        This function pringint animation of progress bar in one line.
+
+        Args:
+            width (int): Width of the progress bar.
+            speed (int): Speed of the progress bar left to right.
+        Returns:
+            str: One line progress bar with color and animation.
+        """
         for i in range(101):
             self.progress_conf(i, width)
             sleep(speed)
         self.mds(' ' + self.txt_end.upper(), self.txt_end_clr)
 
-
-#progress().progress_bar(100, 0.01)
-#progress().progress_bar(100, 0.01)

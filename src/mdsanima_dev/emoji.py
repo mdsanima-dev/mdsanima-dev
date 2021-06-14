@@ -233,6 +233,12 @@ def emoji_clean_url_data(
 
 
 def emoji_load_json_data() -> dict:
+    """
+    This function loading the json data generated on previous function.
+
+    Returns:
+        dict: Dictionary json all emoji with joining two json.
+    """
     with open(HERE / 'json/emoji-list.json', 'r', encoding='utf-8') as dt:
         emo_lis = json.load(dt)
     with open(HERE / 'json/emoji-modifiers.json', 'r', encoding='utf-8') as dt:
@@ -245,10 +251,17 @@ def emoji_load_json_data() -> dict:
 
 
 class emoji:
+    """
+    This class has methods for printing various emoji functions.
+    """
     def __init__(self):
         self.mds = colors.get_complex_color
 
     def emo_stats(self):
+        """
+        This method printing the statistic of emoji with colors in the table.
+        """
+        # Get all value of emoji in json files.
         e_stats = self.emo[self.emo_list]['src']['emoji_stats']
         e_data = self.emo[self.emo_list]['src']['emoji_data']
         e_heder = str(self.emo_list).replace("_", ' ').upper().ljust(21)
@@ -272,6 +285,11 @@ class emoji:
             .ljust(29), 111, 104, True, False, t_col)
 
     def emo_big_head(self):
+        """
+        This method printing all big head text value of emoji with colors
+        in the table.
+        """
+        # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
         e_heder = str('BIG HEAD').upper().ljust(21)
 
@@ -287,6 +305,11 @@ class emoji:
         self.tab(t_col).bot(32)
 
     def emo_medium_head(self):
+        """
+        This method printing all medium head text value of emoji with colors
+        in the table.
+        """
+        # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
         e_heder = str('MEDIUM HEAD').upper().ljust(21)
 
@@ -307,6 +330,15 @@ class emoji:
             self.tab(t_col).bot(32)
 
     def emo_all(self, number: bool = False, names: bool = False):
+        """
+        This method prints all available emojis, sorted by heads.
+        You can use the option to print number of emoji and names of emoji.
+
+        Args:
+            number (bool, optional): Print emoji numbers. Defaults to False.
+            names (bool, optional): Print emoji names. Defaults to False.
+        """
+        # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
         e_heder = str('EMOJI').upper().ljust(21)
 
@@ -334,8 +366,19 @@ class emoji:
                         self.mds(str(name), 243, '\n')) if names else ''
                 print('\n')
 
-    def emo_head(self, bhead, mhead,
-            number: bool = False, names: bool = False):
+    def emo_head(self, bhead: str, mhead: str,
+            number: bool = False, names: bool = False
+        ):
+        """
+        This method pringing all emoji in head.
+
+        Args:
+            bhead (str): Name of big head emoji.
+            mhead (str): Name of medium head emoji.
+            number (bool, optional): Print emoji numbers. Defaults to False.
+            names (bool, optional): Print emoji names. Defaults to False.
+        """
+        # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
 
         # Initial table color variable.
@@ -361,7 +404,16 @@ class emoji:
         chk = 1 if names else print('\r')
 
     def emoji(self, number: int):
+        """
+        Serching of emoji numer and break.
+
+        Args:
+            number (int): Emoji number to printing.
+        """
+        # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
+
+        # Searching of specific number of emoji and break.
         for key_bh in e_head:
             for key_mh in e_head[key_bh]:
                 for key_name in e_head[key_bh][key_mh]:
@@ -372,18 +424,32 @@ class emoji:
 
 
 class show(emoji):
+    """
+    This class show all emoji.
+
+    Args:
+        emoji (class): Master class of emoji.
+    Usage:
+    .. code::
+        show('emoji_list').emo_stats()
+        show('emoji_list').emo_big_head()
+        show('emoji_list').emo_medium_head()
+        show('emoji_list').emo_all(True, False)
+        show('emoji_list').emo_head('objects', 'music', True, True)
+        show('emoji_list').emoji(1813)
+    """
     def __init__(self, emo_list) -> emoji:
+        """
+        Initial function.
+
+        Args:
+            emo_list (str): Name `emoji_list` and `emoji_modifiers` only.
+        Returns:
+            emoji: Pringitn value of specific emoji method.
+        """
         self.emo = emoji_load_json_data()
         self.mds = colors.get_complex_color
         self.head = table().headers
         self.cont = table().content
         self.emo_list = emo_list
         self.tab = table_elem
-
-
-# show('emoji_list').emo_stats()
-# show('emoji_list').emo_big_head()
-# show('emoji_list').emo_medium_head()
-# show('emoji_list').emo_all(True, False)
-# show('emoji_list').emo_head('objects', 'music', True, True)
-# show('emoji_list').emoji(1813)
