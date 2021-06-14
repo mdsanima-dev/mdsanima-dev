@@ -14,7 +14,7 @@ class table:
     def colors(self, color:int=255) -> int:
         self.tab_color = color
 
-    def connect(self, top:bool, length:int, bot:bool) -> str:
+    def connect(self, top: bool, length: int, bot: bool) -> str:
         header = ('\u250c' + ('\u2500' * length) + '\u2510')
         conect = ('\u251c' + ('\u2500' * length) + '\u2524')
         bottom = ('\u2514' + ('\u2500' * length) + '\u2518')
@@ -24,10 +24,9 @@ class table:
         self.con_bot = '' if bot else bottom
 
     def headers(self,
-            header:str, hcolor:int=255,
-            top:bool=False, bot:bool=False,
-            tcolor:int=255
-        ) -> str:
+            header: str, hcolor: int = 255,
+            top: bool = False, bot: bool = False,
+            tcolor: int = 255) -> str:
         self.header = header
         self.color = hcolor
         head_len = len(self.header) + 2
@@ -48,11 +47,10 @@ class table:
         self.mds(self.bot, self.tab_color)
 
     def content(self,
-            content_key:str, content_val:str,
-            key_color:int=255, val_color:int=255,
-            top:bool=False, bot:bool=False,
-            tcolor:int=255,
-        ) -> str:
+            content_key: str, content_val: str,
+            key_color: int = 255, val_color: int = 255,
+            top: bool = False, bot: bool = False,
+            tcolor: int = 255) -> str:
         self.key = content_key
         self.val = content_val
         self.key_col = key_color
@@ -83,29 +81,30 @@ class table:
 
 
 class table_elem:
-    def __init__(self, color:int) -> str:
+    def __init__(self, color: int) -> str:
         self.mds = colors.get_complex_color
         self.color = color
 
-    def top(self, length:int) -> str:
+    def top(self, length: int) -> str:
         self.header = ('\u250c' + ('\u2500' * length) + '\u2510')
         self.mds(self.header, self.color)
 
-    def mid(self, length:int) -> str:
+    def mid(self, length: int) -> str:
         self.middle = ('\u251c' + ('\u2500' * length) + '\u2524')
         self.mds(self.middle, self.color)
 
-    def bot(self, length:int) -> str:
+    def bot(self, length: int) -> str:
         self.bottom = ('\u2514' + ('\u2500' * length) + '\u2518')
         self.mds(self.bottom, self.color)
 
-    def hed(self, length:int, text:str, text_color:int) -> str:
+    def hed(self, length: int, text: str, text_color: int) -> str:
         self.text = text.ljust(length-1)
         self.mds('\u2502', self.color, '')
         self.mds(' ' + self.text.upper(), text_color, '')
         self.mds('\u2502', self.color)
 
-    def con(self, length:int, key:str, val:str, k_clr:int, v_clr:int) -> str:
+    def con(self, length: int, key: str, val: str,
+            k_clr: int, v_clr: int) -> str:
         self.con_key = key
         self.con_val = val
         k_len = len(key)

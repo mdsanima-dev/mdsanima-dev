@@ -41,13 +41,9 @@ def emoji_get_url_data(emoji_url):
 
 
 def emoji_clean_url_data(
-        bhead:bool=False,
-        mhead:bool=False,
-        ucode:bool=False,
-        emoji:bool=False,
-        ename:bool=False,
-        emoji_url:str=emoji_lis_url
-    ) -> dict:
+        bhead: bool = False, mhead: bool = False, ucode: bool = False,
+        emoji: bool = False, ename: bool = False,
+        emoji_url: str = emoji_lis_url) -> dict:
     """
     This funciton is used to clean up previously requested data and store this
     data in dictionary `.json` file in `json` folder. Default this function
@@ -310,7 +306,7 @@ class emoji:
                     .ljust(3), 215, 167, True, True, t_col)
             self.tab(t_col).bot(32)
 
-    def emo_all(self, number:bool=False, names:bool=False):
+    def emo_all(self, number: bool = False, names: bool = False):
         e_head = self.emo[self.emo_list]['emo']
         e_heder = str('EMOJI').upper().ljust(21)
 
@@ -338,7 +334,8 @@ class emoji:
                         self.mds(str(name), 243, '\n')) if names else ''
                 print('\n')
 
-    def emo_head(self, bhead, mhead, number:bool=False, names:bool=False):
+    def emo_head(self, bhead, mhead,
+            number: bool = False, names: bool = False):
         e_head = self.emo[self.emo_list]['emo']
 
         # Initial table color variable.
@@ -363,7 +360,7 @@ class emoji:
         # chk = '' if names else '\r'
         chk = 1 if names else print('\r')
 
-    def emoji(self, number:int):
+    def emoji(self, number: int):
         e_head = self.emo[self.emo_list]['emo']
         for key_bh in e_head:
             for key_mh in e_head[key_bh]:

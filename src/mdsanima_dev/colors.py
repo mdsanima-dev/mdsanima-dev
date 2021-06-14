@@ -23,7 +23,7 @@ def complex_color():
     return sx, xm, ex
 
 
-def show_complex_color(number:bool=False):
+def show_complex_color(number: bool = False):
     """
     Function prints all available colors with a number or only text.
 
@@ -67,7 +67,8 @@ def show_complex_color(number:bool=False):
     return print(done)
 
 
-def get_complex_color(text:str='mdsanima', color:int=255, ends=None) -> str:
+def get_complex_color(text: str = 'mdsanima',
+        color: int = 255, ends = None) -> str:
     """
     This feature allows you to print colored text to the output of the
     console. Now the function works the same like print function.
