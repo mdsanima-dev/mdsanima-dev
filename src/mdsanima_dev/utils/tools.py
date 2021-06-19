@@ -4,7 +4,6 @@
 There are some useful functions that I usually use for python coding.
 """
 
-import sys
 import time
 import requests
 from time import sleep
@@ -71,10 +70,9 @@ def machine(text: str, speed: int = 0.1) -> str:
     Returns:
         str: Printing text as an animation.
     """
-    machine = (text+"\n")
+    machine = (str(text) + '\n')
     for chars in machine:
-        sys.stdout.write(chars)
-        sys.stdout.flush()
+        print(chars, end='', flush=True)
         time.sleep(speed)
 
 
