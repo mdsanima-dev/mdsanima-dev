@@ -141,11 +141,11 @@ class progress:
         perc = str(percent) + '%'
 
         self.mds('\r' + self.txt_first.upper(), self.txt_first_clr, ' ')
+        self.mds(perc.rjust(4), self.percent_clr, '')
         self.mds('[', self.bar_sten_clr, '')
         self.mds(s_start, self.bar_clr, '')
         self.mds(s_end, self.bar_clr, '')
         self.mds(']', self.bar_sten_clr, '')
-        self.mds(' ' + perc, self.percent_clr, '')
 
     def progress_bar(self, width: int, speed: int) -> str:
         """
@@ -160,4 +160,4 @@ class progress:
         for i in range(101):
             self.progress_conf(i, width)
             sleep(speed)
-        self.mds(' ' + self.txt_end.upper(), self.txt_end_clr)
+        #self.mds(' ' + self.txt_end.upper(), self.txt_end_clr)
