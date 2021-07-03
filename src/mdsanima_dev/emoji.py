@@ -1,7 +1,12 @@
 """
-# Emoji Module
+Request data of Emoji from https://unicode.org and store json dict all data.
 
-Request data of Emoji from unicode.org and store json dict all data.
+.. important::
+
+    This module only get data from this two links.
+
+    - `Full Emoji List <https://unicode.org/emoji/charts/full-emoji-list.html>`_
+    - `Full Emoji Modifiers <https://unicode.org/emoji/charts/full-emoji-modifiers.html>`_
 """
 
 import json
@@ -18,19 +23,24 @@ emoji_lis_url = 'http://www.unicode.org/emoji/charts/full-emoji-list.html'
 emoji_mod_url = 'http://www.unicode.org/emoji/charts/full-emoji-modifiers.html'
 
 
-def emoji_get_url_data(emoji_url):
+def emoji_get_url_data(emoji_url: str) -> str:
     """
-    This function request emoji data url and waiting raise for status if
-    status ok returning data text for further processing.
+    This function request emoji data url and waiting raise for status.
+    If status ok returning data text for further processing.
 
-    Args:
-        emoji_url (str): Link to emoticons.
-    Returns:
-        str: Html code as string text.
-    Usage:
-        Assigning function calling to a variable.
-    .. code::
-        eud = emoji_get_url_data(emoji_lis_url)
+    :param emoji_url: link to emoticons
+    :type emoji_url: str
+    :return: html code as string text
+    :rtype: str
+    :usage: assigning function calling to a variable
+
+        .. code:: python
+
+            emoji_url_data = emoji_get_url_data(emoji_lis_url)
+
+    .. note::
+        This function only I used for request data in function
+        `emoji_clean_url_data <#function-emoji-clean-url-data>`_
     """
     url = str(emoji_url)
     res = requests.get(url)
@@ -43,29 +53,53 @@ def emoji_get_url_data(emoji_url):
 def emoji_clean_url_data(
         bhead: bool = False, mhead: bool = False, ucode: bool = False,
         emoji: bool = False, ename: bool = False,
-        emoji_url: str = emoji_lis_url) -> dict:
+        emoji_url: str = emoji_lis_url
+    ) -> dict:
     """
-    This funciton is used to clean up previously requested data and store this
-    data in dictionary `.json` file in `json` folder. Default this function
-    save a `emoji-list` data. You can use parameter to debug what data is
-    saved. Defaults for the end this function printing only stats in colors.
-    Also debug mode show cool colors from extracting url.
+    This funciton is used to clean up previously requested data and store in
+    dictionary ``.json`` file and saved in to json folder. These folder also
+    included in python package. Default save a first link ``emoji_lis_url``,
+    the second link is the ``emoji_mod_url`` which are included in this module
+    as a variable. If you need to download new data, you can use just these
+    two variables only.
 
-    Args:
-        bhead (bool, optional): Debug mode show big head. Defaults to False.
-        mhead (bool, optional): Debug mode show medium head. Defaults to False.
-        ucode (bool, optional): Debug mode show unicode. Defaults to False.
-        emoji (bool, optional): Debug mode show emoji. Defaults to False.
-        ename (bool, optional): Debug mode show emoji name. Defaults to False.
-        emoji_url (str, optional): Link to extract. Defaults to emoji_lis_url.
-    Returns:
-        dict: Save dictionary in to `.json` file.
-    Usage:
-        Calling function and specific parameter to extract two url.
-    .. code::
-        emoji_clean_url_data(emoji_url=emoji_lis_url)
-        emoji_clean_url_data(emoji_url=emoji_mod_url)
-        emoji_clean_url_data(bhead=True)
+    .. admonition:: See also
+        :class: seealso
+
+        This two link on `important <#module-mdsanima_dev.emoji>`_ in the
+        beginning on this document.
+
+    You can use parameter to debug what data is saved. By defaults for the end
+    this function printing only stats in colors. If you want to see use debug
+    parameters. Debug mode show cool colors from extracting url.
+
+    :param bhead: debug mode show big head, defaults to ``False``
+    :type bhead: bool, optional
+    :param mhead: debug mode show medium head, defaults to ``False``
+    :type mhead: bool, optional
+    :param ucode: debug mode show unicode, defaults to ``False``
+    :type ucode: bool, optional
+    :param emoji: debug mode show emoji, defaults to ``False``
+    :type emoji: bool, optional
+    :param ename: debug mode show emoji name, defaults to ``False``
+    :type ename: bool, optional
+    :param emoji_url: link to extract data, defaults to ``emoji_lis_url``
+    :type emoji_url: str, optional
+    :return: save dictionary data in to ``.json`` file
+    :rtype: dict
+    :usage:
+
+        function call extract and save defaults data debug mode
+
+        .. code:: python
+
+            emoji_clean_url_data(bhead=True)
+
+        function call extract and save second link debug mode
+
+        .. code:: python
+
+            emoji_clean_url_data(emoji_url=emoji_mod_url, mhead=True)
     """
     mds = colors.get_complex_color
 
@@ -234,10 +268,17 @@ def emoji_clean_url_data(
 
 def emoji_load_json_data() -> dict:
     """
-    This function loading the json data generated on previous function.
+    This function loading the json data generated on previous function
+    `emoji_clean_url_data <#function-emoji-clean-url-data>`_.
 
-    Returns:
-        dict: Dictionary json all emoji with joining two json.
+    :return: dictionary json all emoji with joining two json ``emoji_list``
+        and ``emoji_modifiers``
+    :rtype: dict
+    :usage: assigning function calling to a variable
+
+        .. code:: python
+
+            emo = emoji_load_json_data()
     """
     with open(HERE / 'json/emoji-list.json', 'r', encoding='utf-8') as dt:
         emo_lis = json.load(dt)
@@ -253,13 +294,19 @@ def emoji_load_json_data() -> dict:
 class emoji:
     """
     This class has methods for printing various emoji functions.
+
+    .. warning::
+        Class `show <#class-show>`_ print all emoji with calling methods inside
+        this class. Recommended only used ``class show(emoji)`` to print emoji
+        big head, medium head, or just only one emoji.
     """
-    def __init__(self):
+    def __init__(self) -> str:
         self.mds = colors.get_complex_color
 
-    def emo_stats(self):
+    def emo_stats(self) -> str:
         """
-        This method printing the statistic of emoji with colors in the table.
+        This method printing the statistic of emoji in the table with colored
+        table and colored text.
         """
         # Get all value of emoji in json files.
         e_stats = self.emo[self.emo_list]['src']['emoji_stats']
@@ -284,10 +331,10 @@ class emoji:
         self.cont('JSON DATA GEN'.ljust(13), str(e_data['json_generated_dt'])\
             .ljust(29), 111, 104, True, False, t_col)
 
-    def emo_big_head(self):
+    def emo_big_head(self) -> str:
         """
-        This method printing all big head text value of emoji with colors
-        in the table.
+        This method printing all big head text value of emoji in the table with
+        colored table and colored text.
         """
         # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
@@ -304,10 +351,10 @@ class emoji:
                 .ljust(3), 149, 215, True, True, t_col)
         self.tab(t_col).bot(32)
 
-    def emo_medium_head(self):
+    def emo_medium_head(self) -> str:
         """
-        This method printing all medium head text value of emoji with colors
-        in the table.
+        This method printing all medium head text value of emoji in the table
+        with colored table and colored text.
         """
         # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
@@ -329,14 +376,17 @@ class emoji:
                     .ljust(3), 215, 167, True, True, t_col)
             self.tab(t_col).bot(32)
 
-    def emo_all(self, number: bool = False, names: bool = False):
+    def emo_all(self, number: bool = False, names: bool = False) -> str:
         """
-        This method prints all available emojis, sorted by heads.
-        You can use the option to print number of emoji and names of emoji.
+        This method prints all available emojis, sorted by heads. You can use
+        arguments to print number of emoji and names of emoji.
 
-        Args:
-            number (bool, optional): Print emoji numbers. Defaults to False.
-            names (bool, optional): Print emoji names. Defaults to False.
+        :param number: print emoji numbers, defaults to ``False``
+        :type number: bool, optional
+        :param names: print emoji names, defaults to ``False``
+        :type names: bool, optional
+        :return: prints all available emojis
+        :rtype: str
         """
         # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
@@ -368,15 +418,20 @@ class emoji:
 
     def emo_head(self, bhead: str, mhead: str,
             number: bool = False, names: bool = False
-        ):
+        ) -> str:
         """
-        This method pringing all emoji in head.
+        This method printing all emoji in to a given group.
 
-        Args:
-            bhead (str): Name of big head emoji.
-            mhead (str): Name of medium head emoji.
-            number (bool, optional): Print emoji numbers. Defaults to False.
-            names (bool, optional): Print emoji names. Defaults to False.
+        :param bhead: name of big head emoji
+        :type bhead: str
+        :param mhead: name of medium head emoji
+        :type mhead: str
+        :param number: print emoji numbers, defaults to ``False``
+        :type number: bool, optional
+        :param names: print emoji names, defaults to ``False``
+        :type names: bool, optional
+        :return: printing all emoji in to a given group
+        :rtype: str
         """
         # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
@@ -396,19 +451,24 @@ class emoji:
             emo_emo = str(name[emo]['emoji'])
             check = (self.mds('[', 197, ''),\
                 self.mds(emo_num, 62, ' -> '),\
-                self.mds(emo_emo, ends=''),\
+                self.mds(emo_emo, end=''),\
                 self.mds(']', 197, '')) if number else print(emo_emo, end='')
             check_name = (print(' => ', end=''),\
                 self.mds(str(emo), 243, '\n')) if names else ''
         # chk = '' if names else '\r'
         chk = 1 if names else print('\r')
 
-    def emoji(self, number: int):
+    def emoji(self, number: int, end: str = '') -> str:
         """
-        Serching of emoji numer and break.
+        Printing only one emoji.
 
-        Args:
-            number (int): Emoji number to printing.
+        :param number: emoji number to printing
+        :type number: int
+        :param end: ends of print, defaults to empty string, that's set a print
+            two or more emoji in the same line.
+        :type end: str, optional
+        :return: print one emoji
+        :rtype: str
         """
         # Get all value of emoji in json files.
         e_head = self.emo[self.emo_list]['emo']
@@ -419,33 +479,46 @@ class emoji:
                 for key_name in e_head[key_bh][key_mh]:
                     for val in e_head[key_bh][key_mh][key_name].values():
                         if val == number:
-                            print(e_head[key_bh][key_mh][key_name]['emoji'])
+                            print(e_head[key_bh][key_mh][key_name]['emoji'],\
+                                end=end)
                             break
 
 
 class show(emoji):
     """
-    This class show all emoji.
+    This class show all emoji or just only one. See documentation for more
+    information and screenshot.
 
-    Args:
-        emoji (class): Master class of emoji.
-    Usage:
-    .. code::
-        show('emoji_list').emo_stats()
-        show('emoji_list').emo_big_head()
-        show('emoji_list').emo_medium_head()
-        show('emoji_list').emo_all(True, False)
-        show('emoji_list').emo_head('objects', 'music', True, True)
-        show('emoji_list').emoji(1813)
+    :param emoji: master class of emoji
+    :type emoji: class
+    :usage:
+
+        assigning function calling to a variable
+
+        .. code:: python
+
+            show = show('emoji_list')
+            show.emo_stats()
+            show.emo_big_head()
+            show.emo_medium_head()
+            show.emo_all(True, False)
+            show.emo_head('objects', 'music', True, True)
+            show.emoji(986)
+
+        or just calling method with arguments in to class
+
+        .. code:: python
+
+            show('emoji_modifiers').emo_head('people_body', 'hands')
     """
-    def __init__(self, emo_list) -> emoji:
+    def __init__(self, emo_list: str) -> emoji:
         """
-        Initial function.
+        Initial function to show emoji on various method.
 
-        Args:
-            emo_list (str): Name `emoji_list` and `emoji_modifiers` only.
-        Returns:
-            emoji: Pringitn value of specific emoji method.
+        :param emo_list: use only `emoji_list` and `emoji_modifiers`
+        :type emo_list: str
+        :return: printing value of specific emoji method
+        :rtype: emoji
         """
         self.emo = emoji_load_json_data()
         self.mds = colors.get_complex_color
