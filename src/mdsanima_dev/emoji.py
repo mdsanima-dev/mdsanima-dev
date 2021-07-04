@@ -409,7 +409,7 @@ class emoji:
                     emo_emo = str(e_head[key_bh][key_mh][name]['emoji'])
                     check = (self.mds('[', 197, ''),\
                         self.mds(emo_num, 62, ' -> '),\
-                        self.mds(emo_emo, ends=''),\
+                        self.mds(emo_emo, end=''),\
                         self.mds(']', 197, '')) if number else print(emo_emo,\
                         end='')
                     check_name = (print(' => ', end=''),\
