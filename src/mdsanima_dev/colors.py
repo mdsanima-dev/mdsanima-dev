@@ -130,7 +130,7 @@ def get_color(text: str = 'mdsanima', color: int = 255) -> str:
 
         .. code:: python
 
-            mds_a = get_color('I love python', 86)
+            mds_a = get_color('I love Python', 86)
             mds_b = get_color('mdsanima', 186)
             print(mds_a, mds_b)
 
@@ -139,7 +139,7 @@ def get_color(text: str = 'mdsanima', color: int = 255) -> str:
         .. code:: python
 
             mds = get_color
-            mds_a = mds('I love python', 86)
+            mds_a = mds('I love Python', 86)
             mds_b = mds('mdsanima', 186)
             print(mds_a, mds_b)
 
@@ -149,7 +149,7 @@ def get_color(text: str = 'mdsanima', color: int = 255) -> str:
 
             from mdsanima_dev.utils.tools import machine
             mds = get_color
-            mds_a = mds('I love python', 86)
+            mds_a = mds('I love Python', 86)
             mds_b = mds('mdsanima', 186)
             machine(mds_a + ' ' + mds_b, 0.01)
     """
