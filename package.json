@@ -5,10 +5,20 @@
     "name": "Marcin Różewski",
     "email": "marcinrozewski@gmail.com"
   },
-  "description": "MDSANIMA Python Development Tools",
+  "description": "MDSANIMA Python Development Tools - This file only for automate versioning and changelog generation",
   "repository": "https://github.com/mdsanima-dev/mdsanima-dev.git",
   "homepage": "https://github.com/mdsanima-dev/mdsanima-dev#readme",
   "license": "MIT",
+  "project_urls": {
+    "Documentation": "https://github.com/mdsanima-dev/mdsanima-dev",
+    "Source": "https://github.com/mdsanima-dev/mdsanima-dev",
+    "Bug Tracker": "https://github.com/mdsanima-dev/mdsanima-dev/issues"
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.0",
+    "conventional-changelog": "^5.0.0",
+    "mdsanima-conventional-changelog": "https://github.com/mdsanima/conventional-changelog/releases/tag/v5.0.0"
+  },
   "keywords": [
     "mdsanima",
     "python",
@@ -22,20 +32,15 @@
     "docs": [
       "sphinx",
       "sphinx-autoapi",
-      "sphinx-rtd-theme",
-      "sphinx-bootstrap-theme",
+      "sphinx-book-theme",
       "sphinx-prompt",
       "sphinx-tabs",
-      "recommonmark"
+      "recommonmark",
+      "myst_parser"
     ]
   },
-  "project_urls": {
-    "Documentation": "https://github.com/mdsanima-dev/mdsanima-dev.git",
-    "Source": "https://github.com/mdsanima-dev/mdsanima-dev",
-    "Bug Tracker": "https://github.com/mdsanima-dev/mdsanima-dev/issues"
-  },
   "classifiers": [
-    "Development Status :: 1 - Planning",
+    "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
     "Environment :: Plugins",
     "Intended Audience :: Developers",
@@ -50,6 +55,7 @@
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
     "Topic :: Desktop Environment",
     "Topic :: Documentation :: Sphinx",
     "Topic :: Education :: Testing",
@@ -64,20 +70,7 @@
     "Topic :: Text Processing",
     "Topic :: Text Processing :: Markup :: reStructuredText"
   ],
-  "devDependencies": {
-    "standard-version": "^9.3.0"
-  },
   "standard-version": {
-    "scripts": {
-      "prebump": "echo 0.1.0",
-      "release": "standard-version --sign"
-    },
-    "skip": {
-      "bump": true,
-      "changelog": true,
-      "commit": true,
-      "tag": true
-    },
     "infile": "CHANGELOG.md",
     "bumpFiles": [
       {
@@ -85,22 +78,38 @@
         "type": "json"
       }
     ],
+    "scripts": {
+      "postbump": "./make_release.py && printf '\n  bumping version in __init__.py'",
+      "posttag": "printf '\n  Run 'git push --follow-tags origin master' to publish'",
+      "release": "standard-version --commit-all --sign",
+      "release-test": "standard-version --dry-run"
+    },
+    "skip": {
+      "bump": false,
+      "changelog": false,
+      "commit": false,
+      "tag": false
+    },
     "types": [
       {
         "type": "feat",
-        "section": "Features"
+        "section": "Features",
+        "hidden": false
       },
       {
         "type": "fix",
-        "section": "Bug Fixes"
+        "section": "Bug Fixes",
+        "hidden": false
       },
       {
         "type": "docs",
-        "section": "Documentation"
+        "section": "Documentation",
+        "hidden": false
       },
       {
         "type": "test",
-        "section": "Tests"
+        "section": "Tests",
+        "hidden": false
       },
       {
         "type": "build",
@@ -120,15 +129,15 @@
         "hidden": true
       }
     ],
-    "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nfor commit guidelines.\n\nWszystkie zmiany jakie nastapily w tym repozytorium, beda tutaj umieszczne.\nDokumentacja **mdsanima-dev** znajduje sie\npod tym [linkiem](https://dev.mdsanima.com) sprawdz to koniecznie.\n"
+    "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nand `README.md` file for commit guidelines. Also you should check [conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for **mdsanima_dev** Python Package is available\nat [docs mdsanima_dev](https://github.com/mdsanima-dev/mdsanima-dev) be sure to check it.\n"
   },
   "scripts": {
-    "release": "standard-version --sign",
-    "release-tag": "standard-version -s -t mdsanima-dev-",
-    "alpha": "standard-version --prerelease alpha",
-    "beta": "standard-version --prerelease beta",
+    "check": "standard-version --dry-run",
+    "release": "standard-version --commit-all --sign",
+    "release-tag": "standard-version --commit-all --sign -t mdsanima-dev-",
+    "alpha": "standard-version --commit-all --sign --prerelease alpha",
+    "beta": "standard-version --commit-all --sign --prerelease beta",
     "test": "echo testing...",
-    "test-blink": "ssh mdsanima@jet-1 'cd ~/blink && ./mds_blink.py -v'",
     "test-skip": "npm run release -- --skip.changelog",
     "test-first": "npm run release -- --first-release"
   }

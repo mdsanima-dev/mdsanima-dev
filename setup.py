@@ -5,6 +5,9 @@ mdsanima-dev Setup Package
 import sys
 import json
 import setuptools
+import pathlib
+
+HERE = pathlib.Path(__file__).parent
 
 # Get python current and required version from users.
 CURRENT_PYTHON = sys.version_info[:2]
@@ -25,11 +28,11 @@ if CURRENT_PYTHON < REQUIRED_PYTHON:
     sys.exit(1)
 
 # Load data from package.json file.
-with open("package.json") as dt:
+with open(HERE / "package.json") as dt:
     data_package = json.load(dt)
 
 # Load data from README.md file.
-with open("README.md", "r", encoding="utf-8") as fh:
+with open(HERE / "README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 # Setuptools dynamic package arguments, nice and clean.
@@ -45,9 +48,14 @@ setuptools.setup(
     project_urls=data_package["project_urls"],
     classifiers=data_package["classifiers"],
     package_dir={"": "src"},
+    package_data={"": ["json/*.json"]},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
     license=data_package["license"],
     extras_require=data_package["extra_require"],
     keywords=data_package["keywords"],
+    command_options={
+        'build_sphinx': {
+            'version': ('setup.py', data_package["version"]),
+            'source_dir': ('setup.py', "docs/source")}},
 )
