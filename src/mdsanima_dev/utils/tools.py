@@ -1,7 +1,5 @@
 """
-# Tools Module
-
-There are some useful functions that I usually use for python coding.
+There are some useful functions that I usually use for python programing.
 """
 
 import time
@@ -14,14 +12,17 @@ def read_file(file_path: str) -> str:
     """
     Function reads the file and splits it into separate lines.
 
-    Args:
-        file_path (str): File path to read and split.
-    Returns:
-        [list, str, int]: Function returns a list of lines in the string by
-                            line and the total number of lines.
-    Usage:
-    .. code::
-        lines, lines_len = read_file(file_path)
+    :param file_path: file path to read and split
+    :type file_path: str
+    :return: list of lines in the string by line and the total number of lines
+    :rtype: str
+    :usage:
+
+        assigning function calling to a variable
+
+        .. code:: python
+
+            lines, lines_len = read_file(file_path)
     """
     with open(file_path, 'r', encoding='utf-8') as r:
         lines = r.read().splitlines()
@@ -34,12 +35,17 @@ def append_file(file_path: str, data: str) -> str:
     """
     Function save data into file.
 
-    Args:
-        file_path (str): File path to save data with append mode.
-        data (str): Data to write into file.
-    Usage:
-    .. code::
-        append_file(file_path, data)
+    :param file_path: file path to save data with append mode
+    :type file_path: str
+    :param data: data to write into file one line
+    :type data: str
+    :usage:
+
+        function calling
+
+        .. code:: python
+
+            append_file(file_path, data)
     """
     with open(file_path, 'a', encoding='utf-8') as w:
         w.write(str(data) + '\n')
@@ -47,12 +53,19 @@ def append_file(file_path: str, data: str) -> str:
 
 def get_response_json(url: str):
     """
-    This function get response json dictionary from url.
+    Function get response json dictionary from url.
 
-    Args:
-        url (str): Url address to get response json.
-    Returns:
-        (json): Dictionary.
+    :param url: url address to get response json
+    :type url: str
+    :return: dictionary data
+    :rtype: json
+    :usage:
+
+        function calling
+
+        .. code:: python
+
+            get_response_json(url)
     """
     response = requests.get(url)
     response.raise_for_status()
@@ -61,14 +74,22 @@ def get_response_json(url: str):
 
 def machine(text: str, speed: int = 0.1) -> str:
     """
-    This function printing text as a typing on screen at intervals time after
+    Function printing text as a typing on screen at intervals time after
     each letter.
 
-    Args:
-        text (string): Text to be entered as an animation.
-        speed (int, optional): Time after each print letter. Defaults to 0.1.
-    Returns:
-        str: Printing text as an animation.
+    :param text: text to be entered as an animation
+    :type text: str
+    :param speed: time after each print letter, defaults to 0.1
+    :type speed: int, optional
+    :return: printing text in the console as an animation
+    :rtype: str
+    :usage:
+
+        function calling
+
+        .. code:: python
+
+            machine('I love Python')
     """
     machine = (str(text) + '\n')
     for chars in machine:
@@ -80,14 +101,19 @@ class progress:
     """
     Progress bar animation.
 
-    Usage:
-        Animation progress bar.
-    .. code::
-        progress().progress_bar(100, 0.01)
+    :usage:
 
-        Animation progress bar with indiwidual percent color.
-    .. code::
-        progress(percent_color=232).progress_bar(100, 0.01)
+        animation progress bar
+
+        .. code:: python
+
+            progress().progress_bar(100, 0.01)
+
+        animation progress bar with indiwidual percent color
+
+        .. code:: python
+
+            progress(percent_color=232).progress_bar(100, 0.01)
     """
     def __init__(self,
             txt_first: str = 'get data', txt_end: str = 'done',
@@ -99,16 +125,22 @@ class progress:
         Initial function. These values can be set individually to the
         different progress bar.
 
-        Args:
-            txt_first (str, optional): First text. Defaults to 'get data'.
-            txt_end (str, optional): End text. Defaults to 'done'.
-            txt_first_color (int, optional): Color first text. Defaults to 112.
-            txt_end_color (int, optional): Color end text. Defaults to 192.
-            bar_sten_color (int, optional): Color parenthesis. Defaults to 203.
-            bar_color (int, optional): Color bar progress. Defaults to 113.
-            percent_color (int, optional): Color percent text. Defaults to 243.
-        Returns:
-            str: One line progress bar animation.
+        :param txt_first: first text, defaults to 'get data'
+        :type txt_first: str, optional
+        :param txt_end: end text, defaults to 'done'
+        :type txt_end: str, optional
+        :param txt_first_color: color first text, defaults to 112
+        :type txt_first_color: int, optional
+        :param txt_end_color: color end text, defaults to 192
+        :type txt_end_color: int, optional
+        :param bar_sten_color: color parenthesis, defaults to 203
+        :type bar_sten_color: int, optional
+        :param bar_color: color bar progress, defaults to 113
+        :type bar_color: int, optional
+        :param percent_color: color percent text, defaults to 243
+        :type percent_color: int, optional
+        :return: one line progress bar animation
+        :rtype: str
         """
         self.mds = get_complex_color
         self.txt_first = txt_first
@@ -127,11 +159,12 @@ class progress:
         This function is a configuration of the progress bar. You can use
         this function if you want to make your own loop for.
 
-        Args:
-            percent (int): Percent value of the progress bar.
-            width (int): Width of the progress bar.
-        Returns:
-            str: One line progress bar.
+        :param percent: percent value of the progress bar
+        :type percent: int
+        :param width: width of the progress bar
+        :type width: int
+        :return: one line progress bar
+        :rtype: str
         """
         start = width * percent // 100
         end = width - start
@@ -151,11 +184,12 @@ class progress:
         """
         This function pringint animation of progress bar in one line.
 
-        Args:
-            width (int): Width of the progress bar.
-            speed (int): Speed of the progress bar left to right.
-        Returns:
-            str: One line progress bar with color and animation.
+        :param width: width of the progress bar
+        :type width: int
+        :param speed: speed of the progress bar left to right
+        :type speed: int
+        :return: one line progress bar with color and animation
+        :rtype: str
         """
         for i in range(101):
             self.progress_conf(i, width)
