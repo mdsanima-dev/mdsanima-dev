@@ -10,7 +10,7 @@
   "homepage": "https://github.com/mdsanima-dev/mdsanima-dev#readme",
   "license": "MIT",
   "project_urls": {
-    "Documentation": "https://github.com/mdsanima-dev/mdsanima-dev",
+    "Documentation": "https://mdsanima-dev.github.io/mdsanima-dev/",
     "Source": "https://github.com/mdsanima-dev/mdsanima-dev",
     "Bug Tracker": "https://github.com/mdsanima-dev/mdsanima-dev/issues"
   },
@@ -129,7 +129,7 @@
         "hidden": true
       }
     ],
-    "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nand `README.md` file for commit guidelines. Also you should check [conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for **mdsanima_dev** Python Package is available\nat [docs mdsanima_dev](https://github.com/mdsanima-dev/mdsanima-dev) be sure to check it.\n"
+    "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nand `README.md` file for commit guidelines. Also you should check [conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for **mdsanima_dev** Python Package is available\nat [docs mdsanima_dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to check it.\n"
   },
   "scripts": {
     "check": "standard-version --dry-run",
