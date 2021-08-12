@@ -57,5 +57,7 @@ setuptools.setup(
     command_options={
         'build_sphinx': {
             'version': ('setup.py', data_package["version"]),
+            'release': ('setup.py', data_package["version"]),
+            'build_dir': ('setup.py', "docs"),
             'source_dir': ('setup.py', "docs/source")}},
 )
