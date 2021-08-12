@@ -43,7 +43,7 @@ python3 -m pip uninstall mdsanima_dev
 ### Using Setup
 
 ```shell
-git clone https://github.com/mdsanima-dev/mdsanima-dev
+git clone https://github.com/mdsanima-dev/mdsanima-dev.git
 cd mdsanima-dev
 python3 setup.py install
 ```
