@@ -22,3 +22,10 @@ This is all modules include of this package.
     module_table
     module_tools
 ```
+
+```{eval-rst}
+.. toctree::
+    :maxdepth: 2
+
+    changelog
+```
