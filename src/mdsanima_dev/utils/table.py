@@ -1,7 +1,5 @@
 """
-# Table Module
-
-Making a cool table.
+Printing a colored table in the terminal console output.
 """
 
 from mdsanima_dev import colors
@@ -16,25 +14,27 @@ class table:
 
     def colors(self, color:int=255) -> int:
         """
-        Initial color table.
+        Initial color table. Only use for this class.
 
-        Args:
-            color (int, optional): Color of the table. Defaults to 255.
-        Returns:
-            int: Number of colors from `colors` module.
+        :param color: color of the table, defaults to 255
+        :type color: int, optional
+        :return: number of colors from ``colors`` module
+        :rtype: int
         """
         self.tab_color = color
 
     def connect(self, top: bool, length: int, bot: bool) -> str:
         """
-        Checking for connecting table.
+        Checking for connectiong table.
 
-        Args:
-            top (bool): Top element of the table.
-            length (int): Length of the table.
-            bot (bool): Bottom element of the table.
-        Returns:
-            str: Element printing of the table in unicode value.
+        :param top: top element of the table
+        :type top: bool
+        :param length: length of the table
+        :type length: int
+        :param bot: bottom element of the table
+        :type bot: bool
+        :return: element printing of the table in unicode value
+        :rtype: str
         """
         header = ('\u250c' + ('\u2500' * length) + '\u2510')
         conect = ('\u251c' + ('\u2500' * length) + '\u2524')
@@ -52,14 +52,31 @@ class table:
         """
         Headers of the template table.
 
-        Args:
-            header (str): Headers with connectiog or nor.
-            hcolor (int, optional): Color of text. Defaults to 255.
-            top (bool, optional): Check connecting top. Defaults to False.
-            bot (bool, optional): Check connection bootom. Defaults to False.
-            tcolor (int, optional): Table color. Defaults to 255.
-        Returns:
-            str: Headers element of tempalte table.
+        :param header: headers text
+        :type header: str
+        :param hcolor: color of text, defaults to 255
+        :type hcolor: int, optional
+        :param top: check connecting top, defaults to ``False``
+        :type top: bool, optional
+        :param bot: check connecting bootom, defaults to ``False``
+        :type bot: bool, optional
+        :param tcolor: table color, defaults to 255
+        :type tcolor: int, optional
+        :return: headers element of template table
+        :rtype: str
+        :usage:
+
+            assigning function calling to a variable
+
+            .. code:: python
+
+                from mdsanima_dev.utils.table import table
+                t = table()
+                t.headers('I Love Python mdsanima.com')
+                t.headers('I Love Python mdsanima.com', hcolor=50)
+                t.headers('I Love Python mdsanima.com', hcolor=197, tcolor=203)
+                t.headers('I Love Python mdsanima.com'.center(40),
+                            hcolor=34, tcolor=220)
         """
         self.header = header
         self.color = hcolor
@@ -74,7 +91,7 @@ class table:
 
         # Table midle.
         self.mds('\u2502', self.tab_color, '')
-        self.mds(' ' + self.header.ljust(head_len-2).upper(), self.color, ' ')
+        self.mds(' ' + self.header.ljust(head_len-2), self.color, ' ')
         self.mds('\u2502', self.tab_color)
 
         # Table bottom.
@@ -87,18 +104,38 @@ class table:
             tcolor: int = 255
         ) -> str:
         """
-        Content of the tempalte table. This table constrain two text value.
+        Content of the template table. This table constrain two text value.
 
-        Args:
-            content_key (str): First text value in the left.
-            content_val (str): Second text value in the right.
-            key_color (int, optional): Text color content key. Defaults to 255.
-            val_color (int, optional): Text color content val. Defaults to 255.
-            top (bool, optional): Check connecting top. Defaults to False.
-            bot (bool, optional): Check connecting bootom. Defaults to False.
-            tcolor (int, optional): Table color. Defaults to 255.
-        Returns:
-            str: Content elemento of template table.
+        :param content_key: first text value in the left
+        :type content_key: str
+        :param content_val: second text value in the right
+        :type content_val: str
+        :param key_color: text color content key, defaults to 255
+        :type key_color: int, optional
+        :param val_color: text color content value, defaults to 255
+        :type val_color: int, optional
+        :param top: check connecting top, defaults to ``False``
+        :type top: bool, optional
+        :param bot: check connecting bootom, defaults to ``False``
+        :type bot: bool, optional
+        :param tcolor: table color, defaults to 255
+        :type tcolor: int, optional
+        :return: content element of template table
+        :rtype: str
+        :usage:
+
+            assigning function calling to a variable
+
+            .. code:: python
+
+                from mdsanima_dev.utils.table import table
+                t = table()
+                t.content('I Love Python', 'mdsanima.com')
+                t.content('I Love Python', 'mdsanima.com', tcolor=197)
+                t.content('I Love Python', 'mdsanima.com',
+                            tcolor=227, key_color=86, val_color=76)
+                t.content('I Love Python'.rjust(20), 'mdsanima.com'.ljust(20),
+                            tcolor=31, key_color=32, val_color=33)
         """
         self.key = content_key
         self.val = content_val
@@ -135,12 +172,12 @@ class table_elem:
     """
     def __init__(self, color: int) -> str:
         """
-        Initial finction.
+        Initial function element of the table.
 
-        Args:
-            color (int): Number of colors from `colors` module.
-        Returns:
-            str: Color value.
+        :param color: number of color from ``colors`` module
+        :type color: int
+        :return: color value
+        :rtype: str
         """
         self.mds = colors.get_complex_color
         self.color = color
@@ -149,10 +186,10 @@ class table_elem:
         """
         Top element of the table.
 
-        Args:
-            length (int): Length of the table element.
-        Returns:
-            str: Unicode top element printing in one line.
+        :param length: length of the table element
+        :type length: int
+        :return: unicode top element printing in one line
+        :rtype: str
         """
         self.header = ('\u250c' + ('\u2500' * length) + '\u2510')
         self.mds(self.header, self.color)
@@ -161,10 +198,10 @@ class table_elem:
         """
         Midle element of the table.
 
-        Args:
-            length (int): Length of the table element.
-        Returns:
-            str: Unicode midle element printing in one line.
+        :param length: length of the table element
+        :type length: int
+        :return: unicode midle element printing in one line
+        :rtype: str
         """
         self.middle = ('\u251c' + ('\u2500' * length) + '\u2524')
         self.mds(self.middle, self.color)
@@ -173,26 +210,26 @@ class table_elem:
         """
         Bootom element of the table.
 
-        Args:
-            length (int): Length of the table element.
-        Returns:
-            str: Unicode bootom element printing in one line.
+        :param length: length of the table element
+        :type length: int
+        :return: unicode bootom element printing in one line
+        :rtype: str
         """
         self.bottom = ('\u2514' + ('\u2500' * length) + '\u2518')
         self.mds(self.bottom, self.color)
 
-    def hed(self,
-            length: int, text: str, text_color: int
-        ) -> str:
+    def hed(self, length: int, text: str, text_color: int) -> str:
         """
-        Header element of the table one text value.
+        Header element of the table on text value.
 
-        Args:
-            length (int): Length of the table element.
-            text (str): Text printing inside table.
-            text_color (int): Text color.
-        Returns:
-            str: Unicode header element printing in one line.
+        :param length: length of the table element
+        :type length: int
+        :param text: text printing inside table
+        :type text: str
+        :param text_color: text color value
+        :type text_color: int
+        :return: unicode header element printing in one line
+        :rtype: str
         """
         self.text = text.ljust(length-1)
         self.mds('\u2502', self.color, '')
@@ -200,20 +237,23 @@ class table_elem:
         self.mds('\u2502', self.color)
 
     def con(self,
-            length: int, key: str, val: str,
-            k_clr: int, v_clr: int
+            length: int, key: str, val: str, k_clr: int, v_clr: int
         ) -> str:
         """
         Content element of the table two text value.
 
-        Args:
-            length (int): Length of the table element.
-            key (str): Text printing inside table in the left.
-            val (str): Text printing inside table in the right.
-            k_clr (int): Text color key.
-            v_clr (int): Text color val.
-        Returns:
-            str: Unicode content element printing in one line.
+        :param length: length of the table element
+        :type length: int
+        :param key: text printing inside table in the left
+        :type key: str
+        :param val: text printing inside table in the right
+        :type val: str
+        :param k_clr: text color key
+        :type k_clr: int
+        :param v_clr: text color value
+        :type v_clr: int
+        :return: unicode content element printing in one line
+        :rtype: str
         """
         self.con_key = key
         self.con_val = val
@@ -221,6 +261,6 @@ class table_elem:
         v_len = len(val)
         ajst = k_len + v_len + 5
         self.mds('\u2502', self.color, '')
-        self.mds(' ' + self.con_key.upper(), k_clr, ' ->')
-        self.mds(' ' + self.con_val.upper(), v_clr, ' '.ljust(length-ajst))
+        self.mds(' ' + self.con_key, k_clr, ' ->')
+        self.mds(' ' + self.con_val, v_clr, ' '.ljust(length-ajst))
         self.mds('\u2502', self.color)
