@@ -14,7 +14,9 @@ modules. So let me show something.
 
 This Python Pacage developed by Marcin Różewski aka
 [MDSANIM](https://mdsanima.com) includes several useful modules thats he uses
-in various projects.
+in various projects. Docomentation for **mdsanima_dev** Python Package
+is available at [docs mdsanima_dev](https://mdsanima-dev.github.io/mdsanima-dev/)
+be sure to check it.
 
 ## Installation
 
@@ -57,7 +59,8 @@ python3 setup.py install
 
 ## Develempent
 
-Help instruction for development.
+Help instruction for development. Check [documentation](https://mdsanima-dev.github.io/mdsanima-dev/docs/html/development.html)
+for workflow release and more info.
 
 ### Build documentation
 
@@ -86,6 +89,10 @@ For checking if everything is ok:
 ```shell
 standard-version release-test
 ```
+
+## Showcase
+
+![python_mdsanima_dev_small_fast](https://user-images.githubusercontent.com/3817871/129311978-e934ab26-85d9-49a1-97a7-dd5eb26b2c72.gif)
 
 ## Connect With Me
 

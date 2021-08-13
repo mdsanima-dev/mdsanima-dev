@@ -4,6 +4,11 @@
 .. automodule:: mdsanima_dev.emoji
 ```
 
+```{eval-rst}
+.. figure:: _static/gif/emoji_show_d_04_optymize.gif
+    :name: show-emoji-04-gif-d
+```
+
 ## Function `emoji_get_url_data`
 
 ```{eval-rst}
@@ -20,6 +25,11 @@
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.emoji.emoji_load_json_data
+```
+
+```{eval-rst}
+.. figure:: _static/gif/emoji_show_c_04_optymize.gif
+    :name: show-emoji-04-gif-c
 ```
 
 ## Class `emoji`
@@ -47,6 +57,11 @@ Check first method
 [``emo_head()``](#method-emo-head),
 [``emoji()``](#method-emoji) and
 [``all method``](#all-method).
+```
+
+```{eval-rst}
+.. figure:: _static/gif/emoji_show_a_04_optymize.gif
+    :name: show-emoji-04-gif-a
 ```
 
 ### Method ``emo_stats()``
