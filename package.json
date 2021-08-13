@@ -5,7 +5,7 @@
     "name": "Marcin Różewski",
     "email": "marcinrozewski@gmail.com"
   },
-  "description": "MDSANIMA Python Development Tools - This file only for automate versioning and changelog generation",
+  "description": "MDSANIMA-DEV Python Development Tools",
   "repository": "https://github.com/mdsanima-dev/mdsanima-dev.git",
   "homepage": "https://github.com/mdsanima-dev/mdsanima-dev#readme",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "mdsanima-conventional-changelog": "https://github.com/mdsanima/conventional-changelog/releases/tag/v5.0.1"
   },
   "keywords": [
-    "mdsanima_dev",
+    "mdsanima-dev",
     "python",
     "development",
     "tools",
@@ -129,7 +129,7 @@
         "hidden": true
       }
     ],
-    "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nand `README.md` file for commit guidelines. Also you should check [conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for **mdsanima_dev** Python Package is available\nat [docs mdsanima_dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to check it.\n"
+    "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nand `README.md` file for commit guidelines. Also you should check [conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for **mdsanima-dev** Python Package is available\nat [docs mdsanima-dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to check it.\n"
   },
   "scripts": {
     "check": "standard-version --dry-run",
