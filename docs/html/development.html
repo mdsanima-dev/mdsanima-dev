@@ -325,7 +325,9 @@ Create tagging release and signed approval with GPG keys.</p>
 <p>We’re almost done. We just need to put commands in to terminal and which will
 create an installable Python Package from your <code class="docutils literal notranslate"><span class="pre">code</span></code> and send it to <code class="docutils literal notranslate"><span class="pre">PyPi</span></code>.</p>
 <p>Build Setpu:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 setup.py sdist bdist_wheel
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 setup.py install
+python3.7 setup.py install
+python3.8 setup.py install
 </pre></div>
 </div>
 <p>It created some new directories for us, such as <code class="docutils literal notranslate"><span class="pre">dist</span></code>, <code class="docutils literal notranslate"><span class="pre">build</span></code>

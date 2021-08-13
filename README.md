@@ -3,7 +3,7 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/mdsanima-dev/mdsanima-dev?style=flat)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/mdsanima-dev/mdsanima-dev?style=flat)
 ![GitHub](https://img.shields.io/github/license/mdsanima-dev/mdsanima-dev?style=flat)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mdsanima_dev?style=flat)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mdsanima-dev?style=flat)
 ![Lines of code](https://img.shields.io/tokei/lines/github/mdsanima-dev/mdsanima-dev?style=flat)
 ![GitHub top language](https://img.shields.io/github/languages/top/mdsanima-dev/mdsanima-dev)
 
@@ -14,7 +14,7 @@ modules. So let me show something.
 
 This Python Pacage developed by Marcin Różewski aka
 [MDSANIM](https://mdsanima.com) includes several useful modules thats he uses
-in various projects. Docomentation for **mdsanima_dev** Python Package
+in various projects. Docomentation for **mdsanima-dev** Python Package
 is available at [docs mdsanima-dev](https://mdsanima-dev.github.io/mdsanima-dev/)
 be sure to check it.
 

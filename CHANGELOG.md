@@ -4,8 +4,8 @@ All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version)
 and `README.md` file for commit guidelines. Also you should check [conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.
 
-Docomentation for **mdsanima_dev** Python Package is available
-at [docs mdsanima_dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to check it.
+Docomentation for **mdsanima-dev** Python Package is available
+at [docs mdsanima-dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to check it.
 
 ## 0.1.0
 
@@ -54,16 +54,20 @@ at [docs mdsanima_dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to 
 
 ### Documentation
 
-* fix duplicate label ([2c2ed8a](https://github.com/mdsanima-dev/mdsanima-dev/commit/2c2ed8aaeb91177452391adf5c36e7ef3ea2fbc2))
+* **gh-pages:** build setup fixed ([29a63e0](https://github.com/mdsanima-dev/mdsanima-dev/commit/29a63e088e48d0f5b492c0c5c846a4969eb8ae4f))
+* fix package name on `pypi` install ([bde85ef](https://github.com/mdsanima-dev/mdsanima-dev/commit/bde85ef73eb821f24ddf0b3d37551719b97b73f8))
 * **devs:** development instruction workflow ([7dfec4c](https://github.com/mdsanima-dev/mdsanima-dev/commit/7dfec4c72584f4d907df500cbc70a8514733199c))
+* **gh-pages:** fix redirecting `url` ([7643624](https://github.com/mdsanima-dev/mdsanima-dev/commit/7643624cfcab90e63981b3795813b87217bd661a))
+* fix duplicate label ([2c2ed8a](https://github.com/mdsanima-dev/mdsanima-dev/commit/2c2ed8aaeb91177452391adf5c36e7ef3ea2fbc2))
+* **fix:** repository clone url ([bee45c7](https://github.com/mdsanima-dev/mdsanima-dev/commit/bee45c726c14a68eb4b09e745e28836980c98314))
 * **gh-pages:** create empty `.nojekyll` closes [#12](https://github.com/mdsanima-dev/mdsanima-dev/issues/12) ([5bb21b2](https://github.com/mdsanima-dev/mdsanima-dev/commit/5bb21b201c89951d794d88b2f4eb865f8b815ee0))
-* **gh-pages:** meta `url` refers `index.html` closes [#11](https://github.com/mdsanima-dev/mdsanima-dev/issues/11) ([c4ceac7](https://github.com/mdsanima-dev/mdsanima-dev/commit/c4ceac7fdd3f5eeb64a42389d773f3ae3110149e))
-* **gh-pages:** meta contents refers to `build` shpinx closes [#13](https://github.com/mdsanima-dev/mdsanima-dev/issues/13) ([5545f4a](https://github.com/mdsanima-dev/mdsanima-dev/commit/5545f4a5618b4ab955679ffb13743ed70594bf0d))
 * **gif:** add gif animation closes [#10](https://github.com/mdsanima-dev/mdsanima-dev/issues/10) ([de8e9ca](https://github.com/mdsanima-dev/mdsanima-dev/commit/de8e9caa4fce235f21d2f3a2c58b13bcd94155a1)), closes [#2](https://github.com/mdsanima-dev/mdsanima-dev/issues/2)
-* add `extension` and `markdown` parser closes [#3](https://github.com/mdsanima-dev/mdsanima-dev/issues/3) ([38b3552](https://github.com/mdsanima-dev/mdsanima-dev/commit/38b3552116817fce65fc1e6b45587e43a9e5faea))
-* add `README.md` information ([2efd757](https://github.com/mdsanima-dev/mdsanima-dev/commit/2efd7574848e5f09b013f2efc98427a21b72d42d))
 * add `toctree` changelog for `sphinx` documentation ([4aae253](https://github.com/mdsanima-dev/mdsanima-dev/commit/4aae2533f6edcae573baea5bb5cf82a24407cdf3))
 * add badge to `README.md` file ([6ee2d6b](https://github.com/mdsanima-dev/mdsanima-dev/commit/6ee2d6b4a85852db6b3bd72c9dc921840dc54853))
+* **gh-pages:** meta `url` refers `index.html` closes [#11](https://github.com/mdsanima-dev/mdsanima-dev/issues/11) ([c4ceac7](https://github.com/mdsanima-dev/mdsanima-dev/commit/c4ceac7fdd3f5eeb64a42389d773f3ae3110149e))
+* **gh-pages:** meta contents refers to `build` shpinx closes [#13](https://github.com/mdsanima-dev/mdsanima-dev/issues/13) ([5545f4a](https://github.com/mdsanima-dev/mdsanima-dev/commit/5545f4a5618b4ab955679ffb13743ed70594bf0d))
+* add `extension` and `markdown` parser closes [#3](https://github.com/mdsanima-dev/mdsanima-dev/issues/3) ([38b3552](https://github.com/mdsanima-dev/mdsanima-dev/commit/38b3552116817fce65fc1e6b45587e43a9e5faea))
+* add `README.md` information ([2efd757](https://github.com/mdsanima-dev/mdsanima-dev/commit/2efd7574848e5f09b013f2efc98427a21b72d42d))
 * add documentation string ([7faf2b0](https://github.com/mdsanima-dev/mdsanima-dev/commit/7faf2b0213e8971fb073a6daac9f490cd0740f27))
 * add theme and html option closes [#4](https://github.com/mdsanima-dev/mdsanima-dev/issues/4) ([765ed8e](https://github.com/mdsanima-dev/mdsanima-dev/commit/765ed8e6b8c57e1118428737c6f78cc0ac60089b))
 * deteting old files `.rst` and make ([778eee6](https://github.com/mdsanima-dev/mdsanima-dev/commit/778eee6a88c60f21a11a79127e4efdc0e958f6f5))
@@ -76,7 +80,6 @@ at [docs mdsanima_dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to 
 * **colors:** documentation colors string ([d325764](https://github.com/mdsanima-dev/mdsanima-dev/commit/d32576405c5d87234f60be3ad749444996b0b23f))
 * **emoji:** add documentation string to a function ([86c6037](https://github.com/mdsanima-dev/mdsanima-dev/commit/86c6037ca6db19b7b7ba5621c23f29befdd5fea6))
 * **emoji:** documentation emoji string ([4853b78](https://github.com/mdsanima-dev/mdsanima-dev/commit/4853b788e5710d1ce965229f60342be0fb0dc00a))
-* **fix:** repository clone url ([bee45c7](https://github.com/mdsanima-dev/mdsanima-dev/commit/bee45c726c14a68eb4b09e745e28836980c98314))
 * **gif:** add gif animation showcase ([b5c26e0](https://github.com/mdsanima-dev/mdsanima-dev/commit/b5c26e09250f977712488e8a7d88ef05f508fa39))
 * **icons:** add `mdsanima` icons logos variation ([7ac931a](https://github.com/mdsanima-dev/mdsanima-dev/commit/7ac931a6ac81f3b4bde45e4d9dfefc1056048bb0))
 * **screenshot:** add console screenshot img ([762bdc8](https://github.com/mdsanima-dev/mdsanima-dev/commit/762bdc838b6776970fad0ebc028e4ece8c841990))
