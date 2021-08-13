@@ -1,7 +1,14 @@
 # mdsanima-dev
 
+![GitHub issues](https://img.shields.io/github/issues-raw/mdsanima-dev/mdsanima-dev?style=flat)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/mdsanima-dev/mdsanima-dev?style=flat)
+![GitHub](https://img.shields.io/github/license/mdsanima-dev/mdsanima-dev?style=flat)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mdsanima_dev?style=flat)
+![Lines of code](https://img.shields.io/tokei/lines/github/mdsanima-dev/mdsanima-dev?style=flat)
+![GitHub top language](https://img.shields.io/github/languages/top/mdsanima-dev/mdsanima-dev)
+
 This is a **mdsanima-dev** developer page. Here you can find various python
-packages. So let me show something.
+modules. So let me show something.
 
 ## Python Package `mdsanima_dev`
 
