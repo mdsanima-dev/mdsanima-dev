@@ -1,5 +1,5 @@
 {
-  "name": "mdsanima-dev",
+  "name": "mdsanima_dev",
   "version": "0.1.0",
   "author": {
     "name": "Marcin Różewski",
@@ -16,11 +16,11 @@
   },
   "devDependencies": {
     "standard-version": "^9.3.0",
-    "conventional-changelog": "^5.0.0",
-    "mdsanima-conventional-changelog": "https://github.com/mdsanima/conventional-changelog/releases/tag/v5.0.0"
+    "conventional-changelog": "^5.0.1",
+    "mdsanima-conventional-changelog": "https://github.com/mdsanima/conventional-changelog/releases/tag/v5.0.1"
   },
   "keywords": [
-    "mdsanima",
+    "mdsanima_dev",
     "python",
     "development",
     "tools",
