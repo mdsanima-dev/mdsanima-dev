@@ -30,7 +30,7 @@ After run this command you will create a new version in the `package.json` file,
 bump it in `__init __.py` and you will automatically create `CHANGELOG.md`
 based on commit messages.
 
-## Build documentation
+## Building documentation
 
 Then build the documentation by typing this command:
 
