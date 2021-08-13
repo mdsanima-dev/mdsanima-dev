@@ -1,0 +1,789 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module table &#8212; mdsanima-dev 0.1.0 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="shortcut icon" href="_static/ic_mdsanima_09_smp_w.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module tools" href="module_tools.html" />
+    <link rel="prev" title="Module emoji" href="module_emoji.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/ic_mdsanima_08_lng_drp_sdw_c.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">mdsanima-dev 0.1.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   MDSANIMA DEVELOPMENT
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Python Modules
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module_colors.html">
+   Module
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     colors
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module_emoji.html">
+   Module
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     emoji
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Module
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     table
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module_tools.html">
+   Module
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     tools
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Development
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="development.html">
+   Workflow
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     release
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="changelog.html">
+   Changelog
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/module_table.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/mdsanima-dev/mdsanima-dev"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/mdsanima-dev/mdsanima-dev/issues/new?title=Issue%20on%20page%20%2Fmodule_table.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#class-table">
+   Class
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     table
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-headers">
+     Method
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       headers()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-content">
+     Method
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       content()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#class-table-elem">
+   Class
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     table_elem
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-bot">
+     Method
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       bot()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-con">
+     Method
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       con()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-hed">
+     Method
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       hed()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-mid">
+     Method
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       mid()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-top">
+     Method
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       top()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-usage-class-table-elem">
+   Example usage class
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     table_elem
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="module-mdsanima_dev.utils.table">
+<span id="module-table"></span><h1>Module <code class="docutils literal notranslate"><span class="pre">table</span></code><a class="headerlink" href="#module-mdsanima_dev.utils.table" title="Permalink to this headline">¶</a></h1>
+<p>Printing a colored table in the terminal console output.</p>
+<div class="section" id="class-table">
+<h2>Class <code class="docutils literal notranslate"><span class="pre">table</span></code><a class="headerlink" href="#class-table" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">mdsanima_dev.utils.table.</span></span><span class="sig-name descname"><span class="pre">table</span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class create template table with colors, headers and content.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table.colors">
+<span class="sig-name descname"><span class="pre">colors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">255</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table.colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initial color table. Only use for this class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>int</em><em>, </em><em>optional</em>) – color of the table, defaults to 255</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>number of colors from <code class="docutils literal notranslate"><span class="pre">colors</span></code> module</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table.connect">
+<span class="sig-name descname"><span class="pre">connect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bot</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table.connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checking for connectiong table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>top</strong> (<em>bool</em>) – top element of the table</p></li>
+<li><p><strong>length</strong> (<em>int</em>) – length of the table</p></li>
+<li><p><strong>bot</strong> (<em>bool</em>) – bottom element of the table</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>element printing of the table in unicode value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="method-headers">
+<h3>Method <code class="docutils literal notranslate"><span class="pre">headers()</span></code><a class="headerlink" href="#method-headers" title="Permalink to this headline">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table.headers">
+<span class="sig-prename descclassname"><span class="pre">table.</span></span><span class="sig-name descname"><span class="pre">headers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">header</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hcolor</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">255</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">top</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bot</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tcolor</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">255</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table.headers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Headers of the template table.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>header</strong> (<em>str</em>) – headers text</p></li>
+<li><p><strong>hcolor</strong> (<em>int</em><em>, </em><em>optional</em>) – color of text, defaults to 255</p></li>
+<li><p><strong>top</strong> (<em>bool</em><em>, </em><em>optional</em>) – check connecting top, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>bot</strong> (<em>bool</em><em>, </em><em>optional</em>) – check connecting bootom, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>tcolor</strong> (<em>int</em><em>, </em><em>optional</em>) – table color, defaults to 255</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>headers element of template table</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Usage</dt>
+<dd class="field-even"><p>assigning function calling to a variable</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.utils.table</span> <span class="kn">import</span> <span class="n">table</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">table</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">headers</span><span class="p">(</span><span class="s1">&#39;I Love Python mdsanima.com&#39;</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">headers</span><span class="p">(</span><span class="s1">&#39;I Love Python mdsanima.com&#39;</span><span class="p">,</span> <span class="n">hcolor</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">headers</span><span class="p">(</span><span class="s1">&#39;I Love Python mdsanima.com&#39;</span><span class="p">,</span> <span class="n">hcolor</span><span class="o">=</span><span class="mi">197</span><span class="p">,</span> <span class="n">tcolor</span><span class="o">=</span><span class="mi">203</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">headers</span><span class="p">(</span><span class="s1">&#39;I Love Python mdsanima.com&#39;</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">40</span><span class="p">),</span>
+            <span class="n">hcolor</span><span class="o">=</span><span class="mi">34</span><span class="p">,</span> <span class="n">tcolor</span><span class="o">=</span><span class="mi">220</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="tabbed-set docutils">
+<input id="2a216dd3-3f77-488c-a2c8-1899745a27dd" name="79739ed4-6a22-4cad-a9b6-b159ba4af404" type="radio">
+</input><label class="tabbed-label" for="2a216dd3-3f77-488c-a2c8-1899745a27dd">
+Terminal Acrylic</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-01-ac-a">
+<img alt="_images/table_show_01_acrylic_a.jpg" src="_images/table_show_01_acrylic_a.jpg" />
+</div>
+</div>
+<input id="95fc8450-88c7-4c74-8168-fb03f5ea3ec3" name="79739ed4-6a22-4cad-a9b6-b159ba4af404" type="radio">
+</input><label class="tabbed-label" for="95fc8450-88c7-4c74-8168-fb03f5ea3ec3">
+Terminal Dark</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-01-dk-a">
+<img alt="_images/table_show_01_dark_a.jpg" src="_images/table_show_01_dark_a.jpg" />
+</div>
+</div>
+<input checked="checked" id="5cc92a0a-e3b8-401b-9b77-c137c668a174" name="79739ed4-6a22-4cad-a9b6-b159ba4af404" type="radio">
+</input><label class="tabbed-label" for="5cc92a0a-e3b8-401b-9b77-c137c668a174">
+Terminal Acrylic Border</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-01-ac-b">
+<img alt="_images/table_show_01_acrylic_b.jpg" src="_images/table_show_01_acrylic_b.jpg" />
+</div>
+</div>
+<input id="86b3999f-f3d0-4ecb-ab26-c38a53229705" name="79739ed4-6a22-4cad-a9b6-b159ba4af404" type="radio">
+</input><label class="tabbed-label" for="86b3999f-f3d0-4ecb-ab26-c38a53229705">
+Terminal Dark Border</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-01-dk-b">
+<img alt="_images/table_show_01_dark_b.jpg" src="_images/table_show_01_dark_b.jpg" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="method-content">
+<h3>Method <code class="docutils literal notranslate"><span class="pre">content()</span></code><a class="headerlink" href="#method-content" title="Permalink to this headline">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table.content">
+<span class="sig-prename descclassname"><span class="pre">table.</span></span><span class="sig-name descname"><span class="pre">content</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content_key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">255</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val_color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">255</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">top</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bot</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tcolor</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">255</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table.content" title="Permalink to this definition">¶</a></dt>
+<dd><p>Content of the template table. This table constrain two text value.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>content_key</strong> (<em>str</em>) – first text value in the left</p></li>
+<li><p><strong>content_val</strong> (<em>str</em>) – second text value in the right</p></li>
+<li><p><strong>key_color</strong> (<em>int</em><em>, </em><em>optional</em>) – text color content key, defaults to 255</p></li>
+<li><p><strong>val_color</strong> (<em>int</em><em>, </em><em>optional</em>) – text color content value, defaults to 255</p></li>
+<li><p><strong>top</strong> (<em>bool</em><em>, </em><em>optional</em>) – check connecting top, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>bot</strong> (<em>bool</em><em>, </em><em>optional</em>) – check connecting bootom, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>tcolor</strong> (<em>int</em><em>, </em><em>optional</em>) – table color, defaults to 255</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>content element of template table</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Usage</dt>
+<dd class="field-even"><p>assigning function calling to a variable</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.utils.table</span> <span class="kn">import</span> <span class="n">table</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">table</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">content</span><span class="p">(</span><span class="s1">&#39;I Love Python&#39;</span><span class="p">,</span> <span class="s1">&#39;mdsanima.com&#39;</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">content</span><span class="p">(</span><span class="s1">&#39;I Love Python&#39;</span><span class="p">,</span> <span class="s1">&#39;mdsanima.com&#39;</span><span class="p">,</span> <span class="n">tcolor</span><span class="o">=</span><span class="mi">197</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">content</span><span class="p">(</span><span class="s1">&#39;I Love Python&#39;</span><span class="p">,</span> <span class="s1">&#39;mdsanima.com&#39;</span><span class="p">,</span>
+            <span class="n">tcolor</span><span class="o">=</span><span class="mi">227</span><span class="p">,</span> <span class="n">key_color</span><span class="o">=</span><span class="mi">86</span><span class="p">,</span> <span class="n">val_color</span><span class="o">=</span><span class="mi">76</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">content</span><span class="p">(</span><span class="s1">&#39;I Love Python&#39;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">20</span><span class="p">),</span> <span class="s1">&#39;mdsanima.com&#39;</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">20</span><span class="p">),</span>
+            <span class="n">tcolor</span><span class="o">=</span><span class="mi">31</span><span class="p">,</span> <span class="n">key_color</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">val_color</span><span class="o">=</span><span class="mi">33</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="tabbed-set docutils">
+<input id="7372d109-0290-4b9f-881f-4c8ffb2b30ae" name="c4529b60-b623-4ed5-912e-4efbbdf4fef2" type="radio">
+</input><label class="tabbed-label" for="7372d109-0290-4b9f-881f-4c8ffb2b30ae">
+Terminal Acrylic</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-02-ac-a">
+<img alt="_images/table_show_02_acrylic_a.jpg" src="_images/table_show_02_acrylic_a.jpg" />
+</div>
+</div>
+<input id="df97a113-3a09-481d-8554-ca01f60b5c15" name="c4529b60-b623-4ed5-912e-4efbbdf4fef2" type="radio">
+</input><label class="tabbed-label" for="df97a113-3a09-481d-8554-ca01f60b5c15">
+Terminal Dark</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-02-dk-a">
+<img alt="_images/table_show_02_dark_a.jpg" src="_images/table_show_02_dark_a.jpg" />
+</div>
+</div>
+<input checked="checked" id="322bd079-0dfe-461f-8f2c-d140c9ff54a1" name="c4529b60-b623-4ed5-912e-4efbbdf4fef2" type="radio">
+</input><label class="tabbed-label" for="322bd079-0dfe-461f-8f2c-d140c9ff54a1">
+Terminal Acrylic Border</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-02-ac-b">
+<img alt="_images/table_show_02_acrylic_b.jpg" src="_images/table_show_02_acrylic_b.jpg" />
+</div>
+</div>
+<input id="5e7a1388-75ff-4068-8f64-bede2b1cd0f8" name="c4529b60-b623-4ed5-912e-4efbbdf4fef2" type="radio">
+</input><label class="tabbed-label" for="5e7a1388-75ff-4068-8f64-bede2b1cd0f8">
+Terminal Dark Border</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-02-dk-b">
+<img alt="_images/table_show_02_dark_b.jpg" src="_images/table_show_02_dark_b.jpg" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="class-table-elem">
+<h2>Class <code class="docutils literal notranslate"><span class="pre">table_elem</span></code><a class="headerlink" href="#class-table-elem" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table_elem">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">mdsanima_dev.utils.table.</span></span><span class="sig-name descname"><span class="pre">table_elem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mdsanima_dev.utils.table.table_elem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Element of the table to create your own, what you want.</p>
+</dd></dl>
+
+<div class="section" id="method-bot">
+<h3>Method <code class="docutils literal notranslate"><span class="pre">bot()</span></code><a class="headerlink" href="#method-bot" title="Permalink to this headline">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table_elem.bot">
+<span class="sig-prename descclassname"><span class="pre">table_elem.</span></span><span class="sig-name descname"><span class="pre">bot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table_elem.bot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bootom element of the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>length</strong> (<em>int</em>) – length of the table element</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>unicode bootom element printing in one line</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="method-con">
+<h3>Method <code class="docutils literal notranslate"><span class="pre">con()</span></code><a class="headerlink" href="#method-con" title="Permalink to this headline">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table_elem.con">
+<span class="sig-prename descclassname"><span class="pre">table_elem.</span></span><span class="sig-name descname"><span class="pre">con</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k_clr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v_clr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table_elem.con" title="Permalink to this definition">¶</a></dt>
+<dd><p>Content element of the table two text value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> (<em>int</em>) – length of the table element</p></li>
+<li><p><strong>key</strong> (<em>str</em>) – text printing inside table in the left</p></li>
+<li><p><strong>val</strong> (<em>str</em>) – text printing inside table in the right</p></li>
+<li><p><strong>k_clr</strong> (<em>int</em>) – text color key</p></li>
+<li><p><strong>v_clr</strong> (<em>int</em>) – text color value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>unicode content element printing in one line</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="method-hed">
+<h3>Method <code class="docutils literal notranslate"><span class="pre">hed()</span></code><a class="headerlink" href="#method-hed" title="Permalink to this headline">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table_elem.hed">
+<span class="sig-prename descclassname"><span class="pre">table_elem.</span></span><span class="sig-name descname"><span class="pre">hed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table_elem.hed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Header element of the table on text value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> (<em>int</em>) – length of the table element</p></li>
+<li><p><strong>text</strong> (<em>str</em>) – text printing inside table</p></li>
+<li><p><strong>text_color</strong> (<em>int</em>) – text color value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>unicode header element printing in one line</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="method-mid">
+<h3>Method <code class="docutils literal notranslate"><span class="pre">mid()</span></code><a class="headerlink" href="#method-mid" title="Permalink to this headline">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table_elem.mid">
+<span class="sig-prename descclassname"><span class="pre">table_elem.</span></span><span class="sig-name descname"><span class="pre">mid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table_elem.mid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Midle element of the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>length</strong> (<em>int</em>) – length of the table element</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>unicode midle element printing in one line</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="method-top">
+<h3>Method <code class="docutils literal notranslate"><span class="pre">top()</span></code><a class="headerlink" href="#method-top" title="Permalink to this headline">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="mdsanima_dev.utils.table.table_elem.top">
+<span class="sig-prename descclassname"><span class="pre">table_elem.</span></span><span class="sig-name descname"><span class="pre">top</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.utils.table.table_elem.top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Top element of the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>length</strong> (<em>int</em>) – length of the table element</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>unicode top element printing in one line</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="example-usage-class-table-elem">
+<h2>Example usage class <code class="docutils literal notranslate"><span class="pre">table_elem</span></code><a class="headerlink" href="#example-usage-class-table-elem" title="Permalink to this headline">¶</a></h2>
+<p>This is a example function to make a colored table with method of class
+<code class="docutils literal notranslate"><span class="pre">table_elem</span></code>. These example show three different tables that are not linked
+together.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.utils.table</span> <span class="kn">import</span> <span class="n">table_elem</span>
+<span class="k">def</span> <span class="nf">my_table</span><span class="p">():</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">table_elem</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">top</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">hed</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;I love Python&#39;</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">62</span><span class="p">),</span> <span class="mi">155</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">bot</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">top</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">con</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;Python&#39;</span><span class="p">,</span> <span class="s1">&#39;hello world&#39;</span><span class="p">,</span> <span class="mi">197</span><span class="p">,</span> <span class="mi">203</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">bot</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">top</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">hed</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;mdsanima.com&#39;</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">62</span><span class="p">),</span> <span class="mi">87</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">bot</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="tabbed-set docutils">
+<input id="a8cfb2f2-975c-41d2-b4ce-d65e16ba8116" name="7bf455bf-f789-4012-975a-0cec8dd97362" type="radio">
+</input><label class="tabbed-label" for="a8cfb2f2-975c-41d2-b4ce-d65e16ba8116">
+Terminal Acrylic</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-03-ac-a">
+<img alt="_images/table_show_03_acrylic_a.jpg" src="_images/table_show_03_acrylic_a.jpg" />
+</div>
+</div>
+<input id="615a493b-7769-4660-9448-d771ec04336c" name="7bf455bf-f789-4012-975a-0cec8dd97362" type="radio">
+</input><label class="tabbed-label" for="615a493b-7769-4660-9448-d771ec04336c">
+Terminal Dark</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-03-dk-a">
+<img alt="_images/table_show_03_dark_a.jpg" src="_images/table_show_03_dark_a.jpg" />
+</div>
+</div>
+<input checked="checked" id="8237ba30-e20c-4d3e-bc01-94ed2dacaa52" name="7bf455bf-f789-4012-975a-0cec8dd97362" type="radio">
+</input><label class="tabbed-label" for="8237ba30-e20c-4d3e-bc01-94ed2dacaa52">
+Terminal Acrylic Border</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-03-ac-b">
+<img alt="_images/table_show_03_acrylic_b.jpg" src="_images/table_show_03_acrylic_b.jpg" />
+</div>
+</div>
+<input id="d4ad4bca-d02e-438b-9907-9c6e0443acf7" name="7bf455bf-f789-4012-975a-0cec8dd97362" type="radio">
+</input><label class="tabbed-label" for="d4ad4bca-d02e-438b-9907-9c6e0443acf7">
+Terminal Dark Border</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-03-dk-b">
+<img alt="_images/table_show_03_dark_b.jpg" src="_images/table_show_03_dark_b.jpg" />
+</div>
+</div>
+</div>
+<p>This example shows how to create linked tables.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.utils.table</span> <span class="kn">import</span> <span class="n">table_elem</span>
+<span class="k">def</span> <span class="nf">my_table</span><span class="p">():</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">table_elem</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">top</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">hed</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;I love Python&#39;</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">63</span><span class="p">),</span> <span class="mi">155</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">mid</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">con</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;mdsanima.com&#39;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">28</span><span class="p">),</span> <span class="s1">&#39;hello world&#39;</span><span class="p">,</span> <span class="mi">197</span><span class="p">,</span> <span class="mi">203</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">con</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;development&#39;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">28</span><span class="p">),</span> <span class="s1">&#39;in progress&#39;</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">con</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;documentation&#39;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">28</span><span class="p">),</span> <span class="s1">&#39;sphinx&#39;</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">61</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">mid</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">hed</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;https://github.com/mdsanima-dev/mdsanima-dev&#39;</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">63</span><span class="p">),</span> <span class="mi">33</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">bot</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="tabbed-set docutils">
+<input id="7032b8e8-bd46-4347-9752-2a6f48091505" name="85407d0f-db1f-45b0-94c1-acfe2dda9c47" type="radio">
+</input><label class="tabbed-label" for="7032b8e8-bd46-4347-9752-2a6f48091505">
+Terminal Acrylic</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-04-ac-a">
+<img alt="_images/table_show_04_acrylic_a.jpg" src="_images/table_show_04_acrylic_a.jpg" />
+</div>
+</div>
+<input id="298a9ea5-0556-4c8b-93f5-7b71e74d6832" name="85407d0f-db1f-45b0-94c1-acfe2dda9c47" type="radio">
+</input><label class="tabbed-label" for="298a9ea5-0556-4c8b-93f5-7b71e74d6832">
+Terminal Dark</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-04-dk-a">
+<img alt="_images/table_show_04_dark_a.jpg" src="_images/table_show_04_dark_a.jpg" />
+</div>
+</div>
+<input checked="checked" id="180ea064-56a2-411a-8863-5bf87490fc6e" name="85407d0f-db1f-45b0-94c1-acfe2dda9c47" type="radio">
+</input><label class="tabbed-label" for="180ea064-56a2-411a-8863-5bf87490fc6e">
+Terminal Acrylic Border</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-04-ac-b">
+<img alt="_images/table_show_04_acrylic_b.jpg" src="_images/table_show_04_acrylic_b.jpg" />
+</div>
+</div>
+<input id="29cfbd24-48d9-4f5a-959a-ebb9c812cba2" name="85407d0f-db1f-45b0-94c1-acfe2dda9c47" type="radio">
+</input><label class="tabbed-label" for="29cfbd24-48d9-4f5a-959a-ebb9c812cba2">
+Terminal Dark Border</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="show-table-04-dk-b">
+<img alt="_images/table_show_04_dark_b.jpg" src="_images/table_show_04_dark_b.jpg" />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="module_emoji.html" title="previous page">Module <code class="docutils literal notranslate"><span class="pre">emoji</span></code></a>
+    <a class='right-next' id="next-link" href="module_tools.html" title="next page">Module <code class="docutils literal notranslate"><span class="pre">tools</span></code></a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Marcin Rozewski<br/>
+        
+            &copy; Copyright 2021, MDSANIMA.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
