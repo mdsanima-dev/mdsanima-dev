@@ -15,7 +15,7 @@ modules. So let me show something.
 This Python Pacage developed by Marcin Różewski aka
 [MDSANIM](https://mdsanima.com) includes several useful modules thats he uses
 in various projects. Docomentation for **mdsanima_dev** Python Package
-is available at [docs mdsanima_dev](https://mdsanima-dev.github.io/mdsanima-dev/)
+is available at [docs mdsanima-dev](https://mdsanima-dev.github.io/mdsanima-dev/)
 be sure to check it.
 
 ## Installation
@@ -27,26 +27,26 @@ Instructions how to install the package.
 Install latest version:
 
 ```shell
-python3 -m pip install mdsanima_dev
+python3 -m pip install mdsanima-dev
 ```
 
 Install specific version:
 
 ```shell
-python3 -m pip install mdsanima_dev==0.1.0
+python3 -m pip install mdsanima-dev==0.1.0
 ```
 
 Upgrade pacage to latest version:
 
 ```shell
-python3 -m pip install --upgrade mdsanima_dev
-python3 -m pip install --force-reinstall msdsanima_dev
+python3 -m pip install --upgrade mdsanima-dev
+python3 -m pip install --force-reinstall msdsanima-dev
 ```
 
 Uninstall pacage:
 
 ```shell
-python3 -m pip uninstall mdsanima_dev
+python3 -m pip uninstall mdsanima-dev
 ```
 
 ### Using Setup
