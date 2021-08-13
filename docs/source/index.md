@@ -23,9 +23,13 @@ This is all modules include of this package.
     module_tools
 ```
 
+## Devs
+
 ```{eval-rst}
 .. toctree::
     :maxdepth: 2
+    :caption: Development
 
+    development
     changelog
 ```
