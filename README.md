@@ -6,6 +6,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mdsanima-dev?style=flat)
 ![Lines of code](https://img.shields.io/tokei/lines/github/mdsanima-dev/mdsanima-dev?style=flat)
 ![GitHub top language](https://img.shields.io/github/languages/top/mdsanima-dev/mdsanima-dev)
+[![Downloads](https://pepy.tech/badge/mdsanima-dev)](https://pepy.tech/project/mdsanima-dev)
 
 This is a **mdsanima-dev** developer page. Here you can find various python
 modules. So let me show something.
@@ -59,7 +60,7 @@ python3 setup.py install
 
 ## Develempent
 
-Help instruction for development. Check [documentation](https://mdsanima-dev.github.io/mdsanima-dev/docs/html/development.html)
+Help instruction for development. Check [documentation](https://mdsanima-dev.github.io/mdsanima-dev/html/development.html)
 for workflow release and more info.
 
 ### Build documentation

@@ -61,9 +61,9 @@ create an installable Python Package from your `code` and send it to `PyPi`.
 Build Setpu:
 
 ```shell
-python3 setup.py install
-python3.7 setup.py install
-python3.8 setup.py install
+sudo python3 setup.py install
+sudo python3.7 setup.py install
+sudo python3.8 setup.py install
 ```
 
 It created some new directories for us, such as `dist`, `build`
