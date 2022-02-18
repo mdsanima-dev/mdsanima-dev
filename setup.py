@@ -1,12 +1,20 @@
+#!/usr/bin/python3
+
+# Copyritht © 2022 Marcin Różewski MDSANIMA
+
+
 """
-mdsanima-dev Setup Package
+Setup ``mdsanima-dev`` Package.
 """
+
 
 import sys
 import json
 import setuptools
 import pathlib
 
+
+# Path variable.
 HERE = pathlib.Path(__file__).parent
 
 # Get python current and required version from users.
@@ -14,17 +22,18 @@ CURRENT_PYTHON = sys.version_info[:2]
 REQUIRED_PYTHON = (3, 6)
 
 # Initial stderr checking print variable.
-mds_sep = ("=" * 26)
-mds_uns = "Unsupported Python Version"
-mds_ver = "This version of mdsanima-dev requires Python {}.{}"
-mds_ins = "but you're trying to install it on Python {}.{}"
+m_sep = "=" * 26
+m_uns = "Unsupported Python Version"
+m_ver = "This version of mdsanima-dev requires Python {}.{}"
+m_ins = "but you're trying to install it on Python {}.{}"
 
 # This check and everything above must remain compatible with Python 3.6.
 if CURRENT_PYTHON < REQUIRED_PYTHON:
-    sys.stderr.write((
-        mds_sep, "\n", mds_uns, "\n", mds_sep, "\n",
-        mds_ver, "\n", mds_ins
-    ).format(*(REQUIRED_PYTHON + CURRENT_PYTHON)))
+    sys.stderr.write(
+        (m_sep, "\n", m_uns, "\n", m_sep, "\n", m_ver, "\n", m_ins).format(
+            *(REQUIRED_PYTHON + CURRENT_PYTHON)
+        )
+    )
     sys.exit(1)
 
 # Load data from package.json file.
@@ -35,7 +44,7 @@ with open(HERE / "package.json") as dt:
 with open(HERE / "README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-# Setuptools dynamic package arguments, nice and clean.
+# Setuptools dynamic package arguments.
 setuptools.setup(
     name=data_package["name"],
     version=data_package["version"],
@@ -55,9 +64,11 @@ setuptools.setup(
     extras_require=data_package["extra_require"],
     keywords=data_package["keywords"],
     command_options={
-        'build_sphinx': {
-            'version': ('setup.py', data_package["version"]),
-            'release': ('setup.py', data_package["version"]),
-            'build_dir': ('setup.py', "docs"),
-            'source_dir': ('setup.py', "docs/source")}},
+        "build_sphinx": {
+            "version": ("setup.py", data_package["version"]),
+            "release": ("setup.py", data_package["version"]),
+            "build_dir": ("setup.py", "docs"),
+            "source_dir": ("setup.py", "docs/source"),
+        }
+    },
 )
