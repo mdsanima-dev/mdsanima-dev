@@ -16,6 +16,7 @@ indent_size = 2
 max_line_length = off
 
 [*.py]
+profile = black
 max_line_length = 79
 
 [*.yml]
