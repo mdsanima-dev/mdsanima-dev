@@ -11,11 +11,11 @@ def frames_to_time_code(frames: int, fps: float) -> str:
     Function converts number of frames to time code ``00:00:00:00`` formats.
 
     :param frames: number of total frames
-    :type frames: integer
+    :type frames: int
     :param fps: frames per second
-    :type fps: integer or float
+    :type fps: int or float
     :return: time code format
-    :rtype: string
+    :rtype: str
     :usage:
 
         assigning function calling to a variable
