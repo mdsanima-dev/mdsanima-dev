@@ -20,13 +20,20 @@
     "mdsanima-conventional-changelog": "https://github.com/mdsanima/conventional-changelog/releases/tag/v5.0.1"
   },
   "keywords": [
+    "animation",
+    "automatic",
+    "changelog",
+    "console",
+    "colors",
+    "development",
+    "emoj",
     "mdsanima-dev",
     "python",
-    "development",
+    "shell",
+    "terminal",
     "tools",
-    "changelog",
-    "automatic",
-    "versioning"
+    "versioning",
+    "vfx"
   ],
   "extra_require": {
     "docs": [
@@ -56,6 +63,7 @@
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "Topic :: Desktop Environment",
     "Topic :: Documentation :: Sphinx",
     "Topic :: Education :: Testing",
