@@ -1,3 +1,12 @@
+# Copyritht © 2022 Marcin Różewski MDSANIMA
+
+# Build System Information.
 [build-system]
 requires = ["setuptools>=46.4.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+# Configuration for Black Python Code Formatter.
+[tool.black]
+line-length = 79
+target-version = ['py36', 'py37', 'py38', 'py39', 'py310']
+include = '\.pyi?$'
