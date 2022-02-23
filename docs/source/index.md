@@ -1,9 +1,17 @@
 # MDSANIMA DEVELOPMENT
 
-Welcome to ``MDSANIMA DEVELOPMENT`` documentation page.
+Welcome to ``MDSANIMA DEVELOPMENT`` documentation site.
 
-This organization is devoted to programming only in the ``Python`` language.
-Sometimes we will add a script written in bash `shell` language.
+```{important}
+This organization mainly deals with ``Python`` programming. Sometimes we also
+code in other languages like ``JavaScript``, ``HTML``, ``Bash Scripting``
+and ``PowerShell``.
+
+We also use the latest technologies Realtime Database, Cloud Servers
+or Machine Learning. We deliver apps and plugins as containers in Docker Compose
+for easy deployment. We know Linux with better security. Every day we learn
+something new.
+```
 
 ```{include} ../../README.md
 ```
@@ -18,12 +26,27 @@ This is all modules include of this package.
     :caption: Python Modules
 
     module_colors
+    module_converts
     module_emoji
     module_table
     module_tools
 ```
 
-## Devs
+## Command Line
+
+This shell console script options allowing you to converting selected function
+directly in command line in the terminal window like `Bash`, `zsh`, `PowerShell`
+and more.
+
+```{eval-rst}
+.. toctree::
+    :maxdepth: 3
+    :caption: Command Line
+
+    shell_converts
+```
+
+## Development
 
 ```{eval-rst}
 .. toctree::
