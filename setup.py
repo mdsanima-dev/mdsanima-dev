@@ -14,20 +14,20 @@ import setuptools
 import pathlib
 
 
-# Path variable.
+# path variable
 HERE = pathlib.Path(__file__).parent
 
-# Get python current and required version from users.
+# get python current and required version from users
 CURRENT_PYTHON = sys.version_info[:2]
 REQUIRED_PYTHON = (3, 6)
 
-# Initial stderr checking print variable.
+# initial stderr checking print variable
 m_sep = "=" * 26
 m_uns = "Unsupported Python Version"
 m_ver = "This version of mdsanima-dev requires Python {}.{}"
 m_ins = "but you're trying to install it on Python {}.{}"
 
-# This check and everything above must remain compatible with Python 3.6.
+# this check and everything above must remain compatible with Python 3.6
 if CURRENT_PYTHON < REQUIRED_PYTHON:
     sys.stderr.write(
         (m_sep, "\n", m_uns, "\n", m_sep, "\n", m_ver, "\n", m_ins).format(
@@ -36,15 +36,15 @@ if CURRENT_PYTHON < REQUIRED_PYTHON:
     )
     sys.exit(1)
 
-# Load data from package.json file.
+# load data from package.json file
 with open(HERE / "package.json") as dt:
     data_package = json.load(dt)
 
-# Load data from README.md file.
+# load data from README.md file
 with open(HERE / "README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-# Setuptools dynamic package arguments.
+# setuptools dynamic package arguments
 setuptools.setup(
     name=data_package["name"],
     version=data_package["version"],
@@ -70,5 +70,11 @@ setuptools.setup(
             "build_dir": ("setup.py", "docs"),
             "source_dir": ("setup.py", "docs/source"),
         }
+    },
+    entry_points={
+        "console_scripts": [
+            "mdsanima-dev-frames-to-time-code = mdsanima_dev.utils.converts:shell_frames_to_time_code",
+            "mdsanima-dev-time-code-to-frames = mdsanima_dev.utils.converts:shell_time_code_to_frames",
+        ],
     },
 )

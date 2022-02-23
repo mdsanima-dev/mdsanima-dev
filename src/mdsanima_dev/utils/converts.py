@@ -1,9 +1,15 @@
+#!/usr/bin/python3
+
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
 """
 Functions that may be useful in VFX and Animation Industry.
 """
+
+
+import argparse
+from mdsanima_dev import __version__ as ver
 
 
 def _seconds():
@@ -16,26 +22,44 @@ def _seconds():
 
 def frames_to_time_code(frames: int, fps: float) -> str:
     """
-    Function converts number of frames to time code ``00:00:00:00`` format.
+    Converting frames to time code ``00:00:00:00`` format.
 
-    :param frames: Number of total frames.
+    :param frames: total frames number
     :type frames: int
-    :param fps: Frames per seconds.
+    :param fps: frames per seconds
     :type fps: float
-    :return: Time code format.
+    :return: time code format
     :rtype: str
 
-    :usage:
+    .. admonition:: USAGE PYTHON
+        :class: hint
 
-        Assigning function calling to a variable:
+        *Assigning a function to a variable:*
 
-        .. code:: python
+    .. code:: python
 
-            from mdsanima_dev.utils.converts import frames_to_time_code
-            time_code = frames_to_time_code(240, 24)
-            print(time_code)
+        from mdsanima_dev.utils.converts import frames_to_time_code
+        time_code = frames_to_time_code(240, 24)
+        print(time_code)
+
+    .. admonition:: USAGE SHELL
+        :class: seealso
+
+        *Command line shell console script:*
+
+    .. code:: shell
+
+        mdsanima-dev-frames-to-time-code --frames 240 --fps 24
+        mdsanima-dev-frames-to-time-code --help
+
+    .. admonition:: SEE ALSO
+        :class: note
+
+        Shell console script
+        `mdsanima-dev-frames-to-time-code <shell_converts.html#command-mdsanima-dev-frames-to-time-code>`_
+        converting directly on the command line.
     """
-    # assigning function calling to a variable setup seconds
+    # assigning a function to a variable setup seconds
     sec_in_min, sec_in_hrs = _seconds()
 
     # setup frames
@@ -57,26 +81,44 @@ def frames_to_time_code(frames: int, fps: float) -> str:
 
 def time_code_to_frames(time_code: str, fps: float) -> int:
     """
-    Function converts time code ``00:00:00:00`` format to frames number.
+    Converting time code ``00:00:00:00`` format to frames.
 
-    :param time_code: Number of total frames.
+    :param time_code: time code format
     :type time_code: str
-    :param fps: Frames per seconds.
+    :param fps: frames per seconds
     :type fps: float
-    :return: Frames number.
+    :return: total frames number
     :rtype: int
 
-    :usage:
+    .. admonition:: USAGE PYTHON
+        :class: hint
 
-        Assigning function calling to a variable:
+        *Assigning a function to a variable:*
 
-        .. code:: python
+    .. code:: python
 
-            from mdsanima_dev.utils.converts import time_code_to_frames
-            frames = time_code_to_frames("00:00:10:00", 24)
-            print(frames)
+        from mdsanima_dev.utils.converts import time_code_to_frames
+        frames = time_code_to_frames("00:00:10:00", 24)
+        print(frames)
+
+    .. admonition:: USAGE SHELL
+        :class: seealso
+
+        *Command line shell console script:*
+
+    .. code:: shell
+
+        mdsanima-dev-time-code-to-frames --time-code 00:00:10:00 --fps 24
+        mdsanima-dev-time-code-to-frames --help
+
+    .. admonition:: SEE ALSO
+        :class: note
+
+        Shell console script
+        `mdsanima-dev-time-code-to-frames <shell_converts.html#command-mdsanima-dev-time-code-to-frames>`_
+        converting directly on the command line.
     """
-    # assigning function calling to a variable setup seconds
+    # assigning a function to a variable setup seconds
     sec_in_min, sec_in_hrs = _seconds()
 
     # extract single values
@@ -93,3 +135,123 @@ def time_code_to_frames(time_code: str, fps: float) -> int:
     frames = round(tc_frames * frames_in_sec + tc_fra)
 
     return frames
+
+
+def shell_frames_to_time_code() -> None:
+    """
+    Shell console script converting frames to time code ``00:00:00:00`` format.
+
+    :param --frames: total frames number
+    :type --frames: int
+    :param --fps: frames per seconds
+    :type --fps: float
+    :return: time code format
+    :rtype: None
+
+    .. admonition:: USAGE SHELL
+        :class: seealso
+
+        *Command line shell console script:*
+
+    .. code:: shell
+
+        mdsanima-dev-frames-to-time-code --frames 240 --fps 24
+        mdsanima-dev-frames-to-time-code --help
+
+    .. admonition:: USAGE PYTHON
+        :class: hint
+
+        *Assigning a function to a variable:*
+
+    .. code:: python
+
+        from mdsanima_dev.utils.converts import frames_to_time_code
+        time_code = frames_to_time_code(240, 24)
+        print(time_code)
+
+
+    .. admonition:: SEE ALSO
+        :class: note
+
+        Invoke function
+        `frames_to_time_code <module_converts.html#function-frames-to-time-code>`_
+        with a given arguments values.
+    """
+    # setup variables
+    a_des = "Converting frames to time code 00:00:00:00 format."
+    a_epi = "Copyritht \U000000A9 2022 Marcin Różewski MDSANIMA"
+    h_frm = "total frames number"
+    h_fps = "frames per seconds"
+
+    # create the top level argument parser
+    ap = argparse.ArgumentParser(description=a_des, epilog=a_epi)
+
+    # add the arguments to the parser
+    ap.add_argument("-v", "--version", action="version", version=ver)
+    ap.add_argument("--frames", required=True, type=int, help=h_frm)
+    ap.add_argument("--fps", required=True, type=float, help=h_fps)
+
+    # calculating time code
+    args = ap.parse_args()
+    time_code = frames_to_time_code(args.frames, args.fps)
+    print(time_code)
+
+
+def shell_time_code_to_frames() -> None:
+    """
+    Shell console script converting time code ``00:00:00:00`` format to frames.
+
+    :param --time-code: time code format
+    :type --time-code: str
+    :param --fps: frames per seconds
+    :type --fps: float
+    :return: total frames number
+    :rtype: None
+
+    .. admonition:: USAGE SHELL
+        :class: seealso
+
+        *Command line shell console script:*
+
+    .. code:: shell
+
+        mdsanima-dev-time-code-to-frames --time-code 00:00:10:00 --fps 24
+        mdsanima-dev-time-code-to-frames --help
+
+    .. admonition:: USAGE PYTHON
+        :class: hint
+
+        *Assigning a function to a variable:*
+
+    .. code:: python
+
+        from mdsanima_dev.utils.converts import time_code_to_frames
+        frames = time_code_to_frames("00:00:10:00", 24)
+        print(frames)
+
+
+    .. admonition:: SEE ALSO
+        :class: note
+
+        Invoke function
+        `time_code_to_frames <module_converts.html#function-time-code-to-frames>`_
+        with a given arguments values.
+    """
+    # setup variables
+    a_des = "Converting time code 00:00:00:00 format to frames."
+    a_epi = "Copyritht \U000000A9 2022 Marcin Różewski MDSANIMA"
+    h_frm = "time code format"
+    h_fps = "frames per seconds"
+
+    # create the top level argument parser
+    ap = argparse.ArgumentParser(description=a_des, epilog=a_epi)
+
+    # add the arguments to the parser
+    ap.add_argument("-v", "--version", action="version", version=ver)
+    ap.add_argument("--time-code", required=True, type=str, help=h_frm)
+    ap.add_argument("--fps", required=True, type=float, help=h_fps)
+
+    # calculating frames
+    args = ap.parse_args()
+    frames = time_code_to_frames(args.timecode, args.fps)
+    print(frames)
