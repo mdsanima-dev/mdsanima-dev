@@ -14,7 +14,7 @@ sys.path.append(os.path.abspath("."))
 
 # project information
 project = "mdsanima-dev"
-copyright = "2021-2022, Marcin Różewski MDSANIMAs"
+copyright = "2021-2022, Marcin Różewski MDSANIMA"
 author = "Marcin Różewski"
 master_doc = "index"
 
@@ -78,6 +78,12 @@ html_theme_options = {
     "navigation_with_keys": True,
     "dark_css_variables": {
         "color-highlight-on-target": "#082542",
+        "tabs-color-label-active": "#007bff",
+        "tabs-color-label-inactive": "grey",
+        "tabs-color-overline": "#202020",
+        "tabs-color-underline": "#202020",
+        "color-api-name": "#007bff",
+        "color-problematic": "#2b8cee",
     },
 }
 
