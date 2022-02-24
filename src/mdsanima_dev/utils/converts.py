@@ -3,12 +3,11 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""
-Functions that may be useful in VFX and Animation Industry.
-"""
+"""Functions that may be useful in VFX and Animation Industry."""
 
 
 import argparse
+
 from mdsanima_dev import __version__ as ver
 
 
@@ -21,14 +20,13 @@ def _seconds():
 
 
 def frames_to_time_code(frames: int, fps: float) -> str:
-    """
-    Converting frames to time code ``00:00:00:00`` format.
+    """Converting frames to time code ``00:00:00:00`` format.
 
-    :param frames: total frames number
+    :param frames: Total frames number.
     :type frames: int
-    :param fps: frames per seconds
+    :param fps: Frames per seconds.
     :type fps: float
-    :return: time code format
+    :return: Time code format.
     :rtype: str
 
     .. admonition:: USAGE PYTHON
@@ -80,14 +78,13 @@ def frames_to_time_code(frames: int, fps: float) -> str:
 
 
 def time_code_to_frames(time_code: str, fps: float) -> int:
-    """
-    Converting time code ``00:00:00:00`` format to frames.
+    """Converting time code ``00:00:00:00`` format to frames.
 
-    :param time_code: time code format
+    :param time_code: Time code format.
     :type time_code: str
-    :param fps: frames per seconds
+    :param fps: Frames per seconds.
     :type fps: float
-    :return: total frames number
+    :return: Total frames number.
     :rtype: int
 
     .. admonition:: USAGE PYTHON
@@ -138,14 +135,13 @@ def time_code_to_frames(time_code: str, fps: float) -> int:
 
 
 def shell_frames_to_time_code() -> None:
-    """
-    Shell console script converting frames to time code ``00:00:00:00`` format.
+    """Shell console script converting frames to time code ``00:00:00:00`` format.
 
-    :param --frames: total frames number
+    :param --frames: Total frames number.
     :type --frames: int
-    :param --fps: frames per seconds
+    :param --fps: Frames per seconds.
     :type --fps: float
-    :return: time code format
+    :return: Time code format.
     :rtype: None
 
     .. admonition:: USAGE SHELL
@@ -198,14 +194,13 @@ def shell_frames_to_time_code() -> None:
 
 
 def shell_time_code_to_frames() -> None:
-    """
-    Shell console script converting time code ``00:00:00:00`` format to frames.
+    """Shell console script converting time code ``00:00:00:00`` format to frames.
 
-    :param --time-code: time code format
+    :param --time-code: Time code format.
     :type --time-code: str
-    :param --fps: frames per seconds
+    :param --fps: Frames per seconds.
     :type --fps: float
-    :return: total frames number
+    :return: Total frames number.
     :rtype: None
 
     .. admonition:: USAGE SHELL
