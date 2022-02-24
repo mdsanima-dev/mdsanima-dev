@@ -1,36 +1,28 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""
-Sphinx configuration file for ``mdsanima-dev`` documentation
-"""
+"""Sphinx configuration file for ``mdsanima-dev`` documentation package."""
 
 
-# -- Path Setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-
-# import os
-# import sys
-# sys.path.append(os.path.abspath("../.."))
+import os
+import sys
 
 
-# -- Project Information -----------------------------------------------------
+# append path
+sys.path.append(os.path.abspath("."))
 
+
+# project information
 project = "mdsanima-dev"
 copyright = "2021-2022, Marcin Różewski MDSANIMAs"
 author = "Marcin Różewski"
 master_doc = "index"
 
-
-# -- General Configuration ---------------------------------------------------
-
 # sphinx extension modules
 extensions = [
     "myst_parser",
     "sphinx_copybutton",
+    "sphinx_design",
     "sphinx_panels",
     "sphinx_inline_tabs",
     "sphinx.ext.autodoc",
@@ -38,38 +30,38 @@ extensions = [
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.napoleon",
     "sphinx.ext.extlinks",
+    "sphinx.ext.githubpages",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.mathjax",
 ]
 
-# Add any paths that contain templates here, relative to this directory.
+# path templates
 templates_path = ["_templates"]
 
-# Markdown Parser Options.
-# myst_commonmark_only = True
-# autosectionlabel_prefix_document = True
+# path static
+html_static_path = ["_static"]
+
+# markdown parser
 source_suffix = {
     ".rst": "restructuredtext",
     ".txt": "markdown",
     ".md": "markdown",
 }
 
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
+# path ignore direcotry
 exclude_patterns = []
 
-
-# -- Options for HTML Output -------------------------------------------------
-
-# The Theme to use for HTML and HTML Help Pages.
+# theme options
 html_theme = "furo"
 html_logo = "_static/icons/ic_mdsanima_08_lng_drp_sdw_c.png"
 html_favicon = "_static/icons/ic_mdsanima_09_smp_w.png"
 
-# Disable the generation of the various indexes
+# html options
 html_use_modindex = False
 html_use_index = False
 panels_add_bootstrap_css = False
 
+# theme options custom
 html_theme_options = {
     "footer_icons": [
         {
@@ -89,14 +81,7 @@ html_theme_options = {
     },
 }
 
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static"]
-
-
-# -- Options for extlinks ----------------------------------------------------
-
+# options for extlinks
 extlinks = {
     "issue": ("https://github.com/mdsanima-dev/mdsanima-dev/issues/%s", "#"),
     "pull": ("https://github.com/mdsanima-dev/mdsanima-dev/pull/%s", "PR #"),
