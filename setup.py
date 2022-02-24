@@ -3,15 +3,14 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""
-Setup ``mdsanima-dev`` Package.
-"""
+"""Setuptools ``mdsanima-dev`` dynamic package."""
 
 
-import sys
 import json
-import setuptools
 import pathlib
+import sys
+
+import setuptools
 
 
 # path variable
