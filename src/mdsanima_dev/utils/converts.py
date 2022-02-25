@@ -60,7 +60,7 @@ def frames_to_timecode(frames: int, fps: float) -> str:
         :class: note
 
         Shell console script
-        `mdsanima-dev-converts <#command-mdsanima-dev-converts>`_ converting
+        `mdsanima-dev-converts <../console/shell-converts.html#converts-frames-to-timecode>`_ converting
         directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -118,7 +118,7 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
         :class: note
 
         Shell console script
-        `mdsanima-dev-converts <#command-mdsanima-dev-converts>`_ converting
+        `mdsanima-dev-converts <../console/shell-converts.html#converts-timecode-to-frames>`_ converting
         directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -176,7 +176,7 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
     .. admonition:: SEE ALSO
         :class: note
 
-        Invoke function `frames_to_timecode <#function-frames-to-timecode>`_
+        Invoke function `frames_to_timecode <../modules/converts.html#function-frames-to-timecode>`_
         with a given arguments values.
     """
     # run calculation
@@ -220,7 +220,7 @@ def shell_timecode_to_frames(timecode: str, fps: float) -> str:
     .. admonition:: SEE ALSO
         :class: note
 
-        Invoke function `timecode_to_frames <#function-timecode-to-frames>`_
+        Invoke function `timecode_to_frames <../modules/converts.html#function-timecode-to-frames>`_
         with a given arguments values.
     """
     # run calculation
