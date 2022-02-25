@@ -72,8 +72,7 @@ setuptools.setup(
     },
     entry_points={
         "console_scripts": [
-            "mdsanima-dev-frames-to-time-code = mdsanima_dev.utils.converts:shell_frames_to_time_code",
-            "mdsanima-dev-time-code-to-frames = mdsanima_dev.utils.converts:shell_time_code_to_frames",
+            "mdsanima-converts = mdsanima_dev.utils.converts:main",
         ],
     },
 )

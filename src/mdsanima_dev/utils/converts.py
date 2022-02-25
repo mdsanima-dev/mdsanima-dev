@@ -7,11 +7,17 @@
 
 
 import argparse
+import sys
 
-from mdsanima_dev import __version__ as ver
+from mdsanima_dev import __version__
 
 
-def _seconds():
+def get_seconds() -> int:
+    """Calculating the number of seconds in an hour.
+
+    :return: Number of seconds in hour and minute.
+    :rtype: int
+    """
     # setup seconds variables
     sec_in_min = 60
     sec_in_hrs = sec_in_min * sec_in_min
@@ -19,14 +25,14 @@ def _seconds():
     return sec_in_min, sec_in_hrs
 
 
-def frames_to_time_code(frames: int, fps: float) -> str:
-    """Converting frames to time code ``00:00:00:00`` format.
+def frames_to_timecode(frames: int, fps: float) -> str:
+    """Converting frames number to timecode ``00:00:00:00`` format.
 
     :param frames: Total frames number.
     :type frames: int
     :param fps: Frames per seconds.
     :type fps: float
-    :return: Time code format.
+    :return: Timecode format.
     :rtype: str
 
     .. admonition:: USAGE PYTHON
@@ -36,9 +42,9 @@ def frames_to_time_code(frames: int, fps: float) -> str:
 
     .. code:: python
 
-        from mdsanima_dev.utils.converts import frames_to_time_code
-        time_code = frames_to_time_code(240, 24)
-        print(time_code)
+        from mdsanima_dev.utils.converts import frames_to_timecode
+        timecode = frames_to_timecode(240, 24)
+        print(timecode)
 
     .. admonition:: USAGE SHELL
         :class: seealso
@@ -47,41 +53,41 @@ def frames_to_time_code(frames: int, fps: float) -> str:
 
     .. code:: shell
 
-        mdsanima-dev-frames-to-time-code --frames 240 --fps 24
-        mdsanima-dev-frames-to-time-code --help
+        mdsanima-converts frames-to-timecode --frames 240 --fps 24
+        mdsanima-converts frames-to-timecode --help
 
     .. admonition:: SEE ALSO
         :class: note
 
         Shell console script
-        `mdsanima-dev-frames-to-time-code <shell_converts.html#command-mdsanima-dev-frames-to-time-code>`_
-        converting directly on the command line.
+        `mdsanima-converts <#command-mdsanima-converts>`_ converting
+        directly on the command line.
     """
     # assigning a function to a variable setup seconds
-    sec_in_min, sec_in_hrs = _seconds()
+    sec_in_min, sec_in_hrs = get_seconds()
 
     # setup frames
     frames_in_sec = fps
     frames_in_hrs = frames // frames_in_sec
     frame_mod_fps = frames % frames_in_sec
 
-    # calculating time code
+    # calculating timecode
     hrs = int(frames_in_hrs // sec_in_hrs)
     min = int(frames_in_hrs // sec_in_min % sec_in_min)
     sec = int(frames_in_hrs % sec_in_min)
     fra = int(frame_mod_fps)
 
-    # formating time code
-    time_code = str("%02d:%02d:%02d:%02d" % (hrs, min, sec, fra))
+    # formating timecode
+    timecode = str("%02d:%02d:%02d:%02d" % (hrs, min, sec, fra))
 
-    return time_code
+    return timecode
 
 
-def time_code_to_frames(time_code: str, fps: float) -> int:
-    """Converting time code ``00:00:00:00`` format to frames.
+def timecode_to_frames(timecode: str, fps: float) -> int:
+    """Converting timecode ``00:00:00:00`` format to frames number.
 
-    :param time_code: Time code format.
-    :type time_code: str
+    :param timecode: Timecode format.
+    :type timecode: str
     :param fps: Frames per seconds.
     :type fps: float
     :return: Total frames number.
@@ -94,8 +100,8 @@ def time_code_to_frames(time_code: str, fps: float) -> int:
 
     .. code:: python
 
-        from mdsanima_dev.utils.converts import time_code_to_frames
-        frames = time_code_to_frames("00:00:10:00", 24)
+        from mdsanima_dev.utils.converts import timecode_to_frames
+        frames = timecode_to_frames("00:00:10:00", 24)
         print(frames)
 
     .. admonition:: USAGE SHELL
@@ -105,24 +111,24 @@ def time_code_to_frames(time_code: str, fps: float) -> int:
 
     .. code:: shell
 
-        mdsanima-dev-time-code-to-frames --time-code 00:00:10:00 --fps 24
-        mdsanima-dev-time-code-to-frames --help
+        mdsanima-converts timecode-to-frames --timecode 00:00:10:00 --fps 24
+        mdsanima-converts timecode-to-frames --help
 
     .. admonition:: SEE ALSO
         :class: note
 
         Shell console script
-        `mdsanima-dev-time-code-to-frames <shell_converts.html#command-mdsanima-dev-time-code-to-frames>`_
-        converting directly on the command line.
+        `mdsanima-converts <#command-mdsanima-converts>`_ converting
+        directly on the command line.
     """
     # assigning a function to a variable setup seconds
-    sec_in_min, sec_in_hrs = _seconds()
+    sec_in_min, sec_in_hrs = get_seconds()
 
     # extract single values
-    tc_hrs = int(time_code.split(":")[0])
-    tc_min = int(time_code.split(":")[1])
-    tc_sec = int(time_code.split(":")[2])
-    tc_fra = int(time_code.split(":")[3])
+    tc_hrs = int(timecode.split(":")[0])
+    tc_min = int(timecode.split(":")[1])
+    tc_sec = int(timecode.split(":")[2])
+    tc_fra = int(timecode.split(":")[3])
 
     # setup and calculating frames
     frames_in_sec = fps
@@ -134,15 +140,16 @@ def time_code_to_frames(time_code: str, fps: float) -> int:
     return frames
 
 
-def shell_frames_to_time_code() -> None:
-    """Shell console script converting frames to time code ``00:00:00:00`` format.
+def shell_frames_to_timecode(frames: int, fps: float) -> str:
+    """Shell console script converting frames number to timecode
+    ``00:00:00:00`` format.
 
     :param --frames: Total frames number.
     :type --frames: int
     :param --fps: Frames per seconds.
     :type --fps: float
-    :return: Time code format.
-    :rtype: None
+    :return: Timecode format.
+    :rtype: str
 
     .. admonition:: USAGE SHELL
         :class: seealso
@@ -151,8 +158,8 @@ def shell_frames_to_time_code() -> None:
 
     .. code:: shell
 
-        mdsanima-dev-frames-to-time-code --frames 240 --fps 24
-        mdsanima-dev-frames-to-time-code --help
+        mdsanima-converts frames-to-timecode --frames 240 --fps 24
+        mdsanima-converts frames-to-timecode --help
 
     .. admonition:: USAGE PYTHON
         :class: hint
@@ -161,47 +168,32 @@ def shell_frames_to_time_code() -> None:
 
     .. code:: python
 
-        from mdsanima_dev.utils.converts import frames_to_time_code
-        time_code = frames_to_time_code(240, 24)
-        print(time_code)
+        from mdsanima_dev.utils.converts import frames_to_timecode
+        timecode = frames_to_timecode(240, 24)
+        print(timecode)
 
 
     .. admonition:: SEE ALSO
         :class: note
 
-        Invoke function
-        `frames_to_time_code <module_converts.html#function-frames-to-time-code>`_
+        Invoke function `frames_to_timecode <#function-frames-to-time-code>`_
         with a given arguments values.
     """
-    # setup variables
-    a_des = "Converting frames to time code 00:00:00:00 format."
-    a_epi = "Copyritht \U000000A9 2022 Marcin Różewski MDSANIMA"
-    h_frm = "total frames number"
-    h_fps = "frames per seconds"
-
-    # create the top level argument parser
-    ap = argparse.ArgumentParser(description=a_des, epilog=a_epi)
-
-    # add the arguments to the parser
-    ap.add_argument("-v", "--version", action="version", version=ver)
-    ap.add_argument("--frames", required=True, type=int, help=h_frm)
-    ap.add_argument("--fps", required=True, type=float, help=h_fps)
-
-    # calculating time code
-    args = ap.parse_args()
-    time_code = frames_to_time_code(args.frames, args.fps)
-    print(time_code)
+    # run calculation
+    timecode = frames_to_timecode(frames, fps)
+    print(timecode)
 
 
-def shell_time_code_to_frames() -> None:
-    """Shell console script converting time code ``00:00:00:00`` format to frames.
+def shell_timecode_to_frames(timecode: str, fps: float) -> str:
+    """Shell console script converting timecode ``00:00:00:00`` format to
+    frames number.
 
-    :param --time-code: Time code format.
-    :type --time-code: str
+    :param --timecode: Timecode format.
+    :type --timecode: str
     :param --fps: Frames per seconds.
     :type --fps: float
     :return: Total frames number.
-    :rtype: None
+    :rtype: str
 
     .. admonition:: USAGE SHELL
         :class: seealso
@@ -210,8 +202,8 @@ def shell_time_code_to_frames() -> None:
 
     .. code:: shell
 
-        mdsanima-dev-time-code-to-frames --time-code 00:00:10:00 --fps 24
-        mdsanima-dev-time-code-to-frames --help
+        mdsanima-converts timecode-to-frames --time-code 00:00:10:00 --fps 24
+        mdsanima-converts timecode-to-frames --help
 
     .. admonition:: USAGE PYTHON
         :class: hint
@@ -220,33 +212,99 @@ def shell_time_code_to_frames() -> None:
 
     .. code:: python
 
-        from mdsanima_dev.utils.converts import time_code_to_frames
-        frames = time_code_to_frames("00:00:10:00", 24)
+        from mdsanima_dev.utils.converts import timecode_to_frames
+        frames = timecode_to_frames("00:00:10:00", 24)
         print(frames)
 
 
     .. admonition:: SEE ALSO
         :class: note
 
-        Invoke function
-        `time_code_to_frames <module_converts.html#function-time-code-to-frames>`_
+        Invoke function `timecode_to_frames <#function-timecode-to-frames>`_
         with a given arguments values.
     """
-    # setup variables
-    a_des = "Converting time code 00:00:00:00 format to frames."
-    a_epi = "Copyritht \U000000A9 2022 Marcin Różewski MDSANIMA"
-    h_frm = "time code format"
-    h_fps = "frames per seconds"
+    # run calculation
+    frames = timecode_to_frames(timecode, fps)
+    print(frames)
+
+
+def _parser_shell_converts_timecode() -> None:
+    # setup variables argument parser
+    ap_desc = "Converting frames number to timecode and opposite."
+    ap_copy = "Copyritht \U000000A9 2022 Marcin Różewski MDSANIMA"
+    sp_desc = "Choose converts options which you want to use."
+    desc_frame_tc = "Converting frames number to timecode 00:00:00:00 format."
+    desc_tc_frame = "Converting timecode 00:00:00:00 format to frames number."
+    cmd_frames_tc = "frames-to-timecode"
+    cmd_tc_frames = "timecode-to-frames"
 
     # create the top level argument parser
-    ap = argparse.ArgumentParser(description=a_des, epilog=a_epi)
+    ap = argparse.ArgumentParser(
+        description=ap_desc,
+        epilog=ap_copy,
+        formatter_class=argparse.RawTextHelpFormatter,
+        prog="mdsanima-converts",
+    )
+    ap.add_argument(
+        "-v", "--version", action="version", version="%(prog)s v" + __version__
+    )
+    sp = ap.add_subparsers(description=sp_desc, metavar="converts")
 
-    # add the arguments to the parser
-    ap.add_argument("-v", "--version", action="version", version=ver)
-    ap.add_argument("--time-code", required=True, type=str, help=h_frm)
-    ap.add_argument("--fps", required=True, type=float, help=h_fps)
+    # create the parser for the frames_to_timecode command
+    ap_frames_tc = sp.add_parser(
+        cmd_frames_tc,
+        description=desc_frame_tc,
+        help="converting frames to timecode",
+        epilog=ap_copy,
+    )
+    ap_frames_tc.add_argument(
+        "-n",
+        "--frames",
+        required=True,
+        type=int,
+        help="total frames number",
+    )
+    ap_frames_tc.add_argument(
+        "-f", "--fps", required=True, type=float, help="frames per seconds"
+    )
 
-    # calculating frames
+    # create the parser for the timecode_to_frames command
+    ap_tc_frames = sp.add_parser(
+        cmd_tc_frames,
+        description=desc_tc_frame,
+        help="converting timecode to frames",
+        epilog=ap_copy,
+    )
+    ap_tc_frames.add_argument(
+        "-c",
+        "--timecode",
+        required=True,
+        type=str,
+        help="timecode format",
+    )
+    ap_tc_frames.add_argument(
+        "-f", "--fps", required=True, type=float, help="frames per seconds"
+    )
+
+    # parse the arguments
     args = ap.parse_args()
-    frames = time_code_to_frames(args.timecode, args.fps)
-    print(frames)
+
+    try:
+        if len(args.__dict__) == 0:
+            ap.print_usage()
+            ap_frames_tc.print_usage()
+            ap_tc_frames.print_usage()
+        if sys.argv[1] == cmd_frames_tc:
+            shell_frames_to_timecode(args.frames, args.fps)
+        if sys.argv[1] == cmd_tc_frames:
+            shell_timecode_to_frames(args.timecode, args.fps)
+    except IndexError:
+        pass
+
+
+def main():
+    _parser_shell_converts_timecode()
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
