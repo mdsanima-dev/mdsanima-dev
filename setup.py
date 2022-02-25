@@ -72,7 +72,7 @@ setuptools.setup(
     },
     entry_points={
         "console_scripts": [
-            "mdsanima-converts = mdsanima_dev.utils.converts:main",
+            "mdsanima-dev-converts = mdsanima_dev.utils.converts:main",
         ],
     },
 )

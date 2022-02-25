@@ -53,14 +53,14 @@ def frames_to_timecode(frames: int, fps: float) -> str:
 
     .. code:: shell
 
-        mdsanima-converts frames-to-timecode --frames 240 --fps 24
-        mdsanima-converts frames-to-timecode --help
+        mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
+        mdsanima-dev-converts frames-to-timecode --help
 
     .. admonition:: SEE ALSO
         :class: note
 
         Shell console script
-        `mdsanima-converts <#command-mdsanima-converts>`_ converting
+        `mdsanima-dev-converts <#command-mdsanima-dev-converts>`_ converting
         directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -111,14 +111,14 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
 
     .. code:: shell
 
-        mdsanima-converts timecode-to-frames --timecode 00:00:10:00 --fps 24
-        mdsanima-converts timecode-to-frames --help
+        mdsanima-dev-converts timecode-to-frames --timecode 00:00:10:00 --fps 24
+        mdsanima-dev-converts timecode-to-frames --help
 
     .. admonition:: SEE ALSO
         :class: note
 
         Shell console script
-        `mdsanima-converts <#command-mdsanima-converts>`_ converting
+        `mdsanima-dev-converts <#command-mdsanima-dev-converts>`_ converting
         directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -158,8 +158,8 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
 
     .. code:: shell
 
-        mdsanima-converts frames-to-timecode --frames 240 --fps 24
-        mdsanima-converts frames-to-timecode --help
+        mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
+        mdsanima-dev-converts frames-to-timecode --help
 
     .. admonition:: USAGE PYTHON
         :class: hint
@@ -176,7 +176,7 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
     .. admonition:: SEE ALSO
         :class: note
 
-        Invoke function `frames_to_timecode <#function-frames-to-time-code>`_
+        Invoke function `frames_to_timecode <#function-frames-to-timecode>`_
         with a given arguments values.
     """
     # run calculation
@@ -202,8 +202,8 @@ def shell_timecode_to_frames(timecode: str, fps: float) -> str:
 
     .. code:: shell
 
-        mdsanima-converts timecode-to-frames --time-code 00:00:10:00 --fps 24
-        mdsanima-converts timecode-to-frames --help
+        mdsanima-dev-converts timecode-to-frames --time-code 00:00:10:00 --fps 24
+        mdsanima-dev-converts timecode-to-frames --help
 
     .. admonition:: USAGE PYTHON
         :class: hint
@@ -243,7 +243,7 @@ def _parser_shell_converts_timecode() -> None:
         description=ap_desc,
         epilog=ap_copy,
         formatter_class=argparse.RawTextHelpFormatter,
-        prog="mdsanima-converts",
+        prog="mdsanima-dev-converts",
     )
     ap.add_argument(
         "-v", "--version", action="version", version="%(prog)s v" + __version__
