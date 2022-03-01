@@ -11,8 +11,8 @@
   "license": "MIT",
   "project_urls": {
     "Documentation": "https://mdsanima-dev.github.io/mdsanima-dev/",
-    "Source": "https://github.com/mdsanima-dev/mdsanima-dev",
-    "Bug Tracker": "https://github.com/mdsanima-dev/mdsanima-dev/issues"
+    "Source": "https://github.com/mdsanima-dev/mdsanima-dev/",
+    "Bug Tracker": "https://github.com/mdsanima-dev/mdsanima-dev/issues/"
   },
   "devDependencies": {
     "standard-version": "^9.3.0",
@@ -39,11 +39,11 @@
     "docs": [
       "sphinx",
       "sphinx-autoapi",
-      "sphinx-book-theme",
       "sphinx-prompt",
       "sphinx-tabs",
       "recommonmark",
-      "myst_parser"
+      "myst_parser",
+      "furo"
     ]
   },
   "classifiers": [
