@@ -26,7 +26,8 @@ def get_seconds() -> int:
 
 
 def frames_to_timecode(frames: int, fps: float) -> str:
-    """Converting frames number to timecode ``00:00:00:00`` format.
+    """Converting frames number to timecode :bdg-warning-line:`00:00:00:00`
+    format.
 
     :param frames: Total frames number.
     :type frames: int
@@ -35,33 +36,24 @@ def frames_to_timecode(frames: int, fps: float) -> str:
     :return: Timecode format.
     :rtype: str
 
-    .. admonition:: USAGE PYTHON
-        :class: hint
+    :usage: Assigning a function to a variable:
 
-        *Assigning a function to a variable:*
+        .. code:: python
 
-    .. code:: python
+            from mdsanima_dev.utils.converts import frames_to_timecode
+            timecode = frames_to_timecode(240, 24)
+            print(timecode)
 
-        from mdsanima_dev.utils.converts import frames_to_timecode
-        timecode = frames_to_timecode(240, 24)
-        print(timecode)
+    :shell: Command line console script:
 
-    .. admonition:: USAGE SHELL
-        :class: seealso
+        .. code:: shell
 
-        *Command line shell console script:*
+            mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
+            mdsanima-dev-converts frames-to-timecode --help
 
-    .. code:: shell
-
-        mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
-        mdsanima-dev-converts frames-to-timecode --help
-
-    .. admonition:: SEE ALSO
-        :class: note
-
-        Shell console script
-        `mdsanima-dev-converts <../console/shell-converts.html#converts-frames-to-timecode>`_ converting
-        directly on the command line.
+        .. seealso::
+            Shell console script :bdg-link-secondary-line:`frames-to-timecode <../console/shell-converts.html#converts-frames-to-timecode>`
+            converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
     sec_in_min, sec_in_hrs = get_seconds()
@@ -84,7 +76,8 @@ def frames_to_timecode(frames: int, fps: float) -> str:
 
 
 def timecode_to_frames(timecode: str, fps: float) -> int:
-    """Converting timecode ``00:00:00:00`` format to frames number.
+    """Converting timecode :bdg-warning-line:`00:00:00:00` format to
+    frames number.
 
     :param timecode: Timecode format.
     :type timecode: str
@@ -93,33 +86,24 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
     :return: Total frames number.
     :rtype: int
 
-    .. admonition:: USAGE PYTHON
-        :class: hint
+    :usage: Assigning a function to a variable:
 
-        *Assigning a function to a variable:*
+        .. code:: python
 
-    .. code:: python
+            from mdsanima_dev.utils.converts import timecode_to_frames
+            frames = timecode_to_frames("00:00:10:00", 24)
+            print(frames)
 
-        from mdsanima_dev.utils.converts import timecode_to_frames
-        frames = timecode_to_frames("00:00:10:00", 24)
-        print(frames)
+    :shell: Command line console script:
 
-    .. admonition:: USAGE SHELL
-        :class: seealso
+        .. code:: shell
 
-        *Command line shell console script:*
+            mdsanima-dev-converts timecode-to-frames --timecode 00:00:10:00 --fps 24
+            mdsanima-dev-converts timecode-to-frames --help
 
-    .. code:: shell
-
-        mdsanima-dev-converts timecode-to-frames --timecode 00:00:10:00 --fps 24
-        mdsanima-dev-converts timecode-to-frames --help
-
-    .. admonition:: SEE ALSO
-        :class: note
-
-        Shell console script
-        `mdsanima-dev-converts <../console/shell-converts.html#converts-timecode-to-frames>`_ converting
-        directly on the command line.
+        .. seealso::
+            Shell console script :bdg-link-secondary-line:`timecode-to-frames <../console/shell-converts.html#converts-timecode-to-frames>`
+            converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
     sec_in_min, sec_in_hrs = get_seconds()
@@ -142,7 +126,7 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
 
 def shell_frames_to_timecode(frames: int, fps: float) -> str:
     """Shell console script converting frames number to timecode
-    ``00:00:00:00`` format.
+    :bdg-warning-line:`00:00:00:00` format.
 
     :param --frames: Total frames number.
     :type --frames: int
@@ -151,33 +135,24 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
     :return: Timecode format.
     :rtype: str
 
-    .. admonition:: USAGE SHELL
-        :class: seealso
+    :shell: Command line console script:
 
-        *Command line shell console script:*
+        .. code:: shell
 
-    .. code:: shell
+            mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
+            mdsanima-dev-converts frames-to-timecode --help
 
-        mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
-        mdsanima-dev-converts frames-to-timecode --help
+    :usage: Assigning a function to a variable:
 
-    .. admonition:: USAGE PYTHON
-        :class: hint
+        .. code:: python
 
-        *Assigning a function to a variable:*
+            from mdsanima_dev.utils.converts import frames_to_timecode
+            timecode = frames_to_timecode(240, 24)
+            print(timecode)
 
-    .. code:: python
-
-        from mdsanima_dev.utils.converts import frames_to_timecode
-        timecode = frames_to_timecode(240, 24)
-        print(timecode)
-
-
-    .. admonition:: SEE ALSO
-        :class: note
-
-        Invoke function `frames_to_timecode <../modules/converts.html#function-frames-to-timecode>`_
-        with a given arguments values.
+        .. seealso::
+            Invoke function :bdg-link-primary-line:`frames_to_timecode <../modules/converts.html#function-frames-to-timecode>`
+            with a given arguments values.
     """
     # run calculation
     timecode = frames_to_timecode(frames, fps)
@@ -185,8 +160,8 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
 
 
 def shell_timecode_to_frames(timecode: str, fps: float) -> str:
-    """Shell console script converting timecode ``00:00:00:00`` format to
-    frames number.
+    """Shell console script converting timecode :bdg-warning-line:`00:00:00:00`
+    format to frames number.
 
     :param --timecode: Timecode format.
     :type --timecode: str
@@ -195,33 +170,24 @@ def shell_timecode_to_frames(timecode: str, fps: float) -> str:
     :return: Total frames number.
     :rtype: str
 
-    .. admonition:: USAGE SHELL
-        :class: seealso
+    :shell: Command line shell console script:
 
-        *Command line shell console script:*
+        .. code:: shell
 
-    .. code:: shell
+            mdsanima-dev-converts timecode-to-frames --time-code 00:00:10:00 --fps 24
+            mdsanima-dev-converts timecode-to-frames --help
 
-        mdsanima-dev-converts timecode-to-frames --time-code 00:00:10:00 --fps 24
-        mdsanima-dev-converts timecode-to-frames --help
+    :usage: Assigning a function to a variable:
 
-    .. admonition:: USAGE PYTHON
-        :class: hint
+        .. code:: python
 
-        *Assigning a function to a variable:*
+            from mdsanima_dev.utils.converts import timecode_to_frames
+            frames = timecode_to_frames("00:00:10:00", 24)
+            print(frames)
 
-    .. code:: python
-
-        from mdsanima_dev.utils.converts import timecode_to_frames
-        frames = timecode_to_frames("00:00:10:00", 24)
-        print(frames)
-
-
-    .. admonition:: SEE ALSO
-        :class: note
-
-        Invoke function `timecode_to_frames <../modules/converts.html#function-timecode-to-frames>`_
-        with a given arguments values.
+        .. seealso::
+            Invoke function :bdg-link-primary-line:`timecode_to_frames <../modules/converts.html#function-timecode-to-frames>`
+            with a given arguments values.
     """
     # run calculation
     frames = timecode_to_frames(timecode, fps)
