@@ -1,6 +1,10 @@
-# Shell `converts`
+# Shell {bdg-danger-line}`converts`
 
 Converting directly in shell console script on the command line.
+
+```{eval-rst}
+.. versionadded:: 0.2.0
+```
 
 ```{important}
 This command line options are a wrapper on existing functions and returning
@@ -8,28 +12,26 @@ the same value on calling selected convert method for the appropriate option,
 both shell command line script and python module.
 
 - Python Function
-[``frames_to_timecode``](../modules/converts.html#function-frames-to-timecode)
+{bdg-link-primary-line}`frames_to_timecode <../modules/converts.html#function-frames-to-timecode>`
 → Console Script
-[``frames-to-timecode``](#converts-frames-to-timecode)
-Command Line.
+{bdg-link-secondary-line}`frames-to-timecode <#converts-frames-to-timecode>`
 - Python Function
-[``timecode_to_frames``](../modules/converts.html#function-timecode-to-frames)
+{bdg-link-primary-line}`timecode_to_frames <../modules/converts.html#function-timecode-to-frames>`
 → Console Script
-[``timecode-to-frames``](#converts-timecode-to-frames)
-Command Line.
+{bdg-link-secondary-line}`timecode-to-frames <#converts-timecode-to-frames>`
 ```
 
-## Command `mdsanima-dev-converts`
+## Command {bdg-secondary-line}`mdsanima-dev-converts`
 
 Choose converts options which you want to use.
 
-### Converts `frames-to-timecode`
+### Converts {bdg-secondary-line}`frames-to-timecode`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.utils.converts.shell_frames_to_timecode
 ```
 
-### Converts `timecode-to-frames`
+### Converts {bdg-secondary-line}`timecode-to-frames`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.utils.converts.shell_timecode_to_frames
