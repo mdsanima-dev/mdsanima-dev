@@ -1,7 +1,7 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""Sphinx configuration file for ``mdsanima-dev`` documentation package."""
+"""Sphinx configuration file for ``mdsanima-dev`` package documentation."""
 
 
 import os
@@ -49,8 +49,8 @@ exclude_patterns = ["_design"]
 
 # theme options
 html_theme = "furo"
-html_logo = "_static/svg/logo_mdsanima_blue.svg"
-html_favicon = "_static/svg/logo_mdsanima_blue.svg"
+html_logo = "_static/svg/logo_mdsanima_default_14-lime.svg"
+html_favicon = "_static/svg/logo_mdsanima_default_14-lime.svg"
 
 # html options
 html_show_sphinx = True
