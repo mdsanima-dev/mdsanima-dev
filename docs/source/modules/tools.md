@@ -28,6 +28,11 @@
 .. autofunction:: mdsanima_dev.utils.tools.machine
 ```
 
+```{eval-rst}
+.. figure:: ../_static/img/gif/machine_show_c_04_optymize.gif
+    :name: show-machine-04-gif-c
+```
+
 ## Class {bdg-info-line}`progress`
 
 ```{eval-rst}
@@ -50,4 +55,9 @@
 
 ```{eval-rst}
 .. automethod:: mdsanima_dev.utils.tools.progress.progress_bar
+```
+
+```{eval-rst}
+.. figure:: ../_static/img/gif/progress_show_a_04_optymize.gif
+    :name: show-progress-04-gif-a
 ```

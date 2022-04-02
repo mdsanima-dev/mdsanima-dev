@@ -4,6 +4,11 @@
 .. automodule:: mdsanima_dev.emoji
 ```
 
+```{eval-rst}
+.. figure:: ../_static/img/gif/emoji_show_d_04_optymize.gif
+    :name: show-emoji-04-gif-d
+```
+
 ## Function {bdg-primary-line}`emoji_get_url_data`
 
 ```{eval-rst}
@@ -20,6 +25,11 @@
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.emoji.emoji_load_json_data
+```
+
+```{eval-rst}
+.. figure:: ../_static/img/gif/emoji_show_c_04_optymize.gif
+    :name: show-emoji-04-gif-c
 ```
 
 ## Class {bdg-info-line}`emoji`
@@ -39,6 +49,11 @@
 Now I will show you how to use class
 {bdg-link-info-line}`show(emoji) <#class-show>` method to find out what number
 each emoji has so that you can use in your code.
+
+```{eval-rst}
+.. figure:: ../_static/img/gif/emoji_show_a_04_optymize.gif
+    :name: show-emoji-04-gif-a
+```
 
 ### Method {bdg-primary-line}`emo_stats()`
 
