@@ -13,7 +13,9 @@ def set_complex_color() -> str:
     :return: Color console literal variable.
     :rtype: str
 
-    :usage: Assigning a function to a variable:
+    :usage:
+
+        Assigning a function to a variable:
 
         .. code:: python
 
@@ -127,7 +129,9 @@ def show_complex_color(number: bool = False) -> str:
     :return: Show all colors in the console output.
     :rtype: str
 
-    :usage: Function calling:
+    :usage:
+
+        Function calling:
 
         .. code:: python
 

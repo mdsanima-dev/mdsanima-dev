@@ -41,7 +41,9 @@ def emoji_get_url_data(emoji_url: str) -> str:
     :return: HTML code as string text.
     :rtype: str
 
-    :usage: Assigning a function by calling to a variable:
+    :usage:
+
+        Assigning a function by calling to a variable:
 
         .. code:: python
 
@@ -92,8 +94,10 @@ def emoji_clean_url_data(
     :return: Save dictionary data in to `.json` file.
     :rtype: dict
 
-    :usage: Function call extract and save defaults data in debug mode
-        and second example also save second ling in debug mode:
+    :usage:
+
+        Function call extract and save defaults data in debug mode and second
+        example also save second ling in debug mode:
 
         .. code:: python
 
@@ -295,7 +299,9 @@ def emoji_load_json_data() -> dict:
         and `emoji_modifiers`.
     :rtype: dict
 
-    :usage: Assigning a function by calling to a variable:
+    :usage:
+
+        Assigning a function by calling to a variable:
 
         .. code:: python
 

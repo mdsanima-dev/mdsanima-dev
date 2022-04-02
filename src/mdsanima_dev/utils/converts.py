@@ -35,7 +35,9 @@ def frames_to_timecode(frames: int, fps: float) -> str:
     :return: Timecode format.
     :rtype: str
 
-    :usage: Assigning a function to a variable:
+    :usage:
+
+        Assigning a function to a variable:
 
         .. code:: python
 
@@ -43,7 +45,9 @@ def frames_to_timecode(frames: int, fps: float) -> str:
             timecode = frames_to_timecode(240, 24)
             print(timecode)
 
-    :shell: Command line console script:
+    :shell:
+
+        Command line console script:
 
         .. code:: shell
 
@@ -84,7 +88,9 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
     :return: Total frames number.
     :rtype: int
 
-    :usage: Assigning a function to a variable:
+    :usage:
+
+        Assigning a function to a variable:
 
         .. code:: python
 
@@ -92,7 +98,9 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
             frames = timecode_to_frames("00:00:10:00", 24)
             print(frames)
 
-    :shell: Command line console script:
+    :shell:
+
+        Command line console script:
 
         .. code:: shell
 
@@ -132,14 +140,18 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
     :return: Timecode format.
     :rtype: str
 
-    :shell: Command line console script:
+    :shell:
+
+        Command line console script:
 
         .. code:: shell
 
             mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
             mdsanima-dev-converts frames-to-timecode --help
 
-    :usage: Assigning a function to a variable:
+    :usage:
+
+        Assigning a function to a variable:
 
         .. code:: python
 
@@ -166,14 +178,18 @@ def shell_timecode_to_frames(timecode: str, fps: float) -> str:
     :return: Total frames number.
     :rtype: str
 
-    :shell: Command line shell console script:
+    :shell:
+
+        Command line shell console script:
 
         .. code:: shell
 
             mdsanima-dev-converts timecode-to-frames --time-code 00:00:10:00 --fps 24
             mdsanima-dev-converts timecode-to-frames --help
 
-    :usage: Assigning a function to a variable:
+    :usage:
+
+        Assigning a function to a variable:
 
         .. code:: python
 
