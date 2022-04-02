@@ -26,8 +26,7 @@ def get_seconds() -> int:
 
 
 def frames_to_timecode(frames: int, fps: float) -> str:
-    """Converting frames number to timecode :bdg-warning-line:`00:00:00:00`
-    format.
+    """Converting frames number to timecode ``00:00:00:00`` format.
 
     :param frames: Total frames number.
     :type frames: int
@@ -76,8 +75,7 @@ def frames_to_timecode(frames: int, fps: float) -> str:
 
 
 def timecode_to_frames(timecode: str, fps: float) -> int:
-    """Converting timecode :bdg-warning-line:`00:00:00:00` format to
-    frames number.
+    """Converting timecode ``00:00:00:00`` format to frames number.
 
     :param timecode: Timecode format.
     :type timecode: str
@@ -125,8 +123,7 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
 
 
 def shell_frames_to_timecode(frames: int, fps: float) -> str:
-    """Shell console script converting frames number to timecode
-    :bdg-warning-line:`00:00:00:00` format.
+    """Shell console script converting frames number to timecode ``00:00:00:00`` format.
 
     :param --frames: Total frames number.
     :type --frames: int
@@ -160,8 +157,7 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
 
 
 def shell_timecode_to_frames(timecode: str, fps: float) -> str:
-    """Shell console script converting timecode :bdg-warning-line:`00:00:00:00`
-    format to frames number.
+    """Shell console script converting timecode ``00:00:00:00`` format to frames number.
 
     :param --timecode: Timecode format.
     :type --timecode: str
