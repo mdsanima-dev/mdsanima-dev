@@ -3,7 +3,7 @@
 Converting directly in shell console script on the command line.
 
 ```{eval-rst}
-.. versionadded:: 0.2.0
+.. versionadded:: 0.1.1
 ```
 
 ```{important}

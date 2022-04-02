@@ -5,7 +5,7 @@
 ```
 
 ```{eval-rst}
-.. versionadded:: 0.2.0
+.. versionadded:: 0.1.1
 ```
 
 ## Function {bdg-primary-line}`frames_to_timecode`
