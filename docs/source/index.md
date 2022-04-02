@@ -1,17 +1,15 @@
 # MDSANIMA DEVELOPMENT
 
-Welcome to ``MDSANIMA DEVELOPMENT`` documentation site.
+Welcome to **MDSANIMA-DEV** documentation site.
 
-```{important}
-This organization mainly deals with ``Python`` programming. Sometimes we also
-code in other languages like ``JavaScript``, ``HTML``, ``Bash Scripting``
-and ``PowerShell``.
+This organization mainly deals with *Python* programming. Sometimes we also
+coding in other languages like *JavaScript*, *HTML*, *Bash* and *PowerShell*
+Scripting.
 
-We also use the latest technologies Realtime Database, Cloud Servers
-or Machine Learning. We deliver apps and plugins as containers in Docker Compose
-for easy deployment. We know Linux with better security. Every day we learn
-something new.
-```
+We also use the modern technologies like *Realtime Database*, *Cloud Servers*
+and *Machine Learning*. We developing apps and plugins as containers
+in *Docker Compose* for easy deployment. We know *Linux* with better security.
+Every day we learn something new.
 
 ```{include} ../../README.md
 ```
@@ -25,17 +23,17 @@ This is all modules include of this package.
     :maxdepth: 3
     :caption: Python Modules
 
-    module_colors
-    module_converts
-    module_emoji
-    module_table
-    module_tools
+    modules/colors
+    modules/converts
+    modules/emoji
+    modules/table
+    modules/tools
 ```
 
 ## Command Line
 
 This shell console script options allowing you to converting selected function
-directly in command line in the terminal window like `Bash`, `zsh`, `PowerShell`
+directly in command line in the terminal window like *Bash*, *zsh*, *PowerShell*
 and more.
 
 ```{eval-rst}
@@ -43,16 +41,18 @@ and more.
     :maxdepth: 3
     :caption: Command Line
 
-    shell_converts
+    console/shell-converts
 ```
 
 ## Development
+
+Helping instruction for development workflow and release deployment.
 
 ```{eval-rst}
 .. toctree::
     :maxdepth: 2
     :caption: Development
 
-    development
-    changelog
+    devs/changelog
+    devs/workflow
 ```
