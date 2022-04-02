@@ -92,8 +92,10 @@ just for fun.
             :name: show-complex-color-true-dk-b
 ```
 
-```{admonition} Note
-Now you know what numbers you have withs different colors, now you can use the
-function {bdg-link-primary-line}`get_complex_color <#function-get-complex-color>`
-in your code.
+```{eval-rst}
+.. note::
+    Now you know what numbers you have withs different colors, now you can use
+    the function
+    :bdg-link-primary-line:`get_complex_color <#function-get-complex-color>`
+    in your code.
 ```
