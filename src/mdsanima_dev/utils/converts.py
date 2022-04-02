@@ -51,8 +51,8 @@ def frames_to_timecode(frames: int, fps: float) -> str:
             mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
             mdsanima-dev-converts frames-to-timecode --help
 
-        .. seealso::
-            Shell console script :bdg-link-secondary-line:`frames-to-timecode <../console/shell-converts.html#converts-frames-to-timecode>`
+        .. seealso:: Shell console script
+            :bdg-link-secondary-line:`frames-to-timecode <../console/shell-converts.html#converts-frames-to-timecode>`
             converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -101,8 +101,8 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
             mdsanima-dev-converts timecode-to-frames --timecode 00:00:10:00 --fps 24
             mdsanima-dev-converts timecode-to-frames --help
 
-        .. seealso::
-            Shell console script :bdg-link-secondary-line:`timecode-to-frames <../console/shell-converts.html#converts-timecode-to-frames>`
+        .. seealso:: Shell console script
+            :bdg-link-secondary-line:`timecode-to-frames <../console/shell-converts.html#converts-timecode-to-frames>`
             converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -150,8 +150,8 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
             timecode = frames_to_timecode(240, 24)
             print(timecode)
 
-        .. seealso::
-            Invoke function :bdg-link-primary-line:`frames_to_timecode <../modules/converts.html#function-frames-to-timecode>`
+        .. seealso:: Invoke function
+            :bdg-link-primary-line:`frames_to_timecode <../modules/converts.html#function-frames-to-timecode>`
             with a given arguments values.
     """
     # run calculation
@@ -185,8 +185,8 @@ def shell_timecode_to_frames(timecode: str, fps: float) -> str:
             frames = timecode_to_frames("00:00:10:00", 24)
             print(frames)
 
-        .. seealso::
-            Invoke function :bdg-link-primary-line:`timecode_to_frames <../modules/converts.html#function-timecode-to-frames>`
+        .. seealso:: Invoke function
+            :bdg-link-primary-line:`timecode_to_frames <../modules/converts.html#function-timecode-to-frames>`
             with a given arguments values.
     """
     # run calculation
