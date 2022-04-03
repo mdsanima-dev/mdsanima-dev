@@ -1,11 +1,11 @@
-# Module {bdg-success-line}`emoji`
+# MODULE {bdg-success-line}`EMOJI`
 
 ```{eval-rst}
 .. automodule:: mdsanima_dev.emoji
 ```
 
 ```{eval-rst}
-.. figure:: ../_static/img/gif/emoji_show_d_04_optymize.gif
+.. figure:: ../_images/gif/emoji_show_d_04_optymize.gif
     :name: show-emoji-04-gif-d
 ```
 
@@ -28,7 +28,7 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_static/img/gif/emoji_show_c_04_optymize.gif
+.. figure:: ../_images/gif/emoji_show_c_04_optymize.gif
     :name: show-emoji-04-gif-c
 ```
 
@@ -51,7 +51,7 @@ Now I will show you how to use class
 each emoji has so that you can use in your code.
 
 ```{eval-rst}
-.. figure:: ../_static/img/gif/emoji_show_a_04_optymize.gif
+.. figure:: ../_images/gif/emoji_show_a_04_optymize.gif
     :name: show-emoji-04-gif-a
 ```
 
@@ -73,23 +73,23 @@ s.emo_stats()
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_01_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_01_acrylic_a.jpg
             :name: show-emoji-01-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_01_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_01_dark_a.jpg
             :name: show-emoji-01-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_01_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_01_acrylic_b.jpg
             :name: show-emoji-01-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_01_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_01_dark_b.jpg
             :name: show-emoji-01-dk-b
 ```
 
@@ -109,23 +109,23 @@ s.emo_all()
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_04_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_04_acrylic_a.jpg
             :name: show-emoji-04-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_04_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_04_dark_a.jpg
             :name: show-emoji-04-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_04_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_04_acrylic_b.jpg
             :name: show-emoji-04-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_04_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_04_dark_b.jpg
             :name: show-emoji-04-dk-b
 ```
 
@@ -146,23 +146,23 @@ s.emo_all(True, False)
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_05_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_05_acrylic_a.jpg
             :name: show-emoji-05-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_05_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_05_dark_a.jpg
             :name: show-emoji-05-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_05_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_05_acrylic_b.jpg
             :name: show-emoji-05-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_05_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_05_dark_b.jpg
             :name: show-emoji-05-dk-b
 ```
 
@@ -183,23 +183,23 @@ s.emo_all(False, True)
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_06_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_06_acrylic_a.jpg
             :name: show-emoji-06-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_06_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_06_dark_a.jpg
             :name: show-emoji-06-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_06_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_06_acrylic_b.jpg
             :name: show-emoji-06-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_06_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_06_dark_b.jpg
             :name: show-emoji-06-dk-b
 ```
 
@@ -220,23 +220,23 @@ s.emo_all(True, True)
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_07_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_07_acrylic_a.jpg
             :name: show-emoji-07-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_07_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_07_dark_a.jpg
             :name: show-emoji-07-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_07_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_07_acrylic_b.jpg
             :name: show-emoji-07-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_07_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_07_dark_b.jpg
             :name: show-emoji-07-dk-b
 ```
 
@@ -255,23 +255,23 @@ s.emo_big_head()
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_02_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_02_acrylic_a.jpg
             :name: show-emoji-02-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_02_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_02_dark_a.jpg
             :name: show-emoji-02-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_02_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_02_acrylic_b.jpg
             :name: show-emoji-02-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_02_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_02_dark_b.jpg
             :name: show-emoji-02-dk-b
 ```
 
@@ -295,23 +295,23 @@ s.emo_head("objects", "music", False, True)
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_08_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_08_acrylic_a.jpg
             :name: show-emoji-08-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_08_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_08_dark_a.jpg
             :name: show-emoji-08-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_08_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_08_acrylic_b.jpg
             :name: show-emoji-08-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_08_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_08_dark_b.jpg
             :name: show-emoji-08-dk-b
 ```
 
@@ -330,23 +330,23 @@ s.emo_medium_head()
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_03_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_03_acrylic_a.jpg
             :name: show-emoji-03-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_03_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_03_dark_a.jpg
             :name: show-emoji-03-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_03_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_03_acrylic_b.jpg
             :name: show-emoji-03-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_03_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_03_dark_b.jpg
             :name: show-emoji-03-dk-b
 ```
 
@@ -369,23 +369,23 @@ s.emoji(86, end="\n")
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_09_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_09_acrylic_a.jpg
             :name: show-emoji-09-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_09_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_09_dark_a.jpg
             :name: show-emoji-09-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_09_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_09_acrylic_b.jpg
             :name: show-emoji-09-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_09_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_09_dark_b.jpg
             :name: show-emoji-09-dk-b
 ```
 
@@ -405,23 +405,23 @@ for i in range(1, 167):
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_10_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_10_acrylic_a.jpg
             :name: show-emoji-10-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_10_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_10_dark_a.jpg
             :name: show-emoji-10-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_10_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_10_acrylic_b.jpg
             :name: show-emoji-10-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_10_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_10_dark_b.jpg
             :name: show-emoji-10-dk-b
 ```
 
@@ -441,23 +441,23 @@ for i in range(1, 1816):
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_11_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_11_acrylic_a.jpg
             :name: show-emoji-11-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_11_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_11_dark_a.jpg
             :name: show-emoji-11-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_11_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_11_acrylic_b.jpg
             :name: show-emoji-11-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_11_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_11_dark_b.jpg
             :name: show-emoji-11-dk-b
 ```
 
@@ -477,23 +477,23 @@ for i in range(1, 1705):
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_12_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_12_acrylic_a.jpg
             :name: show-emoji-12-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_12_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_12_dark_a.jpg
             :name: show-emoji-12-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_12_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_12_acrylic_b.jpg
             :name: show-emoji-12-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_12_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_12_dark_b.jpg
             :name: show-emoji-12-dk-b
 ```
 
@@ -518,22 +518,22 @@ s.emoji(1704, "\n")
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_static/img/screenshot/emoji_show_13_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_13_acrylic_a.jpg
             :name: show-emoji-13-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_static/img/screenshot/emoji_show_13_dark_a.jpg
+        .. figure:: ../_images/screenshot/emoji_show_13_dark_a.jpg
             :name: show-emoji-13-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_static/img/screenshot/emoji_show_13_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_13_acrylic_b.jpg
             :name: show-emoji-13-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_static/img/screenshot/emoji_show_13_dark_b.jpg
+        .. figure:: ../_images/screenshot/emoji_show_13_dark_b.jpg
             :name: show-emoji-13-dk-b
 ```

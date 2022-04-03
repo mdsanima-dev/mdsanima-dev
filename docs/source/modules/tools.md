@@ -1,4 +1,4 @@
-# Module {bdg-success-line}`tools`
+# MODULE {bdg-success-line}`TOOLS`
 
 ```{eval-rst}
 .. automodule:: mdsanima_dev.utils.tools
@@ -29,7 +29,7 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_static/img/gif/machine_show_c_04_optymize.gif
+.. figure:: ../_images/gif/machine_show_c_04_optymize.gif
     :name: show-machine-04-gif-c
 ```
 
@@ -58,6 +58,6 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_static/img/gif/progress_show_a_04_optymize.gif
+.. figure:: ../_images/gif/progress_show_a_04_optymize.gif
     :name: show-progress-04-gif-a
 ```

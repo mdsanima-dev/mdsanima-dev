@@ -1,0 +1,106 @@
+/* Copyritht © 2022 Marcin Różewski MDSANIMA */
+
+/* theme button disable only dark theme */
+.theme-toggle {
+    display: none;
+}
+
+/* middle content */
+.content {
+    width: 46em;
+}
+
+/* no line search */
+.sidebar-search {
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+/* dark theme customization */
+@media (prefers-color-scheme: dark) {
+    /* custom colors */
+    body[data-theme="dark"] {
+        --color-background-primary: #010409; /* content right */
+        --color-background-secondary: #010409; /* content left */
+        --color-background-border: #10141d; /* no line */
+        --color-background-hover: #05080e; /* menu hover left */
+        --color-admonition-background: #05080e; /* colors admonitions */
+        --color-api-name: #0ea5e9; /* code function right */
+        --color-problematic: #075985; /* code function left */
+        --color-highlight-on-target: #10141d; /* target click */
+    }
+
+    /* code block colors */
+    body[data-theme="dark"] .highlight {
+        background: #10141d;
+        border-left: 0.2rem solid #84cc16;
+        border-right: 0.2rem solid #84cc16;
+    }
+
+    /* no link underline */
+    a {
+        text-decoration: none;
+    }
+
+    /* code all */
+    code.literal {
+        background: #10141d;
+    }
+
+    /* code paragraph */
+    p code.literal {
+        border: 1px solid #10141d;
+    }
+
+    /* directives right border color */
+    .admonition {
+        border-right: 0.2rem solid var(--color-admonition-title);
+    }
+    .admonition.caution {
+        border-right-color: var(--color-admonition-title--caution);
+    }
+    .admonition.warning {
+        border-right-color: var(--color-admonition-title--warning);
+    }
+    .admonition.danger {
+        border-right-color: var(--color-admonition-title--danger);
+    }
+    .admonition.attention {
+        border-right-color: var(--color-admonition-title--attention);
+    }
+    .admonition.error {
+        border-right-color: var(--color-admonition-title--error);
+    }
+    .admonition.hint {
+        border-right-color: var(--color-admonition-title--hint);
+    }
+    .admonition.tip {
+        border-right-color: var(--color-admonition-title--tip);
+    }
+    .admonition.important {
+        border-right-color: var(--color-admonition-title--important);
+    }
+    .admonition.note {
+        border-right-color: var(--color-admonition-title--note);
+    }
+    .admonition.seealso {
+        border-right-color: var(--color-admonition-title--seealso);
+    }
+    .admonition.admonition-todo {
+        border-right-color: var(--color-admonition-title--admonition-todo);
+    }
+
+    /* badge no border */
+    :is(h1, h2, h3, h4, .sidebar-scroll, .toc-scroll, .related-pages, .toctree-wrapper)
+        :is(.sd-outline-primary, .sd-outline-secondary, .sd-outline-success, .sd-outline-info, .sd-outline-warning, .sd-outline-danger, .sd-outline-light, .sd-outline-dark) {
+        border-width: 0px !important;
+    }
+
+    /* badge text and border color */
+    .sd-text-success {
+        color: #84cc16 !important;
+    }
+    .sd-outline-success {
+        border-color: #84cc16 !important;
+    }
+}

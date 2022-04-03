@@ -43,7 +43,7 @@ source_suffix = {
 
 # path options
 templates_path = ["_templates"]
-exclude_patterns = ["_design"]
+exclude_patterns = ["_images"]
 html_static_path = ["_static"]
 html_css_files = ["css/furo.css"]
 

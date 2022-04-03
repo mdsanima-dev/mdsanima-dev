@@ -1,4 +1,4 @@
-# Module {bdg-success-line}`converts`
+# MODULE {bdg-success-line}`CONVERTS`
 
 ```{eval-rst}
 .. automodule:: mdsanima_dev.utils.converts
