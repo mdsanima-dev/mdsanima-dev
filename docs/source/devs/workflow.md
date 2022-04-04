@@ -1,18 +1,18 @@
-# Workflow `release`
+# WORKFLOW
 
-Instruction steps how to implement the release and documentation.
+Instruction steps how to implement the release version and documentation site.
 
-## Add new module
+## Add New Module
 
 Write a new module to an existing package. Commit changes based on
 `conventional-commits` messages.
 
-## Add documentation
+## Add Documentation
 
 Write `shpinx` documentation for this module in a `.py` file and in the
 `docs/source` folder.
 
-## Add changelog
+## Add Changelog
 
 First run this command:
 
@@ -30,7 +30,7 @@ After run this command you will create a new version in the `package.json` file,
 bump it in `__init __.py` and you will automatically create `CHANGELOG.md`
 based on commit messages.
 
-## Building documentation
+## Building Documentation
 
 Then build the documentation by typing this command:
 
@@ -40,7 +40,7 @@ sudo python3 setup.py install build_sphinx
 
 By executing this command you will create `html` documentation in `docs/html`.
 
-## Commit changes
+## Commit Changes
 
 Now you just need to execute this command:
 
