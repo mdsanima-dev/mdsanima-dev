@@ -103,4 +103,9 @@
     .sd-outline-success {
         border-color: #84cc16 !important;
     }
+
+    /* brand text size */
+    .sidebar-brand-text {
+        font-size: 1.0rem;
+    }
 }

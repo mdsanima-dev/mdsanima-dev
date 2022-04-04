@@ -45,7 +45,7 @@ source_suffix = {
 templates_path = ["_templates"]
 exclude_patterns = ["_images"]
 html_static_path = ["_static"]
-html_css_files = ["css/furo.css"]
+html_css_files = ["css/furo-mdsanima.css"]
 
 # theme options
 html_theme = "furo"
@@ -60,7 +60,7 @@ html_use_index = False
 # theme options custom
 html_theme_options = {
     "navigation_with_keys": True,
-    "sidebar_hide_name": True,
+    "sidebar_hide_name": False,
     "footer_icons": [
         {
             "name": "GitHub",
