@@ -46,6 +46,7 @@ templates_path = ["_templates"]
 exclude_patterns = ["_images"]
 html_static_path = ["_static"]
 html_css_files = ["css/furo-mdsanima.css"]
+html_js_files = ["js/furo-mdsanima.js"]
 
 # theme options
 html_theme = "furo"
@@ -54,8 +55,6 @@ html_favicon = "_static/svg/logo_mdsanima_default_14-lime.svg"
 
 # html options
 html_show_sphinx = True
-html_use_modindex = False
-html_use_index = False
 
 # theme options custom
 html_theme_options = {
