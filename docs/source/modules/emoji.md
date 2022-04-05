@@ -5,8 +5,8 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_images/gif/emoji_show_d_04_optymize.gif
-    :name: show-emoji-04-gif-d
+.. figure:: ../_images/gif/mdsanima_dev_python_emoji_a.gif
+    :name: show-python-emoji-a
 ```
 
 ## Function {bdg-primary-line}`emoji_get_url_data`
@@ -28,8 +28,8 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_images/gif/emoji_show_c_04_optymize.gif
-    :name: show-emoji-04-gif-c
+.. figure:: ../_images/gif/mdsanima_dev_python_emoji_b.gif
+    :name: show-python-emoji-b
 ```
 
 ## Class {bdg-info-line}`emoji`
@@ -51,8 +51,8 @@ Now I will show you how to use class
 each emoji has so that you can use in your code.
 
 ```{eval-rst}
-.. figure:: ../_images/gif/emoji_show_a_04_optymize.gif
-    :name: show-emoji-04-gif-a
+.. figure:: ../_images/gif/mdsanima_dev_python_emoji_c.gif
+    :name: show-python-emoji-c
 ```
 
 ### Method {bdg-primary-line}`emo_stats()`

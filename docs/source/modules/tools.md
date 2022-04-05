@@ -29,8 +29,8 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_images/gif/machine_show_c_04_optymize.gif
-    :name: show-machine-04-gif-c
+.. figure:: ../_images/gif/mdsanima_dev_python_machine.gif
+    :name: show-python-machine
 ```
 
 ## Class {bdg-info-line}`progress`
@@ -58,6 +58,6 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_images/gif/progress_show_a_04_optymize.gif
-    :name: show-progress-04-gif-a
+.. figure:: ../_images/gif/mdsanima_dev_python_progress.gif
+    :name: show-python-progress
 ```
