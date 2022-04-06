@@ -7,7 +7,7 @@
   },
   "description": "MDSANIMA-DEV Python Development Tools",
   "repository": "https://github.com/mdsanima-dev/mdsanima-dev.git",
-  "homepage": "https://github.com/mdsanima-dev/mdsanima-dev#readme",
+  "homepage": "https://github.com/mdsanima-dev/mdsanima-dev/#readme",
   "license": "MIT",
   "project_urls": {
     "Documentation": "https://mdsanima-dev.github.io/mdsanima-dev/",
@@ -37,13 +37,11 @@
   ],
   "extra_require": {
     "docs": [
-      "sphinx",
-      "sphinx-autoapi",
-      "sphinx-prompt",
-      "sphinx-tabs",
-      "recommonmark",
-      "myst_parser",
-      "furo"
+      "furo",
+      "myst-parser",
+      "Sphinx",
+      "sphinx-copybutton",
+      "sphinx-design"
     ]
   },
   "classifiers": [
@@ -137,7 +135,7 @@
         "hidden": true
       }
     ],
-    "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nand `README.md` file for commit guidelines. Also you should check [conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for **mdsanima-dev** Python Package is available\nat [docs mdsanima-dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to check it.\n"
+    "header": "# CHANGELOG\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nand `README.md` file for commit guidelines. Also you should check [conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for **mdsanima-dev** Python Package is available\nat [docs mdsanima-dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to check it.\n"
   },
   "scripts": {
     "check": "standard-version --dry-run",
