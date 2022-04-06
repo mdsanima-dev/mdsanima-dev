@@ -3,7 +3,8 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""Setuptools ``mdsanima-dev`` dynamic package."""
+"""Setuptools ``mdsanima-dev`` dynamic package. This setup allow to build
+Sphinx Documentation and SHELL Script."""
 
 
 import json
@@ -66,8 +67,9 @@ setuptools.setup(
         "build_sphinx": {
             "version": ("setup.py", data_package["version"]),
             "release": ("setup.py", data_package["version"]),
-            "build_dir": ("setup.py", "docs"),
-            "source_dir": ("setup.py", "docs/source"),
+            "source_dir": ("setup.py", "docs"),
+            "build_dir": ("setup.py", "build"),
+            "builder": ("setup.py", "dirhtml"),
         }
     },
     entry_points={
