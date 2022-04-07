@@ -11,7 +11,7 @@ and *Machine Learning*. We developing apps and plugins as containers
 in *Docker Compose* for easy deployment. We know *Linux* with better security.
 Every day we learn something new.
 
-```{include} ../../README.md
+```{include} ../README.md
 ```
 
 ## Python Modules
@@ -41,7 +41,7 @@ and more.
     :maxdepth: 3
     :caption: Command Line
 
-    console/shell-converts
+    shell/converts
 ```
 
 ## Development
@@ -53,6 +53,6 @@ Helping instruction for development workflow and release deployment.
     :maxdepth: 2
     :caption: Development
 
-    devs/changelog
     devs/workflow
+    devs/changelog
 ```
