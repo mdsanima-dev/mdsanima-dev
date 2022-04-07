@@ -171,7 +171,7 @@ def my_table():
     t.con(64, "development".rjust(28), "in progress", 87, 86)
     t.con(64, "documentation".rjust(28), "sphinx", 31, 61)
     t.mid(64)
-    t.hed(64, "https://github.com/mdsanima-dev/mdsanima-dev".center(63), 33)
+    t.hed(64, "https://github.com/mdsanima-dev/mdsanima-dev/".center(63), 33)
     t.bot(64)
 ```
 

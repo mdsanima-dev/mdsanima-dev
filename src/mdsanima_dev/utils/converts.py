@@ -55,7 +55,8 @@ def frames_to_timecode(frames: int, fps: float) -> str:
             mdsanima-dev-converts frames-to-timecode --help
 
         .. seealso:: Shell console script
-            :bdg-link-secondary-line:`frames-to-timecode <../console/shell-converts.html#converts-frames-to-timecode>`
+            :bdg-link-secondary-line:`frames-to-timecode
+            </shell/converts/#converts-frames-to-timecode>`
             converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -108,7 +109,8 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
             mdsanima-dev-converts timecode-to-frames --help
 
         .. seealso:: Shell console script
-            :bdg-link-secondary-line:`timecode-to-frames <../console/shell-converts.html#converts-timecode-to-frames>`
+            :bdg-link-secondary-line:`timecode-to-frames
+            </shell/converts/#converts-timecode-to-frames>`
             converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -131,7 +133,8 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
 
 
 def shell_frames_to_timecode(frames: int, fps: float) -> str:
-    """Shell console script converting frames number to timecode ``00:00:00:00`` format.
+    """Shell console script converting frames number to timecode
+    ``00:00:00:00`` format.
 
     :param --frames: Total frames number.
     :type --frames: int
@@ -160,7 +163,8 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
             print(timecode)
 
         .. seealso:: Invoke function
-            :bdg-link-primary-line:`frames_to_timecode <../modules/converts.html#function-frames-to-timecode>`
+            :bdg-link-primary-line:`frames_to_timecode
+            </modules/converts/#function-frames-to-timecode>`
             with a given arguments values.
     """
     # run calculation
@@ -169,7 +173,8 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
 
 
 def shell_timecode_to_frames(timecode: str, fps: float) -> str:
-    """Shell console script converting timecode ``00:00:00:00`` format to frames number.
+    """Shell console script converting timecode ``00:00:00:00`` format
+    to frames number.
 
     :param --timecode: Timecode format.
     :type --timecode: str
@@ -198,7 +203,8 @@ def shell_timecode_to_frames(timecode: str, fps: float) -> str:
             print(frames)
 
         .. seealso:: Invoke function
-            :bdg-link-primary-line:`timecode_to_frames <../modules/converts.html#function-timecode-to-frames>`
+            :bdg-link-primary-line:`timecode_to_frames
+            </modules/converts/#function-timecode-to-frames>`
             with a given arguments values.
     """
     # run calculation

@@ -5,10 +5,10 @@
 store all emoji data inside `.josn` file on this python package as dictionary.
 
 .. important:: This module only get data from
-    `Full Emoji List <https://unicode.org/emoji/charts/full-emoji-list.html>`_
-    and
-    `Full Emoji Modifiers <https://unicode.org/emoji/charts/full-emoji-modifiers.html>`_
-    links.
+    `Full Emoji List
+    <https://unicode.org/emoji/charts/full-emoji-list.html>`_ and
+    `Full Emoji Modifiers
+    <https://unicode.org/emoji/charts/full-emoji-modifiers.html>`_ links.
 """
 
 
@@ -34,7 +34,8 @@ def emoji_get_url_data(emoji_url: str) -> str:
     If status ok returning data text for further processing.
 
     .. warning:: This function only used for request data in function
-        :bdg-link-primary-line:`emoji_clean_url_data <#function-emoji-clean-url-data>`
+        :bdg-link-primary-line:`emoji_clean_url_data
+        <#function-emoji-clean-url-data>`
 
     :param emoji_url: Link to emoticons.
     :type emoji_url: str
@@ -292,8 +293,8 @@ def emoji_clean_url_data(
 
 def emoji_load_json_data() -> dict:
     """This function loading the json data generated on previous
-    :bdg-link-primary-line:`emoji_clean_url_data <#function-emoji-clean-url-data>`
-    function.
+    :bdg-link-primary-line:`emoji_clean_url_data
+    <#function-emoji-clean-url-data>` function.
 
     :return: Dictionary json on all emoji with joining two json `emoji_list`
         and `emoji_modifiers`.

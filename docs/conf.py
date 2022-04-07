@@ -44,13 +44,13 @@ source_suffix = {
 templates_path = ["_templates"]
 exclude_patterns = ["_images"]
 html_static_path = ["_static"]
-html_css_files = ["css/furo-mdsanima.css"]
-html_js_files = ["js/furo-mdsanima.js"]
+html_css_files = ["mdsanima.css"]
+html_js_files = ["mdsanima.js"]
 
 # theme options
 html_theme = "furo"
-html_logo = "_static/svg/logo_mdsanima_default_14-lime.svg"
-html_favicon = "_static/svg/logo_mdsanima_default_14-lime.svg"
+html_logo = "_static/logo_mdsanima_default_14-lime.svg"
+html_favicon = "_static/logo_mdsanima_default_14-lime.svg"
 
 # html options
 html_show_sphinx = True
