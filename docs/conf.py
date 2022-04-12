@@ -49,8 +49,8 @@ html_js_files = ["mdsanima.js"]
 
 # theme options
 html_theme = "furo"
-html_logo = "_static/logo_mdsanima_default_14-lime.svg"
-html_favicon = "_static/logo_mdsanima_default_14-lime.svg"
+html_logo = "_static/logo/filled/svg/logo_mdsanima_default_14-lime.svg"
+html_favicon = "_static/logo/squere/png/logo_mdsanima_default_14-lime_1x.png"
 
 # html options
 html_show_sphinx = True
