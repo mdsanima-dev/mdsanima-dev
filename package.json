@@ -93,33 +93,33 @@
     "skip": {
       "bump": false,
       "changelog": false,
-      "commit": false,
-      "tag": false
+      "commit": true,
+      "tag": true
     },
     "types": [
       {
         "type": "feat",
-        "section": "Features",
+        "section": "{bdg-success-line}`FEATURES`",
         "hidden": false
       },
       {
         "type": "fix",
-        "section": "Bug Fixes",
+        "section": "{bdg-warning-line}`BUG FIXES`",
         "hidden": false
       },
       {
         "type": "docs",
-        "section": "Documentation",
+        "section": "{bdg-info-line}`DOCUMENTATION`",
         "hidden": false
       },
       {
         "type": "test",
-        "section": "Tests",
+        "section": "{bdg-secondary-line}`TESTS`",
         "hidden": false
       },
       {
         "type": "build",
-        "section": "Build System",
+        "section": "{bdg-danger-line}`BUILD SYSTEM`",
         "hidden": true
       },
       {
@@ -135,7 +135,7 @@
         "hidden": true
       }
     ],
-    "header": "# CHANGELOG\n\nAll notable changes to this project will be documented in this file.\nSee [standard-version](https://github.com/conventional-changelog/standard-version)\nand `README.md` file for commit guidelines. Also you should check [conventional-changelog](https://github.com/mdsanima/conventional-changelog) for more detail.\n\nDocomentation for **mdsanima-dev** Python Package is available\nat [docs mdsanima-dev](https://mdsanima-dev.github.io/mdsanima-dev/) be sure to check it.\n"
+    "header": "# CHANGELOG\n\nAll notable changes to this project will be documented in this file.\n\nPlease check\n[`standard-version`](https://github.com/conventional-changelog/standard-version)\nand documentation for commit guidelines. Also you should check\n[`conventional-changelog`](https://github.com/mdsanima/conventional-changelog)\nfor more detail.\n\nDocomentation for *Python* package\n[`mdsanima-dev`](https://pypi.org/project/mdsanima-dev) is available\nat [`GitHub Pages`](https://mdsanima-dev.github.io/mdsanima-dev/)\nbe sure to check it.\n"
   },
   "scripts": {
     "check": "standard-version --dry-run",
