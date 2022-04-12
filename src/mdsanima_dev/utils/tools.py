@@ -1,7 +1,7 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""There are some useful functions that I usually use for python programing."""
+"""There are some useful functions that I usually use for *Python* coding."""
 
 
 import time

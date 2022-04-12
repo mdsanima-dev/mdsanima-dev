@@ -68,7 +68,7 @@ def get_color(text: str = "mdsanima", color: int = 255) -> str:
 
         Also you can use
         :bdg-link-primary-line:`machine
-        </modules/tools/#function-machine>` function:
+        <../module-tools/#function-machine>` function:
 
         .. code:: python
 

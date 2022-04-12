@@ -2,7 +2,8 @@
 
 
 """Request data of emoji from `unicode.org <https://unicode.org>`_ site and
-store all emoji data inside `.josn` file on this python package as dictionary.
+store all emoji data inside `.josn` file on this *Python* package as
+dictionary.
 
 .. important:: This module only get data from
     `Full Emoji List
@@ -68,7 +69,7 @@ def emoji_clean_url_data(
 ) -> dict:
     """This funciton is used to clean up previously requested data and store in
     dictionary `.json` file and saved in to `json` folder. These folder also
-    included in python package. Default save a first link `emoji_lis_url`,
+    included in *Python* package. Default save a first link `emoji_lis_url`,
     the second link is the `emoji_mod_url` which are included in this module
     as a variable. If you need to download new data, you can use just these
     two variables only.
@@ -77,8 +78,8 @@ def emoji_clean_url_data(
     this function printing only stats in colors. If you want to see use debug
     parameters. Debug mode show cool colors from extracting url.
 
-    .. warning:: This two link is `important <#module-mdsanima_dev.emoji>`_.
-        Check this in the beginning on this page.
+    .. warning:: This two link is `important <#module-mdsanima_dev.emoji>`_,
+        please check this in the beginning on this page.
 
     :param bhead: Debug mode show big head, defaults to `False`.
     :type bhead: bool, optional
@@ -323,7 +324,7 @@ class emoji:
     """This class has methods for printing various emoji functions.
 
     .. warning:: Class :bdg-link-info-line:`show <#class-show>` print all emoji
-        with calling methods inside this class. Recommended used only
+        with calling methods inside this class. We're recommended used only
         class :bdg-link-info-line:`show(emoji) <#class-show>` to print
         `big head`, `medium head`, or just only one `emoji`.
     """
