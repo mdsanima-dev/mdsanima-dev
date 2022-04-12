@@ -5,7 +5,7 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_images/gif/mdsanima_dev_python_emoji_a.gif
+.. figure:: ./_images/gif/mdsanima_dev_python_emoji_a.gif
     :name: show-python-emoji-a
 ```
 
@@ -28,7 +28,7 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_images/gif/mdsanima_dev_python_emoji_b.gif
+.. figure:: ./_images/gif/mdsanima_dev_python_emoji_b.gif
     :name: show-python-emoji-b
 ```
 
@@ -48,10 +48,10 @@
 
 Now I will show you how to use class
 {bdg-link-info-line}`show(emoji) <#class-show>` method to find out what number
-each emoji has so that you can use in your code.
+each emoji has so that you can use in your code:
 
 ```{eval-rst}
-.. figure:: ../_images/gif/mdsanima_dev_python_emoji_c.gif
+.. figure:: ./_images/gif/mdsanima_dev_python_emoji_c.gif
     :name: show-python-emoji-c
 ```
 
@@ -60,7 +60,7 @@ each emoji has so that you can use in your code.
 This method show statistic about emoji published on *.json* files which was
 retrieved on the
 {bdg-link-primary-line}`emoji_clean_url_data <#function-emoji-clean-url-data>`
-function. You can use *emoji_list* or *emoji_modifiers* only.
+function. You can use *emoji_list* or *emoji_modifiers* only:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -73,30 +73,30 @@ s.emo_stats()
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_01_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_01_acrylic_a.jpg
             :name: show-emoji-01-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_01_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_01_dark_a.jpg
             :name: show-emoji-01-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_01_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_01_acrylic_b.jpg
             :name: show-emoji-01-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_01_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_01_dark_b.jpg
             :name: show-emoji-01-dk-b
 ```
 
 ### Method {bdg-primary-line}`emo_all()`
 
-This method will display all the available emojis from the list you have
-selected. All emojis in the given group will be displayed on one line.
+This method will display all the available emoji from the list you have
+selected. All emoji in the given group will be displayed on one line:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -109,31 +109,31 @@ s.emo_all()
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_04_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_04_acrylic_a.jpg
             :name: show-emoji-04-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_04_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_04_dark_a.jpg
             :name: show-emoji-04-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_04_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_04_acrylic_b.jpg
             :name: show-emoji-04-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_04_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_04_dark_b.jpg
             :name: show-emoji-04-dk-b
 ```
 
 #### Method {bdg-primary-line}`emo_all(True, False)`
 
-The first argument is true so it will show us all the emojis and a number that
-is assigned to the emoji. All emojis in the given group will be displayed on
-one line.
+The first argument is true so it will show us all the emoji and a number that
+is assigned to the emoji. All emoji in the given group will be displayed on
+one line:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -146,23 +146,23 @@ s.emo_all(True, False)
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_05_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_05_acrylic_a.jpg
             :name: show-emoji-05-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_05_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_05_dark_a.jpg
             :name: show-emoji-05-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_05_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_05_acrylic_b.jpg
             :name: show-emoji-05-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_05_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_05_dark_b.jpg
             :name: show-emoji-05-dk-b
 ```
 
@@ -170,7 +170,7 @@ s.emo_all(True, False)
 
 The second argument is true so it will show us all the emojis and a name thats
 is assigned to the emoji. All emoticons in a given group will be displayed
-individually, each on a separate line.
+individually, each on a separate line:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -183,23 +183,23 @@ s.emo_all(False, True)
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_06_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_06_acrylic_a.jpg
             :name: show-emoji-06-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_06_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_06_dark_a.jpg
             :name: show-emoji-06-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_06_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_06_acrylic_b.jpg
             :name: show-emoji-06-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_06_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_06_dark_b.jpg
             :name: show-emoji-06-dk-b
 ```
 
@@ -207,7 +207,7 @@ s.emo_all(False, True)
 
 Both arguments are true so I will show us the number assigned to the emoji
 and its name. All emoticons in a given group will be displayed individually,
-each on a separate line.
+each on a separate line:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -220,29 +220,29 @@ s.emo_all(True, True)
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_07_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_07_acrylic_a.jpg
             :name: show-emoji-07-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_07_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_07_dark_a.jpg
             :name: show-emoji-07-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_07_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_07_acrylic_b.jpg
             :name: show-emoji-07-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_07_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_07_dark_b.jpg
             :name: show-emoji-07-dk-b
 ```
 
 ### Method {bdg-primary-line}`emo_big_head()`
 
-This method shows all available big heads from the list you selected.
+This method shows all available big heads from the list you're selected:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -255,23 +255,23 @@ s.emo_big_head()
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_02_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_02_acrylic_a.jpg
             :name: show-emoji-02-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_02_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_02_dark_a.jpg
             :name: show-emoji-02-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_02_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_02_acrylic_b.jpg
             :name: show-emoji-02-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_02_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_02_dark_b.jpg
             :name: show-emoji-02-dk-b
 ```
 
@@ -279,7 +279,7 @@ s.emo_big_head()
 
 This method displays all emojis from a given big head and medium head.
 You always need to enter these two arguments *big_head* and *medium_head*.
-The next two arguments are for displaying emoji numbers and their names.
+The next two arguments are for displaying emoji numbers and their names:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -295,29 +295,29 @@ s.emo_head("objects", "music", False, True)
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_08_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_08_acrylic_a.jpg
             :name: show-emoji-08-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_08_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_08_dark_a.jpg
             :name: show-emoji-08-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_08_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_08_acrylic_b.jpg
             :name: show-emoji-08-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_08_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_08_dark_b.jpg
             :name: show-emoji-08-dk-b
 ```
 
 ### Method {bdg-primary-line}`emo_medium_head()`
 
-This method shows all available medium heads from the list you selected.
+This method shows all available medium heads from the list you're selected:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -330,23 +330,23 @@ s.emo_medium_head()
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_03_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_03_acrylic_a.jpg
             :name: show-emoji-03-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_03_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_03_dark_a.jpg
             :name: show-emoji-03-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_03_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_03_acrylic_b.jpg
             :name: show-emoji-03-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_03_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_03_dark_b.jpg
             :name: show-emoji-03-dk-b
 ```
 
@@ -354,7 +354,7 @@ s.emo_medium_head()
 
 Now you know what numbers each emoji has, so you can use this method for your
 code. If you want to print on a new line use this argument `end = "\n"`
-or just simple `show("emoji_list").emoji(86, "\n")` thats it.
+or just simple `show("emoji_list").emoji(86, "\n")` thats it:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -369,29 +369,29 @@ s.emoji(86, end="\n")
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_09_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_09_acrylic_a.jpg
             :name: show-emoji-09-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_09_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_09_dark_a.jpg
             :name: show-emoji-09-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_09_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_09_acrylic_b.jpg
             :name: show-emoji-09-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_09_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_09_dark_b.jpg
             :name: show-emoji-09-dk-b
 ```
 
 #### Method {bdg-primary-line}`emoji()` for loop ``emoji_list`` fist
 
-This way you can now print the first 67 emojis from the list selected.
+This way you can now print the first 67 emojis from the list selected:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -405,29 +405,29 @@ for i in range(1, 167):
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_10_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_10_acrylic_a.jpg
             :name: show-emoji-10-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_10_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_10_dark_a.jpg
             :name: show-emoji-10-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_10_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_10_acrylic_b.jpg
             :name: show-emoji-10-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_10_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_10_dark_b.jpg
             :name: show-emoji-10-dk-b
 ```
 
 #### Method {bdg-primary-line}`emoji()` for loop ``emoji_list`` all
 
-This way you can print all available emojis from the list selected.
+This way you can print all available emojis from the list selected:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -441,29 +441,29 @@ for i in range(1, 1816):
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_11_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_11_acrylic_a.jpg
             :name: show-emoji-11-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_11_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_11_dark_a.jpg
             :name: show-emoji-11-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_11_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_11_acrylic_b.jpg
             :name: show-emoji-11-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_11_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_11_dark_b.jpg
             :name: show-emoji-11-dk-b
 ```
 
 #### Method {bdg-primary-line}`emoji()` for loop ``emoji_modifiers`` all
 
-This way you can print all available emojis from the list selected.
+This way you can print all available emojis from the list selected:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -477,29 +477,29 @@ for i in range(1, 1705):
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_12_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_12_acrylic_a.jpg
             :name: show-emoji-12-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_12_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_12_dark_a.jpg
             :name: show-emoji-12-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_12_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_12_acrylic_b.jpg
             :name: show-emoji-12-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_12_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_12_dark_b.jpg
             :name: show-emoji-12-dk-b
 ```
 
 ### All Method
 
-Here I show all methods work to get the correct number for your emoji.
+Show all methods to get the correct number for your emoji:
 
 ```python
 from mdsanima_dev.emoji import show
@@ -518,22 +518,22 @@ s.emoji(1704, "\n")
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/emoji_show_13_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_13_acrylic_a.jpg
             :name: show-emoji-13-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/emoji_show_13_dark_a.jpg
+        .. figure:: ./_images/screenshot/emoji_show_13_dark_a.jpg
             :name: show-emoji-13-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/emoji_show_13_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_13_acrylic_b.jpg
             :name: show-emoji-13-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/emoji_show_13_dark_b.jpg
+        .. figure:: ./_images/screenshot/emoji_show_13_dark_b.jpg
             :name: show-emoji-13-dk-b
 ```

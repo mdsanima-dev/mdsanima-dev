@@ -9,15 +9,15 @@ Converting directly in shell console script on the command line.
 ```{important}
 This command line options are a wrapper on existing functions and returning
 the same value on calling selected convert method for the appropriate option,
-both shell command line script and python module.
+both shell command line script and *Python* module.
 
 - Python Function
 {bdg-link-primary-line}`frames_to_timecode
-</modules/converts/#function-frames-to-timecode>` → Console Script
+<../module-converts/#function-frames-to-timecode>` → Console Script
 {bdg-link-secondary-line}`frames-to-timecode <#converts-frames-to-timecode>`
 - Python Function
 {bdg-link-primary-line}`timecode_to_frames
-</modules/converts/#function-timecode-to-frames>` → Console Script
+<../module-converts/#function-timecode-to-frames>` → Console Script
 {bdg-link-secondary-line}`timecode-to-frames <#converts-timecode-to-frames>`
 ```
 

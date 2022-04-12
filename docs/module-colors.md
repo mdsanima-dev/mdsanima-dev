@@ -40,23 +40,23 @@ just for fun.
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/color_show_01_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/color_show_01_acrylic_a.jpg
             :name: show-complex-color-false-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/color_show_01_dark_a.jpg
+        .. figure:: ./_images/screenshot/color_show_01_dark_a.jpg
             :name: show-complex-color-false-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/color_show_01_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/color_show_01_acrylic_b.jpg
             :name: show-complex-color-false-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/color_show_01_dark_b.jpg
+        .. figure:: ./_images/screenshot/color_show_01_dark_b.jpg
             :name: show-complex-color-false-dk-b
 ```
 
@@ -72,23 +72,23 @@ just for fun.
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/color_show_02_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/color_show_02_acrylic_a.jpg
             :name: show-complex-color-true-ac-a
 
     .. tab-item:: Shell Dark
         :selected:
 
-        .. figure:: ../_images/screenshot/color_show_02_dark_a.jpg
+        .. figure:: ./_images/screenshot/color_show_02_dark_a.jpg
             :name: show-complex-color-true-dk-a
 
     .. tab-item:: Shell Acrylic Border
 
-        .. figure:: ../_images/screenshot/color_show_02_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/color_show_02_acrylic_b.jpg
             :name: show-complex-color-true-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/color_show_02_dark_b.jpg
+        .. figure:: ./_images/screenshot/color_show_02_dark_b.jpg
             :name: show-complex-color-true-dk-b
 ```
 

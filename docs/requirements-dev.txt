@@ -5,3 +5,4 @@ sphinx-inline-tabs==2022.1.2b11
 myst-parser==0.16.1
 furo==2022.3.4
 wheel==0.37.1
+twine==4.0.0

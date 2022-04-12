@@ -25,23 +25,23 @@
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/table_show_01_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/table_show_01_acrylic_a.jpg
             :name: show-table-01-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/table_show_01_dark_a.jpg
+        .. figure:: ./_images/screenshot/table_show_01_dark_a.jpg
             :name: show-table-01-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/table_show_01_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/table_show_01_acrylic_b.jpg
             :name: show-table-01-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/table_show_01_dark_b.jpg
+        .. figure:: ./_images/screenshot/table_show_01_dark_b.jpg
             :name: show-table-01-dk-b
 ```
 
@@ -56,23 +56,23 @@
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/table_show_02_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/table_show_02_acrylic_a.jpg
             :name: show-table-02-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/table_show_02_dark_a.jpg
+        .. figure:: ./_images/screenshot/table_show_02_dark_a.jpg
             :name: show-table-02-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/table_show_02_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/table_show_02_acrylic_b.jpg
             :name: show-table-02-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/table_show_02_dark_b.jpg
+        .. figure:: ./_images/screenshot/table_show_02_dark_b.jpg
             :name: show-table-02-dk-b
 ```
 
@@ -116,7 +116,7 @@
 
 This is a example function to make a colored table on class
 {bdg-link-info-line}`table_elem <#class-table-elem>` method. These example show
-three different tables that are not linked together.
+three different tables that are not linked together:
 
 ```python
 from mdsanima_dev.utils.table import table_elem
@@ -138,27 +138,27 @@ def my_table():
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/table_show_03_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/table_show_03_acrylic_a.jpg
             :name: show-table-03-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/table_show_03_dark_a.jpg
+        .. figure:: ./_images/screenshot/table_show_03_dark_a.jpg
             :name: show-table-03-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/table_show_03_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/table_show_03_acrylic_b.jpg
             :name: show-table-03-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/table_show_03_dark_b.jpg
+        .. figure:: ./_images/screenshot/table_show_03_dark_b.jpg
             :name: show-table-03-dk-b
 ```
 
-This example shows how to create linked tables.
+This example shows how to create linked tables:
 
 ```python
 from mdsanima_dev.utils.table import table_elem
@@ -180,22 +180,22 @@ def my_table():
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/table_show_04_acrylic_a.jpg
+        .. figure:: ./_images/screenshot/table_show_04_acrylic_a.jpg
             :name: show-table-04-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/table_show_04_dark_a.jpg
+        .. figure:: ./_images/screenshot/table_show_04_dark_a.jpg
             :name: show-table-04-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/table_show_04_acrylic_b.jpg
+        .. figure:: ./_images/screenshot/table_show_04_acrylic_b.jpg
             :name: show-table-04-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/table_show_04_dark_b.jpg
+        .. figure:: ./_images/screenshot/table_show_04_dark_b.jpg
             :name: show-table-04-dk-b
 ```

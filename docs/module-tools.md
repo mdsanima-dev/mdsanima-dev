@@ -29,7 +29,7 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_images/gif/mdsanima_dev_python_machine.gif
+.. figure:: ./_images/gif/mdsanima_dev_python_machine.gif
     :name: show-python-machine
 ```
 
@@ -58,6 +58,6 @@
 ```
 
 ```{eval-rst}
-.. figure:: ../_images/gif/mdsanima_dev_python_progress.gif
+.. figure:: ./_images/gif/mdsanima_dev_python_progress.gif
     :name: show-python-progress
 ```
