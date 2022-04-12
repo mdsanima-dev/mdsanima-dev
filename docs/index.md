@@ -1,6 +1,13 @@
 # MDSANIMA DEVELOPMENT
 
-Welcome to **MDSANIMA-DEV** documentation site.
+Welcome in **MDSANIMA-DEV** documentation site.
+
+```{include} ../README.md
+:start-after: <!-- start info-mdsanima-dev -->
+:end-before: <!-- end info-mdsanima-dev -->
+```
+
+![mdsanima-dev-python-show-gif](_images/gif/mdsanima_dev_python_show.gif)
 
 This organization mainly deals with *Python* programming. Sometimes we also
 coding in other languages like *JavaScript*, *HTML*, *Bash* and *PowerShell*
@@ -11,48 +18,49 @@ and *Machine Learning*. We developing apps and plugins as containers
 in *Docker Compose* for easy deployment. We know *Linux* with better security.
 Every day we learn something new.
 
-```{include} ../README.md
+```{toctree}
+:hidden:
+
+installation
 ```
 
 ## Python Modules
 
 This is all modules include of this package.
 
-```{eval-rst}
-.. toctree::
-    :maxdepth: 3
-    :caption: Python Modules
+```{toctree}
+:maxdepth: 3
+:caption: Python Modules
 
-    modules/colors
-    modules/converts
-    modules/emoji
-    modules/table
-    modules/tools
+module-colors
+module-converts
+module-emoji
+module-table
+module-tools
 ```
 
 ## Command Line
 
 This shell console script options allowing you to converting selected function
-directly in command line in the terminal window like *Bash*, *zsh*, *PowerShell*
-and more.
+directly in command line in the terminal window like *bash*, *zsh*,
+*PowerShell* and more.
 
-```{eval-rst}
-.. toctree::
-    :maxdepth: 3
-    :caption: Command Line
+```{toctree}
+:maxdepth: 3
+:caption: Command Line
 
-    shell/converts
+shell-converts
 ```
 
 ## Development
 
 Helping instruction for development workflow and release deployment.
 
-```{eval-rst}
-.. toctree::
-    :maxdepth: 2
-    :caption: Development
+```{toctree}
+:maxdepth: 2
+:caption: Development
 
-    devs/workflow
-    devs/changelog
+workflow
+changelog
+license
 ```
