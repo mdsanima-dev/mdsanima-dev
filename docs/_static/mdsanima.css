@@ -1,5 +1,19 @@
 /* Copyritht © 2022 Marcin Różewski MDSANIMA */
 
+/* colors palette definition mdsanima */
+:root {
+    --color-mdsanima-sky-500: #0EA5E9;
+    --color-mdsanima-sky-600: #0284C7;
+    --color-mdsanima-sky-800: #075985;
+    --color-mdsanima-lime-600: #65A30D;
+    --color-mdsanima-teal-500: #14B8A6;
+    --color-mdsanima-orange-500: #F97316;
+    --color-mdsanima-red-500: #EF4444;
+    --color-mdsanima-code: #10141D;
+    --color-mdsanima-bg-primary: #010409;
+    --color-mdsanima-bg-secondary: #05080E;
+}
+
 /* theme button disable only dark theme */
 .theme-toggle {
     display: none;
@@ -24,28 +38,30 @@ body {
 
 /* dark theme customization */
 body:not([data-theme=light]) {
-    --color-background-primary: #010409; /* content right */
-    --color-background-secondary: #010409; /* content left */
-    --color-background-border: #10141d; /* no line */
-    --color-background-hover: #05080e; /* menu hover left */
-    --color-admonition-background: #05080e; /* colors admonitions */
-    --color-api-name: #0ea5e9; /* code function right */
-    --color-problematic: #075985; /* code function left */
-    --color-highlight-on-target: #10141d; /* target click */
+    --color-brand-primary: var(--color-mdsanima-sky-500); /* text link left sidebar */
+    --color-brand-content: var(--color-mdsanima-sky-500); /* text link code */
+    --color-background-primary: var(--color-mdsanima-bg-primary); /* content right */
+    --color-background-secondary: var(--color-mdsanima-bg-primary); /* content left */
+    --color-background-border: var(--color-mdsanima-code); /* no line */
+    --color-background-hover: var(--color-mdsanima-bg-secondary); /* menu hover left */
+    --color-admonition-background: var(--color-mdsanima-bg-secondary); /* colors admonitions */
+    --color-api-name: var(--color-mdsanima-sky-600); /* code function right */
+    --color-problematic: var(--color-mdsanima-sky-800); /* code function left */
+    --color-highlight-on-target: var(--color-mdsanima-code); /* target click */
 }
 
 /* code block python colors */
 body:not([data-theme=light]) .highlight-python .highlight {
-    background: #10141d;
-    border-left: 0.2rem solid #84cc16;
-    border-right: 0.2rem solid #84cc16;
+    background: var(--color-mdsanima-code);
+    border-left: 0.2rem solid var(--color-mdsanima-lime-600);
+    border-right: 0.2rem solid var(--color-mdsanima-lime-600);
 }
 
 /* code block shell colors */
 body:not([data-theme=light]) .highlight-shell .highlight {
-    background: #10141d;
-    border-left: 0.2rem solid #dc3545;
-    border-right: 0.2rem solid #dc3545;
+    background: var(--color-mdsanima-code);
+    border-left: 0.2rem solid var(--color-mdsanima-orange-500);
+    border-right: 0.2rem solid var(--color-mdsanima-orange-500);
 }
 
 /* no link underline */
@@ -55,12 +71,12 @@ a {
 
 /* code all */
 code.literal {
-    background: #10141d;
+    background: var(--color-mdsanima-code);
 }
 
 /* code paragraph */
 p code.literal {
-    border: 1px solid #10141d;
+    border: 1px solid var(--color-mdsanima-code);
 }
 
 /* directives right border color */
@@ -108,11 +124,35 @@ p code.literal {
 }
 
 /* badge text and border color */
+.sd-text-primary {
+    color: var(--color-mdsanima-sky-500) !important;
+}
+.sd-outline-primary {
+    border-color: var(--color-mdsanima-sky-500) !important;
+}
 .sd-text-success {
-    color: #84cc16 !important;
+    color: var(--color-mdsanima-lime-600) !important;
 }
 .sd-outline-success {
-    border-color: #84cc16 !important;
+    border-color: var(--color-mdsanima-lime-600) !important;
+}
+.sd-text-info {
+    color: var(--color-mdsanima-teal-500) !important;
+}
+.sd-outline-info {
+    border-color: var(--color-mdsanima-teal-500) !important;
+}
+.sd-text-warning {
+    color: var(--color-mdsanima-orange-500) !important;
+}
+.sd-outline-warning {
+    border-color: var(--color-mdsanima-orange-500) !important;
+}
+.sd-text-danger {
+    color: var(--color-mdsanima-red-500) !important;
+}
+.sd-outline-danger {
+    border-color: var(--color-mdsanima-red-500) !important;
 }
 
 /* brand text size */
