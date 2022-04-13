@@ -39,11 +39,18 @@ source_suffix = {
     ".md": "markdown",
 }
 
+# font awesome
+fontawesome_css = "https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+cdnfa = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/"
+fontawesome_min = cdnfa + "fontawesome.min.css"
+solid_min = cdnfa + "solid.min.css"
+brands_min = cdnfa + "brands.min.css"
+
 # path options
 templates_path = ["_templates"]
 exclude_patterns = ["_images"]
 html_static_path = ["_static"]
-html_css_files = ["mdsanima.css"]
+html_css_files = ["mdsanima.css", fontawesome_css]
 html_js_files = ["mdsanima.js"]
 
 # theme options
