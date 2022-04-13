@@ -100,7 +100,8 @@ python3.7 -m http.server 8080 --directory build/dirhtml/
 
 To use the `--directory` option you must use *Python 3.7* or later, but if you
 don't have one, you can just go to the above-mentioned directory and type
-`python3 -m http.server 8080` in the terminal.
+`python3 -m http.server 8080` in the terminal. If you want to listen to a
+specific interface use the `--bind 127.0.0.1` options.
 
 Now just go to your browser and enter the
 [`localhost:8080`](http://localhost:8080/) address.

@@ -1,4 +1,4 @@
-# GETTING STARTED
+# GETTING {bdg-info-line}`STARTED`
 
 ```{include} ../README.md
 :start-after: <!-- start help-started -->

@@ -136,29 +136,18 @@ version of this package already installed.
 
 <!-- start help-on-virtualenv -->
 
-Create virtual environment in hidden folder, type in the terminal:
+Create and activate virtual environment in hidden folder, type in the terminal:
 
 ```shell
 virtualenv .venv
-```
-
-Activate virtual environment in hidden folder, type in the terminal:
-
-```shell
 source .venv/bin/activate
 ```
 
-If you want to create virtual environment with specific *Python* version, type
-in the terminal:
+If you want to create and activate virtual environment with specific *Python*
+version, type in the terminal:
 
 ```shell
 virtualenv venv39 -p python3.9
-```
-
-Activate virtual environment with specific *Python* version, type in the
-terminal:
-
-```shell
 source venv39/bin/activate
 ```
 
@@ -199,6 +188,7 @@ These are my social media account, be sure to check it. Thanks!
 [![twitter-follow-toudajew][badge-12]][link-12]
 [![twitter-follow-str9led][badge-13]][link-13]
 [![twitter-follow-mdsanima][badge-14]][link-14]
+
 [![subreddit-subscribers-mdsanima][badge-15]][link-15]
 [![youtube-subscribers-mdsanima][badge-16]][link-16]
 [![youtube-views-mdsanima][badge-17]][link-16]

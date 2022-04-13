@@ -22,6 +22,8 @@ Every day we learn something new.
 :hidden:
 
 installation
+project/index
+tutorials/index
 ```
 
 ## Python Modules

@@ -16,6 +16,12 @@
     border-top: 0px;
 }
 
+/* space sidebar left */
+body {
+    --sidebar-tree-space-above: 1.0rem; /* space between search and first element */
+    --sidebar-caption-space-above: 0.8rem; /* space between caption elements */
+}
+
 /* dark theme customization */
 body:not([data-theme=light]) {
     --color-background-primary: #010409; /* content right */
