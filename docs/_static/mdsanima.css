@@ -119,8 +119,12 @@ p code.literal {
 
 /* badge no border */
 :is(h1, h2, h3, h4, .sidebar-scroll, .toc-scroll, .related-pages, .toctree-wrapper)
-    :is(.sd-outline-primary, .sd-outline-secondary, .sd-outline-success, .sd-outline-info, .sd-outline-warning, .sd-outline-danger, .sd-outline-light, .sd-outline-dark, code.literal) {
+:is(.sd-outline-primary, .sd-outline-secondary, .sd-outline-success, .sd-outline-info, .sd-outline-warning, .sd-outline-danger, .sd-outline-light, .sd-outline-dark) {
     border-width: 0px !important;
+}
+
+/* code no bacground */
+:is(h1, h2, h3, h4, .sidebar-scroll, .toc-scroll, .related-pages, .toctree-wrapper) code.literal {
     background: var(--color-mdsanima-bg-primary);
 }
 
