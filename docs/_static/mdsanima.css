@@ -65,9 +65,9 @@ body:not([data-theme=light]) .highlight-shell .highlight {
 }
 
 /* no link underline */
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
 /* code all */
 code.literal {
@@ -119,8 +119,9 @@ p code.literal {
 
 /* badge no border */
 :is(h1, h2, h3, h4, .sidebar-scroll, .toc-scroll, .related-pages, .toctree-wrapper)
-    :is(.sd-outline-primary, .sd-outline-secondary, .sd-outline-success, .sd-outline-info, .sd-outline-warning, .sd-outline-danger, .sd-outline-light, .sd-outline-dark) {
+    :is(.sd-outline-primary, .sd-outline-secondary, .sd-outline-success, .sd-outline-info, .sd-outline-warning, .sd-outline-danger, .sd-outline-light, .sd-outline-dark, code.literal) {
     border-width: 0px !important;
+    background: var(--color-mdsanima-bg-primary);
 }
 
 /* badge text and border color */
@@ -158,4 +159,24 @@ p code.literal {
 /* brand text size */
 .sidebar-brand-text {
     font-size: 1.0rem;
+}
+
+/* change icon color when active python modules */
+.sidebar-tree .current>.reference .sd-octicon-file-code {
+    fill: var(--color-mdsanima-lime-600);
+}
+
+/* change icon color when active terminal commands */
+.sidebar-tree .current>.reference .sd-octicon-file-binary {
+    fill: var(--color-mdsanima-orange-500);
+}
+
+/* change icon color when active project development */
+.sidebar-tree .current>.reference .sd-octicon-workflow {
+    fill: var(--color-mdsanima-red-500);
+}
+
+/* animation on click */
+.sidebar-tree .current-page>.reference .sd-octicon {
+    animation: 0.3s ease-out 0s 1 normal none running sd-slide-from-left;
 }
