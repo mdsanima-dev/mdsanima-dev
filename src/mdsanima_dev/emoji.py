@@ -1,9 +1,9 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""Request data of emoji from `unicode.org <https://unicode.org>`_ site and
-store all emoji data inside `.josn` file on this *Python* package as
-dictionary.
+"""Module ``emoji`` is for request data of emoji from
+`unicode.org <https://unicode.org>`_ site and store all emoji data inside
+`.josn` file on this *Python* package as dictionary.
 
 .. important:: This module only get data from
     `Full Emoji List
@@ -68,11 +68,11 @@ def emoji_clean_url_data(
     emoji_url: str = emoji_lis_url,
 ) -> dict:
     """This funciton is used to clean up previously requested data and store in
-    dictionary `.json` file and saved in to `json` folder. These folder also
-    included in *Python* package. Default save a first link `emoji_lis_url`,
-    the second link is the `emoji_mod_url` which are included in this module
-    as a variable. If you need to download new data, you can use just these
-    two variables only.
+    dictionary ``.json`` file and saved in to ``json`` folder. These folder
+    also included in *Python* package. Default save a first link
+    ``emoji_lis_url``, the second link is the ``emoji_mod_url`` which are
+    included in this module as a variable. If you need to download new data,
+    you can use just these two variables only.
 
     You can use parameter to debug what data is saved. By defaults for the end
     this function printing only stats in colors. If you want to see use debug
@@ -81,19 +81,19 @@ def emoji_clean_url_data(
     .. warning:: This two link is `important <#module-mdsanima_dev.emoji>`_,
         please check this in the beginning on this page.
 
-    :param bhead: Debug mode show big head, defaults to `False`.
+    :param bhead: Debug mode show big head, defaults to ``False``.
     :type bhead: bool, optional
-    :param mhead: Debug mode show medium head, defaults to `False`.
+    :param mhead: Debug mode show medium head, defaults to ``False``.
     :type mhead: bool, optional
-    :param ucode: Debug mode show unicode, defaults to `False`.
+    :param ucode: Debug mode show unicode, defaults to ``False``.
     :type ucode: bool, optional
-    :param emoji: Debug mode show emoji, defaults to `False`.
+    :param emoji: Debug mode show emoji, defaults to ``False``.
     :type emoji: bool, optional
-    :param ename: Debug mode show emoji name, defaults to `False`.
+    :param ename: Debug mode show emoji name, defaults to ``False``.
     :type ename: bool, optional
-    :param emoji_url: Link to extract data, defaults to `emoji_lis_url`.
+    :param emoji_url: Link to extract data, defaults to ``emoji_lis_url``.
     :type emoji_url: str, optional
-    :return: Save dictionary data in to `.json` file.
+    :return: Save dictionary data in to ``.json`` file.
     :rtype: dict
 
     :usage:
@@ -297,8 +297,8 @@ def emoji_load_json_data() -> dict:
     :bdg-link-primary-line:`emoji_clean_url_data
     <#function-emoji-clean-url-data>` function.
 
-    :return: Dictionary json on all emoji with joining two json `emoji_list`
-        and `emoji_modifiers`.
+    :return: Dictionary json on all emoji with joining two json ``emoji_list``
+        and ``emoji_modifiers``.
     :rtype: dict
 
     :usage:
@@ -323,9 +323,9 @@ def emoji_load_json_data() -> dict:
 class emoji:
     """This class has methods for printing various emoji functions.
 
-    .. warning:: Class :bdg-link-info-line:`show <#class-show>` print all emoji
-        with calling methods inside this class. We're recommended used only
-        class :bdg-link-info-line:`show(emoji) <#class-show>` to print
+    .. warning:: Class :bdg-link-primary-line:`show <#class-show>` print all
+        emoji with calling methods inside this class. We're recommended used
+        only class :bdg-link-primary-line:`show(emoji) <#class-show>` to print
         `big head`, `medium head`, or just only one `emoji`.
     """
 
@@ -466,9 +466,9 @@ class emoji:
         """This method prints all available emojis, sorted by heads.
         You can use arguments to print number of emoji and names of emoji.
 
-        :param number: Print emoji numbers, defaults to `False`.
+        :param number: Print emoji numbers, defaults to ``False``.
         :type number: bool, optional
-        :param names: Print emoji names, defaults to `False`.
+        :param names: Print emoji names, defaults to ``False``.
         :type names: bool, optional
         :return: Prints all available emojis.
         :rtype: str
@@ -524,9 +524,9 @@ class emoji:
         :type bhead: str
         :param mhead: Name of medium head emoji.
         :type mhead: str
-        :param number: Print emoji numbers, defaults to `False`.
+        :param number: Print emoji numbers, defaults to ``False``.
         :type number: bool, optional
-        :param names: Print emoji names, defaults to `False`.
+        :param names: Print emoji names, defaults to ``False``.
         :type names: bool, optional
         :return: Printing all emoji in to a given group.
         :rtype: str

@@ -7,6 +7,8 @@
     --color-mdsanima-sky-800: #075985;
     --color-mdsanima-lime-600: #65A30D;
     --color-mdsanima-teal-500: #14B8A6;
+    --color-mdsanima-teal-600: #0D9488;
+    --color-mdsanima-teal-800: #115E59;
     --color-mdsanima-orange-500: #F97316;
     --color-mdsanima-red-500: #EF4444;
     --color-mdsanima-code: #10141D;
@@ -48,6 +50,7 @@ body:not([data-theme=light]) {
     --color-api-name: var(--color-mdsanima-sky-600); /* code function right */
     --color-problematic: var(--color-mdsanima-sky-800); /* code function left */
     --color-highlight-on-target: var(--color-mdsanima-code); /* target click */
+    --sd-color-primary-highlight: var(--color-mdsanima-sky-800); /* badge link text hover */
 }
 
 /* code block python colors */
@@ -64,10 +67,13 @@ body:not([data-theme=light]) .highlight-shell .highlight {
     border-right: 0.2rem solid var(--color-mdsanima-orange-500);
 }
 
-/* no link underline */
-/* a {
+/* no link underline and hover color */
+a {
     text-decoration: none;
-} */
+}
+a:hover {
+    color: var(--color-mdsanima-sky-800);
+}
 
 /* code all */
 code.literal {
@@ -118,7 +124,6 @@ p code.literal {
 }
 
 /* badge no border */
-:is(h1, h2, h3, h4, .sidebar-scroll, .toc-scroll, .related-pages, .toctree-wrapper)
 :is(.sd-outline-primary, .sd-outline-secondary, .sd-outline-success, .sd-outline-info, .sd-outline-warning, .sd-outline-danger, .sd-outline-light, .sd-outline-dark) {
     border-width: 0px !important;
 }
@@ -166,21 +171,21 @@ p code.literal {
 }
 
 /* change icon color when active python modules */
-.sidebar-tree .current>.reference .sd-octicon-file-code {
+:is(h1 .sd-octicon-file-code, .sidebar-tree .current>.reference .sd-octicon-file-code) {
     fill: var(--color-mdsanima-lime-600);
 }
 
 /* change icon color when active terminal commands */
-.sidebar-tree .current>.reference .sd-octicon-file-binary {
+:is(h1 .sd-octicon-file-binary, .sidebar-tree .current>.reference .sd-octicon-file-binary) {
     fill: var(--color-mdsanima-orange-500);
 }
 
 /* change icon color when active project development */
-.sidebar-tree .current>.reference .sd-octicon-workflow {
+:is(h1 .sd-octicon-workflow, .sidebar-tree .current>.reference .sd-octicon-workflow) {
     fill: var(--color-mdsanima-red-500);
 }
 
 /* animation on click */
-.sidebar-tree .current-page>.reference .sd-octicon {
-    animation: 0.3s ease-out 0s 1 normal none running sd-slide-from-left;
+:is(h1 .sd-octicon, .sidebar-tree .current-page>.reference .sd-octicon) {
+    animation: 0.5s ease-out 0s 1 normal none running sd-slide-from-left;
 }

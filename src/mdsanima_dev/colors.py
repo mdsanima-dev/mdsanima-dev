@@ -1,7 +1,10 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""Complex colors printed in the console output with your own text."""
+"""Module ``colors`` is for print complex color in the console output with your
+own texts. Also, this module is for showing example colors that's you might be
+used in your project.
+"""
 
 
 def set_complex_color() -> str:
@@ -39,39 +42,34 @@ def get_color(text: str = "mdsanima", color: int = 255) -> str:
     print function.
 
     :param text: The text you want to use for color output in the console,
-        defaults to `mdsanima`.
+        defaults to ``mdsanima``.
     :type text: str, optional
     :param color: The color number you want to use for color output in the
-        console, defaults to `255`.
+        console, defaults to ``255``.
     :type color: int, optional
     :return: Colored text output in the console.
     :rtype: str
 
     :usage:
 
-        Assigning a function by calling to variable:
+        Assigning a function by calling to variable or assigning a function to
+        a variable just add after import ``mds = get_color`` and in the next
+        line type ``mds_a = mds("I love Python", 86)`` in your code:
 
         .. code:: python
 
+            from mdsanima_dev.colors import get_color
             mds_a = get_color("I love Python", 86)
             mds_b = get_color("mdsanima", 186)
             print(mds_a, mds_b)
 
-        Assigning a function to a variable:
-
-        .. code:: python
-
-            mds = get_color
-            mds_a = mds("I love Python", 86)
-            mds_b = mds("mdsanima", 186)
-            print(mds_a, mds_b)
-
         Also you can use
         :bdg-link-primary-line:`machine
-        <../module-tools/#function-machine>` function:
+        <../tools/#function-machine>` function:
 
         .. code:: python
 
+            from mdsanima_dev.colors import get_color
             from mdsanima_dev.utils.tools import machine
             mds = get_color
             mds_a = mds("I love Python", 86)
@@ -90,23 +88,24 @@ def get_complex_color(
     console. Now the function works the same like print function.
 
     :param text: The text you want to use for color output in the console,
-        defaults to `mdsanima`.
+        defaults to ``mdsanima``.
     :type text: str, optional
     :param color: The color number you want to use for color output in the
-        console, defaults to `255`.
+        console, defaults to ``255``.
     :type color: int, optional
-    :param end: End of line print, defaults to `None`.
+    :param end: End of line print, defaults to ``None``.
     :type end: str, optional
     :return: Colored text output in the console.
     :rtype: str
 
     :usage:
 
-        Assigning a function to a variable `mds` then function calling
+        Assigning a function to a variable ``mds`` then function calling
         returning printing colored text on the same line:
 
         .. code:: python
 
+            from mdsanima_dev.colors import get_complex_color
             mds = get_complex_color
             mds(color=44)
             mds("mdsa", 160, " ")
@@ -124,7 +123,7 @@ def get_complex_color(
 def show_complex_color(number: bool = False) -> str:
     """Function prints all available colors with a number or only text.
 
-    :param number: Show color number, defaults to `False`.
+    :param number: Show color number, defaults to ``False``.
     :type number: bool, optional
     :return: Show all colors in the console output.
     :rtype: str
@@ -135,6 +134,7 @@ def show_complex_color(number: bool = False) -> str:
 
         .. code:: python
 
+            from mdsanima_dev.colors import show_complex_color
             show_complex_color(False)
             show_complex_color(True)
     """

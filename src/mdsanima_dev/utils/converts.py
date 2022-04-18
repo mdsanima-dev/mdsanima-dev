@@ -3,7 +3,9 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""Functions that may be useful in VFX and Animation Industry."""
+"""Module ``converts`` contains functions that may be useful in VFX and
+Animation Industry.
+"""
 
 
 import argparse
@@ -12,7 +14,7 @@ import sys
 from mdsanima_dev import __version__
 
 
-def get_seconds() -> int:
+def _get_seconds() -> int:
     """Calculating the number of seconds in an hour.
 
     :return: Number of seconds in hour and minute.
@@ -51,16 +53,16 @@ def frames_to_timecode(frames: int, fps: float) -> str:
 
         .. code:: shell
 
-            mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
-            mdsanima-dev-converts frames-to-timecode --help
+            mdsanima-dev frames-to-timecode --frames 240 --fps 24
+            mdsanima-dev frames-to-timecode --help
 
         .. seealso:: Shell console script
-            :bdg-link-secondary-line:`frames-to-timecode
-            <../shell-converts/#converts-frames-to-timecode>`
+            :bdg-link-warning-line:`frames-to-timecode
+            <../../command/converts/#converts-frames-to-timecode>`
             converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
-    sec_in_min, sec_in_hrs = get_seconds()
+    sec_in_min, sec_in_hrs = _get_seconds()
 
     # setup frames
     frames_in_sec = fps
@@ -105,16 +107,16 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
 
         .. code:: shell
 
-            mdsanima-dev-converts timecode-to-frames --timecode 00:00:10:00 --fps 24
-            mdsanima-dev-converts timecode-to-frames --help
+            mdsanima-dev timecode-to-frames --timecode 00:00:10:00 --fps 24
+            mdsanima-dev timecode-to-frames --help
 
         .. seealso:: Shell console script
-            :bdg-link-secondary-line:`timecode-to-frames
-            <../shell-converts/#converts-timecode-to-frames>`
+            :bdg-link-warning-line:`timecode-to-frames
+            <../../command/converts/#converts-timecode-to-frames>`
             converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
-    sec_in_min, sec_in_hrs = get_seconds()
+    sec_in_min, sec_in_hrs = _get_seconds()
 
     # extract single values
     tc_hrs = int(timecode.split(":")[0])
@@ -149,8 +151,8 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
 
         .. code:: shell
 
-            mdsanima-dev-converts frames-to-timecode --frames 240 --fps 24
-            mdsanima-dev-converts frames-to-timecode --help
+            mdsanima-dev frames-to-timecode --frames 240 --fps 24
+            mdsanima-dev frames-to-timecode --help
 
     :usage:
 
@@ -164,7 +166,7 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
 
         .. seealso:: Invoke function
             :bdg-link-primary-line:`frames_to_timecode
-            <../module-converts/#function-frames-to-timecode>`
+            <../../module/converts/#function-frames-to-timecode>`
             with a given arguments values.
     """
     # run calculation
@@ -189,8 +191,8 @@ def shell_timecode_to_frames(timecode: str, fps: float) -> str:
 
         .. code:: shell
 
-            mdsanima-dev-converts timecode-to-frames --time-code 00:00:10:00 --fps 24
-            mdsanima-dev-converts timecode-to-frames --help
+            mdsanima-dev timecode-to-frames --time-code 00:00:10:00 --fps 24
+            mdsanima-dev timecode-to-frames --help
 
     :usage:
 
@@ -204,7 +206,7 @@ def shell_timecode_to_frames(timecode: str, fps: float) -> str:
 
         .. seealso:: Invoke function
             :bdg-link-primary-line:`timecode_to_frames
-            <../module-converts/#function-timecode-to-frames>`
+            <../../module/converts/#function-timecode-to-frames>`
             with a given arguments values.
     """
     # run calculation
@@ -227,7 +229,7 @@ def _parser_shell_converts_timecode() -> None:
         description=ap_desc,
         epilog=ap_copy,
         formatter_class=argparse.RawTextHelpFormatter,
-        prog="mdsanima-dev-converts",
+        prog="mdsanima-dev",
     )
     ap.add_argument(
         "-v", "--version", action="version", version="%(prog)s v" + __version__

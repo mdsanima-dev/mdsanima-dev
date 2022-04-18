@@ -1,7 +1,9 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""Printing a colored table in the terminal console output."""
+"""Module ``table`` is for printing a colored table in the terminal console
+output.
+"""
 
 
 from mdsanima_dev import colors
@@ -16,9 +18,9 @@ class table:
     def colors(self, color: int = 255) -> int:
         """Initial color table. Only use for this class.
 
-        :param color: Color of the table, defaults to `255`.
+        :param color: Color of the table, defaults to ``255``.
         :type color: int, optional
-        :return: Number of colors from `colors` module.
+        :return: Number of colors from ``colors`` module.
         :rtype: int
         """
         self.tab_color = color
@@ -55,13 +57,13 @@ class table:
 
         :param header: Headers text.
         :type header: str
-        :param hcolor: Color of text, defaults to `255`.
+        :param hcolor: Color of text, defaults to ``255``.
         :type hcolor: int, optional
-        :param top: Check connecting top, defaults to `False`.
+        :param top: Check connecting top, defaults to ``False``.
         :type top: bool, optional
-        :param bot: Check connecting bootom, defaults to `False`.
+        :param bot: Check connecting bootom, defaults to ``False``.
         :type bot: bool, optional
-        :param tcolor: Table color, defaults to `255`.
+        :param tcolor: Table color, defaults to ``255``.
         :type tcolor: int, optional
         :return: Headers element of template table.
         :rtype: str
@@ -116,15 +118,15 @@ class table:
         :type content_key: str
         :param content_val: Second text value in the right.
         :type content_val: str
-        :param key_color: Text color content key, defaults to `255`.
+        :param key_color: Text color content key, defaults to ``255``.
         :type key_color: int, optional
-        :param val_color: Text color content value, defaults to `255`.
+        :param val_color: Text color content value, defaults to ``255``.
         :type val_color: int, optional
-        :param top: Check connecting top, defaults to `False`.
+        :param top: Check connecting top, defaults to ``False``.
         :type top: bool, optional
-        :param bot: Check connecting bootom, defaults to `False`.
+        :param bot: Check connecting bootom, defaults to ``False``.
         :type bot: bool, optional
-        :param tcolor: Table color, defaults to `255`.
+        :param tcolor: Table color, defaults to ``255``.
         :type tcolor: int, optional
         :return: Content element of template table.
         :rtype: str
@@ -181,7 +183,7 @@ class table_elem:
     def __init__(self, color: int) -> str:
         """Initial function element of the table.
 
-        :param color: Number of color from `colors` module.
+        :param color: Number of color from ``colors`` module.
         :type color: int
         :return: Color value.
         :rtype: str

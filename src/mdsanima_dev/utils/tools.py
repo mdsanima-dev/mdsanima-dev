@@ -1,7 +1,9 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""There are some useful functions that I usually use for *Python* coding."""
+"""Module ``tools`` contains some useful functions that I usually use for
+*Python* coding.
+"""
 
 
 import time
@@ -83,7 +85,7 @@ def machine(text: str, speed: int = 0.1) -> str:
 
     :param text: Text to be entered as an animation.
     :type text: str
-    :param speed: Time after each print letter, defaults to `0.1`.
+    :param speed: Time after each print letter, defaults to ``0.1``.
     :type speed: int, optional
     :return: Printing text in the console as an animation.
     :rtype: str
@@ -133,19 +135,19 @@ class progress:
         """Initial function. These values can be set individually to the
         different progress bar.
 
-        :param txt_first: First text, defaults to `get data`.
+        :param txt_first: First text, defaults to ``get data``.
         :type txt_first: str, optional
-        :param txt_end: End text, defaults to `done`.
+        :param txt_end: End text, defaults to ``done``.
         :type txt_end: str, optional
-        :param txt_first_color: Color first text, defaults to `112`.
+        :param txt_first_color: Color first text, defaults to ``112``.
         :type txt_first_color: int, optional
-        :param txt_end_color: Color end text, defaults to `192`.
+        :param txt_end_color: Color end text, defaults to ``192``.
         :type txt_end_color: int, optional
-        :param bar_sten_color: Color parenthesis, defaults to `203`.
+        :param bar_sten_color: Color parenthesis, defaults to ``203``.
         :type bar_sten_color: int, optional
-        :param bar_color: Color bar progress, defaults to `113`.
+        :param bar_color: Color bar progress, defaults to ``113``.
         :type bar_color: int, optional
-        :param percent_color: Color percent text, defaults to `243`.
+        :param percent_color: Color percent text, defaults to ``243``.
         :type percent_color: int, optional
         :return: One line progress bar animation.
         :rtype: str

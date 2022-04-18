@@ -15,7 +15,7 @@
 
 <!-- start info-mdsanima-dev -->
 
-*Python* package [`mdsanima-dev`](https://pypi.org/project/mdsanima-dev) is for
+*Python* package [mdsanima-dev](https://pypi.org/project/mdsanima-dev) is for
 colorizing, adding emoji and making table on console shell print output.
 You can find here *Python* modules that's make coding easier and cooler,
 includes several useful modules that we use in various projects.
@@ -23,23 +23,23 @@ Also, in the future we're add more cool function on this package.
 
 <!-- end info-mdsanima-dev -->
 
-Docomentation available at [`GitHub Pages`][link-08], be sure to check it.
+Docomentation available at [GitHub Pages][link-08], be sure to check it.
 
 ## Installation
 
 <!-- start help-started -->
 
 Instructions how to install the *Python* package
-[`mdsanima-dev`](https://pypi.org/project/mdsanima-dev) on your system.
+[mdsanima-dev](https://pypi.org/project/mdsanima-dev) on your system.
 
 <!-- end help-started -->
 
 <!-- start help-installation -->
 
-Options [`PyPI`](#using-pypi), [`Setup`](#using-setup) or
-[`Wheel`](#using-wheel) allows you to install the package **globally** on
+Options [PyPI](#using-pypi), [Setup](#using-setup) or
+[Wheel](#using-wheel) allows you to install the package **globally** on
 your system. If you want to install the package in an **isolated environment**
-on your system use the [`virtualenv`](#on-virtualenv) options.
+on your system use the [virtualenv](#on-virtualenv) options.
 
 <!-- end help-installation -->
 
@@ -85,7 +85,7 @@ python3 -m pip uninstall mdsanima-dev
 
 Install the package using `easy install` options, but this is an deprecated
 method and not recommend using this, instead of this method please use
-[`Wheel`](#using-wheel) options for install.
+[Wheel](#using-wheel) options for install.
 
 Clone repository with all number of commits history using HTTPS:
 
@@ -112,7 +112,7 @@ python3 setup.py install
 <!-- start help-using-wheel -->
 
 Build package from source then install it. Clone the repository just like in
-the [`Using Setup`](#using-setup) statement then type in the terminal:
+the [Using Setup](#using-setup) statement then type in the terminal:
 
 ```shell
 python3 setup.py sdist bdist_wheel
@@ -120,7 +120,7 @@ python3 setup.py sdist bdist_wheel
 
 The package build creates new directories where the installation files are
 located the `build` and `dist` directories. Then install the package just like
-in the [`Using PyPI`](#using-pypi) statement, but instead of entering the
+in the [Using PyPI](#using-pypi) statement, but instead of entering the
 package name, give the path to the `.whl` file that was built earlier:
 
 ```shell
@@ -157,8 +157,8 @@ Finnaly install the package in virtual environment, type in the terminal:
 pip install mdsanima-dev
 ```
 
-Also you can use [`PyPI`](#using-pypi), [`Setup`](#using-setup) or
-[`Wheel`](#using-wheel) options.
+Also you can use [PyPI](#using-pypi), [Setup](#using-setup) or
+[Wheel](#using-wheel) options.
 
 Deactivate virtual environment, type in the terminal:
 
@@ -166,15 +166,15 @@ Deactivate virtual environment, type in the terminal:
 deactivate
 ```
 
-You can use also [`venv`](https://docs.python.org/3/tutorial/venv.html) instead
-of this option.
+You can use also [venv](https://docs.python.org/3/tutorial/venv.html) instead
+of this option, just type `python3 -m venv venv` in the terminal.
 
 <!-- end help-on-virtualenv -->
 
 ## Develempent
 
 Instruction for the *Python* package development. Please check the
-[`documentation`][link-08] site for more information.
+[documentation][link-08] site for more information.
 
 ## Showcase
 
@@ -197,8 +197,8 @@ These are my social media account, be sure to check it. Thanks!
 
 ## License
 
-Python package [`mdsanima-dev`][link-02] developed by
-[`Marcin Różewski`][link-10] is released under the terms of
+Python package [mdsanima-dev][link-02] developed by
+[Marcin Różewski][link-10] is released under the terms of
 [MIT License][link-11]
 
 [badge-pe]: https://static.pepy.tech/personalized-badge/mdsanima-dev?period=total&units=none&left_color=grey&right_color=yellowgreen&left_text=downloads
