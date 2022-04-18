@@ -1,4 +1,4 @@
-# MODULE {bdg-success-line}`CONVERTS`
+# {octicon}`file-code;1em;sd-text-secondary` `CONVERTS`
 
 ```{eval-rst}
 .. automodule:: mdsanima_dev.utils.converts

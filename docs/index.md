@@ -1,6 +1,6 @@
-# MDSANIMA DEVELOPMENT
+# {octicon}`organization;1em;sd-text-secondary`{bdg-info-line}`MDSANIMA DEVELOPMENT`
 
-Welcome in **MDSANIMA-DEV** documentation site.
+Welcome in documentation site.
 
 ```{include} ../README.md
 :start-after: <!-- start info-mdsanima-dev -->
@@ -22,47 +22,25 @@ Every day we learn something new.
 :hidden:
 
 installation
-project/index
-tutorials/index
+tutorial/index
 ```
 
-## Python Modules
-
-This is all modules include of this package.
-
 ```{toctree}
+:hidden:
 :maxdepth: 3
-:caption: Python Modules
+:caption: Package
 
-module-colors
-module-converts
-module-emoji
-module-table
-module-tools
+module/index
+command/index
 ```
 
-## Command Line
-
-This shell console script options allowing you to converting selected function
-directly in command line in the terminal window like *bash*, *zsh*,
-*PowerShell* and more.
-
 ```{toctree}
-:maxdepth: 3
-:caption: Command Line
-
-shell-converts
-```
-
-## Development
-
-Helping instruction for development workflow and release deployment.
-
-```{toctree}
+:hidden:
 :maxdepth: 2
-:caption: Development
+:caption: Project
 
-workflow
+project/index
+development/index
 changelog
 license
 ```

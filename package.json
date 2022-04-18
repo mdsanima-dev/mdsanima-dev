@@ -99,27 +99,27 @@
     "types": [
       {
         "type": "feat",
-        "section": "{bdg-success-line}`FEATURES`",
+        "section": "{octicon}`telescope;1em;sd-text-secondary`{bdg-success-line}`FEATURES`",
         "hidden": false
       },
       {
         "type": "fix",
-        "section": "{bdg-warning-line}`BUG FIXES`",
+        "section": "{octicon}`pulse;1em;sd-text-secondary`{bdg-warning-line}`BUG FIXES`",
         "hidden": false
       },
       {
         "type": "docs",
-        "section": "{bdg-info-line}`DOCUMENTATION`",
+        "section": "{octicon}`book;1em;sd-text-secondary`{bdg-info-line}`DOCUMENTATION`",
         "hidden": false
       },
       {
         "type": "test",
-        "section": "{bdg-danger-line}`TESTS`",
+        "section": "{octicon}`tools;1em;sd-text-secondary`{bdg-danger-line}`TESTS`",
         "hidden": false
       },
       {
         "type": "build",
-        "section": "{bdg-secondary-line}`BUILD SYSTEM`",
+        "section": "{octicon}`server;1em;sd-text-secondary`{bdg-secondary-line}`BUILD SYSTEM`",
         "hidden": true
       },
       {
@@ -135,7 +135,7 @@
         "hidden": true
       }
     ],
-    "header": "# {octicon}`checklist;1em;sd-text-secondary sd-px-1` CHANGELOG\n\nAll notable changes to this project will be documented in this file.\n\nPlease check\n[standard-version](https://github.com/conventional-changelog/standard-version)\nand documentation for commit guidelines. Also you should check\n[conventional-changelog](https://github.com/mdsanima/conventional-changelog)\nfor more detail.\n\nDocomentation for *Python* package\n[mdsanima-dev](https://pypi.org/project/mdsanima-dev) is available\nat [GitHub Pages](https://mdsanima-dev.github.io/mdsanima-dev/)\nbe sure to check it.\n"
+    "header": "# {octicon}`checklist;1em;sd-text-secondary`{bdg-danger-line}`CHANGELOG`\n\nAll notable changes to this project will be documented in this file.\n\nPlease check\n[standard-version](https://github.com/conventional-changelog/standard-version)\nand documentation for commit guidelines. Also you should check\n[conventional-changelog](https://github.com/mdsanima/conventional-changelog)\nfor more detail.\n\nDocomentation for *Python* package\n[mdsanima-dev](https://pypi.org/project/mdsanima-dev) is available\nat [GitHub Pages](https://mdsanima-dev.github.io/mdsanima-dev/)\nbe sure to check it.\n"
   },
   "scripts": {
     "check": "standard-version --dry-run",

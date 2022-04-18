@@ -1,10 +1,10 @@
-# WORKFLOW
+# {octicon}`workflow;1em;sd-text-secondary` `WORKFLOW`
 
 Instruction steps how to implement the release version and documentation site.
 
-## Python Package
+## Python Package Coding
 
-For [`Python`][python] coding we're using [`Visual Studio Code`][vscode] and we
+For [Python][python] coding we're using [Visual Studio Code][vscode] and we
 love this editor so much. Editor configuration setup is defined in
 `.editorconfig` and `pyproject.toml` file, we use `black` and `isort`
 configuration defined in this file.
@@ -16,7 +16,7 @@ your local system typing `virtualenv .venv` and activating
 
 ### Add New Module
 
-Write a new module to an existing package. Use the [`black`][black] code
+Write a new module to an existing package. Use the [black][black] code
 formatter. We always try to write *Python* code with limit all lines to a
 **maximum of 79 characters**. In addition, we try to keep the documentation and
 the `.md` markdown files according to this specification, not to exceed this
@@ -24,7 +24,7 @@ limit as well. In some cases, unfortunately, this cannot be avoided, such as
 pasting long links.
 
 ```{important}
-Please check the official [`PEP 8 - Style Guide for Python Code`][pep]
+Please check the official [PEP 8 - Style Guide for Python Code][pep]
 specification on section maximum line length.
 ```
 
@@ -53,19 +53,19 @@ pip install --force-reinstall dist/mdsanima_dev-0.1.1-py3-none-any.whl
 In this case I used the `--force-reinstall` option because I had an earlier
 version of this package already installed.
 
-Now you're ready to [`Build Documentation`](#build-documentation) site localy
-and upload your distributions to [`PyPI`](#send-to-pypi) using `Twine`.
+Now you're ready to [Build Documentation](#build-documentation) site localy
+and upload your distributions to [PyPI](#send-to-pypi) using `Twine`.
 
 ```{tip}
-If you have trouble, please check [`Packaging Python Projects`][pack] tutorial
-and [`Packaging and Distributing Projects`][dist] guides on official *Python*
+If you have trouble, please check [Packaging Python Projects][pack] tutorial
+and [Packaging and Distributing Projects][dist] guides on official *Python*
 site.
 ```
 
 ## Build Documentation
 
-Documentation are created automatically using [`Sphinx`][sphinx] based on
-[`Python`][python] files and the information they contain written in comments.
+Documentation are created automatically using [Sphinx][sphinx] based on
+[Python][python] files and the information they contain written in comments.
 
 ```{warning}
 This options build documentaiton localy only for testing. Directory
@@ -73,8 +73,8 @@ This options build documentaiton localy only for testing. Directory
 for build documentation deployments.
 ```
 
-The first thing you need to do is [`Add New Module`](#add-new-module) along
-with the documentation. Then install it using the [`Wheel`](#build-package)
+The first thing you need to do is [Add New Module](#add-new-module) along
+with the documentation. Then install it using the [Wheel](#build-package)
 option and finally build the documentation typing in the terminal:
 
 ```shell
@@ -104,12 +104,12 @@ don't have one, you can just go to the above-mentioned directory and type
 specific interface use the `--bind 127.0.0.1` options.
 
 Now just go to your browser and enter the
-[`localhost:8080`](http://localhost:8080/) address.
+[localhost:8080](http://localhost:8080/) address.
 
 ## Automate Release
 
 Automate versioning and CHANGELOG generation, with
-[`Semantic Versioning`][semver] and [`Conventional Commits`][convcommits].
+[Semantic Versioning][semver] and [Conventional Commits][convcommits].
 Generate changelogs and release notes from a project's commit messages and
 metadata.
 
@@ -119,7 +119,7 @@ changelog file for the project and tracking version on the *Python* package
 based on commit messages.
 
 ```{important}
-Please check the [`Commit Guide`][convcommits] site for proper commit message
+Please check the [Commit Guide][convcommits] site for proper commit message
 to generate CHANGELOG file.
 ```
 
@@ -140,7 +140,7 @@ standard-version release
 Command above for create release run script defined in `package.json` file on
 script section `standard-version --commit-all --sign` which means bumping
 version, adding changes in changelog, commiting all files and adding tag with
-[`Signing Commits`][gpg] using GPG keys.
+[Signing Commits][gpg] using GPG keys.
 
 For checking if everything is ok, type in the terminal:
 
@@ -172,13 +172,13 @@ standard-version --skip.bump --skip.changelog --commit-all --sign
 
 After executing this command all changed files will be committed with the
 current version and new tag will be created. Commiting `package.json`,
-`__init__.py`, `CHANGELOG.md` and other file with [`Signed Commits`][gpg]
+`__init__.py`, `CHANGELOG.md` and other file with [Signed Commits][gpg]
 approval with GPG keys.
 
 ## Send to PyPI
 
 We're almost done. If all steps is done, finally you can uploading your project
-to [`PyPI`](https://pypi.org/project/mdsanima-dev).
+to [PyPI](https://pypi.org/project/mdsanima-dev).
 
 When you ran the command to create your distribution, a new directory `dist`
 was created under your project's root directory. That's where you'll find your
@@ -191,7 +191,7 @@ twine check dist/*
 ```
 
 Before releasing on main PyPI repo, you might prefer training with the
-[`TestPyPI`](https://test.pypi.org) which is cleaned on a semi regular
+[TestPyPI](https://test.pypi.org) which is cleaned on a semi regular
 basis.
 
 Send to `TestPyPI` using `Twine`, type in the terminal:
@@ -200,7 +200,7 @@ Send to `TestPyPI` using `Twine`, type in the terminal:
 twine upload --repository testpypi dist/*
 ```
 
-Then go to [`test.pypi.org`](https://test.pypi.org/project/mdsanima-dev)
+Then go to [test.pypi.org](https://test.pypi.org/project/mdsanima-dev)
 site and check the package, if everything is ok, install it using `TestPyPI`
 with `pip`. You can tell `pip` to download packages from `TestPyPI` instead of
 `PyPI` by specifying the `--index-url` flag, type in the terminal:
@@ -209,7 +209,7 @@ with `pip`. You can tell `pip` to download packages from `TestPyPI` instead of
 python3 -m pip install --index-url https://test.pypi.org/simple/ mdsanima-dev
 ```
 
-Finally we can send our package to [`pypi.org`](https://pypi.org/) main site.
+Finally we can send our package to [pypi.org](https://pypi.org/) main site.
 
 Send to `PyPI` using `Twine`, type in the terminal:
 
@@ -218,8 +218,8 @@ twine upload dist/*
 ```
 
 ```{tip}
-If you have trouble, please check [`Using TestPyPI`][testpypi] guides and
-[`Uploading your Project to PyPI`][sendpypi] guides on official *Python* site.
+If you have trouble, please check [Using TestPyPI][testpypi] guides and
+[Uploading your Project to PyPI][sendpypi] guides on official *Python* site.
 ```
 
 [python]: https://www.python.org/

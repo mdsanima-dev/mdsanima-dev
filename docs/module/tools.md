@@ -1,4 +1,4 @@
-# MODULE {bdg-success-line}`TOOLS`
+# {octicon}`file-code;1em;sd-text-secondary` `TOOLS`
 
 ```{eval-rst}
 .. automodule:: mdsanima_dev.utils.tools
@@ -29,11 +29,11 @@
 ```
 
 ```{eval-rst}
-.. figure:: ./_images/gif/mdsanima_dev_python_machine.gif
+.. figure:: ../_images/gif/mdsanima_dev_python_machine.gif
     :name: show-python-machine
 ```
 
-## Class {bdg-info-line}`progress`
+## Class {bdg-primary-line}`progress`
 
 ```{eval-rst}
 .. autoclass:: mdsanima_dev.utils.tools.progress
@@ -58,6 +58,6 @@
 ```
 
 ```{eval-rst}
-.. figure:: ./_images/gif/mdsanima_dev_python_progress.gif
+.. figure:: ../_images/gif/mdsanima_dev_python_progress.gif
     :name: show-python-progress
 ```

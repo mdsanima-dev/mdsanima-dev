@@ -1,4 +1,4 @@
-# SHELL {bdg-danger-line}`CONVERTS`
+# {octicon}`file-binary;1em;sd-text-secondary` `CONVERTS`
 
 Converting directly in shell console script on the command line.
 
@@ -13,25 +13,25 @@ both shell command line script and *Python* module.
 
 - Python Function
 {bdg-link-primary-line}`frames_to_timecode
-<../module-converts/#function-frames-to-timecode>` → Console Script
-{bdg-link-secondary-line}`frames-to-timecode <#converts-frames-to-timecode>`
+<../../module/converts/#function-frames-to-timecode>` → Console Script
+{bdg-link-warning-line}`frames-to-timecode <#converts-frames-to-timecode>`
 - Python Function
 {bdg-link-primary-line}`timecode_to_frames
-<../module-converts/#function-timecode-to-frames>` → Console Script
-{bdg-link-secondary-line}`timecode-to-frames <#converts-timecode-to-frames>`
+<../../module/converts/#function-timecode-to-frames>` → Console Script
+{bdg-link-warning-line}`timecode-to-frames <#converts-timecode-to-frames>`
 ```
 
-## Command {bdg-warning-line}`mdsanima-dev-converts`
+## Command {bdg-warning-line}`mdsanima-dev`
 
 Choose converts options which you want to use.
 
-### Converts {bdg-secondary-line}`frames-to-timecode`
+### Converts {bdg-warning-line}`frames-to-timecode`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.utils.converts.shell_frames_to_timecode
 ```
 
-### Converts {bdg-secondary-line}`timecode-to-frames`
+### Converts {bdg-warning-line}`timecode-to-frames`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.utils.converts.shell_timecode_to_frames

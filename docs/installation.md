@@ -1,4 +1,4 @@
-# GETTING {bdg-info-line}`STARTED`
+# {octicon}`desktop-download;1em;sd-text-secondary`{bdg-primary-line}`GETTING STARTED`
 
 ```{include} ../README.md
 :start-after: <!-- start help-started -->
