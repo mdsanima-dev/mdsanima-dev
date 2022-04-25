@@ -13,40 +13,29 @@
 [![github-deployments][badge-09]][link-07]
 [![github-pages-documentation][badge-10]][link-08]
 
-<!-- start info-mdsanima-dev -->
-
-*Python* package [mdsanima-dev](https://pypi.org/project/mdsanima-dev) is for
-colorizing, adding emoji and making table on console shell print output.
-You can find here *Python* modules that's make coding easier and cooler,
-includes several useful modules that we use in various projects.
-Also, in the future we're add more cool function on this package.
-
-<!-- end info-mdsanima-dev -->
+*Python* package [mdsanima-dev][link-02] is for colorizing, adding emoji and
+making table on console shell print output. You can find here *Python* modules
+that's make coding easier and cooler, includes several useful modules that
+we're use in various projects. In the future we're add more cool function on
+this package.
 
 Docomentation available at [GitHub Pages][link-08], be sure to check it.
 
 ## Installation
 
-<!-- start help-started -->
-
-Instructions how to install the *Python* package
-[mdsanima-dev](https://pypi.org/project/mdsanima-dev) on your system.
-
-<!-- end help-started -->
+Instructions how to install the *Python* package [mdsanima-dev][link-02] on
+your system.
 
 <!-- start help-installation -->
-
-Options [PyPI](#using-pypi), [Setup](#using-setup) or
-[Wheel](#using-wheel) allows you to install the package **globally** on
+Options [PyPI](#using-pypi), [setup](#using-setup) or
+[wheel](#using-wheel) allows you to install the package **globally** on
 your system. If you want to install the package in an **isolated environment**
 on your system use the [virtualenv](#on-virtualenv) options.
-
 <!-- end help-installation -->
 
 ### Using `PyPI`
 
 <!-- start help-using-pypi -->
-
 Install latest version:
 
 ```shell
@@ -76,16 +65,14 @@ Uninstall package:
 ```shell
 python3 -m pip uninstall mdsanima-dev
 ```
-
 <!-- end help-using-pypi -->
 
-### Using `Setup`
+### Using `setup`
 
 <!-- start help-using-setup -->
-
 Install the package using `easy install` options, but this is an deprecated
 method and not recommend using this, instead of this method please use
-[Wheel](#using-wheel) options for install.
+[wheel](#using-wheel) options for install.
 
 Clone repository with all number of commits history using HTTPS:
 
@@ -104,15 +91,13 @@ Then go to the repository directory `cd mdsanima-dev` and install the package:
 ```shell
 python3 setup.py install
 ```
-
 <!-- end help-using-setup -->
 
-### Using `Wheel`
+### Using `wheel`
 
 <!-- start help-using-wheel -->
-
 Build package from source then install it. Clone the repository just like in
-the [Using Setup](#using-setup) statement then type in the terminal:
+the [using setup](#using-setup) statement then type in the terminal:
 
 ```shell
 python3 setup.py sdist bdist_wheel
@@ -120,7 +105,7 @@ python3 setup.py sdist bdist_wheel
 
 The package build creates new directories where the installation files are
 located the `build` and `dist` directories. Then install the package just like
-in the [Using PyPI](#using-pypi) statement, but instead of entering the
+in the [using PyPI](#using-pypi) statement, but instead of entering the
 package name, give the path to the `.whl` file that was built earlier:
 
 ```shell
@@ -129,13 +114,11 @@ python3 -m pip install --force-reinstall dist/mdsanima_dev-0.1.1-py3-none-any.wh
 
 In this case I used the `--force-reinstall` option because I had an earlier
 version of this package already installed.
-
 <!-- end help-using-wheel -->
 
 ### On `virtualenv`
 
 <!-- start help-on-virtualenv -->
-
 Create and activate virtual environment in hidden folder, type in the terminal:
 
 ```shell
@@ -157,19 +140,18 @@ Finnaly install the package in virtual environment, type in the terminal:
 pip install mdsanima-dev
 ```
 
-Also you can use [PyPI](#using-pypi), [Setup](#using-setup) or
-[Wheel](#using-wheel) options.
+Also you can use [PyPI](#using-pypi), [setup](#using-setup) or
+[wheel](#using-wheel) options.
 
 Deactivate virtual environment, type in the terminal:
 
 ```shell
 deactivate
 ```
+<!-- end help-on-virtualenv -->
 
 You can use also [venv](https://docs.python.org/3/tutorial/venv.html) instead
 of this option, just type `python3 -m venv venv` in the terminal.
-
-<!-- end help-on-virtualenv -->
 
 ## Develempent
 
