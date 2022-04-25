@@ -22,14 +22,28 @@
 }
 
 /* middle content */
-.content {
+/* .content {
     width: 46em;
-}
+} */
+
+/* sidebar right and left */
+/* .sidebar-container, .toc-drawer {
+    width: 16em;
+} */
 
 /* no line search */
 .sidebar-search {
     border-bottom: 0px;
     border-top: 0px;
+}
+
+/* colors and fonts */
+h1, h2, h3, h4 {
+    color: var(--color-mdsanima-sky-500);
+}
+h2, h3, h4 {
+    font-family: monospace;
+    color: var(--color-mdsanima-teal-500);
 }
 
 /* space sidebar left */
@@ -40,8 +54,8 @@ body {
 
 /* dark theme customization */
 body:not([data-theme=light]) {
-    --color-brand-primary: var(--color-mdsanima-sky-500); /* text link left sidebar */
-    --color-brand-content: var(--color-mdsanima-sky-500); /* text link code */
+    --color-brand-primary: var(--color-mdsanima-teal-500); /* text link left sidebar */
+    --color-brand-content: var(--color-mdsanima-teal-500); /* text link code */
     --color-background-primary: var(--color-mdsanima-bg-primary); /* content right */
     --color-background-secondary: var(--color-mdsanima-bg-primary); /* content left */
     --color-background-border: var(--color-mdsanima-code); /* no line */
@@ -51,6 +65,7 @@ body:not([data-theme=light]) {
     --color-problematic: var(--color-mdsanima-sky-800); /* code function left */
     --color-highlight-on-target: var(--color-mdsanima-code); /* target click */
     --sd-color-primary-highlight: var(--color-mdsanima-sky-800); /* badge link text hover */
+    --color-admonition-title--seealso: var(--color-mdsanima-teal-500); /* color admonition */
 }
 
 /* code block python colors */
@@ -72,7 +87,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: var(--color-mdsanima-sky-800);
+    color: var(--color-mdsanima-teal-800);
 }
 
 /* code all */
@@ -85,42 +100,10 @@ p code.literal {
     border: 1px solid var(--color-mdsanima-code);
 }
 
-/* directives right border color */
+/* directives right left no border color */
 .admonition {
-    border-right: 0.2rem solid var(--color-admonition-title);
-}
-.admonition.caution {
-    border-right-color: var(--color-admonition-title--caution);
-}
-.admonition.warning {
-    border-right-color: var(--color-admonition-title--warning);
-}
-.admonition.danger {
-    border-right-color: var(--color-admonition-title--danger);
-}
-.admonition.attention {
-    border-right-color: var(--color-admonition-title--attention);
-}
-.admonition.error {
-    border-right-color: var(--color-admonition-title--error);
-}
-.admonition.hint {
-    border-right-color: var(--color-admonition-title--hint);
-}
-.admonition.tip {
-    border-right-color: var(--color-admonition-title--tip);
-}
-.admonition.important {
-    border-right-color: var(--color-admonition-title--important);
-}
-.admonition.note {
-    border-right-color: var(--color-admonition-title--note);
-}
-.admonition.seealso {
-    border-right-color: var(--color-admonition-title--seealso);
-}
-.admonition.admonition-todo {
-    border-right-color: var(--color-admonition-title--admonition-todo);
+    border-left: 0rem solid var(--color-admonition-title);
+    border-right: 0rem solid var(--color-admonition-title);
 }
 
 /* badge no border */
@@ -131,6 +114,12 @@ p code.literal {
 /* code no bacground */
 :is(h1, h2, h3, h4, .sidebar-scroll, .toc-scroll, .related-pages, .toctree-wrapper) code.literal {
     background: var(--color-mdsanima-bg-primary);
+}
+:is(h1, h2, h3, h4, .toc-scroll, .related-pages) code.literal {
+    color: var(--color-mdsanima-sky-500);
+}
+.toc-scroll code.literal {
+    font-size: var(--font-size--small);
 }
 
 /* badge text and border color */
@@ -170,22 +159,44 @@ p code.literal {
     font-size: 1.0rem;
 }
 
+/* change icon color when active installation and tutorials */
+:is(h1 :is(.sd-octicon-organization, .sd-octicon-desktop-download, .sd-octicon-mortar-board, .sd-octicon-telescope), .sidebar-tree .current>.reference :is(.sd-octicon-organization, .sd-octicon-desktop-download, .sd-octicon-mortar-board, .sd-octicon-telescope)) {
+    fill: var(--color-mdsanima-teal-500);
+}
+
 /* change icon color when active python modules */
-:is(h1 .sd-octicon-file-code, .sidebar-tree .current>.reference .sd-octicon-file-code) {
-    fill: var(--color-mdsanima-lime-600);
+:is(h1 :is(.sd-octicon-beaker, .sd-octicon-file-code), .sidebar-tree .current>.reference :is(.sd-octicon-beaker, .sd-octicon-file-code)) {
+    fill: var(--color-mdsanima-teal-500);
 }
 
 /* change icon color when active terminal commands */
-:is(h1 .sd-octicon-file-binary, .sidebar-tree .current>.reference .sd-octicon-file-binary) {
-    fill: var(--color-mdsanima-orange-500);
+:is(h1 :is(.sd-octicon-terminal, .sd-octicon-file-binary), .sidebar-tree .current>.reference :is(.sd-octicon-terminal, .sd-octicon-file-binary)) {
+    fill: var(--color-mdsanima-teal-500);
 }
 
-/* change icon color when active project development */
-:is(h1 .sd-octicon-workflow, .sidebar-tree .current>.reference .sd-octicon-workflow) {
-    fill: var(--color-mdsanima-red-500);
+/* change icon color when active project */
+:is(h1 :is(.sd-octicon-plug, .sd-octicon-rocket, .sd-octicon-workflow, .sd-octicon-checklist, .sd-octicon-law), .sidebar-tree .current>.reference :is(.sd-octicon-plug, .sd-octicon-rocket, .sd-octicon-workflow, .sd-octicon-checklist, .sd-octicon-law)) {
+    fill: var(--color-mdsanima-teal-500);
 }
 
 /* animation on click */
 :is(h1 .sd-octicon, .sidebar-tree .current-page>.reference .sd-octicon) {
     animation: 0.5s ease-out 0s 1 normal none running sd-slide-from-left;
+    fill: var(--color-mdsanima-teal-500);
+}
+
+/* page toctree sidebar right fonts */
+.toctree-wrapper, .toc-tree {
+    font-family: monospace;
+    font-size: var(--font-size--small);
+}
+
+/* fix icon rotate */
+.related-pages a.prev-page svg.sd-octicon {
+    transform: rotate(0deg);
+}
+
+/* remove icon on related pages */
+.related-pages svg {
+    display: none;
 }
