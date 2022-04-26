@@ -112,7 +112,7 @@ p code.literal {
 :is(h1, h2, h3, h4, .sidebar-scroll, .toc-scroll, .related-pages, .toctree-wrapper) code.literal {
     background: var(--color-mdsanima-bg-primary);
 }
-:is(h1, h2, h3, h4, .toc-scroll, .related-pages) code.literal {
+:is(h1, h2, h3, h4, .related-pages, .toc-tree li.scroll-current>.reference) code.literal {
     color: var(--color-mdsanima-sky-500);
 }
 .toc-scroll code.literal {
