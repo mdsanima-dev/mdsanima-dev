@@ -63,6 +63,7 @@ body:not([data-theme=light]) {
     --sd-color-primary-highlight: var(--color-mdsanima-sky-800); /* badge link text hover */
     --color-admonition-title--seealso: var(--color-mdsanima-teal-500); /* color admonition */
     --color-sidebar-link-text--top-level: var(--color-mdsanima-sky-500); /* color link sidebar */
+    --sd-color-card-background: var(--color-mdsanima-bg-secondary); /* color bg card */
 }
 
 /* code block python colors */
@@ -187,4 +188,11 @@ body:not([data-theme="light"]) .highlight .nb {
 }
 body:not([data-theme="light"]) .highlight .m {
     color: #d0d0d0;
+}
+
+/* adjust gif on home page */
+img[alt~="mdsanima-dev-python-show-gif"] {
+    max-width: 86%;
+    margin: auto;
+    display: block;
 }
