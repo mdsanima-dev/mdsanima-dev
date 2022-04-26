@@ -170,3 +170,21 @@ p code.literal {
 .related-pages code.literal {
     padding: 0%;
 }
+
+/* custom code block colors */
+body:not([data-theme="light"]) .highlight :is(.kn, .kc) {
+    color: var(--color-mdsanima-lime-600);
+}
+body:not([data-theme="light"]) .highlight :is(.nn, .nf, .mi, .mf) {
+    color: var(--color-mdsanima-sky-500);
+    text-decoration: none;
+}
+body:not([data-theme="light"]) .highlight .s2 {
+    color: var(--color-mdsanima-orange-500);
+}
+body:not([data-theme="light"]) .highlight .nb {
+    color: var(--color-mdsanima-teal-500);
+}
+body:not([data-theme="light"]) .highlight .m {
+    color: #d0d0d0;
+}
