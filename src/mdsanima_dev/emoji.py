@@ -2,14 +2,17 @@
 
 
 """Module ``emoji`` is for request data of emoji from
-`unicode.org <https://unicode.org>`_ site and store all emoji data inside
-`.josn` file on this *Python* package as dictionary.
+`unicode.org <https://unicode.org>`_ :octicon:`link-external;0.8em` site and
+store all emoji data inside `.josn` file on this *Python* package as
+dictionary.
 
 .. important:: This module only get data from
     `Full Emoji List
-    <https://unicode.org/emoji/charts/full-emoji-list.html>`_ and
+    <https://unicode.org/emoji/charts/full-emoji-list.html>`_
+    :octicon:`link-external;0.8em` and
     `Full Emoji Modifiers
-    <https://unicode.org/emoji/charts/full-emoji-modifiers.html>`_ links.
+    <https://unicode.org/emoji/charts/full-emoji-modifiers.html>`_
+    :octicon:`link-external;0.8em` links.
 """
 
 
@@ -34,9 +37,8 @@ def emoji_get_url_data(emoji_url: str) -> str:
     """This function request emoji data url and waiting raise for status.
     If status ok returning data text for further processing.
 
-    .. warning:: This function only used for request data in function
-        :bdg-link-primary-line:`emoji_clean_url_data
-        <#function-emoji-clean-url-data>`
+    .. warning:: This function only used for request data in
+        `emoji_clean_url_data <#function-emoji-clean-url-data>`_ function.
 
     :param emoji_url: Link to emoticons.
     :type emoji_url: str
@@ -294,8 +296,7 @@ def emoji_clean_url_data(
 
 def emoji_load_json_data() -> dict:
     """This function loading the json data generated on previous
-    :bdg-link-primary-line:`emoji_clean_url_data
-    <#function-emoji-clean-url-data>` function.
+    `emoji_clean_url_data <#function-emoji-clean-url-data>`_ function.
 
     :return: Dictionary json on all emoji with joining two json ``emoji_list``
         and ``emoji_modifiers``.
@@ -323,10 +324,10 @@ def emoji_load_json_data() -> dict:
 class emoji:
     """This class has methods for printing various emoji functions.
 
-    .. warning:: Class :bdg-link-primary-line:`show <#class-show>` print all
-        emoji with calling methods inside this class. We're recommended used
-        only class :bdg-link-primary-line:`show(emoji) <#class-show>` to print
-        `big head`, `medium head`, or just only one `emoji`.
+    .. warning:: Class `show <#class-show>`_ print all emoji with calling
+        methods inside this class. We're recommended used only class
+        `show(emoji) <#class-show>`_ to print `big head`, `medium head`, or
+        just only one `emoji`.
     """
 
     def __init__(self) -> str:

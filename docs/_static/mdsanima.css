@@ -8,6 +8,7 @@
     --color-mdsanima-lime-600: #65A30D;
     --color-mdsanima-teal-500: #14B8A6;
     --color-mdsanima-teal-600: #0D9488;
+    --color-mdsanima-teal-700: #0F766E;
     --color-mdsanima-teal-800: #115E59;
     --color-mdsanima-orange-500: #F97316;
     --color-mdsanima-red-500: #EF4444;
@@ -21,25 +22,20 @@
     display: none;
 }
 
-/* middle content */
-/* .content {
-    width: 46em;
-} */
-
-/* sidebar right and left */
-/* .sidebar-container, .toc-drawer {
-    width: 16em;
-} */
-
 /* no line search */
 .sidebar-search {
     border-bottom: 0px;
     border-top: 0px;
 }
 
+/* brand text size */
+.sidebar-brand-text {
+    font-size: 1.0rem;
+}
+
 /* colors and fonts */
 h1, h2, h3, h4 {
-    color: var(--color-mdsanima-sky-500);
+    color: var(--color-mdsanima-teal-500);
 }
 h2, h3, h4 {
     font-family: monospace;
@@ -66,6 +62,7 @@ body:not([data-theme=light]) {
     --color-highlight-on-target: var(--color-mdsanima-code); /* target click */
     --sd-color-primary-highlight: var(--color-mdsanima-sky-800); /* badge link text hover */
     --color-admonition-title--seealso: var(--color-mdsanima-teal-500); /* color admonition */
+    --color-sidebar-link-text--top-level: var(--color-mdsanima-sky-500); /* color link sidebar */
 }
 
 /* code block python colors */
@@ -87,7 +84,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: var(--color-mdsanima-teal-800);
+    color: var(--color-mdsanima-teal-700);
 }
 
 /* code all */
@@ -154,31 +151,6 @@ p code.literal {
     border-color: var(--color-mdsanima-red-500) !important;
 }
 
-/* brand text size */
-.sidebar-brand-text {
-    font-size: 1.0rem;
-}
-
-/* change icon color when active installation and tutorials */
-:is(h1 :is(.sd-octicon-organization, .sd-octicon-desktop-download, .sd-octicon-mortar-board, .sd-octicon-telescope), .sidebar-tree .current>.reference :is(.sd-octicon-organization, .sd-octicon-desktop-download, .sd-octicon-mortar-board, .sd-octicon-telescope)) {
-    fill: var(--color-mdsanima-teal-500);
-}
-
-/* change icon color when active python modules */
-:is(h1 :is(.sd-octicon-beaker, .sd-octicon-file-code), .sidebar-tree .current>.reference :is(.sd-octicon-beaker, .sd-octicon-file-code)) {
-    fill: var(--color-mdsanima-teal-500);
-}
-
-/* change icon color when active terminal commands */
-:is(h1 :is(.sd-octicon-terminal, .sd-octicon-file-binary), .sidebar-tree .current>.reference :is(.sd-octicon-terminal, .sd-octicon-file-binary)) {
-    fill: var(--color-mdsanima-teal-500);
-}
-
-/* change icon color when active project */
-:is(h1 :is(.sd-octicon-plug, .sd-octicon-rocket, .sd-octicon-workflow, .sd-octicon-checklist, .sd-octicon-law), .sidebar-tree .current>.reference :is(.sd-octicon-plug, .sd-octicon-rocket, .sd-octicon-workflow, .sd-octicon-checklist, .sd-octicon-law)) {
-    fill: var(--color-mdsanima-teal-500);
-}
-
 /* animation on click */
 :is(h1 .sd-octicon, .sidebar-tree .current-page>.reference .sd-octicon) {
     animation: 0.5s ease-out 0s 1 normal none running sd-slide-from-left;
@@ -191,12 +163,10 @@ p code.literal {
     font-size: var(--font-size--small);
 }
 
-/* fix icon rotate */
-.related-pages a.prev-page svg.sd-octicon {
-    transform: rotate(0deg);
-}
-
-/* remove icon on related pages */
-.related-pages svg {
+/* remove icon on related pages and toctree */
+.related-pages svg, .toctree-wrapper svg {
     display: none;
+}
+.related-pages code.literal {
+    padding: 0%;
 }

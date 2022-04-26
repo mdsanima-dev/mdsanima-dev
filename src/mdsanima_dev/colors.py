@@ -34,8 +34,7 @@ def set_complex_color() -> str:
 
 def get_color(text: str = "mdsanima", color: int = 255) -> str:
     """This function is almost the same as
-    :bdg-link-primary-line:`get_complex_color <#function-get-complex-color>`
-    function.
+    `get_complex_color <#function-get-complex-color>`_ function.
 
     The difference is that the return is a sequence of unicode characters
     and to get the output in the terminal in a color you need to use the
@@ -64,8 +63,7 @@ def get_color(text: str = "mdsanima", color: int = 255) -> str:
             print(mds_a, mds_b)
 
         Also you can use
-        :bdg-link-primary-line:`machine
-        <../tools/#function-machine>` function:
+        `machine <../tools/#function-machine>`_ function:
 
         .. code:: python
 

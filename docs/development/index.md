@@ -1,6 +1,6 @@
-# {octicon}`rocket;1em;sd-text-secondary`{bdg-danger-line}`DEVELOPMENT`
+# {octicon}`rocket;1em;sd-text-secondary` `DEVELOPMENT`
 
-## Development Help
+## DEVELOPMENT `HELP`
 
 Helping instruction for development workflow and release deployment.
 
@@ -8,4 +8,6 @@ Helping instruction for development workflow and release deployment.
 :maxdepth: 3
 
 workflow
+changelog
+license
 ```

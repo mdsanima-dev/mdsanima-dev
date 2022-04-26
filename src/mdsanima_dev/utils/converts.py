@@ -57,8 +57,8 @@ def frames_to_timecode(frames: int, fps: float) -> str:
             mdsanima-dev frames-to-timecode --help
 
         .. seealso:: Shell console script
-            :bdg-link-warning-line:`frames-to-timecode
-            <../../command/converts/#converts-frames-to-timecode>`
+            `frames-to-timecode
+            <../../commands/converts/#converts-frames-to-timecode>`_
             converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -111,8 +111,8 @@ def timecode_to_frames(timecode: str, fps: float) -> int:
             mdsanima-dev timecode-to-frames --help
 
         .. seealso:: Shell console script
-            :bdg-link-warning-line:`timecode-to-frames
-            <../../command/converts/#converts-timecode-to-frames>`
+            `timecode-to-frames
+            <../../commands/converts/#converts-timecode-to-frames>`_
             converting directly on the command line.
     """
     # assigning a function to a variable setup seconds
@@ -165,8 +165,8 @@ def shell_frames_to_timecode(frames: int, fps: float) -> str:
             print(timecode)
 
         .. seealso:: Invoke function
-            :bdg-link-primary-line:`frames_to_timecode
-            <../../module/converts/#function-frames-to-timecode>`
+            `frames_to_timecode
+            <../../modules/converts/#function-frames-to-timecode>`_
             with a given arguments values.
     """
     # run calculation
@@ -205,8 +205,8 @@ def shell_timecode_to_frames(timecode: str, fps: float) -> str:
             print(frames)
 
         .. seealso:: Invoke function
-            :bdg-link-primary-line:`timecode_to_frames
-            <../../module/converts/#function-timecode-to-frames>`
+            `timecode_to_frames
+            <../../modules/converts/#function-timecode-to-frames>`_
             with a given arguments values.
     """
     # run calculation

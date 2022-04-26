@@ -1,11 +1,11 @@
-# {octicon}`organization;1em;sd-text-secondary`{bdg-info-line}`MDSANIMA DEVELOPMENT`
+# {octicon}`organization;1em;sd-text-secondary` `MDSANIMA DEVELOPMENT`
 
-Welcome in documentation site.
-
-```{include} ../README.md
-:start-after: <!-- start info-mdsanima-dev -->
-:end-before: <!-- end info-mdsanima-dev -->
-```
+Welcome in [mdsanima-dev {octicon}`link-external;0.8em`][pypi-mdsanima-dev]
+documentation site. This *Python* package is for colorizing, adding emoji and
+making table on console shell print output. You can find here *Python* modules
+that's make coding easier and cooler, includes several useful modules that
+we're use in various projects. In the future we're add more cool function on
+this package.
 
 ![mdsanima-dev-python-show-gif](_images/gif/mdsanima_dev_python_show.gif)
 
@@ -21,8 +21,8 @@ Every day we learn something new.
 ```{toctree}
 :hidden:
 
-installation
-tutorial/index
+getting-started
+tutorials/index
 ```
 
 ```{toctree}
@@ -30,8 +30,8 @@ tutorial/index
 :maxdepth: 3
 :caption: Package
 
-module/index
-command/index
+modules/index
+commands/index
 ```
 
 ```{toctree}
@@ -41,6 +41,7 @@ command/index
 
 project/index
 development/index
-changelog
-license
+sponsor
 ```
+
+[pypi-mdsanima-dev]: https://pypi.org/project/mdsanima-dev

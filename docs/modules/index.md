@@ -1,6 +1,6 @@
-# {octicon}`beaker;1em;sd-text-secondary`{bdg-success-line}`PYTHON MODULES`
+# {octicon}`beaker;1em;sd-text-secondary` `PYTHON MODULES`
 
-## All Modules
+## ALL `MODULES`
 
 This is list of all modules include of this *Python* package.
 

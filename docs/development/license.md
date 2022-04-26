@@ -1,4 +1,4 @@
-# {octicon}`law;1em;sd-text-secondary`{bdg-danger-line}`LICENSE`
+# {octicon}`law;1em;sd-text-secondary` `LICENSE`
 
-```{include} ../LICENSE
+```{include} ../../LICENSE
 ```

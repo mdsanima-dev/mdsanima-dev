@@ -8,13 +8,13 @@
 .. versionadded:: 0.1.1
 ```
 
-## Function {bdg-primary-line}`frames_to_timecode`
+## FUNCTION `frames_to_timecode`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.utils.converts.frames_to_timecode
 ```
 
-## Function {bdg-primary-line}`timecode_to_frames`
+## FUNCTION `timecode_to_frames`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.utils.converts.timecode_to_frames

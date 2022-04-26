@@ -4,31 +4,31 @@
 .. automodule:: mdsanima_dev.colors
 ```
 
-## Function {bdg-primary-line}`set_complex_color`
+## FUNCTION `set_complex_color`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.colors.set_complex_color
 ```
 
-## Function {bdg-primary-line}`get_color`
+## FUNCTION `get_color`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.colors.get_color
 ```
 
-## Function {bdg-primary-line}`get_complex_color`
+## FUNCTION `get_complex_color`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.colors.get_complex_color
 ```
 
-## Function {bdg-primary-line}`show_complex_color`
+## FUNCTION `show_complex_color`
 
 ```{eval-rst}
 .. autofunction:: mdsanima_dev.colors.show_complex_color
 ```
 
-### Example {bdg-primary-line}`show_complex_color(False)`
+### EXAMPLE `show_complex_color(False)`
 
 ```{eval-rst}
 This is a example screenshots of the `Shell Terminal` in different variants,
@@ -60,7 +60,7 @@ just for fun.
             :name: show-complex-color-false-dk-b
 ```
 
-### Example {bdg-primary-line}`show_complex_color(True)`
+### EXAMPLE `show_complex_color(True)`
 
 ```{eval-rst}
 This is a example screenshots of the `Shell Terminal` in different variants,
@@ -95,7 +95,6 @@ just for fun.
 ```{eval-rst}
 .. note::
     Now you know what numbers you have withs different colors, now you can use
-    the function
-    :bdg-link-primary-line:`get_complex_color <#function-get-complex-color>`
-    in your code.
+    the function `get_complex_color <#function-get-complex-color>`_ in your
+    code.
 ```

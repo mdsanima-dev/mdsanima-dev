@@ -135,7 +135,7 @@
         "hidden": true
       }
     ],
-    "header": "# {octicon}`checklist;1em;sd-text-secondary`{bdg-danger-line}`CHANGELOG`\n\nAll notable changes to this project will be documented in this file.\n\nPlease check\n[standard-version](https://github.com/conventional-changelog/standard-version)\nand documentation for commit guidelines. Also you should check\n[conventional-changelog](https://github.com/mdsanima/conventional-changelog)\nfor more detail.\n\nDocomentation for *Python* package\n[mdsanima-dev](https://pypi.org/project/mdsanima-dev) is available\nat [GitHub Pages](https://mdsanima-dev.github.io/mdsanima-dev/)\nbe sure to check it.\n"
+    "header": "# {octicon}`checklist;1em;sd-text-secondary` `CHANGELOG`\n\nAll notable changes to this project will be documented in this file.\n\nPlease check\n[standard-version {octicon}`link-external;0.8em`](https://github.com/conventional-changelog/standard-version)\nand documentation for commit guidelines. Also you should check\n[conventional-changelog {octicon}`link-external;0.8em`](https://github.com/mdsanima/conventional-changelog)\nfor more detail.\n\nDocomentation for *Python* package\n[mdsanima-dev {octicon}`link-external;0.8em`](https://pypi.org/project/mdsanima-dev) is available\nat [GitHub Pages {octicon}`link-external;0.8em`](https://mdsanima-dev.github.io/mdsanima-dev/)\nbe sure to check it.\n"
   },
   "scripts": {
     "check": "standard-version --dry-run",

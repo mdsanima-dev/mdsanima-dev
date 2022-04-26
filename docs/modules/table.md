@@ -4,7 +4,7 @@
 .. automodule:: mdsanima_dev.utils.table
 ```
 
-## Class {bdg-primary-line}`table`
+## CLASS `table`
 
 ```{eval-rst}
 .. autoclass:: mdsanima_dev.utils.table.table
@@ -14,7 +14,7 @@
     .. automethod:: connect
 ```
 
-### Method {bdg-primary-line}`headers()`
+### METHOD `headers()`
 
 ```{eval-rst}
 .. automethod:: mdsanima_dev.utils.table.table.headers
@@ -45,7 +45,7 @@
             :name: show-table-01-dk-b
 ```
 
-### Method {bdg-primary-line}`content()`
+### METHOD `content()`
 
 ```{eval-rst}
 .. automethod:: mdsanima_dev.utils.table.table.content
@@ -76,47 +76,47 @@
             :name: show-table-02-dk-b
 ```
 
-## Class {bdg-primary-line}`table_elem`
+## CLASS `table_elem`
 
 ```{eval-rst}
 .. autoclass:: mdsanima_dev.utils.table.table_elem
 ```
 
-### Method {bdg-primary-line}`bot()`
+### METHOD `bot()`
 
 ```{eval-rst}
 .. automethod:: mdsanima_dev.utils.table.table_elem.bot
 ```
 
-### Method {bdg-primary-line}`con()`
+### METHOD `con()`
 
 ```{eval-rst}
 .. automethod:: mdsanima_dev.utils.table.table_elem.con
 ```
 
-### Method {bdg-primary-line}`hed()`
+### METHOD `hed()`
 
 ```{eval-rst}
 .. automethod:: mdsanima_dev.utils.table.table_elem.hed
 ```
 
-### Method {bdg-primary-line}`mid()`
+### METHOD `mid()`
 
 ```{eval-rst}
 .. automethod:: mdsanima_dev.utils.table.table_elem.mid
 ```
 
-### Method {bdg-primary-line}`top()`
+### METHOD `top()`
 
 ```{eval-rst}
 .. automethod:: mdsanima_dev.utils.table.table_elem.top
 ```
 
-### Example Usage
+### EXAMPLE `USAGE`
 
 This is a example function to make a colored table on class
-{bdg-link-primary-line}`table_elem <#class-table-elem>` method. These example show
-three different tables that are not linked together:
+[table_elem](#class-table-elem) method. These example show three different
+tables that are not linked together:
 
 ```python
 from mdsanima_dev.utils.table import table_elem
