@@ -60,6 +60,7 @@ html_favicon = "_static/logo/squere/png/logo_mdsanima_default_02-sky_1x.png"
 
 # html options
 html_show_sphinx = True
+html_last_updated_fmt = "%d %B %Y, at %H:%M:%S"
 
 # theme options custom
 html_theme_options = {

@@ -80,6 +80,13 @@ body:not([data-theme=light]) .highlight-shell .highlight {
     border-right: 0.2rem solid var(--color-mdsanima-orange-500);
 }
 
+/* code block makrdown colors */
+body:not([data-theme=light]) .highlight-markdown .highlight {
+    background: var(--color-mdsanima-code);
+    border-left: 0.2rem solid var(--color-mdsanima-sky-500);
+    border-right: 0.2rem solid var(--color-mdsanima-sky-500);
+}
+
 /* no link underline and hover color */
 a {
     text-decoration: none;
