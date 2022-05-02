@@ -1,0 +1,205 @@
+/* Copyritht © 2022 Marcin Różewski MDSANIMA */
+
+/* colors palette definition mdsanima */
+:root {
+    --color-mdsanima-sky-500: #0EA5E9;
+    --color-mdsanima-sky-600: #0284C7;
+    --color-mdsanima-sky-800: #075985;
+    --color-mdsanima-lime-600: #65A30D;
+    --color-mdsanima-teal-500: #14B8A6;
+    --color-mdsanima-teal-600: #0D9488;
+    --color-mdsanima-teal-700: #0F766E;
+    --color-mdsanima-teal-800: #115E59;
+    --color-mdsanima-orange-500: #F97316;
+    --color-mdsanima-red-500: #EF4444;
+    --color-mdsanima-code: #10141D;
+    --color-mdsanima-bg-primary: #010409;
+    --color-mdsanima-bg-secondary: #05080E;
+}
+
+/* theme button disable only dark theme */
+.theme-toggle {
+    display: none;
+}
+
+/* no line search */
+.sidebar-search {
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+/* brand text size */
+.sidebar-brand-text {
+    font-size: 1.0rem;
+}
+
+/* colors and fonts */
+h1, h2, h3, h4 {
+    color: var(--color-mdsanima-teal-500);
+}
+h2, h3, h4 {
+    font-family: monospace;
+    color: var(--color-mdsanima-teal-500);
+}
+
+/* space sidebar left */
+body {
+    --sidebar-tree-space-above: 1.0rem; /* space between search and first element */
+    --sidebar-caption-space-above: 0.8rem; /* space between caption elements */
+}
+
+/* dark theme customization */
+body:not([data-theme=light]) {
+    --color-brand-primary: var(--color-mdsanima-teal-500); /* text link left sidebar */
+    --color-brand-content: var(--color-mdsanima-teal-500); /* text link code */
+    --color-background-primary: var(--color-mdsanima-bg-primary); /* content right */
+    --color-background-secondary: var(--color-mdsanima-bg-primary); /* content left */
+    --color-background-border: var(--color-mdsanima-code); /* no line */
+    --color-background-hover: var(--color-mdsanima-bg-secondary); /* menu hover left */
+    --color-admonition-background: var(--color-mdsanima-bg-secondary); /* colors admonitions */
+    --color-api-name: var(--color-mdsanima-sky-600); /* code function right */
+    --color-problematic: var(--color-mdsanima-sky-800); /* code function left */
+    --color-highlight-on-target: var(--color-mdsanima-code); /* target click */
+    --sd-color-primary-highlight: var(--color-mdsanima-sky-800); /* badge link text hover */
+    --color-admonition-title--seealso: var(--color-mdsanima-teal-500); /* color admonition */
+    --color-sidebar-link-text--top-level: var(--color-mdsanima-sky-500); /* color link sidebar */
+    --sd-color-card-background: var(--color-mdsanima-bg-secondary); /* color bg card */
+}
+
+/* code block python colors */
+body:not([data-theme=light]) .highlight-python .highlight {
+    background: var(--color-mdsanima-code);
+    border-left: 0.2rem solid var(--color-mdsanima-lime-600);
+    border-right: 0.2rem solid var(--color-mdsanima-lime-600);
+}
+
+/* code block shell colors */
+body:not([data-theme=light]) .highlight-shell .highlight {
+    background: var(--color-mdsanima-code);
+    border-left: 0.2rem solid var(--color-mdsanima-orange-500);
+    border-right: 0.2rem solid var(--color-mdsanima-orange-500);
+}
+
+/* code block makrdown colors */
+body:not([data-theme=light]) .highlight-markdown .highlight {
+    background: var(--color-mdsanima-code);
+    border-left: 0.2rem solid var(--color-mdsanima-sky-500);
+    border-right: 0.2rem solid var(--color-mdsanima-sky-500);
+}
+
+/* no link underline and hover color */
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-mdsanima-teal-700);
+}
+
+/* code all */
+code.literal {
+    background: var(--color-mdsanima-code);
+}
+
+/* code paragraph */
+p code.literal {
+    border: 1px solid var(--color-mdsanima-code);
+}
+
+/* directives right left no border color */
+.admonition {
+    border-left: 0rem solid var(--color-admonition-title);
+    border-right: 0rem solid var(--color-admonition-title);
+}
+
+/* badge no border */
+:is(.sd-outline-primary, .sd-outline-secondary, .sd-outline-success, .sd-outline-info, .sd-outline-warning, .sd-outline-danger, .sd-outline-light, .sd-outline-dark) {
+    border-width: 0px !important;
+}
+
+/* code no bacground */
+:is(h1, h2, h3, h4, .sidebar-scroll, .toc-scroll, .related-pages, .toctree-wrapper) code.literal {
+    background: var(--color-mdsanima-bg-primary);
+}
+:is(h1, h2, h3, h4, .related-pages, .toc-tree li.scroll-current>.reference) code.literal {
+    color: var(--color-mdsanima-sky-500);
+}
+.toc-scroll code.literal {
+    font-size: var(--font-size--small);
+}
+
+/* badge text and border color */
+.sd-text-primary {
+    color: var(--color-mdsanima-sky-500) !important;
+}
+.sd-outline-primary {
+    border-color: var(--color-mdsanima-sky-500) !important;
+}
+.sd-text-success {
+    color: var(--color-mdsanima-lime-600) !important;
+}
+.sd-outline-success {
+    border-color: var(--color-mdsanima-lime-600) !important;
+}
+.sd-text-info {
+    color: var(--color-mdsanima-teal-500) !important;
+}
+.sd-outline-info {
+    border-color: var(--color-mdsanima-teal-500) !important;
+}
+.sd-text-warning {
+    color: var(--color-mdsanima-orange-500) !important;
+}
+.sd-outline-warning {
+    border-color: var(--color-mdsanima-orange-500) !important;
+}
+.sd-text-danger {
+    color: var(--color-mdsanima-red-500) !important;
+}
+.sd-outline-danger {
+    border-color: var(--color-mdsanima-red-500) !important;
+}
+
+/* animation on click */
+:is(h1 .sd-octicon, .sidebar-tree .current-page>.reference .sd-octicon) {
+    animation: 0.5s ease-out 0s 1 normal none running sd-slide-from-left;
+    fill: var(--color-mdsanima-teal-500);
+}
+
+/* page toctree sidebar right fonts */
+.toctree-wrapper, .toc-tree {
+    font-family: monospace;
+    font-size: var(--font-size--small);
+}
+
+/* remove icon on related pages and toctree */
+.related-pages svg, .toctree-wrapper svg {
+    display: none;
+}
+.related-pages code.literal {
+    padding: 0%;
+}
+
+/* custom code block colors */
+body:not([data-theme="light"]) .highlight :is(.kn, .kc) {
+    color: var(--color-mdsanima-lime-600);
+}
+body:not([data-theme="light"]) .highlight :is(.nn, .nf, .mi, .mf) {
+    color: var(--color-mdsanima-sky-500);
+    text-decoration: none;
+}
+body:not([data-theme="light"]) .highlight .s2 {
+    color: var(--color-mdsanima-orange-500);
+}
+body:not([data-theme="light"]) .highlight .nb {
+    color: var(--color-mdsanima-teal-500);
+}
+body:not([data-theme="light"]) .highlight .m {
+    color: #d0d0d0;
+}
+
+/* adjust gif on home page */
+img[alt~="mdsanima-dev-python-show-gif"] {
+    max-width: 86%;
+    margin: auto;
+    display: block;
+}

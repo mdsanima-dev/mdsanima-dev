@@ -1,0 +1,439 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="Changelog" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="https://mdsanima-dev.github.io/mdsanima-dev/development/changelog/" />
+  
+<meta property="og:description" content="All notable changes to this project will be documented in this file. See standard-version and README.md file for commit guidelines. Also you should check conventional-changelog for more detail. Doc..." />
+  
+<meta property="og:image" content="https://mdsanima-dev.github.io/mdsanima-dev/_static/images/mdsanima_dev_python_package.jpg" />
+  
+<meta property="og:image:alt" content="Changelog" />
+  
+<meta property="twitter:card" content="summary_large_image" /><link rel="index" title="Index" href="../../genindex/" /><link rel="search" title="Search" href="../../search/" /><link rel="next" title="LICENSE" href="../license/" /><link rel="prev" title="WORKFLOW" href="../workflow/" />
+
+    <link rel="shortcut icon" href="../../_static/logo_mdsanima_default_02-sky_1x.png"/><meta name="generator" content="sphinx-4.5.0, furo 2022.03.04"/>
+        <title>Changelog - mdsanima-dev 0.1.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=935aa2abcc5c1da4283d1dc201fb1f0add16d23a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=25ceb02ed1c46dc30f2321ff83e92799f69dfdb9" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mdsanima.css" />
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../"><div class="brand">mdsanima-dev 0.1.1 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../../">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../../_static/logo_mdsanima_default_02-sky.svg" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">mdsanima-dev 0.1.1 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search/" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/"><svg aria-hidden="true" class="sd-octicon sd-octicon-desktop-download sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M8.75 5V.75a.75.75 0 00-1.5 0V5H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 5H8.75zM1.5 2.75a.25.25 0 01.25-.25h3a.75.75 0 000-1.5h-3A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1h-3a.75.75 0 000 1.5h3a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">GETTING</span> <span class="pre">STARTED</span></code></a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/"><svg aria-hidden="true" class="sd-octicon sd-octicon-mortar-board sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M7.693 1.066a.75.75 0 01.614 0l7.25 3.25a.75.75 0 010 1.368L13 6.831v2.794c0 1.024-.81 1.749-1.66 2.173-.893.447-2.075.702-3.34.702-.278 0-.55-.012-.816-.036a.75.75 0 01.133-1.494c.22.02.45.03.683.03 1.082 0 2.025-.221 2.67-.543.69-.345.83-.682.83-.832V7.503L8.307 8.934a.75.75 0 01-.614 0L4 7.28v1.663c.296.105.575.275.812.512.438.438.688 1.059.688 1.796v3a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75v-3c0-.737.25-1.358.688-1.796.237-.237.516-.407.812-.512V6.606L.443 5.684a.75.75 0 010-1.368l7.25-3.25zM2.583 5L8 7.428 13.416 5 8 2.572 2.583 5zM2.5 11.25c0-.388.125-.611.25-.735a.704.704 0 01.5-.203c.19 0 .37.071.5.203.125.124.25.347.25.735v2.25H2.5v-2.25z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">QUICK</span> <span class="pre">TUTORIALS</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/how-to-install-python-on-ubuntu-linux-system/"><svg aria-hidden="true" class="sd-octicon sd-octicon-telescope sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M14.184 1.143a1.75 1.75 0 00-2.502-.57L.912 7.916a1.75 1.75 0 00-.53 2.32l.447.775a1.75 1.75 0 002.275.702l11.745-5.656a1.75 1.75 0 00.757-2.451l-1.422-2.464zm-1.657.669a.25.25 0 01.358.081l1.422 2.464a.25.25 0 01-.108.35l-2.016.97-1.505-2.605 1.85-1.26zM9.436 3.92l1.391 2.41-5.42 2.61-.942-1.63 4.97-3.39zM3.222 8.157l-1.466 1a.25.25 0 00-.075.33l.447.775a.25.25 0 00.325.1l1.598-.769-.83-1.436zm6.253 2.306a.75.75 0 00-.944-.252l-1.809.87a.75.75 0 00-.293.253L4.38 14.326a.75.75 0 101.238.848l1.881-2.75v2.826a.75.75 0 001.5 0v-2.826l1.881 2.75a.75.75 0 001.238-.848l-2.644-3.863z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">HOW</span> <span class="pre">TO</span> <span class="pre">INSTALL</span> <span class="pre">PYTHON</span> <span class="pre">3.10</span> <span class="pre">ON</span> <span class="pre">UBUNTU</span> <span class="pre">20.04</span> <span class="pre">LTS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/how-to-remove-trash-icon-from-ubuntu-desktop/"><svg aria-hidden="true" class="sd-octicon sd-octicon-telescope sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M14.184 1.143a1.75 1.75 0 00-2.502-.57L.912 7.916a1.75 1.75 0 00-.53 2.32l.447.775a1.75 1.75 0 002.275.702l11.745-5.656a1.75 1.75 0 00.757-2.451l-1.422-2.464zm-1.657.669a.25.25 0 01.358.081l1.422 2.464a.25.25 0 01-.108.35l-2.016.97-1.505-2.605 1.85-1.26zM9.436 3.92l1.391 2.41-5.42 2.61-.942-1.63 4.97-3.39zM3.222 8.157l-1.466 1a.25.25 0 00-.075.33l.447.775a.25.25 0 00.325.1l1.598-.769-.83-1.436zm6.253 2.306a.75.75 0 00-.944-.252l-1.809.87a.75.75 0 00-.293.253L4.38 14.326a.75.75 0 101.238.848l1.881-2.75v2.826a.75.75 0 001.5 0v-2.826l1.881 2.75a.75.75 0 001.238-.848l-2.644-3.863z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">HOW</span> <span class="pre">TO</span> <span class="pre">REMOVE</span> <span class="pre">THE</span> <span class="pre">TRASH</span> <span class="pre">ICON</span> <span class="pre">FROM</span> <span class="pre">UBUNTU</span> <span class="pre">DESKTOP</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/how-to-rename-local-and-remote-git-branch/"><svg aria-hidden="true" class="sd-octicon sd-octicon-telescope sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M14.184 1.143a1.75 1.75 0 00-2.502-.57L.912 7.916a1.75 1.75 0 00-.53 2.32l.447.775a1.75 1.75 0 002.275.702l11.745-5.656a1.75 1.75 0 00.757-2.451l-1.422-2.464zm-1.657.669a.25.25 0 01.358.081l1.422 2.464a.25.25 0 01-.108.35l-2.016.97-1.505-2.605 1.85-1.26zM9.436 3.92l1.391 2.41-5.42 2.61-.942-1.63 4.97-3.39zM3.222 8.157l-1.466 1a.25.25 0 00-.075.33l.447.775a.25.25 0 00.325.1l1.598-.769-.83-1.436zm6.253 2.306a.75.75 0 00-.944-.252l-1.809.87a.75.75 0 00-.293.253L4.38 14.326a.75.75 0 101.238.848l1.881-2.75v2.826a.75.75 0 001.5 0v-2.826l1.881 2.75a.75.75 0 001.238-.848l-2.644-3.863z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">HOW</span> <span class="pre">TO</span> <span class="pre">RENAME</span> <span class="pre">LOCAL</span> <span class="pre">AND</span> <span class="pre">REMOTE</span> <span class="pre">GIT</span> <span class="pre">BRANCH</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../modules/"><svg aria-hidden="true" class="sd-octicon sd-octicon-beaker sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M5 5.782V2.5h-.25a.75.75 0 010-1.5h6.5a.75.75 0 010 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 01-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 019.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 01-.633 1.153H3.233a.75.75 0 01-.633-1.153z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">PYTHON</span> <span class="pre">MODULES</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modules/colors/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">COLORS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modules/converts/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">CONVERTS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modules/emoji/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">EMOJI</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modules/table/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">TABLE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modules/tools/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">TOOLS</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../commands/"><svg aria-hidden="true" class="sd-octicon sd-octicon-terminal sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0114.25 15H1.75A1.75 1.75 0 010 13.25V2.75zm1.75-.25a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V2.75a.25.25 0 00-.25-.25H1.75zM7.25 8a.75.75 0 01-.22.53l-2.25 2.25a.75.75 0 11-1.06-1.06L5.44 8 3.72 6.28a.75.75 0 111.06-1.06l2.25 2.25c.141.14.22.331.22.53zm1.5 1.5a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">TERMINAL</span> <span class="pre">COMMANDS</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../commands/converts/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-binary sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2a.75.75 0 01-1.5 0v-2zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM0 7.75C0 6.784.784 6 1.75 6h1.5C4.216 6 5 6.784 5 7.75v2.5A1.75 1.75 0 013.25 12h-1.5A1.75 1.75 0 010 10.25v-2.5zm1.75-.25a.25.25 0 00-.25.25v2.5c0 .138.112.25.25.25h1.5a.25.25 0 00.25-.25v-2.5a.25.25 0 00-.25-.25h-1.5zm5-1.5a.75.75 0 000 1.5h.75v3h-.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5H9V6.75A.75.75 0 008.25 6h-1.5z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">CONVERTS</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../project/"><svg aria-hidden="true" class="sd-octicon sd-octicon-plug sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M10.276 3.09a.25.25 0 01.192-.09h.782a.25.25 0 01.25.25v8.5a.25.25 0 01-.25.25h-.782a.25.25 0 01-.192-.09l-.95-1.14a.75.75 0 00-.483-.264l-3.124-.39a.25.25 0 01-.219-.249V5.133a.25.25 0 01.219-.248l3.124-.39a.75.75 0 00.483-.265l.95-1.14zM4 8v1.867a1.75 1.75 0 001.533 1.737l2.83.354.761.912c.332.4.825.63 1.344.63h.782A1.75 1.75 0 0013 11.75V11h2.25a.75.75 0 000-1.5H13v-4h2.25a.75.75 0 000-1.5H13v-.75a1.75 1.75 0 00-1.75-1.75h-.782c-.519 0-1.012.23-1.344.63l-.76.913-2.831.353A1.75 1.75 0 004 5.133V6.5H2.5A2.5 2.5 0 000 9v5.25a.75.75 0 001.5 0V9a1 1 0 011-1H4z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">INFORMATION</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../project/about/"><svg aria-hidden="true" class="sd-octicon sd-octicon-organization sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">ABOUT</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../project/badge/"><svg aria-hidden="true" class="sd-octicon sd-octicon-tools sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">BADGE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../project/reference/"><svg aria-hidden="true" class="sd-octicon sd-octicon-paper-airplane sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M1.592 2.712L2.38 7.25h4.87a.75.75 0 110 1.5H2.38l-.788 4.538L13.929 8 1.592 2.712zM.989 8L.064 2.68a1.341 1.341 0 011.85-1.462l13.402 5.744a1.13 1.13 0 010 2.076L1.913 14.782a1.341 1.341 0 01-1.85-1.463L.99 8z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">REFERENCE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../project/social/"><svg aria-hidden="true" class="sd-octicon sd-octicon-share sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M7.823.177L4.927 3.073a.25.25 0 00.177.427H7.25v5.75a.75.75 0 001.5 0V3.5h2.146a.25.25 0 00.177-.427L8.177.177a.25.25 0 00-.354 0zM3.75 6.5a.25.25 0 00-.25.25v6.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25v-6.5a.25.25 0 00-.25-.25h-1a.75.75 0 010-1.5h1c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25v-6.5C2 5.784 2.784 5 3.75 5h1a.75.75 0 110 1.5h-1z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">SOCIAL</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../project/theme/"><svg aria-hidden="true" class="sd-octicon sd-octicon-gear sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M7.429 1.525a6.593 6.593 0 011.142 0c.036.003.108.036.137.146l.289 1.105c.147.56.55.967.997 1.189.174.086.341.183.501.29.417.278.97.423 1.53.27l1.102-.303c.11-.03.175.016.195.046.219.31.41.641.573.989.014.031.022.11-.059.19l-.815.806c-.411.406-.562.957-.53 1.456a4.588 4.588 0 010 .582c-.032.499.119 1.05.53 1.456l.815.806c.08.08.073.159.059.19a6.494 6.494 0 01-.573.99c-.02.029-.086.074-.195.045l-1.103-.303c-.559-.153-1.112-.008-1.529.27-.16.107-.327.204-.5.29-.449.222-.851.628-.998 1.189l-.289 1.105c-.029.11-.101.143-.137.146a6.613 6.613 0 01-1.142 0c-.036-.003-.108-.037-.137-.146l-.289-1.105c-.147-.56-.55-.967-.997-1.189a4.502 4.502 0 01-.501-.29c-.417-.278-.97-.423-1.53-.27l-1.102.303c-.11.03-.175-.016-.195-.046a6.492 6.492 0 01-.573-.989c-.014-.031-.022-.11.059-.19l.815-.806c.411-.406.562-.957.53-1.456a4.587 4.587 0 010-.582c.032-.499-.119-1.05-.53-1.456l-.815-.806c-.08-.08-.073-.159-.059-.19a6.44 6.44 0 01.573-.99c.02-.029.086-.075.195-.045l1.103.303c.559.153 1.112.008 1.529-.27.16-.107.327-.204.5-.29.449-.222.851-.628.998-1.189l.289-1.105c.029-.11.101-.143.137-.146zM8 0c-.236 0-.47.01-.701.03-.743.065-1.29.615-1.458 1.261l-.29 1.106c-.017.066-.078.158-.211.224a5.994 5.994 0 00-.668.386c-.123.082-.233.09-.3.071L3.27 2.776c-.644-.177-1.392.02-1.82.63a7.977 7.977 0 00-.704 1.217c-.315.675-.111 1.422.363 1.891l.815.806c.05.048.098.147.088.294a6.084 6.084 0 000 .772c.01.147-.038.246-.088.294l-.815.806c-.474.469-.678 1.216-.363 1.891.2.428.436.835.704 1.218.428.609 1.176.806 1.82.63l1.103-.303c.066-.019.176-.011.299.071.213.143.436.272.668.386.133.066.194.158.212.224l.289 1.106c.169.646.715 1.196 1.458 1.26a8.094 8.094 0 001.402 0c.743-.064 1.29-.614 1.458-1.26l.29-1.106c.017-.066.078-.158.211-.224a5.98 5.98 0 00.668-.386c.123-.082.233-.09.3-.071l1.102.302c.644.177 1.392-.02 1.82-.63.268-.382.505-.789.704-1.217.315-.675.111-1.422-.364-1.891l-.814-.806c-.05-.048-.098-.147-.088-.294a6.1 6.1 0 000-.772c-.01-.147.039-.246.088-.294l.814-.806c.475-.469.679-1.216.364-1.891a7.992 7.992 0 00-.704-1.218c-.428-.609-1.176-.806-1.82-.63l-1.103.303c-.066.019-.176.011-.299-.071a5.991 5.991 0 00-.668-.386c-.133-.066-.194-.158-.212-.224L10.16 1.29C9.99.645 9.444.095 8.701.031A8.094 8.094 0 008 0zm1.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM11 8a3 3 0 11-6 0 3 3 0 016 0z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">THEME</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../"><svg aria-hidden="true" class="sd-octicon sd-octicon-rocket sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M14.064 0a8.75 8.75 0 00-6.187 2.563l-.459.458c-.314.314-.616.641-.904.979H3.31a1.75 1.75 0 00-1.49.833L.11 7.607a.75.75 0 00.418 1.11l3.102.954c.037.051.079.1.124.145l2.429 2.428c.046.046.094.088.145.125l.954 3.102a.75.75 0 001.11.418l2.774-1.707a1.75 1.75 0 00.833-1.49V9.485c.338-.288.665-.59.979-.904l.458-.459A8.75 8.75 0 0016 1.936V1.75A1.75 1.75 0 0014.25 0h-.186zM10.5 10.625c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 00.119-.213v-2.066zM3.678 8.116L5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 00-.213.119l-1.2 1.95 1.782.547zm5.26-4.493A7.25 7.25 0 0114.063 1.5h.186a.25.25 0 01.25.25v.186a7.25 7.25 0 01-2.123 5.127l-.459.458a15.21 15.21 0 01-2.499 2.02l-2.317 1.5-2.143-2.143 1.5-2.317a15.25 15.25 0 012.02-2.5l.458-.458h.002zM12 5a1 1 0 11-2 0 1 1 0 012 0zm-8.44 9.56a1.5 1.5 0 10-2.12-2.12c-.734.73-1.047 2.332-1.15 3.003a.23.23 0 00.265.265c.671-.103 2.273-.416 3.005-1.148z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">DEVELOPMENT</span></code></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../workflow/"><svg aria-hidden="true" class="sd-octicon sd-octicon-workflow sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M0 1.75C0 .784.784 0 1.75 0h3.5C6.216 0 7 .784 7 1.75v3.5A1.75 1.75 0 015.25 7H4v4a1 1 0 001 1h4v-1.25C9 9.784 9.784 9 10.75 9h3.5c.966 0 1.75.784 1.75 1.75v3.5A1.75 1.75 0 0114.25 16h-3.5A1.75 1.75 0 019 14.25v-.75H5A2.5 2.5 0 012.5 11V7h-.75A1.75 1.75 0 010 5.25v-3.5zm1.75-.25a.25.25 0 00-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 00.25-.25v-3.5a.25.25 0 00-.25-.25h-3.5zm9 9a.25.25 0 00-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 00.25-.25v-3.5a.25.25 0 00-.25-.25h-3.5z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">WORKFLOW</span></code></a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Changelog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../license/"><svg aria-hidden="true" class="sd-octicon sd-octicon-law sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">LICENSE</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../sponsor/"><svg aria-hidden="true" class="sd-octicon sd-octicon-heart sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">SPONSOR</span></code></a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container"><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">#</a></h1>
+<p>All notable changes to this project will be documented in this file.
+See <a class="reference external" href="https://github.com/conventional-changelog/standard-version">standard-version</a>
+and <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file for commit guidelines. Also you should check <a class="reference external" href="https://github.com/mdsanima/conventional-changelog">conventional-changelog</a> for more detail.</p>
+<p>Docomentation for <strong>mdsanima-dev</strong> Python Package is available
+at <a class="reference external" href="https://mdsanima-dev.github.io/mdsanima-dev/">docs mdsanima-dev</a> be sure to check it.</p>
+<section id="id1">
+<h2>0.1.0<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p><em>Date:</em> <em>2021-08-13</em></p>
+<section id="features">
+<h3>Features<a class="headerlink" href="#features" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><strong>build-system:</strong> template file to help building <code class="docutils literal notranslate"><span class="pre">mdsanima-dev</span></code> python package (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/6839cab06a55b1a3e04831b361d50daa293e35a6">6839cab</a>)</p></li>
+<li><p><strong>build-system:</strong> this file is the build script for setuptools (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/54f990e0117648be830bc18ecf1ac97c7128028d">54f990e</a>)</p></li>
+<li><p><strong>colors:</strong> add color number show options <code class="docutils literal notranslate"><span class="pre">False</span></code> or <code class="docutils literal notranslate"><span class="pre">True</span></code> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/6670265db59900e048cc90435f897852c0931ab5">6670265</a>)</p></li>
+<li><p><strong>colors:</strong> add function <code class="docutils literal notranslate"><span class="pre">get_complex_color</span></code> colored text in console (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/7a6704c350116595976a50f8091c7fa60ad2f27e">7a6704c</a>)</p></li>
+<li><p><strong>colors:</strong> function <code class="docutils literal notranslate"><span class="pre">get_complex_color</span></code> works the same like print (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/76fab2ba7fd348096b5e36065e575c01542d3366">76fab2b</a>)</p></li>
+<li><p><strong>devs:</strong> workflow bumping version in <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> file closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/1">#1</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/d38babdeb405d4d4cd3d214a3dfe5a092b1799d8">d38babd</a>)</p></li>
+<li><p><strong>emoji:</strong> add two class for show entire collection of emoji (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/0ae038e751534bd7dc226472af863929d0d9fc4f">0ae038e</a>)</p></li>
+<li><p><strong>emoji:</strong> request data from url and store clean json dictionary (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/bfa0a946d0dfec09c079d255e46d43a44cc338a8">bfa0a94</a>)</p></li>
+<li><p><strong>standard-version:</strong> automate versioning and changelog generation (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/8ede8db885e42372ffb22e482df988a0130479d5">8ede8db</a>)</p></li>
+<li><p><strong>table:</strong> making a cool table what you wnat (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/3d28efeb998922dd20e056623d4ae210ce7e7004">3d28efe</a>)</p></li>
+<li><p><strong>tools:</strong> useful functions that I usually use fro python coding (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/20439f55c4f621502d9e46459085f51f7793d596">20439f5</a>)</p></li>
+<li><p>add function <code class="docutils literal notranslate"><span class="pre">show_complex_color</span></code> prints all avaiable colors (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/437969a61bc6a0d5f0093c061cc1a0064bd499a1">437969a</a>)</p></li>
+<li><p>initial python file required to import the directory as a package (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/cfefad56a43d09d6e7f73972fa2e060576c0c7e7">cfefad5</a>)</p></li>
+</ul>
+</section>
+<section id="bug-fixes">
+<h3>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>double parenthesis instead of single <code class="docutils literal notranslate"><span class="pre">__version__</span></code> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/38eb1ac331e0987b1dca985c1bf6a8eb981fd6e7">38eb1ac</a>)</p></li>
+<li><p><strong>build-system:</strong> fix documentation url <code class="docutils literal notranslate"><span class="pre">github-pages</span></code> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/0e00e360e6182c40d0671c410f6f345fe710a5d7">0e00e36</a>)</p></li>
+<li><p><strong>build-system:</strong> pacage name and dev dependencies (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/1b7f25feddc0686e37323937f00c240c79d8cc9e">1b7f25f</a>)</p></li>
+<li><p><strong>build-system:</strong> requires version of setuptools and clean code (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/c11f0d0b20b41fcfffc428e450b528d61faa591c">c11f0d0</a>)</p></li>
+<li><p><strong>colors:</strong> function <code class="docutils literal notranslate"><span class="pre">get_complex_color</span></code> now return string (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/ab24e342cec079bb8745dc724e92f53e16bf0cb0">ab24e34</a>)</p></li>
+<li><p><strong>docs:</strong> build directory for <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> html (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/13736c0f7d8918fda7dbc5412cad5e0f5dbb84e0">13736c0</a>)</p></li>
+<li><p>add name to <code class="docutils literal notranslate"><span class="pre">LICENSE</span></code> file (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/3258000bd33bf6270e42be9cd423bcccdf8d126d">3258000</a>)</p></li>
+<li><p>new script <code class="docutils literal notranslate"><span class="pre">npm</span></code> and data pacage on <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> file (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/db246aecb639665743234904e209e526c63756d8">db246ae</a>)</p></li>
+<li><p><strong>emoji:</strong> end of string parameter (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/9ef92e075712dd33995f9693a54b0208ce23d4ee">9ef92e0</a>)</p></li>
+<li><p><strong>progress:</strong> remove end string on progress bar (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/4abf6df0cf88cb34dceed0254acc440042871012">4abf6df</a>)</p></li>
+<li><p>add spaces on function arguments (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/b45720ce4adde3a2bebb75538db43b9e4da738cf">b45720c</a>)</p></li>
+<li><p>readme template (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/5f3ed982a3320489e7c1148f83abdfc5c1273ec9">5f3ed98</a>)</p></li>
+<li><p><strong>colors:</strong> now info <strong>show complex</strong> printing with colors (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/2dd0c138a298a004dbd818a7f2184e8eb0db22b0">2dd0c13</a>)</p></li>
+<li><p><strong>emoji:</strong> for installable python apps in develompment (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/191018b3b3c4ded9dd26829cdfb040067c73babf">191018b</a>)</p></li>
+<li><p><strong>emoji:</strong> removed unnecessary comment (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/b828e6ba8f8c5d5569a091f831a2fee8394c236d">b828e6b</a>)</p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">__version__</span></code> variable (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/1d1bd608ad73363ebf98c97cc2511db9869417c7">1d1bd60</a>)</p></li>
+<li><p>initial <strong>README</strong> <code class="docutils literal notranslate"><span class="pre">mdsanima-dev</span></code> python package (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/a92a0676d5b98d54218aed636f47f1ff21e0060d">a92a067</a>)</p></li>
+<li><p>template file helps consistent clean coding style (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/2118ae228ac517a1d9c406346b45dd69e8a2478b">2118ae2</a>)</p></li>
+</ul>
+</section>
+<section id="tests">
+<h3>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>printing data from <code class="docutils literal notranslate"><span class="pre">package.json</span></code> file to check if working (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/5359db722d2b44754701b7f4a490297e4ce6287e">5359db7</a>)</p></li>
+</ul>
+</section>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>fix badge and some docstring (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/16a27d64c1be1cb58d651a16a14b293572db0d3f">16a27d6</a>)</p></li>
+<li><p><strong>devs:</strong> development instruction workflow (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/7dfec4c72584f4d907df500cbc70a8514733199c">7dfec4c</a>)</p></li>
+<li><p><strong>gh-pages:</strong> build setup fixed (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/29a63e088e48d0f5b492c0c5c846a4969eb8ae4f">29a63e0</a>)</p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">toctree</span></code> changelog for <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> documentation (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/4aae2533f6edcae573baea5bb5cf82a24407cdf3">4aae253</a>)</p></li>
+<li><p>add badge to <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/6ee2d6b4a85852db6b3bd72c9dc921840dc54853">6ee2d6b</a>)</p></li>
+<li><p>add documentation string (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/7faf2b0213e8971fb073a6daac9f490cd0740f27">7faf2b0</a>)</p></li>
+<li><p>fix package name on <code class="docutils literal notranslate"><span class="pre">pypi</span></code> install (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/bde85ef73eb821f24ddf0b3d37551719b97b73f8">bde85ef</a>)</p></li>
+<li><p><strong>gh-pages:</strong> fix redirecting <code class="docutils literal notranslate"><span class="pre">url</span></code> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/7643624cfcab90e63981b3795813b87217bd661a">7643624</a>)</p></li>
+<li><p>fix duplicate label (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/2c2ed8aaeb91177452391adf5c36e7ef3ea2fbc2">2c2ed8a</a>)</p></li>
+<li><p><strong>fix:</strong> repository clone url (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/bee45c726c14a68eb4b09e745e28836980c98314">bee45c7</a>)</p></li>
+<li><p><strong>gh-pages:</strong> create empty <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code> closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/12">#12</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/5bb21b201c89951d794d88b2f4eb865f8b815ee0">5bb21b2</a>)</p></li>
+<li><p><strong>gh-pages:</strong> meta <code class="docutils literal notranslate"><span class="pre">url</span></code> refers <code class="docutils literal notranslate"><span class="pre">index.html</span></code> closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/11">#11</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/c4ceac7fdd3f5eeb64a42389d773f3ae3110149e">c4ceac7</a>)</p></li>
+<li><p><strong>gh-pages:</strong> meta contents refers to <code class="docutils literal notranslate"><span class="pre">build</span></code> shpinx closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/13">#13</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/5545f4a5618b4ab955679ffb13743ed70594bf0d">5545f4a</a>)</p></li>
+<li><p><strong>gif:</strong> add gif animation closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/10">#10</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/de8e9caa4fce235f21d2f3a2c58b13bcd94155a1">de8e9ca</a>), closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/2">#2</a></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">extension</span></code> and <code class="docutils literal notranslate"><span class="pre">markdown</span></code> parser closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/3">#3</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/38b3552116817fce65fc1e6b45587e43a9e5faea">38b3552</a>)</p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">README.md</span></code> information (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/2efd7574848e5f09b013f2efc98427a21b72d42d">2efd757</a>)</p></li>
+<li><p>add theme and html option closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/4">#4</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/765ed8e6b8c57e1118428737c6f78cc0ac60089b">765ed8e</a>)</p></li>
+<li><p>deteting old files <code class="docutils literal notranslate"><span class="pre">.rst</span></code> and make (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/778eee6a88c60f21a11a79127e4efdc0e958f6f5">778eee6</a>)</p></li>
+<li><p>sphinx documentation <code class="docutils literal notranslate"><span class="pre">colors</span></code> module closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/6">#6</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/5ff370f66112987f544856b54a1a91bd2469af80">5ff370f</a>)</p></li>
+<li><p>sphinx documentation <code class="docutils literal notranslate"><span class="pre">emoji</span></code> module closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/7">#7</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/727179192d844a744aeb0aac42f0f2ece05d27e8">7271791</a>)</p></li>
+<li><p>sphinx documentation <code class="docutils literal notranslate"><span class="pre">table</span></code> module closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/8">#8</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/c74429171e74bdc223fbc6a405f0c3597d313b44">c744291</a>)</p></li>
+<li><p>sphinx documentation <code class="docutils literal notranslate"><span class="pre">tools</span></code> module closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/9">#9</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/65a3a65c73e8b7655545a8200c11eedfb7562a63">65a3a65</a>)</p></li>
+<li><p>sphinx documentation main <code class="docutils literal notranslate"><span class="pre">index.md</span></code> files closes <a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/issues/5">#5</a> (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/d8eb0f16c07293cb52d2438d7d8e9713ae554e90">d8eb0f1</a>)</p></li>
+<li><p><strong>build-system:</strong> auto generate <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> python documentation (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/fbbe045e01dc0a39f3d3baa12d0bd3ca6082b1b7">fbbe045</a>)</p></li>
+<li><p><strong>colors:</strong> documentation colors string (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/d32576405c5d87234f60be3ad749444996b0b23f">d325764</a>)</p></li>
+<li><p><strong>emoji:</strong> add documentation string to a function (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/86c6037ca6db19b7b7ba5621c23f29befdd5fea6">86c6037</a>)</p></li>
+<li><p><strong>emoji:</strong> documentation emoji string (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/4853b788e5710d1ce965229f60342be0fb0dc00a">4853b78</a>)</p></li>
+<li><p><strong>gif:</strong> add gif animation showcase (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/b5c26e09250f977712488e8a7d88ef05f508fa39">b5c26e0</a>)</p></li>
+<li><p><strong>icons:</strong> add <code class="docutils literal notranslate"><span class="pre">mdsanima</span></code> icons logos variation (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/7ac931a6ac81f3b4bde45e4d9dfefc1056048bb0">7ac931a</a>)</p></li>
+<li><p><strong>screenshot:</strong> add console screenshot img (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/762bdc838b6776970fad0ebc028e4ece8c841990">762bdc8</a>)</p></li>
+<li><p><strong>table:</strong> add docstring for <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> documentation (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/bcb302840b5609974dc3c7708016b8c0b4b2f3d9">bcb3028</a>)</p></li>
+<li><p><strong>test:</strong> add screenshot test img (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/e77204b59065df1480c7fbe5761917daa8dfe0f0">e77204b</a>)</p></li>
+<li><p><strong>tools:</strong> add docstring for <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> documentation (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/7b0ac87fea5ccee06c4f2177844587b1294036b4">7b0ac87</a>)</p></li>
+<li><p>template configuration file shuld be changed (<a class="reference external" href="https://github.com/mdsanima-dev/mdsanima-dev/commit/3c7080fb64a72a55dbe7f18b4094e255b1cbd4ef">3c7080f</a>)</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../license/">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-law sd-text-secondary" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path></svg> <code class="docutils literal notranslate"><span class="pre">LICENSE</span></code></div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../workflow/">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-workflow sd-text-secondary" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M0 1.75C0 .784.784 0 1.75 0h3.5C6.216 0 7 .784 7 1.75v3.5A1.75 1.75 0 015.25 7H4v4a1 1 0 001 1h4v-1.25C9 9.784 9.784 9 10.75 9h3.5c.966 0 1.75.784 1.75 1.75v3.5A1.75 1.75 0 0114.25 16h-3.5A1.75 1.75 0 019 14.25v-.75H5A2.5 2.5 0 012.5 11V7h-.75A1.75 1.75 0 010 5.25v-3.5zm1.75-.25a.25.25 0 00-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 00.25-.25v-3.5a.25.25 0 00-.25-.25h-3.5zm9 9a.25.25 0 00-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 00.25-.25v-3.5a.25.25 0 00-.25-.25h-3.5z"></path></svg> <code class="docutils literal notranslate"><span class="pre">WORKFLOW</span></code></div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2021-2022, Marcin Różewski MDSANIMA
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on 02 May 2022, at 23:13:09</div>
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              <a class="muted-link " href="https://github.com/mdsanima-dev/mdsanima-dev/" aria-label="GitHub">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Changelog</a><ul>
+<li><a class="reference internal" href="#id1">0.1.0</a><ul>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#bug-fixes">Bug Fixes</a></li>
+<li><a class="reference internal" href="#tests">Tests</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/mdsanima.js"></script>
+    </body>
+</html>
