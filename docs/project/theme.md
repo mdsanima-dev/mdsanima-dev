@@ -9,7 +9,8 @@ off.
 
 If you want to check what changes have been made please check the
 `mdsanima.css` file which is in `/docs/_static/` directory on this package
-repository and you can also see it in [changelog](../development/changelog/).
+repository and you can also see it in [changelog](../development/changelog/)
+pages.
 
 You can navigate through the documentation by using the keyboard with the
 Left Arrow {kbd}`<` or Right Arrow {kbd}`>` key.
@@ -35,7 +36,11 @@ icon informing that you are going to another page like
 link which goes to the GitHub **mdsanima-dev** page organization.
 
 In addition, each documented page written in `markdown` should contain an
-appropriate metatag and corrected page title and description.
+appropriate metatag and corrected page title and description. For this options
+we're add [sphinxext-opengraph {octicon}`link-external;0.8em`][opengraph]
+extension to generate OpenGraph metadata. For debug metadata praview how our
+webpage documentation will look on Google, Facebook, Twitter and more please
+check [debug meta tag](../reference/#debug-meta-tag) links section.
 
 ```{important}
 Please just check how this file is written in the repository that generates
@@ -48,6 +53,8 @@ It may also happen that the text is not written correctly in the English
 language. My native language is Polish and please don't laugh if something is
 misspelled. Every day I try to improve my writing and speaking in English, but
 this is hard.
+
+[opengraph]: https://github.com/wpilibsuite/sphinxext-opengraph
 
 ## EXAMPLE `MARKDOWN`
 
@@ -138,12 +145,14 @@ icons.
 
 This is a example of adding a `img` or `svg` with custom size.
 
-<img src="../../_static/logo/squere/svg/logo_mdsanima_default_02-sky.svg" width="48" height="48">
+<img src="../../_static/logo/squere/svg/logo_mdsanima_default_02-sky.svg" width="67" height="67">
+<img src="../../_images/mdsanima_dev_python_package.jpg" width="128" height="67">
 
 Markdown should be a this `html` code:
 
 ```markdown
-<img src="../../_static/logo/squere/svg/logo_mdsanima_default_02-sky.svg" width="48" height="48">
+<img src="../../_static/logo/squere/svg/logo_mdsanima_default_02-sky.svg" width="67" height="67">
+<img src="../../_images/mdsanima_dev_python_package.jpg" width="128" height="67">
 ```
 
 ## EXAMPLE `BLOCK CODE`

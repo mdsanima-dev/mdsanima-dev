@@ -24,6 +24,7 @@ extensions = [
     "myst_parser",
     "sphinx_copybutton",
     "sphinx_design",
+    "sphinxext.opengraph",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.autosectionlabel",
@@ -86,3 +87,10 @@ extlinks = {
     "pull": ("https://github.com/mdsanima-dev/mdsanima-dev/pull/%s", "PR #"),
     "pypi": ("https://pypi.org/project/%s/", ""),
 }
+
+# meta tags config
+ogp_site_url = "https://mdsanima-dev.github.io/mdsanima-dev/"
+ogp_image = ogp_site_url + "_images/mdsanima_dev_python_package.jpg"
+ogp_custom_meta_tags = [
+    '<meta property="twitter:card" content="summary_large_image" />',
+]
