@@ -14,6 +14,8 @@ This is a useful links for this documentation site theme and other stuff.
 - [PyPA Specificiation {octicon}`link-external;0.8em`](https://packaging.python.org/en/latest/specifications/pypirc/#pypirc)
 - [Publishing Package Using TestPyPI {octicon}`link-external;0.8em`](https://packaging.python.org/en/latest/guides/using-testpypi/)
 - [Publishing Package GitHub Actions {octicon}`link-external;0.8em`](https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/)
+- [MyST Parser Extension {octicon}`link-external;0.8em`](https://github.com/executablebooks/myst-parser)
+- [MyST Parser Documentation {octicon}`link-external;0.8em`](https://myst-parser.readthedocs.io/en/latest/)
 - [Shields Metadata Badge {octicon}`link-external;0.8em`](https://shields.io/)
 - [Octicons Icons {octicon}`link-external;0.8em`](https://primer.github.io/octicons/)
 - [Font Awesome Icons {octicon}`link-external;0.8em`](https://fontawesome.com/search?m=free&s=solid)

@@ -146,13 +146,13 @@ icons.
 This is a example of adding a `img` or `svg` with custom size.
 
 <img src="../../_static/logo/squere/svg/logo_mdsanima_default_02-sky.svg" width="67" height="67">
-<img src="../../_images/mdsanima_dev_python_package.jpg" width="128" height="67">
+<img src="../../_static/images/mdsanima_dev_python_package.jpg" width="128" height="67">
 
 Markdown should be a this `html` code:
 
 ```markdown
 <img src="../../_static/logo/squere/svg/logo_mdsanima_default_02-sky.svg" width="67" height="67">
-<img src="../../_images/mdsanima_dev_python_package.jpg" width="128" height="67">
+<img src="../../_static/images/mdsanima_dev_python_package.jpg" width="128" height="67">
 ```
 
 ## EXAMPLE `BLOCK CODE`

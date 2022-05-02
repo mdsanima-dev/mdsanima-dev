@@ -12,7 +12,7 @@ the same value on calling selected convert method for the appropriate option,
 both shell command line script and *Python* module.
 
 - Python Function
-[frames_to_timecode](../../modules/converts/#function-frames-to-timecode>) →
+[frames_to_timecode](../../modules/converts/#function-frames-to-timecode) →
 Console Script [mdsanima-dev frames-to-timecode](#converts-frames-to-timecode)
 - Python Function
 [timecode_to_frames](../../modules/converts/#function-timecode-to-frames) →

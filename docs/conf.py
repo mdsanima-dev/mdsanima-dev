@@ -90,7 +90,11 @@ extlinks = {
 
 # meta tags config
 ogp_site_url = "https://mdsanima-dev.github.io/mdsanima-dev/"
-ogp_image = ogp_site_url + "_images/mdsanima_dev_python_package.jpg"
+ogp_image = ogp_site_url + "_static/images/mdsanima_dev_python_package.jpg"
 ogp_custom_meta_tags = [
     '<meta property="twitter:card" content="summary_large_image" />',
 ]
+
+# myst parser config
+myst_all_links_external = True
+myst_heading_anchors = 4
