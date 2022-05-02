@@ -203,7 +203,7 @@ cleaned on a semi regular basis.
 Send to `TestPyPI` using `Twine`, type in the terminal:
 
 ```shell
-twine upload --repository testpypi dist/*
+twine upload --repository pypi-test dist/*
 ```
 
 Then go to [test.pypi.org {octicon}`link-external;0.8em`][pypitest] site and
