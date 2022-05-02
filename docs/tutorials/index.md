@@ -9,4 +9,5 @@ Here we will post interesting quick tutorials that may be useful to you.
 
 how-to-install-python-on-ubuntu-linux-system
 how-to-remove-trash-icon-from-ubuntu-desktop
+how-to-rename-local-and-remote-git-branch
 ```
