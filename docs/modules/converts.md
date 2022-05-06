@@ -2,9 +2,6 @@
 
 ```{eval-rst}
 .. automodule:: mdsanima_dev.utils.converts
-```
-
-```{eval-rst}
 .. versionadded:: 0.1.1
 ```
 

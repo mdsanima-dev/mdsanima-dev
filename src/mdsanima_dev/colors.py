@@ -7,8 +7,8 @@ used in your project.
 """
 
 
-def set_complex_color() -> str:
-    """Define color console variables.
+def _set_color_number() -> str:
+    """Define color console variables number with ``x1b`` syntax.
 
     .. warning:: Do not use this function in your code, it is needed to perform
         other functions.
@@ -22,8 +22,8 @@ def set_complex_color() -> str:
 
         .. code:: python
 
-            sx, xm, ex = complex_color()
-            start_c, middle_c, end_c = complex_color()
+            sx, xm, ex = _set_color_number()
+            start_c, middle_c, end_c = _set_color_number()
     """
     sx = "\x1b[38;5;"
     xm = "m"
@@ -32,9 +32,9 @@ def set_complex_color() -> str:
     return sx, xm, ex
 
 
-def get_color(text: str = "mdsanima", color: int = 255) -> str:
+def use_color_number(text: str = "mdsanima", color: int = 255) -> str:
     """This function is almost the same as
-    `get_complex_color <#function-get-complex-color>`_ function.
+    `print_color_number <#function-print-color-number>`_ function.
 
     The difference is that the return is a sequence of unicode characters
     and to get the output in the terminal in a color you need to use the
@@ -46,54 +46,53 @@ def get_color(text: str = "mdsanima", color: int = 255) -> str:
     :param color: The color number you want to use for color output in the
         console, defaults to ``255``.
     :type color: int, optional
-    :return: Colored text output in the console.
+    :return: Text string output with ``x1b`` systax.
     :rtype: str
 
     :usage:
 
         Assigning a function by calling to variable or assigning a function to
-        a variable just add after import ``mds = get_color`` and in the next
-        line type ``mds_a = mds("I love Python", 86)`` in your code:
+        variable just add after import ``color = use_color_number`` and in the
+        next line type ``mdsanima_a = color("I love Python", 86)`` in your
+        code or use this:
 
         .. code:: python
 
-            from mdsanima_dev.colors import get_color
-            mds_a = get_color("I love Python", 86)
-            mds_b = get_color("mdsanima", 186)
-            print(mds_a, mds_b)
+            from mdsanima_dev.colors import use_color_number
+            mdsanima_a = use_color_number("I love Python", 86)
+            mdsanima_b = use_color_number("mdsanima", 186)
+            print(mdsanima_a, mdsanima_b)
 
         Also you can use
         `machine <../tools/#function-machine>`_ function:
 
         .. code:: python
 
-            from mdsanima_dev.colors import get_color
+            from mdsanima_dev.colors import use_color_number
             from mdsanima_dev.utils.tools import machine
-            mds = get_color
-            mds_a = mds("I love Python", 86)
-            mds_b = mds("mdsanima", 186)
-            machine(mds_a + " " + mds_b, 0.01)
+            color = use_color_number
+            mdsanima_a = color("I love Python", 86)
+            mdsanima_b = color("mdsanima", 186)
+            machine(mdsanima_a + " " + mdsanima_b, 0.01)
     """
-    sx, xm, ex = set_complex_color()
+    sx, xm, ex = _set_color_number()
 
-    return sx + str(color - 1) + xm + text + ex
+    return sx + str(color) + xm + text + ex
 
 
-def get_complex_color(
-    text: str = "mdsanima", color: int = 255, end=None
-) -> str:
+def print_color_number(text: str = "mds", color: int = 255, end=None) -> str:
     """This feature allows you to print colored text to the output of the
     console. Now the function works the same like print function.
 
     :param text: The text you want to use for color output in the console,
-        defaults to ``mdsanima``.
+        defaults to ``mds``.
     :type text: str, optional
     :param color: The color number you want to use for color output in the
         console, defaults to ``255``.
     :type color: int, optional
     :param end: End of line print, defaults to ``None``.
     :type end: str, optional
-    :return: Colored text output in the console.
+    :return: Printing colored string text output in the console.
     :rtype: str
 
     :usage:
@@ -103,8 +102,8 @@ def get_complex_color(
 
         .. code:: python
 
-            from mdsanima_dev.colors import get_complex_color
-            mds = get_complex_color
+            from mdsanima_dev.colors import print_color_number
+            mds = print_color_number
             mds(color=44)
             mds("mdsa", 160, " ")
             mds("mds", 88, " ")
@@ -112,18 +111,17 @@ def get_complex_color(
             mds("mds", 86)
             mds(end="mdsanima-dev", color=85, text="mds")
     """
-    sx, xm, ex = set_complex_color()
-    print(sx + str(color - 1) + xm + text + ex, end=end)
+    sx, xm, ex = _set_color_number()
 
-    return str
+    return print(sx + str(color) + xm + text + ex, end=end)
 
 
-def show_complex_color(number: bool = False) -> str:
-    """Function prints all available colors with a number or only text.
+def show_color_number(number: bool = True) -> str:
+    """Function prints all available colors with number or string text example.
 
-    :param number: Show color number, defaults to ``False``.
+    :param number: Show color number, defaults to ``True``.
     :type number: bool, optional
-    :return: Show all colors in the console output.
+    :return: Print all colors number or string example in the console output.
     :rtype: str
 
     :usage:
@@ -132,20 +130,20 @@ def show_complex_color(number: bool = False) -> str:
 
         .. code:: python
 
-            from mdsanima_dev.colors import show_complex_color
-            show_complex_color(False)
-            show_complex_color(True)
+            from mdsanima_dev.colors import show_color_number
+            show_color_number(True)
+            show_color_number(False)
     """
-    sx, xm, ex = set_complex_color()
-    col = [251, 246, 243, 197, 161]
-    cna = sx + str(col[0] - 1) + xm + "[" + ex
-    cnb = sx + str(col[0] - 1) + xm + "\n\n[" + ex
-    csh = sx + str(col[1] - 1) + xm + "SHOW COMPLEX COLOR " + ex
-    cdo = sx + str(col[2] - 1) + xm + "DONE COMPLEX COLOR " + ex
-    cmd = sx + str(col[3] - 1) + xm + "MDSANIMA" + ex
-    cnu = sx + str(col[4] - 1) + xm + "NUMBER" + ex
-    cnc = sx + str(col[0] - 1) + xm + "]" + ex
-    cne = sx + str(col[0] - 1) + xm + "]\n" + ex
+    sx, xm, ex = _set_color_number()
+    col = [251, 246, 243, 44]
+    cna = sx + str(col[0]) + xm + "[" + ex
+    cnb = sx + str(col[0]) + xm + "\n\n[" + ex
+    csh = sx + str(col[1]) + xm + "SHOW COLOR " + ex
+    cdo = sx + str(col[2]) + xm + "DONE COLOR " + ex
+    cmd = sx + str(col[3]) + xm + "STRING" + ex
+    cnu = sx + str(col[3]) + xm + "NUMBER" + ex
+    cnc = sx + str(col[0]) + xm + "]" + ex
+    cne = sx + str(col[0]) + xm + "]\n" + ex
 
     # print info options
     if number == False:
@@ -157,9 +155,9 @@ def show_complex_color(number: bool = False) -> str:
         done = cnb + cdo + cnu + cnc
 
     # print all colors
-    for i in range(255):
+    for i in range(256):
         if number == True:
-            show = "--> " + str(i + 1).ljust(5)
+            show = "--> " + str(i).ljust(5)
         color = sx + str(i) + xm + show + ex
         print(color, sep=" ", end="", flush=True)
 

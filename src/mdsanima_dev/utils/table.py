@@ -13,7 +13,7 @@ class table:
     """This class create template table with colors, headers and content."""
 
     def __init__(self):
-        self.mds = colors.get_complex_color
+        self.mds = colors.print_color_number
 
     def colors(self, color: int = 255) -> int:
         """Initial color table. Only use for this class.
@@ -188,7 +188,7 @@ class table_elem:
         :return: Color value.
         :rtype: str
         """
-        self.mds = colors.get_complex_color
+        self.mds = colors.print_color_number
         self.color = color
 
     def top(self, length: int) -> str:

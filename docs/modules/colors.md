@@ -4,35 +4,36 @@
 .. automodule:: mdsanima_dev.colors
 ```
 
-## FUNCTION `set_complex_color`
+## FUNCTION `use_color_number`
 
 ```{eval-rst}
-.. autofunction:: mdsanima_dev.colors.set_complex_color
+.. autofunction:: mdsanima_dev.colors.use_color_number
+.. versionchanged:: 0.2.0
 ```
 
-## FUNCTION `get_color`
+## FUNCTION `print_color_number`
 
 ```{eval-rst}
-.. autofunction:: mdsanima_dev.colors.get_color
+.. autofunction:: mdsanima_dev.colors.print_color_number
+.. versionchanged:: 0.2.0
 ```
 
-## FUNCTION `get_complex_color`
+## FUNCTION `show_color_number`
 
 ```{eval-rst}
-.. autofunction:: mdsanima_dev.colors.get_complex_color
+.. autofunction:: mdsanima_dev.colors.show_color_number
+.. versionchanged:: 0.2.0
 ```
 
-## FUNCTION `show_complex_color`
-
-```{eval-rst}
-.. autofunction:: mdsanima_dev.colors.show_complex_color
-```
-
-### EXAMPLE `show_complex_color(False)`
+### EXAMPLE `show_color_number(True)`
 
 ```{eval-rst}
 This is a example screenshots of the `Shell Terminal` in different variants,
 just for fun.
+```
+
+```{eval-rst}
+.. versionchanged:: 0.2.0
 ```
 
 ```{eval-rst}
@@ -41,30 +42,34 @@ just for fun.
     .. tab-item:: Shell Acrylic
 
         .. figure:: ../_images/screenshot/color_show_01_acrylic_a.jpg
-            :name: show-complex-color-false-ac-a
+            :name: show-color-number-true-ac-a
 
     .. tab-item:: Shell Dark
 
         .. figure:: ../_images/screenshot/color_show_01_dark_a.jpg
-            :name: show-complex-color-false-dk-a
+            :name: show-color-number-true-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
         .. figure:: ../_images/screenshot/color_show_01_acrylic_b.jpg
-            :name: show-complex-color-false-ac-b
+            :name: show-color-number-true-ac-b
 
     .. tab-item:: Shell Dark Border
 
         .. figure:: ../_images/screenshot/color_show_01_dark_b.jpg
-            :name: show-complex-color-false-dk-b
+            :name: show-color-number-true-dk-b
 ```
 
-### EXAMPLE `show_complex_color(True)`
+### EXAMPLE `show_color_number(False)`
 
 ```{eval-rst}
 This is a example screenshots of the `Shell Terminal` in different variants,
 just for fun.
+```
+
+```{eval-rst}
+.. versionchanged:: 0.2.0
 ```
 
 ```{eval-rst}
@@ -73,28 +78,30 @@ just for fun.
     .. tab-item:: Shell Acrylic
 
         .. figure:: ../_images/screenshot/color_show_02_acrylic_a.jpg
-            :name: show-complex-color-true-ac-a
+            :name: show-color-number-false-ac-a
 
     .. tab-item:: Shell Dark
         :selected:
 
         .. figure:: ../_images/screenshot/color_show_02_dark_a.jpg
-            :name: show-complex-color-true-dk-a
+            :name: show-color-number-false-dk-a
 
     .. tab-item:: Shell Acrylic Border
 
         .. figure:: ../_images/screenshot/color_show_02_acrylic_b.jpg
-            :name: show-complex-color-true-ac-b
+            :name: show-color-number-false-ac-b
 
     .. tab-item:: Shell Dark Border
 
         .. figure:: ../_images/screenshot/color_show_02_dark_b.jpg
-            :name: show-complex-color-true-dk-b
+            :name: show-color-number-false-dk-b
 ```
 
 ```{eval-rst}
 .. note::
     Now you know what numbers you have withs different colors, now you can use
-    the function `get_complex_color <#function-get-complex-color>`_ in your
-    code.
+    the function `use_color_number <#function-use-color-number>`_ in your
+    code and assigning to a variable to print color text in the terminal or you
+    can use function `print_color_number <#function-print-color-number>`_ to
+    override print function and get the sam result.
 ```
