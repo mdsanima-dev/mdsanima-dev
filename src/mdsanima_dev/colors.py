@@ -6,6 +6,8 @@ own texts. Also, this module is for showing example colors that's you might be
 used in your project.
 """
 
+import os
+
 
 def _set_color_number() -> str:
     """Define color console variables number with ``x1b`` syntax.
@@ -135,26 +137,37 @@ def show_color_number(number: bool = True) -> str:
             show_color_number(False)
     """
     sx, xm, ex = _set_color_number()
-    col = [251, 246, 243, 44]
-    cna = sx + str(col[0]) + xm + "[" + ex
-    cnb = sx + str(col[0]) + xm + "\n\n[" + ex
-    csh = sx + str(col[1]) + xm + "SHOW COLOR " + ex
-    cdo = sx + str(col[2]) + xm + "DONE COLOR " + ex
-    cmd = sx + str(col[3]) + xm + "STRING" + ex
-    cnu = sx + str(col[3]) + xm + "NUMBER" + ex
-    cnc = sx + str(col[0]) + xm + "]" + ex
-    cne = sx + str(col[0]) + xm + "]\n" + ex
 
-    # print info options
+    # Get terminal size columns for center info print.
+    terminal = os.get_terminal_size()
+
+    # Calculation terminal size based on 21 count string from info.
+    calculate_start = terminal.columns / 2 - 11
+    calculate_end = terminal.columns / 2 - 10
+
+    # Setup colors for info print.
+    colors = [196, 208, 70, 44, 39]
+
+    # Setup colors info variables.
+    cts = sx + str(colors[4]) + xm + ("=" * int(calculate_start)) + ex
+    cna = sx + str(colors[0]) + xm + "[" + ex
+    csh = sx + str(colors[1]) + xm + " SHOW COLOR " + ex
+    cdo = sx + str(colors[2]) + xm + " DONE COLOR " + ex
+    cmd = sx + str(colors[3]) + xm + "STRING " + ex
+    cnu = sx + str(colors[3]) + xm + "NUMBER " + ex
+    cnc = sx + str(colors[0]) + xm + "]" + ex
+    cte = sx + str(colors[4]) + xm + ("=" * int(calculate_end)) + ex
+
+    # Print info options colors.
     if number == False:
         show = "mdsanima".ljust(9)
-        print(cna + csh + cmd + cne)
-        done = cnb + cdo + cmd + cnc
+        print(cts + cna + csh + cmd + cnc + cte)
+        done = "\n" + cts + cna + cdo + cmd + cnc + cte
     else:
-        print(cna + csh + cnu + cne)
-        done = cnb + cdo + cnu + cnc
+        print(cts + cna + csh + cnu + cnc + cte)
+        done = "\n" + cts + cna + cdo + cnu + cnc + cte
 
-    # print all colors
+    # Print all colors numbers colors.
     for i in range(256):
         if number == True:
             show = "--> " + str(i).ljust(5)
