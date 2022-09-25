@@ -56,8 +56,8 @@ html_js_files = ["mdsanima.js"]
 
 # Theme options setup.
 html_theme = "furo"
-html_logo = "_static/logo/filled/svg/logo_mdsanima_default_02-sky.svg"
-html_favicon = "_static/logo/squere/png/logo_mdsanima_default_02-sky_1x.png"
+html_logo = "_static/logo/png/filled/mdsanima_logo_rc2_light_02_sky.png"
+html_favicon = "_static/logo/svg/squere/mdsanima_logo_rc2_light_02_sky.svg"
 
 # Html options setup.
 html_show_sphinx = True
