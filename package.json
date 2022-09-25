@@ -15,9 +15,7 @@
     "Bug Tracker": "https://github.com/mdsanima-dev/mdsanima-dev/issues/"
   },
   "devDependencies": {
-    "standard-version": "^9.3.0",
-    "conventional-changelog": "^5.0.1",
-    "mdsanima-conventional-changelog": "https://github.com/mdsanima/conventional-changelog/releases/tag/v5.0.1"
+    "standard-version": "^9.5.0"
   },
   "keywords": [
     "animation",
