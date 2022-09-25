@@ -8,18 +8,18 @@ import os
 import sys
 
 
-# append path
+# Append path absolute.
 sys.path.append(os.path.abspath("."))
 
 
-# project information
+# Project information.
 project = "mdsanima-dev"
 copyright = "2021-2022, Marcin Różewski MDSANIMA"
 author = "Marcin Różewski"
 master_doc = "index"
 language = "en"
 
-# sphinx extension modules
+# Sphinx extension modules.
 extensions = [
     "myst_parser",
     "sphinx_copybutton",
@@ -35,35 +35,35 @@ extensions = [
     "sphinx.ext.mathjax",
 ]
 
-# markdown parser
+# Markdown parser.
 source_suffix = {
     ".md": "markdown",
 }
 
-# font awesome
+# Font awesome setup.
 fontawesome_css = "https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 cdnfa = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/"
 fontawesome_min = cdnfa + "fontawesome.min.css"
 solid_min = cdnfa + "solid.min.css"
 brands_min = cdnfa + "brands.min.css"
 
-# path options
+# Path options setup.
 templates_path = ["_templates"]
 exclude_patterns = ["_images"]
 html_static_path = ["_static"]
 html_css_files = ["mdsanima.css", fontawesome_css]
 html_js_files = ["mdsanima.js"]
 
-# theme options
+# Theme options setup.
 html_theme = "furo"
 html_logo = "_static/logo/filled/svg/logo_mdsanima_default_02-sky.svg"
 html_favicon = "_static/logo/squere/png/logo_mdsanima_default_02-sky_1x.png"
 
-# html options
+# Html options setup.
 html_show_sphinx = True
 html_last_updated_fmt = "%d %B %Y, at %H:%M:%S"
 
-# theme options custom
+# Theme options custom setup.
 html_theme_options = {
     "navigation_with_keys": True,
     "sidebar_hide_name": False,
@@ -81,20 +81,20 @@ html_theme_options = {
     ],
 }
 
-# extlinks options
+# Extlinks options setup.
 extlinks = {
     "issue": ("https://github.com/mdsanima-dev/mdsanima-dev/issues/%s", "#"),
     "pull": ("https://github.com/mdsanima-dev/mdsanima-dev/pull/%s", "PR #"),
     "pypi": ("https://pypi.org/project/%s/", ""),
 }
 
-# meta tags config
+# Meta tags config.
 ogp_site_url = "https://mdsanima-dev.github.io/mdsanima-dev/"
 ogp_image = ogp_site_url + "_static/images/mdsanima_dev_python_package.jpg"
 ogp_custom_meta_tags = [
     '<meta property="twitter:card" content="summary_large_image" />',
 ]
 
-# myst parser config
+# Myst parser config.
 myst_all_links_external = True
 myst_heading_anchors = 4
