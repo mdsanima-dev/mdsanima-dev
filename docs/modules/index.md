@@ -1,8 +1,9 @@
 # {octicon}`beaker;1em;sd-text-secondary` `PYTHON MODULES`
 
-## ALL `MODULES`
+## ALL AVAILABLE `MODULES`
 
-This is list of all modules include of this *Python* package.
+This is a list of all available modules of this _Python_ package. I hope you
+like it. Enjoy coding.
 
 ```{toctree}
 :maxdepth: 3
