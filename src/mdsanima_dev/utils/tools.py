@@ -1,7 +1,7 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""Module ``tools`` contains some useful functions that I usually use for
+"""Module ``tools`` contains some useful functions that we usually useing for
 *Python* coding.
 """
 
@@ -11,7 +11,7 @@ from time import sleep
 
 import requests
 
-from mdsanima_dev.colors import print_color_number
+from mdsanima_dev.colors import print_colors
 
 
 def read_file(file_path: str) -> str:
@@ -38,7 +38,7 @@ def read_file(file_path: str) -> str:
 
 
 def append_file(file_path: str, data: str) -> str:
-    """Function save data into file.
+    """Function to save data into in to file.
 
     :param file_path: File path to save data with append mode.
     :type file_path: str
@@ -58,7 +58,7 @@ def append_file(file_path: str, data: str) -> str:
 
 
 def get_response_json(url: str):
-    """Function get response json dictionary from url.
+    """Function get response json dictionary from given url address.
 
     :param url: URL address to get response json.
     :type url: str
@@ -152,7 +152,7 @@ class progress:
         :return: One line progress bar animation.
         :rtype: str
         """
-        self.mds = print_color_number
+        self.mds = print_colors
         self.txt_first = txt_first
         self.txt_end = txt_end
         self.txt_first_clr = txt_first_color
