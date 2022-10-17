@@ -20,6 +20,7 @@ from typing import Union
 
 
 INFO_KEY_ERROR = "Please choose a name from this default colors scheme"
+INFO_OPT_ERROR = "Please choose from this 'number', 'name' or 'text' options"
 DEFAULT_NAMES_NORMAL = {
     "cyan": 50,
     "sky": 39,
@@ -199,16 +200,23 @@ def show_normal_colors(options: str = "number") -> str:
     if options == "text":
         print(cts + cna + csh + cmd + cnc + cte)
         done = "\n" + cte + cna + cdo + cmd + cnc + cts
+    else:
+        done = INFO_OPT_ERROR
 
     # Print all colors numbers.
-    for i in range(256):
-        if options == "number":
-            show = "--> " + str(i).ljust(5)
-        if options == "name":
-            show = "mdsanima".ljust(9)
-        if options == "text":
-            show = "mdsanima".ljust(9)
-        color = fg + str(i) + xm + show + ex
-        print(color, sep=" ", end="", flush=True)
+    if options == "number" or options == "text":
+        for i in range(256):
+            if options == "number":
+                show = "--> " + str(i).ljust(5)
+            if options == "text":
+                show = "mdsanima".ljust(9)
+            color = fg + str(i) + xm + show + ex
+            print(color, sep=" ", end="", flush=True)
+    if options == "name":
+        default_key = DEFAULT_NAMES_NORMAL.keys()
+        for name in list(default_key):
+            show = str(name) + " "
+            color = fg + str(DEFAULT_NAMES_NORMAL[name]) + xm + show + ex
+            print(color, sep=" ", end="", flush=True)
 
     return print(done)
