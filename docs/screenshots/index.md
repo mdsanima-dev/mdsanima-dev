@@ -1,4 +1,4 @@
-# {octicon}`image;1em;sd-text-secondary` `SCREENSHOTS`
+# {octicon}`image;1em;sd-text-secondary` `EXAMPLE SCREENSHOTS`
 
 Want to see {bdg-warning-line}`Terminal Screenshots` from the sample code along
 with cool show output that's we produced of this _Python_ package. See this
