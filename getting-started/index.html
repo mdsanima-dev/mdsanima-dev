@@ -259,23 +259,23 @@ on your system use the <a class="reference external" href="#on-virtualenv">virtu
 <section id="using-pypi">
 <h3>USING <code class="docutils literal notranslate"><span class="pre">PYPI</span></code><a class="headerlink" href="#using-pypi" title="Permalink to this headline">#</a></h3>
 <p>Install latest version:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 -m pip install mdsanima-dev
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>mdsanima-dev
 </pre></div>
 </div>
 <p>Install specific version:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 -m pip install mdsanima-dev<span class="o">==</span><span class="m">0</span>.1.1
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>mdsanima-dev<span class="o">==</span><span class="m">0</span>.1.1
 </pre></div>
 </div>
 <p>Upgrade package to latest version:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 -m pip install --upgrade mdsanima-dev
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>mdsanima-dev
 </pre></div>
 </div>
 <p>Reinstall package to latest version:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 -m pip install --force-reinstall msdsanima-dev
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--force-reinstall<span class="w"> </span>msdsanima-dev
 </pre></div>
 </div>
 <p>Uninstall package:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 -m pip uninstall mdsanima-dev
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>uninstall<span class="w"> </span>mdsanima-dev
 </pre></div>
 </div>
 </section>
@@ -285,15 +285,15 @@ on your system use the <a class="reference external" href="#on-virtualenv">virtu
 method and not recommend using this, instead of this method please use
 <a class="reference external" href="#using-wheel">wheel</a> options for install.</p>
 <p>Clone repository with all number of commits history using HTTPS:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/mdsanima-dev/mdsanima-dev.git
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mdsanima-dev/mdsanima-dev.git
 </pre></div>
 </div>
 <p>Clone repository with the specified number of commits history using SSH:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone --depth<span class="o">=</span><span class="m">1</span> git@github.com:mdsanima-dev/mdsanima-dev.git
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>git@github.com:mdsanima-dev/mdsanima-dev.git
 </pre></div>
 </div>
 <p>Then go to the repository directory <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">mdsanima-dev</span></code> and install the package:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 setup.py install
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>setup.py<span class="w"> </span>install
 </pre></div>
 </div>
 </section>
@@ -301,14 +301,14 @@ method and not recommend using this, instead of this method please use
 <h3>USING <code class="docutils literal notranslate"><span class="pre">WHEEL</span></code><a class="headerlink" href="#using-wheel" title="Permalink to this headline">#</a></h3>
 <p>Build package from source then install it. Clone the repository just like in
 the <a class="reference external" href="#using-setup">using setup</a> statement then type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 setup.py sdist bdist_wheel
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>setup.py<span class="w"> </span>sdist<span class="w"> </span>bdist_wheel
 </pre></div>
 </div>
 <p>The package build creates new directories where the installation files are
 located the <code class="docutils literal notranslate"><span class="pre">build</span></code> and <code class="docutils literal notranslate"><span class="pre">dist</span></code> directories. Then install the package just like
 in the <a class="reference external" href="#using-pypi">using PyPI</a> statement, but instead of entering the
 package name, give the path to the <code class="docutils literal notranslate"><span class="pre">.whl</span></code> file that was built earlier:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 -m pip install --force-reinstall dist/mdsanima_dev-0.1.1-py3-none-any.whl
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--force-reinstall<span class="w"> </span>dist/mdsanima_dev-0.1.1-py3-none-any.whl
 </pre></div>
 </div>
 <p>In this case I used the <code class="docutils literal notranslate"><span class="pre">--force-reinstall</span></code> option because I had an earlier
@@ -317,18 +317,18 @@ version of this package already installed.</p>
 <section id="on-virtualenv">
 <h3>ON <code class="docutils literal notranslate"><span class="pre">VIRTUALENV</span></code><a class="headerlink" href="#on-virtualenv" title="Permalink to this headline">#</a></h3>
 <p>Create and activate virtual environment in hidden folder, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>virtualenv .venv
-<span class="nb">source</span> .venv/bin/activate
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>virtualenv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
 </pre></div>
 </div>
 <p>If you want to create and activate virtual environment with specific <em>Python</em>
 version, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>virtualenv venv39 -p python3.9
-<span class="nb">source</span> venv39/bin/activate
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>virtualenv<span class="w"> </span>venv39<span class="w"> </span>-p<span class="w"> </span>python3.9
+<span class="nb">source</span><span class="w"> </span>venv39/bin/activate
 </pre></div>
 </div>
 <p>Finnaly install the package in virtual environment, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install mdsanima-dev
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>mdsanima-dev
 </pre></div>
 </div>
 <p>Also you can use <a class="reference external" href="#using-pypi">PyPI</a>, <a class="reference external" href="#using-setup">setup</a> or
@@ -372,13 +372,13 @@ of this option, just type <code class="docutils literal notranslate"><span class
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2021-2022, Marcin Różewski MDSANIMA
+                Copyright &#169; 2021-2023, Marcin Różewski MDSANIMA
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on 02 May 2022, at 23:16:57</div>
+              Last updated on 01 April 2023, at 05:24:59</div>
           </div>
           <div class="right-details">
             <div class="icons">

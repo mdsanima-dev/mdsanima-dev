@@ -283,13 +283,13 @@ directives for generate documentation site.</p>
 <section id="build-package">
 <h3>BUILD <code class="docutils literal notranslate"><span class="pre">PACKAGE</span></code><a class="headerlink" href="#build-package" title="Permalink to this headline">#</a></h3>
 <p>We just need to create an installable <em>Python</em> package, type in to terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 setup.py sdist bdist_wheel
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>setup.py<span class="w"> </span>sdist<span class="w"> </span>bdist_wheel
 </pre></div>
 </div>
 <p>The package build creates new directories where the installation files are
 located the <code class="docutils literal notranslate"><span class="pre">build</span></code> and <code class="docutils literal notranslate"><span class="pre">dist</span></code> directories. Then install the package, type in
 the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install --force-reinstall dist/mdsanima_dev-0.1.1-py3-none-any.whl
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--force-reinstall<span class="w"> </span>dist/mdsanima_dev-0.1.1-py3-none-any.whl
 </pre></div>
 </div>
 <p>In this case I used the <code class="docutils literal notranslate"><span class="pre">--force-reinstall</span></code> option because I had an earlier
@@ -320,7 +320,7 @@ for build documentation deployments.</p>
 <p>The first thing you need to do is <a class="reference external" href="#add-new-module">Add New Module</a> along
 with the documentation. Then install it using the <a class="reference external" href="#build-package">wheel</a>
 option and finally build the documentation typing in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 setup.py build_sphinx
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>setup.py<span class="w"> </span>build_sphinx
 </pre></div>
 </div>
 <p>You can also use the <code class="docutils literal notranslate"><span class="pre">easy</span> <span class="pre">install</span></code> options typing
@@ -332,7 +332,7 @@ recommended.</p>
 for prettier URLs no <code class="docutils literal notranslate"><span class="pre">.html</span></code> in documentation pages address.</p>
 <p>To see the documentation site in your local environment, just enter the command
 in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3.7 -m http.server <span class="m">8080</span> --directory build/dirhtml/
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3.7<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span><span class="m">8080</span><span class="w"> </span>--directory<span class="w"> </span>build/dirhtml/
 </pre></div>
 </div>
 <p>To use the <code class="docutils literal notranslate"><span class="pre">--directory</span></code> option you must use <em>Python 3.7</em> or later, but if you
@@ -365,7 +365,7 @@ skip commit and tag, only bump version and changelog are active because when
 generate changelog typing in the terminal <code class="docutils literal notranslate"><span class="pre">standard-version</span> <span class="pre">release-test</span></code>
 labels are broken and we’re manually fixing it.</p>
 <p>Make release version and changelog, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>standard-version release
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>standard-version<span class="w"> </span>release
 </pre></div>
 </div>
 <p>Command above for create release run script defined in <code class="docutils literal notranslate"><span class="pre">package.json</span></code> file on
@@ -373,7 +373,7 @@ script section <code class="docutils literal notranslate"><span class="pre">stan
 version, adding changes in changelog, commiting all files and adding tag with
 <a class="reference external" href="https://docs.github.com/en/github-ae@latest/authentication/managing-commit-signature-verification/signing-commits">Signing Commits <svg aria-hidden="true" class="sd-octicon sd-octicon-link-external" height="0.8em" version="1.1" viewbox="0 0 16 16" width="0.8em"><path d="M9.6036 1H13.75C13.8881 1 14 1.11193 14 1.25V5.39645C14 5.61917 13.7307 5.73072 13.5732 5.57322L12.0303 4.03033L8.28033 7.78033C7.98744 8.07322 7.51256 8.07322 7.21967 7.78033C6.92678 7.48744 6.92678 7.01256 7.21967 6.71967L10.9697 2.96967L9.4268 1.42678C9.2693 1.26929 9.3808 1 9.6036 1ZM2.75 2C1.7835 2 1 2.7835 1 3.75V12.25C1 13.2165 1.7835 14 2.75 14H11.25C12.2165 14 13 13.2165 13 12.25V8.75C13 8.33579 12.6642 8 12.25 8C11.8358 8 11.5 8.33579 11.5 8.75V12.25C11.5 12.3881 11.3881 12.5 11.25 12.5H2.75C2.61193 12.5 2.5 12.3881 2.5 12.25V3.75C2.5 3.61193 2.61193 3.5 2.75 3.5H6.25C6.66421 3.5 7 3.16421 7 2.75C7 2.33579 6.66421 2 6.25 2H2.75Z" fill-rule="evenodd"></path></svg></a> using GPG keys.</p>
 <p>For checking if everything is ok, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>standard-version release-test
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>standard-version<span class="w"> </span>release-test
 </pre></div>
 </div>
 <p>Command above for checking run script defined in <code class="docutils literal notranslate"><span class="pre">package.json</span></code> file on script
@@ -382,14 +382,14 @@ no bumping version, not adding changes in changelog and no commit and tag.
 This option is only for checking if everything is ok and we recommend using
 this option first.</p>
 <p>Also you can checking if everything is ok, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>standard-version --skip.commit --skip.tag
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>standard-version<span class="w"> </span>--skip.commit<span class="w"> </span>--skip.tag
 </pre></div>
 </div>
 <p>After run this command you will create a new version in the <code class="docutils literal notranslate"><span class="pre">package.json</span></code>
 file, bumping version in <code class="docutils literal notranslate"><span class="pre">__init</span> <span class="pre">__.py</span></code> and automatically create <code class="docutils literal notranslate"><span class="pre">CHANGELOG.md</span></code>
 based on commit messages.</p>
 <p>Now you just need to execute this command in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>standard-version --skip.bump --skip.changelog --commit-all --sign
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>standard-version<span class="w"> </span>--skip.bump<span class="w"> </span>--skip.changelog<span class="w"> </span>--commit-all<span class="w"> </span>--sign
 </pre></div>
 </div>
 <p>After executing this command all changed files will be committed with the
@@ -405,27 +405,27 @@ to <a class="reference external" href="https://pypi.org/project/mdsanima-dev">Py
 was created under your project’s root directory. That’s where you’ll find your
 distribution files to upload.</p>
 <p>Firs you should check the build are valid, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>twine check dist/*
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>twine<span class="w"> </span>check<span class="w"> </span>dist/*
 </pre></div>
 </div>
 <p>Before releasing on main PyPI repo, you might prefer training with the
 <a class="reference external" href="https://test.pypi.org">TestPyPI <svg aria-hidden="true" class="sd-octicon sd-octicon-link-external" height="0.8em" version="1.1" viewbox="0 0 16 16" width="0.8em"><path d="M9.6036 1H13.75C13.8881 1 14 1.11193 14 1.25V5.39645C14 5.61917 13.7307 5.73072 13.5732 5.57322L12.0303 4.03033L8.28033 7.78033C7.98744 8.07322 7.51256 8.07322 7.21967 7.78033C6.92678 7.48744 6.92678 7.01256 7.21967 6.71967L10.9697 2.96967L9.4268 1.42678C9.2693 1.26929 9.3808 1 9.6036 1ZM2.75 2C1.7835 2 1 2.7835 1 3.75V12.25C1 13.2165 1.7835 14 2.75 14H11.25C12.2165 14 13 13.2165 13 12.25V8.75C13 8.33579 12.6642 8 12.25 8C11.8358 8 11.5 8.33579 11.5 8.75V12.25C11.5 12.3881 11.3881 12.5 11.25 12.5H2.75C2.61193 12.5 2.5 12.3881 2.5 12.25V3.75C2.5 3.61193 2.61193 3.5 2.75 3.5H6.25C6.66421 3.5 7 3.16421 7 2.75C7 2.33579 6.66421 2 6.25 2H2.75Z" fill-rule="evenodd"></path></svg></a> which is
 cleaned on a semi regular basis.</p>
 <p>Send to <code class="docutils literal notranslate"><span class="pre">TestPyPI</span></code> using <code class="docutils literal notranslate"><span class="pre">Twine</span></code>, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>twine upload --repository pypi-test dist/*
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>twine<span class="w"> </span>upload<span class="w"> </span>--repository<span class="w"> </span>pypi-test<span class="w"> </span>dist/*
 </pre></div>
 </div>
 <p>Then go to <a class="reference external" href="https://test.pypi.org/project/mdsanima-dev">test.pypi.org <svg aria-hidden="true" class="sd-octicon sd-octicon-link-external" height="0.8em" version="1.1" viewbox="0 0 16 16" width="0.8em"><path d="M9.6036 1H13.75C13.8881 1 14 1.11193 14 1.25V5.39645C14 5.61917 13.7307 5.73072 13.5732 5.57322L12.0303 4.03033L8.28033 7.78033C7.98744 8.07322 7.51256 8.07322 7.21967 7.78033C6.92678 7.48744 6.92678 7.01256 7.21967 6.71967L10.9697 2.96967L9.4268 1.42678C9.2693 1.26929 9.3808 1 9.6036 1ZM2.75 2C1.7835 2 1 2.7835 1 3.75V12.25C1 13.2165 1.7835 14 2.75 14H11.25C12.2165 14 13 13.2165 13 12.25V8.75C13 8.33579 12.6642 8 12.25 8C11.8358 8 11.5 8.33579 11.5 8.75V12.25C11.5 12.3881 11.3881 12.5 11.25 12.5H2.75C2.61193 12.5 2.5 12.3881 2.5 12.25V3.75C2.5 3.61193 2.61193 3.5 2.75 3.5H6.25C6.66421 3.5 7 3.16421 7 2.75C7 2.33579 6.66421 2 6.25 2H2.75Z" fill-rule="evenodd"></path></svg></a> site and
 check the package, if everything is ok, install it using <code class="docutils literal notranslate"><span class="pre">TestPyPI</span></code> with <code class="docutils literal notranslate"><span class="pre">pip</span></code>.
 You can tell <code class="docutils literal notranslate"><span class="pre">pip</span></code> to download packages from <code class="docutils literal notranslate"><span class="pre">TestPyPI</span></code> instead of <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> by
 specifying the <code class="docutils literal notranslate"><span class="pre">--index-url</span></code> flag, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3 -m pip install --index-url https://test.pypi.org/simple/ mdsanima-dev
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--index-url<span class="w"> </span>https://test.pypi.org/simple/<span class="w"> </span>mdsanima-dev
 </pre></div>
 </div>
 <p>Finally we can send our package to
 <a class="reference external" href="https://pypi.org/">pypi.org <svg aria-hidden="true" class="sd-octicon sd-octicon-link-external" height="0.8em" version="1.1" viewbox="0 0 16 16" width="0.8em"><path d="M9.6036 1H13.75C13.8881 1 14 1.11193 14 1.25V5.39645C14 5.61917 13.7307 5.73072 13.5732 5.57322L12.0303 4.03033L8.28033 7.78033C7.98744 8.07322 7.51256 8.07322 7.21967 7.78033C6.92678 7.48744 6.92678 7.01256 7.21967 6.71967L10.9697 2.96967L9.4268 1.42678C9.2693 1.26929 9.3808 1 9.6036 1ZM2.75 2C1.7835 2 1 2.7835 1 3.75V12.25C1 13.2165 1.7835 14 2.75 14H11.25C12.2165 14 13 13.2165 13 12.25V8.75C13 8.33579 12.6642 8 12.25 8C11.8358 8 11.5 8.33579 11.5 8.75V12.25C11.5 12.3881 11.3881 12.5 11.25 12.5H2.75C2.61193 12.5 2.5 12.3881 2.5 12.25V3.75C2.5 3.61193 2.61193 3.5 2.75 3.5H6.25C6.66421 3.5 7 3.16421 7 2.75C7 2.33579 6.66421 2 6.25 2H2.75Z" fill-rule="evenodd"></path></svg></a> main site.</p>
 <p>Send to <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> using <code class="docutils literal notranslate"><span class="pre">Twine</span></code>, type in the terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>twine upload dist/*
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>twine<span class="w"> </span>upload<span class="w"> </span>dist/*
 </pre></div>
 </div>
 <div class="admonition tip">
@@ -467,13 +467,13 @@ guides on official <em>Python</em> site.</p>
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2021-2022, Marcin Różewski MDSANIMA
+                Copyright &#169; 2021-2023, Marcin Różewski MDSANIMA
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on 02 May 2022, at 23:16:57</div>
+              Last updated on 01 April 2023, at 05:24:59</div>
           </div>
           <div class="right-details">
             <div class="icons">
