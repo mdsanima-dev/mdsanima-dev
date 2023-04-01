@@ -14,7 +14,7 @@ sys.path.append(os.path.abspath("."))
 
 # project information
 project = "mdsanima-dev"
-copyright = "2021-2022, Marcin Różewski MDSANIMA"
+copyright = "2021-2023, Marcin Różewski MDSANIMA"
 author = "Marcin Różewski"
 master_doc = "index"
 language = "en"
