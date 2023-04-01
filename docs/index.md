@@ -32,6 +32,7 @@ tutorials/index
 
 modules/index
 commands/index
+screenshots/index
 ```
 
 ```{toctree}
@@ -41,7 +42,6 @@ commands/index
 
 project/index
 development/index
-screenshots/index
 sponsor
 ```
 

@@ -1,11 +1,12 @@
-#!/usr/bin/python3
-
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
 """Setuptools ``mdsanima-dev`` dynamic package. This setup allow to build
-Sphinx Documentation and SHELL Script."""
+Sphinx Documentation and SHELL CLI Script.
+"""
 
+
+from __future__ import annotations
 
 import json
 import pathlib
@@ -14,20 +15,20 @@ import sys
 import setuptools
 
 
-# path variable
+# Path variable.
 HERE = pathlib.Path(__file__).parent
 
-# get python current and required version from users
+# Get python current and required version from users system.
 CURRENT_PYTHON = sys.version_info[:2]
-REQUIRED_PYTHON = (3, 6)
+REQUIRED_PYTHON = (3, 7)
 
-# initial stderr checking print variable
+# Initial stderr checking print variable.
 m_sep = "=" * 26
 m_uns = "Unsupported Python Version"
 m_ver = "This version of mdsanima-dev requires Python {}.{}"
 m_ins = "but you're trying to install it on Python {}.{}"
 
-# this check and everything above must remain compatible with Python 3.6
+# Check and everything above must remain compatible with Python 3.7 version.
 if CURRENT_PYTHON < REQUIRED_PYTHON:
     sys.stderr.write(
         (m_sep, "\n", m_uns, "\n", m_sep, "\n", m_ver, "\n", m_ins).format(
@@ -36,15 +37,15 @@ if CURRENT_PYTHON < REQUIRED_PYTHON:
     )
     sys.exit(1)
 
-# load data from package.json file
+# Load data from package.json file.
 with open(HERE / "package.json") as dt:
     data_package = json.load(dt)
 
-# load data from README.md file
+# Load data from README.md file.
 with open(HERE / "README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-# setuptools dynamic package arguments
+# Setuptools dynamic package arguments.
 setuptools.setup(
     name=data_package["name"],
     version=data_package["version"],
@@ -59,7 +60,7 @@ setuptools.setup(
     package_dir={"": "src"},
     package_data={"": ["json/*.json"]},
     packages=setuptools.find_packages(where="src"),
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     license=data_package["license"],
     extras_require=data_package["extra_require"],
     keywords=data_package["keywords"],

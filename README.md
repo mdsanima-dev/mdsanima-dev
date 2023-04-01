@@ -230,3 +230,6 @@ The _Python_ package [mdsanima-dev][link-02] developed by
 [link-15]: https://reddit.com/r/mdsanima/
 [link-16]: https://youtube.com/mdsanima?sub_confirmation=1
 [link-17]: https://twitch.tv/mdsanima/
+
+Zamień linki z mdsanima-render-time tam już dobrze ułożone.
+Sprawdź plik README.md, jest wszystko.

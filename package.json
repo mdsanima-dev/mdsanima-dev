@@ -1,6 +1,6 @@
 {
   "name": "mdsanima_dev",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": {
     "name": "Marcin Różewski",
     "email": "marcinrozewski@gmail.com"
@@ -21,11 +21,14 @@
     "animation",
     "automatic",
     "changelog",
-    "console",
+    "cli",
     "colors",
+    "commands",
+    "console",
     "development",
-    "emoj",
+    "emoji",
     "mdsanima-dev",
+    "mdsanima",
     "python",
     "shell",
     "terminal",
@@ -55,7 +58,6 @@
     "Operating System :: MacOS :: MacOS X",
     "Operating System :: Microsoft :: Windows :: Windows 10",
     "Operating System :: POSIX :: Linux",
-    "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",

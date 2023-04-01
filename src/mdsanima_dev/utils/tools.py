@@ -11,7 +11,7 @@ from time import sleep
 
 import requests
 
-from mdsanima_dev.colors import print_colors
+from mdsanima_dev.colors import print_normal_mode
 
 
 def read_file(file_path: str) -> str:
@@ -152,7 +152,7 @@ class progress:
         :return: One line progress bar animation.
         :rtype: str
         """
-        self.mds = print_colors
+        self.mds = print_normal_mode
         self.txt_first = txt_first
         self.txt_end = txt_end
         self.txt_first_clr = txt_first_color

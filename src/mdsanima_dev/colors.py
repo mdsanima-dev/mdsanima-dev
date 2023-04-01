@@ -60,7 +60,7 @@ def _get_normal_default(color_name: str = "white") -> int:
         defaults to ``white``.
     :type color_name: str, optional
     :return: Color number for text foreground and background syntax output.
-    :rtype: int
+        Return type ``int``.
     """
     color_number = DEFAULT_NAMES_NORMAL[color_name]
     return color_number
@@ -74,7 +74,7 @@ def _set_normal_syntax() -> str:
         other functions.
 
     :return: Color console literal variable for text foreground and background.
-    :rtype: str
+        Return type ``str``.
     """
     fg = "\x1b[38;5;"
     bg = "\x1b[48;5;"
@@ -101,7 +101,7 @@ def use_normal_mode(
         Choose a number from 0 to 255 or use color name, defaults to ``None``.
     :type bg_color: Union[str, int], optional
     :return: Text string output with colors ``x1b`` systax.
-    :rtype: str
+        Return type ``str``.
     """
     fg, bg, xm, ex = _set_normal_syntax()
     try:
@@ -143,7 +143,7 @@ def print_normal_mode(
     :param end: End of line print options, defaults to ``None``.
     :type end: None, optional
     :return: Printing colored string text foreground and background output.
-    :rtype: None
+        Return type ``None``.
     """
     out_result = use_normal_mode(text, fg_color, bg_color)
     return print(out_result, end=end)
@@ -157,7 +157,7 @@ def show_normal_colors(options: str = "number") -> str:
         ``number``, ``name`` or ``text`` options, defaults to ``number``.
     :type options: str, optional
     :return: Printing all colors number, name or text example output.
-    :rtype: str
+        Return type ``str``.
     """
     fg, bg, xm, ex = _set_normal_syntax()
 
