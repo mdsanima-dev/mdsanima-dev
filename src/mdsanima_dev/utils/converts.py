@@ -47,19 +47,19 @@ def frames_to_timecode(frames: int, fps: float) -> str:
             timecode = frames_to_timecode(240, 24)
             print(timecode)
 
-    :shell:
+    :shell cli:
 
-        Command line console script:
+        Console command-line interface script:
 
         .. code:: shell
 
             mdsanima-dev frames-to-timecode --frames 240 --fps 24
             mdsanima-dev frames-to-timecode --help
 
-        .. seealso:: Shell console script
+        .. seealso:: Shell CLI console script
             `frames-to-timecode
             <../../commands/converts/#converts-frames-to-timecode>`_
-            converting directly on the command line.
+            converting directly on the command-line interface.
     """
     # assigning a function to a variable setup seconds
     sec_in_min, sec_in_hrs = _get_seconds()

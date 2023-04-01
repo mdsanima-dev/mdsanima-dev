@@ -2,99 +2,130 @@
 
 ```{eval-rst}
 .. automodule:: mdsanima_dev.colors
+.. versionadded:: 0.1.0
 ```
 
-## FUNCTION `set_complex_color`
+## FUNCTION `use_default`
 
 ```{eval-rst}
-.. autofunction:: mdsanima_dev.colors.set_complex_color
+.. autofunction:: mdsanima_dev.colors.use_default
+
+
+    This function is almost the same as
+    `print_default_color <#function-print-default-color>`_ function but it
+    differs in one specific detail.
+
+    The difference is that the return is a sequence of unicode characters
+    and to get the output in the terminal in a color you need to use the
+    print function.
+
+    :usage:
+
+        Assigning a function to variable. After imports modules add this code
+        ``color_text = use_default_color`` then in the next line type this
+        pieces ``mdsanima = color_text("I love Python", 39)`` of code. Next you
+        can simple type this ``print(mdsanima)`` code for printing color text
+        string output in your shell terminal window. Also instead of typing
+        color number you can us default colors name scheme like ``sky`` or
+        ``blue`` color.
+
+        Assigning a function by calling to a variable, use this example code:
+
+        .. code:: python
+
+            from mdsanima_dev.colors import use_default_color
+            love = use_default_color("I love Python", 86)
+            devs = use_default_color("App Development", "red")
+            print(love, devs)
+
+        You can also use `machine <../tools/#function-machine>`_ function with
+        this example code:
+
+        .. code:: python
+
+            from mdsanima_dev.colors import use_default_color
+            from mdsanima_dev.utils.tools import machine
+            love = use_default_color("I love Python", 74)
+            devs = use_default_color("App Development", "indigo")
+            machine(love + " " + devs, 0.01)
+
+  :screenshots:
+
+    Want to see :bdg-warning-line:`Terminal Screenshots` from the sample code
+    above along with cool show output that's we produced. See this examples
+    `output use_colors <../../screenshots/colors/#examples-output-use-colors>`_
+    link.
+
+.. versionchanged:: 0.2.0
 ```
 
-## FUNCTION `get_color`
+## FUNCTION `print_default`
 
 ```{eval-rst}
-.. autofunction:: mdsanima_dev.colors.get_color
+.. autofunction:: mdsanima_dev.colors.print_default
+
+
+    :usage:
+
+        Assigning a function to a ``mdsanima`` variable. Instead of typing
+        ``mdsanima`` you can assign any string in these variable like
+        ``my_print`` or something else. Then call this funtion to returning
+        printing colored text on the same line or next line.
+
+        You can simple create test function like this sample code:
+
+        .. code:: python
+
+            from mdsanima_dev.colors import print_default_color
+
+            mdsanima = print_default_color
+
+            def printing_color():
+                mdsanima(color=42)
+                mdsanima("example", 30, end=" ")
+                mdsanima("colored text", 32, end=" ")
+                mdsanima(text="development", color=38, end=" ")
+                mdsanima("in one line", 86)
+                mdsanima(color=50, text="your text", end=" ")
+                mdsanima("example", color=80, end=" in ")
+                mdsanima("colors", color=110, end=" ")
+                mdsanima("more devs colors", color=140)
+                mdsanima(color=48)
+
+            printing_color()
+
+  :screenshots:
+
+    Want to see :bdg-warning-line:`Terminal Screenshots` from the sample code
+    above along with cool show output that's we produced. See this examples
+    `output print_colors <../../screenshots/colors/#examples-output-print-colors>`_
+    link.
+
+.. versionchanged:: 0.2.0
 ```
 
-## FUNCTION `get_complex_color`
+## FUNCTION `show_colors`
 
 ```{eval-rst}
-.. autofunction:: mdsanima_dev.colors.get_complex_color
-```
+.. autofunction:: mdsanima_dev.colors.show_colors
 
-## FUNCTION `show_complex_color`
 
-```{eval-rst}
-.. autofunction:: mdsanima_dev.colors.show_complex_color
-```
+    :usage:
 
-### EXAMPLE `show_complex_color(False)`
+        This is a function call. Type this sample code in your console:
 
-```{eval-rst}
-This is a example screenshots of the `Shell Terminal` in different variants,
-just for fun.
-```
+        .. code:: python
 
-```{eval-rst}
-.. tab-set::
+            from mdsanima_dev.colors import show_colors
+            show_colors(True)
+            show_colors(False)
 
-    .. tab-item:: Shell Acrylic
+  :screenshots:
 
-        .. figure:: ../_images/screenshot/color_show_01_acrylic_a.jpg
-            :name: show-complex-color-false-ac-a
+    Want to see :bdg-warning-line:`Terminal Screenshots` from the sample code
+    above along with cool show output that's we produced. See this examples
+    `output show_colors <../../screenshots/colors/#examples-output-show-colors>`_
+    link.
 
-    .. tab-item:: Shell Dark
-
-        .. figure:: ../_images/screenshot/color_show_01_dark_a.jpg
-            :name: show-complex-color-false-dk-a
-
-    .. tab-item:: Shell Acrylic Border
-        :selected:
-
-        .. figure:: ../_images/screenshot/color_show_01_acrylic_b.jpg
-            :name: show-complex-color-false-ac-b
-
-    .. tab-item:: Shell Dark Border
-
-        .. figure:: ../_images/screenshot/color_show_01_dark_b.jpg
-            :name: show-complex-color-false-dk-b
-```
-
-### EXAMPLE `show_complex_color(True)`
-
-```{eval-rst}
-This is a example screenshots of the `Shell Terminal` in different variants,
-just for fun.
-```
-
-```{eval-rst}
-.. tab-set::
-
-    .. tab-item:: Shell Acrylic
-
-        .. figure:: ../_images/screenshot/color_show_02_acrylic_a.jpg
-            :name: show-complex-color-true-ac-a
-
-    .. tab-item:: Shell Dark
-        :selected:
-
-        .. figure:: ../_images/screenshot/color_show_02_dark_a.jpg
-            :name: show-complex-color-true-dk-a
-
-    .. tab-item:: Shell Acrylic Border
-
-        .. figure:: ../_images/screenshot/color_show_02_acrylic_b.jpg
-            :name: show-complex-color-true-ac-b
-
-    .. tab-item:: Shell Dark Border
-
-        .. figure:: ../_images/screenshot/color_show_02_dark_b.jpg
-            :name: show-complex-color-true-dk-b
-```
-
-```{eval-rst}
-.. note::
-    Now you know what numbers you have withs different colors, now you can use
-    the function `get_complex_color <#function-get-complex-color>`_ in your
-    code.
+.. versionchanged:: 0.2.0
 ```

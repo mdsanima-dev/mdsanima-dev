@@ -3,8 +3,7 @@
 # Copyritht © 2022 Marcin Różewski MDSANIMA
 
 
-"""
-Python package release. Help devs workflow.
+"""Python package release. Help devs workflow.
 
 .. important::
 
@@ -32,8 +31,7 @@ HERE = pathlib.Path(__file__).parent
 
 
 def go_check():
-    """
-    Loading data from ``package.json`` file.
+    """Loading data from ``package.json`` file.
     Execute after the version is bumped by ``postbump`` options.
 
     :return: new version to replece
@@ -47,8 +45,7 @@ def go_check():
 
 
 def go_read_write(old_version: str, new_version: str):
-    """
-    Replace old version with new version ``__init__.py`` file.
+    """Replace old version with new version ``__init__.py`` file.
 
     :param old_version: line number with old version
     :type old_version: str
@@ -63,9 +60,10 @@ def go_read_write(old_version: str, new_version: str):
 
 
 def go_bump():
-    """
-    Reading file ``__init__.py`` and then split lines. Searching matching lines
-    and replacing this line with new version. Printing info in the console.
+    """Reading file ``__init__.py`` and then split lines.
+
+    Searching matching lines and replacing this line with new version. Printing
+    info in the console.
     """
     path_to_file = HERE / "src/mdsanima_dev/__init__.py"
     with open(path_to_file, "r", encoding="utf-8") as r:

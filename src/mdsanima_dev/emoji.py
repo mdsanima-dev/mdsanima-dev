@@ -108,7 +108,7 @@ def emoji_clean_url_data(
             emoji_clean_url_data(bhead=True)
             emoji_clean_url_data(emoji_url=emoji_mod_url, mhead=True)
     """
-    mds = colors.get_complex_color
+    mds = colors.print_color_number
 
     # assigning function calling to a variable
     eud = emoji_get_url_data(emoji_url)
@@ -331,7 +331,7 @@ class emoji:
     """
 
     def __init__(self) -> str:
-        self.mds = colors.get_complex_color
+        self.mds = colors.print_color_number
 
     def emo_stats(self) -> str:
         """This method printing the statistic of emoji in the table with
@@ -630,7 +630,7 @@ class show(emoji):
         :rtype: emoji
         """
         self.emo = emoji_load_json_data()
-        self.mds = colors.get_complex_color
+        self.mds = colors.print_color_number
         self.head = table().headers
         self.cont = table().content
         self.emo_list = emo_list

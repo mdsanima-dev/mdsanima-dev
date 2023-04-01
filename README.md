@@ -13,8 +13,8 @@
 [![github-deployments][badge-09]][link-07]
 [![github-pages-documentation][badge-10]][link-08]
 
-*Python* package [mdsanima-dev][link-02] is for colorizing, adding emoji and
-making table on console shell print output. You can find here *Python* modules
+_Python_ package [mdsanima-dev][link-02] is for colorizing, adding emoji and
+making table on console shell print output. You can find here _Python_ modules
 that's make coding easier and cooler, includes several useful modules that
 we're use in various projects. In the future we're add more cool function on
 this package.
@@ -23,19 +23,22 @@ Docomentation available at [GitHub Pages][link-08], be sure to check it.
 
 ## Installation
 
-Instructions how to install the *Python* package [mdsanima-dev][link-02] on
+Instructions how to install the _Python_ package [mdsanima-dev][link-02] on
 your system.
 
 <!-- start help-installation -->
+
 Options [PyPI](#using-pypi), [setup](#using-setup) or
 [wheel](#using-wheel) allows you to install the package **globally** on
 your system. If you want to install the package in an **isolated environment**
 on your system use the [virtualenv](#on-virtualenv) options.
+
 <!-- end help-installation -->
 
 ### Using `PyPI`
 
 <!-- start help-using-pypi -->
+
 Install latest version:
 
 ```shell
@@ -57,7 +60,7 @@ python3 -m pip install --upgrade mdsanima-dev
 Reinstall package to latest version:
 
 ```shell
-python3 -m pip install --force-reinstall msdsanima-dev
+python3 -m pip install --force-reinstall mdsanima-dev
 ```
 
 Uninstall package:
@@ -65,11 +68,13 @@ Uninstall package:
 ```shell
 python3 -m pip uninstall mdsanima-dev
 ```
+
 <!-- end help-using-pypi -->
 
 ### Using `setup`
 
 <!-- start help-using-setup -->
+
 Install the package using `easy install` options, but this is an deprecated
 method and not recommend using this, instead of this method please use
 [wheel](#using-wheel) options for install.
@@ -91,11 +96,13 @@ Then go to the repository directory `cd mdsanima-dev` and install the package:
 ```shell
 python3 setup.py install
 ```
+
 <!-- end help-using-setup -->
 
 ### Using `wheel`
 
 <!-- start help-using-wheel -->
+
 Build package from source then install it. Clone the repository just like in
 the [using setup](#using-setup) statement then type in the terminal:
 
@@ -114,11 +121,13 @@ python3 -m pip install --force-reinstall dist/mdsanima_dev-0.1.1-py3-none-any.wh
 
 In this case I used the `--force-reinstall` option because I had an earlier
 version of this package already installed.
+
 <!-- end help-using-wheel -->
 
 ### On `virtualenv`
 
 <!-- start help-on-virtualenv -->
+
 Create and activate virtual environment in hidden folder, type in the terminal:
 
 ```shell
@@ -126,7 +135,7 @@ virtualenv .venv
 source .venv/bin/activate
 ```
 
-If you want to create and activate virtual environment with specific *Python*
+If you want to create and activate virtual environment with specific _Python_
 version, type in the terminal:
 
 ```shell
@@ -148,6 +157,7 @@ Deactivate virtual environment, type in the terminal:
 ```shell
 deactivate
 ```
+
 <!-- end help-on-virtualenv -->
 
 You can use also [venv](https://docs.python.org/3/tutorial/venv.html) instead
@@ -155,7 +165,7 @@ of this option, just type `python3 -m venv venv` in the terminal.
 
 ## Develempent
 
-Instruction for the *Python* package development. Please check the
+Instruction for the _Python_ package development. Please check the
 [documentation][link-08] site for more information.
 
 ## Showcase
@@ -179,9 +189,9 @@ These are my social media account, be sure to check it. Thanks!
 
 ## License
 
-Python package [mdsanima-dev][link-02] developed by
+The _Python_ package [mdsanima-dev][link-02] developed by
 [Marcin Różewski][link-10] is released under the terms of
-[MIT License][link-11]
+[MIT License][link-11].
 
 [badge-pe]: https://static.pepy.tech/personalized-badge/mdsanima-dev?period=total&units=none&left_color=grey&right_color=yellowgreen&left_text=downloads
 [badge-01]: https://img.shields.io/github/license/mdsanima-dev/mdsanima-dev?style=flat
@@ -203,7 +213,6 @@ Python package [mdsanima-dev][link-02] developed by
 [badge-17]: https://img.shields.io/youtube/channel/views/UCB5na2BRwrnwx00LCspbG5Q?style=social
 [badge-18]: https://img.shields.io/twitch/status/mdsanima?style=social
 [badge-19]: https://img.shields.io/discord/621477380359454742?style=social&logo=discord
-
 [link-01]: https://github.com/mdsanima-dev/mdsanima-dev
 [link-02]: https://pypi.org/project/mdsanima-dev
 [link-03]: https://github.com/psf/black
@@ -214,10 +223,13 @@ Python package [mdsanima-dev][link-02] developed by
 [link-08]: https://mdsanima-dev.github.io/mdsanima-dev/
 [link-09]: https://discord.gg/c3m7pTF
 [link-10]: https://github.com/mdsanima
-[link-11]: https://github.com/mdsanima-dev/mdsanima-dev/blob/master/LICENSE
+[link-11]: https://github.com/mdsanima-dev/mdsanima-dev/blob/main/LICENSE
 [link-12]: https://twitter.com/intent/follow?toudajew&screen_name=toudajew
 [link-13]: https://twitter.com/intent/follow?str9led&screen_name=str9led
 [link-14]: https://twitter.com/intent/follow?mdsanima&screen_name=mdsanima
 [link-15]: https://reddit.com/r/mdsanima/
 [link-16]: https://youtube.com/mdsanima?sub_confirmation=1
 [link-17]: https://twitch.tv/mdsanima/
+
+Zamień linki z mdsanima-render-time tam już dobrze ułożone.
+Sprawdź plik README.md, jest wszystko.

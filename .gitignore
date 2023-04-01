@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# dotenv environment variables file
+.env.test
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# mdsanima folders
+tmp
+temp
+otls/backup

@@ -1,6 +1,6 @@
 {
   "name": "mdsanima_dev",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": {
     "name": "Marcin Różewski",
     "email": "marcinrozewski@gmail.com"
@@ -15,19 +15,20 @@
     "Bug Tracker": "https://github.com/mdsanima-dev/mdsanima-dev/issues/"
   },
   "devDependencies": {
-    "standard-version": "^9.3.0",
-    "conventional-changelog": "^5.0.1",
-    "mdsanima-conventional-changelog": "https://github.com/mdsanima/conventional-changelog/releases/tag/v5.0.1"
+    "standard-version": "^9.5.0"
   },
   "keywords": [
     "animation",
     "automatic",
     "changelog",
-    "console",
+    "cli",
     "colors",
+    "commands",
+    "console",
     "development",
-    "emoj",
+    "emoji",
     "mdsanima-dev",
+    "mdsanima",
     "python",
     "shell",
     "terminal",
@@ -57,7 +58,6 @@
     "Operating System :: MacOS :: MacOS X",
     "Operating System :: Microsoft :: Windows :: Windows 10",
     "Operating System :: POSIX :: Linux",
-    "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
