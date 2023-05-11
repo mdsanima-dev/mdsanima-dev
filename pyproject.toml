@@ -1,11 +1,11 @@
-# Copyritht © 2022 Marcin Różewski MDSANIMA
+# Copyritht © 2022 - 2023 Marcin Różewski MDSANIMA
 
 [build-system]
 requires = ['setuptools>=46.4.0', 'wheel']
 build-backend = 'setuptools.build_meta'
 
 [tool.black]
-line-length = 79
+line-length = 120
 target-version = ['py36', 'py37', 'py38', 'py39', 'py310']
 include = '\.pyi?$'
 
