@@ -4,17 +4,22 @@
 """Setuptools dynamic package. This setup allow to build Sphinx Documentation only."""
 
 
+import json
+import pathlib
+
 import setuptools
 
-from mdsanima_dev._version import __version__  # pylint: disable=E0611 disable=E0401
 
+HERE = pathlib.Path(__file__).parent
 
-# Setuptools dynamic package arguments.
+with open(HERE / "package.json", "r", encoding="utf-8") as data:
+    package = json.load(data)
+
 setuptools.setup(
     command_options={
         "build_sphinx": {
-            "version": ("setup.py", __version__),
-            "release": ("setup.py", __version__),
+            "version": ("setup.py", package["version"]),
+            "release": ("setup.py", package["version"]),
             "source_dir": ("setup.py", "docs"),
             "build_dir": ("setup.py", "build"),
             "builder": ("setup.py", "dirhtml"),
