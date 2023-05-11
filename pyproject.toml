@@ -1,12 +1,99 @@
-# Copyritht © 2022 - 2023 Marcin Różewski MDSANIMA
+# Copyritht © 2021 - 2023 Marcin Różewski MDSANIMA
 
 [build-system]
-requires = ['setuptools>=46.4.0', 'wheel']
+requires = ['setuptools>=67.7.2', 'wheel>=0.40.0', 'pip>=23.1.2', 'setuptools_scm[toml]>=7.1.0']
 build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'mdsanima_dev'
+authors = [{name = 'Marcin Różewski', email = 'marcinrozewski@gmail.com'}]
+description = 'MDSANIMA-DEV Python Development Tools'
+readme = 'README.md'
+license = {file = 'LICENSE'}
+requires-python = '>=3.10'
+keywords = [
+    'animation',
+    'automatic',
+    'bash',
+    'changelog',
+    'cli',
+    'colors',
+    'command-line',
+    'console-app',
+    'console-application',
+    'console',
+    'development',
+    'emoj',
+    'mdsanima-dev',
+    'mdsanima',
+    'python-library',
+    'python',
+    'python3',
+    'shell-script',
+    'shell',
+    'terminal',
+    'tools',
+    'versioning',
+    'vfx',
+    'zsh',
+]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Environment :: Plugins',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Education',
+    'Intended Audience :: End Users/Desktop',
+    'Intended Audience :: Information Technology',
+    'Intended Audience :: Legal Industry',
+    'Intended Audience :: Other Audience',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Natural Language :: Polish',
+    'Operating System :: MacOS',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX :: BSD',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: Unix',
+    'Programming Language :: Python :: 3.10',
+    'Topic :: Desktop Environment',
+    'Topic :: Documentation :: Sphinx',
+    'Topic :: Education :: Testing',
+    'Topic :: Home Automation',
+    'Topic :: Scientific/Engineering :: Information Analysis',
+    'Topic :: Software Development',
+    'Topic :: Software Development :: Libraries',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: System',
+    'Topic :: System :: Console Fonts',
+    'Topic :: System :: Filesystems',
+    'Topic :: System :: Logging',
+    'Topic :: System :: Operating System',
+    'Topic :: System :: Shells',
+    'Topic :: System :: System Shells',
+    'Topic :: System :: Systems Administration',
+    'Topic :: System :: Systems Administration :: Authentication/Directory',
+    'Topic :: Terminals',
+    'Topic :: Text Processing',
+    'Topic :: Text Processing :: Markup :: reStructuredText',
+    'Topic :: Utilities',
+    'Typing :: Typed',
+]
+dynamic = ['version']
+
+[project.urls]
+homepage = 'https://github.com/mdsanima-dev/mdsanima-dev'
+documentation = 'https://github.com/mdsanima-dev/mdsanima-dev#readme'
+repository = 'https://github.com/mdsanima-dev/mdsanima-dev.git'
+changelog = 'https://github.com/mdsanima-dev/mdsanima-dev/blob/main/CHANGELOG.md'
+
+[project.scripts]
+mdsanima-dev = 'mdsanima_dev.utils.converts:main'
 
 [tool.black]
 line-length = 120
-target-version = ['py36', 'py37', 'py38', 'py39', 'py310']
+target-version = ['py310']
 include = '\.pyi?$'
 
 [tool.isort]
@@ -17,3 +104,9 @@ lines_before_imports = 2
 lines_after_imports = 2
 treat_all_comments_as_code = true
 extend_skip = ['.md', '.json']
+
+[tool.setuptools.packages.find]
+where = ['src']
+
+[tool.setuptools_scm]
+write_to = 'src/mdsanima_dev/_version.py'
