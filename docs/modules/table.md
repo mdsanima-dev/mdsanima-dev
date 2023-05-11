@@ -25,23 +25,23 @@
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/table_show_01_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/table_show_01_acrylic_a.webp
             :name: show-table-01-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/table_show_01_dark_a.jpg
+        .. figure:: ../_images/screenshot/table_show_01_dark_a.webp
             :name: show-table-01-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/table_show_01_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/table_show_01_acrylic_b.webp
             :name: show-table-01-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/table_show_01_dark_b.jpg
+        .. figure:: ../_images/screenshot/table_show_01_dark_b.webp
             :name: show-table-01-dk-b
 ```
 
@@ -56,23 +56,23 @@
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/table_show_02_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/table_show_02_acrylic_a.webp
             :name: show-table-02-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/table_show_02_dark_a.jpg
+        .. figure:: ../_images/screenshot/table_show_02_dark_a.webp
             :name: show-table-02-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/table_show_02_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/table_show_02_acrylic_b.webp
             :name: show-table-02-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/table_show_02_dark_b.jpg
+        .. figure:: ../_images/screenshot/table_show_02_dark_b.webp
             :name: show-table-02-dk-b
 ```
 
@@ -138,23 +138,23 @@ def my_table():
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/table_show_03_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/table_show_03_acrylic_a.webp
             :name: show-table-03-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/table_show_03_dark_a.jpg
+        .. figure:: ../_images/screenshot/table_show_03_dark_a.webp
             :name: show-table-03-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/table_show_03_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/table_show_03_acrylic_b.webp
             :name: show-table-03-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/table_show_03_dark_b.jpg
+        .. figure:: ../_images/screenshot/table_show_03_dark_b.webp
             :name: show-table-03-dk-b
 ```
 
@@ -180,22 +180,22 @@ def my_table():
 
     .. tab-item:: Shell Acrylic
 
-        .. figure:: ../_images/screenshot/table_show_04_acrylic_a.jpg
+        .. figure:: ../_images/screenshot/table_show_04_acrylic_a.webp
             :name: show-table-04-ac-a
 
     .. tab-item:: Shell Dark
 
-        .. figure:: ../_images/screenshot/table_show_04_dark_a.jpg
+        .. figure:: ../_images/screenshot/table_show_04_dark_a.webp
             :name: show-table-04-dk-a
 
     .. tab-item:: Shell Acrylic Border
         :selected:
 
-        .. figure:: ../_images/screenshot/table_show_04_acrylic_b.jpg
+        .. figure:: ../_images/screenshot/table_show_04_acrylic_b.webp
             :name: show-table-04-ac-b
 
     .. tab-item:: Shell Dark Border
 
-        .. figure:: ../_images/screenshot/table_show_04_dark_b.jpg
+        .. figure:: ../_images/screenshot/table_show_04_dark_b.webp
             :name: show-table-04-dk-b
 ```
