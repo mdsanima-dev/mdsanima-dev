@@ -13,29 +13,27 @@
 [![github-deployments][badge-09]][link-07]
 [![github-pages-documentation][badge-10]][link-08]
 
-*Python* package [mdsanima-dev][link-02] is for colorizing, adding emoji and
-making table on console shell print output. You can find here *Python* modules
-that's make coding easier and cooler, includes several useful modules that
-we're use in various projects. In the future we're add more cool function on
-this package.
+_Python_ package [mdsanima-dev][link-02] is for colorizing, adding emoji and making table on console shell print output.
+You can find here _Python_ modules that's make coding easier and cooler, includes several useful modules that we're use
+in various projects. In the future we're add more cool function on this package.
 
 Docomentation available at [GitHub Pages][link-08], be sure to check it.
 
-## Installation
+## Installation `Options`
 
-Instructions how to install the *Python* package [mdsanima-dev][link-02] on
-your system.
+Instructions how to install the _Python_ package [mdsanima-dev][link-02] on your system.
 
 <!-- start help-installation -->
-Options [PyPI](#using-pypi), [setup](#using-setup) or
-[wheel](#using-wheel) allows you to install the package **globally** on
-your system. If you want to install the package in an **isolated environment**
-on your system use the [virtualenv](#on-virtualenv) options.
+
+Options [PyPI](#using-pypi) allows you to install the package **globally** on your system. If you want to install the
+package in an **isolated environment** on your system use the [virtualenv](#using-virtualenv) options.
+
 <!-- end help-installation -->
 
 ### Using `PyPI`
 
 <!-- start help-using-pypi -->
+
 Install latest version:
 
 ```shell
@@ -45,7 +43,7 @@ python3 -m pip install mdsanima-dev
 Install specific version:
 
 ```shell
-python3 -m pip install mdsanima-dev==0.1.1
+python3 -m pip install mdsanima-dev==0.2.0
 ```
 
 Upgrade package to latest version:
@@ -65,14 +63,12 @@ Uninstall package:
 ```shell
 python3 -m pip uninstall mdsanima-dev
 ```
+
 <!-- end help-using-pypi -->
 
-### Using `setup`
+### Using `virtualenv`
 
-<!-- start help-using-setup -->
-Install the package using `easy install` options, but this is an deprecated
-method and not recommend using this, instead of this method please use
-[wheel](#using-wheel) options for install.
+<!-- start help-on-virtualenv -->
 
 Clone repository with all number of commits history using HTTPS:
 
@@ -86,77 +82,57 @@ Clone repository with the specified number of commits history using SSH:
 git clone --depth=1 git@github.com:mdsanima-dev/mdsanima-dev.git
 ```
 
-Then go to the repository directory `cd mdsanima-dev` and install the package:
+Then go to the repository directory:
 
 ```shell
-python3 setup.py install
-```
-<!-- end help-using-setup -->
-
-### Using `wheel`
-
-<!-- start help-using-wheel -->
-Build package from source then install it. Clone the repository just like in
-the [using setup](#using-setup) statement then type in the terminal:
-
-```shell
-python3 setup.py sdist bdist_wheel
+cd mdsanima-dev
 ```
 
-The package build creates new directories where the installation files are
-located the `build` and `dist` directories. Then install the package just like
-in the [using PyPI](#using-pypi) statement, but instead of entering the
-package name, give the path to the `.whl` file that was built earlier:
+Create isolated environment with specific package version then activate and install requirements, type in terminal:
 
 ```shell
-python3 -m pip install --force-reinstall dist/mdsanima_dev-0.1.1-py3-none-any.whl
-```
-
-In this case I used the `--force-reinstall` option because I had an earlier
-version of this package already installed.
-<!-- end help-using-wheel -->
-
-### On `virtualenv`
-
-<!-- start help-on-virtualenv -->
-Create and activate virtual environment in hidden folder, type in the terminal:
-
-```shell
-virtualenv .venv
+virtualenv --setuptools 67.7.2 --wheel 0.40.0 --pip 23.1.2 .venv
 source .venv/bin/activate
+pip install -r requirements-dev.txt
+pip install -r requirements-doc.txt
 ```
 
-If you want to create and activate virtual environment with specific *Python*
-version, type in the terminal:
+Install build tools for creating distribution, then build package from source, type in terminal:
 
 ```shell
-virtualenv venv39 -p python3.9
-source venv39/bin/activate
+pip install --upgrade build
+python -m build
 ```
 
 Finnaly install the package in virtual environment, type in the terminal:
 
 ```shell
-pip install mdsanima-dev
+pip install --force-reinstall dist/mdsanima_dev-0.2.0-py3-none-any.whl
 ```
 
-Also you can use [PyPI](#using-pypi), [setup](#using-setup) or
-[wheel](#using-wheel) options.
+In this case I used the `--force-reinstall` option because I had an earlier version of this package already installed.
+
+Also you can build Sphinx documentation, type in terminal:
+
+```shell
+python setup.py build_sphinx
+cd build/dirhtml
+python -m http.server 8080
+```
+
+Now open [localhost](http://localhost:8080) to see the documentation.
 
 Deactivate virtual environment, type in the terminal:
 
 ```shell
 deactivate
 ```
-<!-- end help-on-virtualenv -->
 
-You can use also [venv](https://docs.python.org/3/tutorial/venv.html) instead
-of this option, just type `python3 -m venv venv` in the terminal.
+<!-- end help-on-virtualenv -->
 
 ## Develempent
 
-Instruction for the *Python* package development. Please check the
-[documentation][link-08] site for more information.
+Instruction for the _Python_ package development. Please check the [documentation][link-08] site for more information.
 
 ## Showcase
 
@@ -179,8 +155,7 @@ These are my social media account, be sure to check it. Thanks!
 
 ## License
 
-Python package [mdsanima-dev][link-02] developed by
-[Marcin Różewski][link-10] is released under the terms of
+Python package [mdsanima-dev][link-02] developed by [Marcin Różewski][link-10] is released under the terms of
 [MIT License][link-11]
 
 [badge-pe]: https://static.pepy.tech/personalized-badge/mdsanima-dev?period=total&units=none&left_color=grey&right_color=yellowgreen&left_text=downloads
@@ -203,7 +178,6 @@ Python package [mdsanima-dev][link-02] developed by
 [badge-17]: https://img.shields.io/youtube/channel/views/UCB5na2BRwrnwx00LCspbG5Q?style=social
 [badge-18]: https://img.shields.io/twitch/status/mdsanima?style=social
 [badge-19]: https://img.shields.io/discord/621477380359454742?style=social&logo=discord
-
 [link-01]: https://github.com/mdsanima-dev/mdsanima-dev
 [link-02]: https://pypi.org/project/mdsanima-dev
 [link-03]: https://github.com/psf/black
