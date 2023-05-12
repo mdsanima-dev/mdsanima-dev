@@ -4,6 +4,8 @@
 """Setuptools dynamic package. This setup allow to build Sphinx Documentation only."""
 
 
+from __future__ import annotations
+
 import json
 import pathlib
 
