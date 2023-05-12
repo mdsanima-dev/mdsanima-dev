@@ -3,7 +3,7 @@
 Instructions how to install the _Python_ package [mdsanima-dev {octicon}`link-external;0.8em`][pypi-mdsanima-dev] on
 your system.
 
-<img src="../../_static/images/mdsanima_dev_python_package.webp">
+<img src="../_static/images/mdsanima_dev_python_package.webp">
 
 ## INSTALLATION `OPTIONS`
 
