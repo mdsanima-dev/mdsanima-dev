@@ -1,3 +1,5 @@
+# Copyritht © 2022-2023 Marcin Różewski MDSANIMA
+
 name: docs-build-deployment
 on:
   push:
@@ -5,24 +7,26 @@ on:
 
 jobs:
   docs:
-    name: documentation
+    name: Sphinx Documentation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
         with:
-          python-version: "3.8"
+          python-version: "3.10"
           cache: "pip"
-          cache-dependency-path: "**/requirements-dev.txt"
-      - name: install dependencies
-        run: pip install -r docs/requirements-dev.txt
-      - name: build package
-        run: python setup.py sdist bdist_wheel
-      - name: install package
+          cache-dependency-path: "**/requirements-*.txt"
+      - name: Install DEVS Dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Install DOCS Dependencies
+        run: pip install -r requirements-doc.txt
+      - name: Build Package
+        run: python -m build
+      - name: Install Package
         run: pip install dist/mdsanima_dev-*-py3-none-any.whl
-      - name: build documentation
+      - name: Build Documentation
         run: python setup.py build_sphinx
-      - name: upload to github pages
+      - name: Upload to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

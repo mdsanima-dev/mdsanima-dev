@@ -1,1 +1,1 @@
-__version__ = "0.1.1"
+# Copyright © 2021-2023 Marcin Różewski MDSANIMA
