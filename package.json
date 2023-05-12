@@ -1,6 +1,6 @@
 {
   "name": "mdsanima_dev",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "description": "MDSANIMA-DEV Python Development Tools",
   "standard-version": {
@@ -24,7 +24,7 @@
       },
       {
         "type": "docs",
-        "section": "{octicon}`book;1em;sd-text-secondary`{bdg-info-line}`DOCUMENTATION`",
+        "section": "{octicon}`book;1em;sd-text-secondary`{bdg-secondary-line}`DOCUMENTATION`",
         "hidden": false
       },
       {
@@ -34,15 +34,16 @@
       },
       {
         "type": "build",
-        "section": "{octicon}`server;1em;sd-text-secondary`{bdg-secondary-line}`BUILD SYSTEM`",
-        "hidden": true
-      },
-      {
-        "type": "ci",
-        "hidden": true
+        "section": "{octicon}`server;1em;sd-text-secondary`{bdg-primary-line}`BUILD SYSTEM`",
+        "hidden": false
       },
       {
         "type": "refactor",
+        "section": "{octicon}`file-code;1em;sd-text-secondary`{bdg-light-line}`REFACTOR`",
+        "hidden": false
+      },
+      {
+        "type": "ci",
         "hidden": true
       },
       {
