@@ -1,7 +1,6 @@
-# Copyritht © 2021-2023 Marcin Różewski MDSANIMA
+# Copyright (c) 2021 - 2023 MDSANIMA
 
-
-"""Setuptools dynamic package. This setup allow to build Sphinx Documentation only."""
+"""Setuptools dynamic package. This setup allows building Sphinx Documentation only."""
 
 
 from __future__ import annotations
@@ -14,7 +13,7 @@ import setuptools
 
 HERE = pathlib.Path(__file__).parent
 
-with open(HERE / "package.json", "r", encoding="utf-8") as data:
+with open(HERE / "manifest.json", "r", encoding="utf-8") as data:
     package = json.load(data)
 
 setuptools.setup(
