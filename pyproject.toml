@@ -1,112 +1,149 @@
-# Copyritht © 2021 - 2023 Marcin Różewski MDSANIMA
+# Copyright (c) 2021 - 2023 MDSANIMA
+
+# This is a configuration file for this Python package. Published on PyPI using Twine.
+
 
 [build-system]
-requires = ['setuptools>=67.7.2', 'wheel>=0.40.0', 'pip>=23.1.2', 'setuptools_scm[toml]>=7.1.0']
-build-backend = 'setuptools.build_meta'
+requires = ["setuptools>=68.2", "wheel>=0.41", "setuptools_scm[toml]>=8.0"]
+build-backend = "setuptools.build_meta"
+
 
 [project]
-name = 'mdsanima_dev'
-authors = [{name = 'Marcin Różewski', email = 'marcinrozewski@gmail.com'}]
-description = 'MDSANIMA-DEV Python Development Tools'
-readme = 'README.md'
-license = {file = 'LICENSE'}
-requires-python = '>=3.10'
+name = "mdsanima-dev"
+dynamic = ["version"]
+description = "The mdsanima-dev Python package offers a range of powerful features, including colorizing text, adding emojis, and creating well-formatted tables in console shell print output."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Marcin Różewski", email = "marcinrozewski@gmail.com" }]
 keywords = [
-    'animation',
-    'automatic',
-    'bash',
-    'changelog',
-    'cli',
-    'colors',
-    'command-line',
-    'console-app',
-    'console-application',
-    'console',
-    'development',
-    'emoj',
-    'mdsanima-dev',
-    'mdsanima',
-    'python-library',
-    'python',
-    'python3',
-    'shell-script',
-    'shell',
-    'terminal',
-    'tools',
-    'versioning',
-    'vfx',
-    'zsh',
+    "animation",
+    "automatic",
+    "bash",
+    "changelog",
+    "cli",
+    "colors",
+    "command-line",
+    "console-app",
+    "console-application",
+    "console",
+    "development",
+    "emoj",
+    "mdsanima-dev",
+    "mdsanima",
+    "python-library",
+    "python",
+    "python3",
+    "shell-script",
+    "shell",
+    "terminal",
+    "tools",
+    "versioning",
+    "vfx",
+    "zsh",
 ]
 classifiers = [
-    'Development Status :: 5 - Production/Stable',
-    'Environment :: Console',
-    'Environment :: Plugins',
-    'Intended Audience :: Developers',
-    'Intended Audience :: Education',
-    'Intended Audience :: End Users/Desktop',
-    'Intended Audience :: Information Technology',
-    'Intended Audience :: Legal Industry',
-    'Intended Audience :: Other Audience',
-    'Intended Audience :: System Administrators',
-    'License :: OSI Approved :: MIT License',
-    'Natural Language :: English',
-    'Natural Language :: Polish',
-    'Operating System :: MacOS',
-    'Operating System :: Microsoft :: Windows',
-    'Operating System :: POSIX :: BSD',
-    'Operating System :: POSIX :: Linux',
-    'Operating System :: Unix',
-    'Programming Language :: Python :: 3.10',
-    'Topic :: Desktop Environment',
-    'Topic :: Documentation :: Sphinx',
-    'Topic :: Education :: Testing',
-    'Topic :: Home Automation',
-    'Topic :: Scientific/Engineering :: Information Analysis',
-    'Topic :: Software Development',
-    'Topic :: Software Development :: Libraries',
-    'Topic :: Software Development :: Libraries :: Python Modules',
-    'Topic :: System',
-    'Topic :: System :: Console Fonts',
-    'Topic :: System :: Filesystems',
-    'Topic :: System :: Logging',
-    'Topic :: System :: Operating System',
-    'Topic :: System :: Shells',
-    'Topic :: System :: System Shells',
-    'Topic :: System :: Systems Administration',
-    'Topic :: System :: Systems Administration :: Authentication/Directory',
-    'Topic :: Terminals',
-    'Topic :: Text Processing',
-    'Topic :: Text Processing :: Markup :: reStructuredText',
-    'Topic :: Utilities',
-    'Typing :: Typed',
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Legal Industry",
+    "Intended Audience :: Other Audience",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Natural Language :: Polish",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: BSD",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Desktop Environment",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Education :: Testing",
+    "Topic :: Home Automation",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System",
+    "Topic :: System :: Console Fonts",
+    "Topic :: System :: Filesystems",
+    "Topic :: System :: Logging",
+    "Topic :: System :: Operating System",
+    "Topic :: System :: Shells",
+    "Topic :: System :: System Shells",
+    "Topic :: System :: Systems Administration",
+    "Topic :: System :: Systems Administration :: Authentication/Directory",
+    "Topic :: Terminals",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Markup :: reStructuredText",
+    "Topic :: Utilities",
+    "Typing :: Typed",
 ]
-dynamic = ['version']
+
+[project.optional-dependencies]
+dev = [
+    "black==23.11.0",
+    "build==1.0.3",
+    "flake8==6.1.0",
+    "ipython==8.17.2",
+    "isort==5.12.0",
+    "pylint==3.0.2",
+    "pytest-cov==4.1.0",
+    "pytest==7.4.3",
+    "setuptools-scm==8.0.4",
+    "setuptools==68.2.2",
+    "twine==4.0.2",
+    "virtualenv==20.24.6",
+    "wheel==0.41.3",
+]
+doc = [
+    "furo==2022.3.4",
+    "myst-parser==0.17.2",
+    "sphinx-copybutton==0.5.0",
+    "sphinx-design==0.0.13",
+    "sphinx-inline-tabs==2022.1.2b11",
+    "sphinx==4.5.0",
+    "sphinxext-opengraph==0.6.3",
+]
+
 
 [project.urls]
-homepage = 'https://github.com/mdsanima-dev/mdsanima-dev'
-documentation = 'https://github.com/mdsanima-dev/mdsanima-dev#readme'
-repository = 'https://github.com/mdsanima-dev/mdsanima-dev.git'
-changelog = 'https://github.com/mdsanima-dev/mdsanima-dev/blob/main/CHANGELOG.md'
+Homepage = "https://github.com/mdsanima-dev/mdsanima-dev/"
+Documentation = "https://mdsanima-dev.github.io/mdsanima-dev/"
+Repository = "https://github.com/mdsanima-dev/mdsanima-dev.git"
+Changelog = "https://github.com/mdsanima-dev/mdsanima-dev/blob/main/CHANGELOG.md"
+Tracker = "https://github.com/mdsanima-dev/mdsanima-dev/issues/"
+
 
 [project.scripts]
-mdsanima-dev = 'mdsanima_dev.utils.converts:main'
+mdsanima-dev = "mdsanima_dev.utils.converts:main"
+
 
 [tool.black]
 line-length = 120
-target-version = ['py310']
-include = '\.pyi?$'
+
 
 [tool.isort]
-profile = 'black'
-src_paths = ['src', 'tests']
+profile = "black"
+src_paths = ["src", "tests"]
 force_single_line = true
 lines_before_imports = 2
 lines_after_imports = 2
 treat_all_comments_as_code = true
-extend_skip = ['.md', '.json']
+extend_skip = [".md", ".json"]
+
 
 [tool.setuptools.packages.find]
-where = ['src']
+where = ["src"]
+
 
 [tool.setuptools_scm]
-write_to = 'src/mdsanima_dev/_version.py'
+write_to = "src/mdsanima_dev/_version.py"

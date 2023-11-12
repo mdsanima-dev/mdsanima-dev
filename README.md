@@ -88,14 +88,26 @@ Then go to the repository directory:
 cd mdsanima-dev
 ```
 
-Create isolated environment with specific package version then activate and install requirements, type in terminal:
+Make sure you have `virtualenv` installed on your system. If not, enter this command:
 
 ```shell
-virtualenv --setuptools 67.7.2 --wheel 0.40.0 --pip 23.1.2 .venv
-source .venv/bin/activate
-pip install -r requirements-dev.txt
-pip install -r requirements-doc.txt
+sudo apt update && sudo apt install virtualenv
+python3 -m pip install --upgrade virtualenv
 ```
+
+Creating and activating the development environment, and then installing the necessary packages, enter the following commands in the terminal:
+
+```shell
+virtualenv --pip=23.3.1 --python=python3.12 .venv
+source .venv/bin/activate
+pip install ".[dev]"
+```
+
+All dependencies for this project are specified in the project's TOML configuration.
+
+You can install these dependencies using the `pip install .` command, which will build our package and install the basic dependencies along with the new version of our package. To install dev dependencies, you can use the `pip install ".[dev]"` command instead of specifying a `-r` flag and file as mentioned earlier.
+
+After following the above instructions, we can start writing the program. You can also refer to the instructions regarding the configuration of the development environment, which are included in this [workflow](https://docs.mdsanima.dev/development/workflow/) guide.
 
 Install build tools for creating distribution, then build package from source, type in terminal:
 
