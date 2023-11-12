@@ -1,25 +1,25 @@
-# Copyritht © 2021-2023 Marcin Różewski MDSANIMA
+# Copyright (c) 2021 - 2023 MDSANIMA
 
-
-"""Sphinx documentation configuration file for `mdsanima-dev` package."""
+"""Configuration file for the Sphinx documentation site of the `mdsanima-dev` Python package."""
 
 
 import os
 import sys
 
 
-# Append absolute path.
+# Append absolute path
 sys.path.append(os.path.abspath("."))
 
 
-# Project information.
+# Project information
 project = "mdsanima-dev"
-copyright = "2021-2023, Marcin Różewski MDSANIMA"
+copyright = "2021 - 2023 MDSANIMA"
 author = "Marcin Różewski"
 master_doc = "index"
 language = "en"
 
-# Sphinx extension modules.
+
+# Sphinx extension modules
 extensions = [
     "myst_parser",
     "sphinx_copybutton",
@@ -35,33 +35,39 @@ extensions = [
     "sphinx.ext.mathjax",
 ]
 
-# Markdown parser.
+
+# Markdown parser
 source_suffix = {
     ".md": "markdown",
 }
 
-# Fontawesome options.
+
+# Font awesome links
 FONTAWESOME_CSS_A = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"
 FONTAWESOME_CSS_B = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css"
 FONTAWESOME_CSS_C = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
 
-# Path options.
+
+# Path options
 templates_path = ["_templates"]
 exclude_patterns = ["_images"]
 html_static_path = ["_static"]
 html_js_files = ["mdsanima.js"]
 html_css_files = ["mdsanima.css", FONTAWESOME_CSS_A, FONTAWESOME_CSS_B, FONTAWESOME_CSS_C]
 
-# Theme options.
+
+# Theme options
 html_theme = "furo"
 html_logo = "_static/images/mdsanima_logo_rc2_light_01_cyan.png"
 html_favicon = "_static/images/mdsanima_logo_rc2_light_01_cyan.svg"
 
-# HTML options.
+
+# HTML options
 html_show_sphinx = True
 html_last_updated_fmt = "%d %B %Y, at %H:%M:%S"
 
-# Theme custom options.
+
+# Theme custom options
 html_theme_options = {
     "navigation_with_keys": True,
     "sidebar_hide_name": False,
@@ -75,20 +81,21 @@ html_theme_options = {
     ],
 }
 
-# External links options.
+
+# External links options
 extlinks = {
     "issue": ("https://github.com/mdsanima-dev/mdsanima-dev/issues/%s", "#"),
     "pull": ("https://github.com/mdsanima-dev/mdsanima-dev/pull/%s", "PR #"),
     "pypi": ("https://pypi.org/project/%s/", ""),
 }
 
-# Meta tags config.
-ogp_site_url = "https://mdsanima-dev.github.io/mdsanima-dev/"
-ogp_image = ogp_site_url + "_static/images/mdsanima_dev_python_package.webp"
-ogp_custom_meta_tags = [
-    '<meta property="twitter:card" content="summary_large_image" />',
-]
 
-# Myst parser config.
+# Meta tags config
+ogp_site_url = "https://docs.mdsanima.dev/"
+ogp_image = ogp_site_url + "_static/images/mdsanima_dev_python_package.webp"
+ogp_custom_meta_tags = ['<meta property="twitter:card" content="summary_large_image" />']
+
+
+# Myst parser config
 myst_all_links_external = True
 myst_heading_anchors = 4
