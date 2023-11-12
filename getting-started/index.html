@@ -293,13 +293,20 @@ package in an <strong>isolated environment</strong> on your system use the <a cl
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>mdsanima-dev
 </pre></div>
 </div>
-<p>Create isolated environment with specific package version then activate and install requirements, type in terminal:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>virtualenv<span class="w"> </span>--setuptools<span class="w"> </span><span class="m">67</span>.7.2<span class="w"> </span>--wheel<span class="w"> </span><span class="m">0</span>.40.0<span class="w"> </span>--pip<span class="w"> </span><span class="m">23</span>.1.2<span class="w"> </span>.venv
-<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-dev.txt
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-doc.txt
+<p>Make sure you have <code class="docutils literal notranslate"><span class="pre">virtualenv</span></code> installed on your system. If not, enter this command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>virtualenv
+python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>virtualenv
 </pre></div>
 </div>
+<p>Creating and activating the development environment, and then installing the necessary packages, enter the following commands in the terminal:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>virtualenv<span class="w"> </span>--pip<span class="o">=</span><span class="m">23</span>.3.1<span class="w"> </span>--python<span class="o">=</span>python3.12<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span><span class="s2">".[dev]"</span>
+</pre></div>
+</div>
+<p>All dependencies for this project are specified in the project’s TOML configuration.</p>
+<p>You can install these dependencies using the <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">.</span></code> command, which will build our package and install the basic dependencies along with the new version of our package. To install dev dependencies, you can use the <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">".[dev]"</span></code> command instead of specifying a <code class="docutils literal notranslate"><span class="pre">-r</span></code> flag and file as mentioned earlier.</p>
+<p>After following the above instructions, we can start writing the program. You can also refer to the instructions regarding the configuration of the development environment, which are included in this <a class="reference external" href="https://docs.mdsanima.dev/development/workflow/">workflow</a> guide.</p>
 <p>Install build tools for creating distribution, then build package from source, type in terminal:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>build
 python<span class="w"> </span>-m<span class="w"> </span>build
@@ -360,7 +367,7 @@ python<span class="w"> </span>-m<span class="w"> </span>http.server<span class="
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on 12 November 2023, at 19:58:57</div>
+              Last updated on 12 November 2023, at 21:16:05</div>
           </div>
           <div class="right-details">
             <div class="icons">
