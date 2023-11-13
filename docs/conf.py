@@ -3,6 +3,7 @@
 """Configuration file for the Sphinx documentation site of the `mdsanima-dev` Python package."""
 
 
+import json
 import os
 import sys
 
@@ -10,13 +11,25 @@ import sys
 # Append absolute path
 sys.path.append(os.path.abspath("."))
 
+# Parent directory
+parent_dir = os.path.dirname(os.getcwd())
+
+# Get version
+with open(parent_dir + "/manifest.json", "r", encoding="utf-8") as data:
+    package = json.load(data)
+
 
 # Project information
 project = "mdsanima-dev"
-copyright = "2021 - 2023 MDSANIMA"
+copyright = "2021-2023 MDSANIMA"
 author = "Marcin Różewski"
 master_doc = "index"
 language = "en"
+
+
+# The package version
+version = package["version"]
+release = package["version"]
 
 
 # Sphinx extension modules

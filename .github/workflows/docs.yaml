@@ -21,7 +21,6 @@ jobs:
         with:
           python-version: "3.12"
           cache: "pip"
-          cache-dependency-path: setup.py
       - name: Install development dependencies
         run: pip install ".[dev]"
       - name: Install documentation dependencies
@@ -31,8 +30,8 @@ jobs:
       - name: Install mdsanima-dev package
         run: pip install dist/mdsanima_dev-*-py3-none-any.whl
       - name: Build Sphinx documentation site
-        run: python setup.py build_sphinx
-      - name: Custom domain create CNAME in publish directory
+        run: sphinx-build -M dirhtml docs build
+      - name: Create CNAME for custom domain
         run: cp CNAME ./build/dirhtml/
       - name: Upload to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
