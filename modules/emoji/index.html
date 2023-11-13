@@ -1,31 +1,27 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-content_root="../../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content=" EMOJI" />
-  
 <meta property="og:type" content="website" />
-  
 <meta property="og:url" content="https://docs.mdsanima.dev/modules/emoji/" />
-  
+<meta property="og:site_name" content="mdsanima-dev" />
 <meta property="og:description" content="EMOJI: Module emoji is for request data of emoji from unicode.org site and store all emoji data inside.josn file on this Python package as dictionary. FUNCTION emoji_get_url_data: FUNCTION emoji_cl..." />
-  
 <meta property="og:image" content="https://docs.mdsanima.dev/_static/images/mdsanima_dev_python_package.webp" />
-  
-<meta property="og:image:alt" content=" EMOJI" />
-  
-<meta property="twitter:card" content="summary_large_image" /><link rel="index" title="Index" href="../../genindex/" /><link rel="search" title="Search" href="../../search/" /><link rel="next" title="TABLE" href="../table/" /><link rel="prev" title="CONVERTS" href="../converts/" />
+<meta property="og:image:alt" content="mdsanima-dev" />
+<meta name="description" content="EMOJI: Module emoji is for request data of emoji from unicode.org site and store all emoji data inside.josn file on this Python package as dictionary. FUNCTION emoji_get_url_data: FUNCTION emoji_cl..." />
+<meta property="twitter:card" content="summary_large_image" />
+<link rel="index" title="Index" href="../../genindex/" /><link rel="search" title="Search" href="../../search/" /><link rel="next" title="TABLE" href="../table/" /><link rel="prev" title="CONVERTS" href="../converts/" />
 
-    <link rel="shortcut icon" href="../../_static/mdsanima_logo_rc2_light_01_cyan.svg"/><meta name="generator" content="sphinx-4.5.0, furo 2022.03.04"/>
+    <link rel="shortcut icon" href="../../_static/mdsanima_logo_rc2_light_01_cyan.svg"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>EMOJI - mdsanima-dev 0.2.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=935aa2abcc5c1da4283d1dc201fb1f0add16d23a" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=25ceb02ed1c46dc30f2321ff83e92799f69dfdb9" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mdsanima.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mdsanima.css?v=1d25cff3" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" />
@@ -55,10 +51,12 @@
   }
 </style></head>
   <body>
+    
     <script>
       document.body.dataset.theme = localStorage.getItem("theme") || "auto";
     </script>
     
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="svg-toc" viewBox="0 0 24 24">
     <title>Contents</title>
@@ -160,7 +158,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../../">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../">
   
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="../../_static/mdsanima_logo_rc2_light_01_cyan.png" alt="Logo"/>
@@ -169,14 +167,14 @@
   <span class="sidebar-brand-text">mdsanima-dev 0.2.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search/" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting-started/"><svg aria-hidden="true" class="sd-octicon sd-octicon-desktop-download sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M8.75 5V.75a.75.75 0 00-1.5 0V5H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 5H8.75zM1.5 2.75a.25.25 0 01.25-.25h3a.75.75 0 000-1.5h-3A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1h-3a.75.75 0 000 1.5h3a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">GETTING</span> <span class="pre">STARTED</span></code></a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/"><svg aria-hidden="true" class="sd-octicon sd-octicon-mortar-board sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M7.693 1.066a.75.75 0 01.614 0l7.25 3.25a.75.75 0 010 1.368L13 6.831v2.794c0 1.024-.81 1.749-1.66 2.173-.893.447-2.075.702-3.34.702-.278 0-.55-.012-.816-.036a.75.75 0 01.133-1.494c.22.02.45.03.683.03 1.082 0 2.025-.221 2.67-.543.69-.345.83-.682.83-.832V7.503L8.307 8.934a.75.75 0 01-.614 0L4 7.28v1.663c.296.105.575.275.812.512.438.438.688 1.059.688 1.796v3a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75v-3c0-.737.25-1.358.688-1.796.237-.237.516-.407.812-.512V6.606L.443 5.684a.75.75 0 010-1.368l7.25-3.25zM2.583 5L8 7.428 13.416 5 8 2.572 2.583 5zM2.5 11.25c0-.388.125-.611.25-.735a.704.704 0 01.5-.203c.19 0 .37.071.5.203.125.124.25.347.25.735v2.25H2.5v-2.25z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">QUICK</span> <span class="pre">TUTORIALS</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/"><svg aria-hidden="true" class="sd-octicon sd-octicon-desktop-download sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4.927 5.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 5H8.75V.75a.75.75 0 10-1.5 0V5H5.104a.25.25 0 00-.177.427z"></path><path d="M1.573 2.573a.25.25 0 00-.073.177v7.5a.25.25 0 00.25.25h12.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-3a.75.75 0 110-1.5h3A1.75 1.75 0 0116 2.75v7.5A1.75 1.75 0 0114.25 12h-3.727c.099 1.041.52 1.872 1.292 2.757A.75.75 0 0111.25 16h-6.5a.75.75 0 01-.565-1.243c.772-.885 1.192-1.716 1.292-2.757H1.75A1.75 1.75 0 010 10.25v-7.5A1.75 1.75 0 011.75 1h3a.75.75 0 010 1.5h-3a.25.25 0 00-.177.073zM6.982 12a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5H6.982z"></path></svg> <code class="docutils literal notranslate"><span class="pre">GETTING</span> <span class="pre">STARTED</span></code></a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/"><svg aria-hidden="true" class="sd-octicon sd-octicon-mortar-board sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M7.693 1.066a.75.75 0 01.614 0l7.25 3.25a.75.75 0 010 1.368L13 6.831v2.794c0 1.024-.81 1.749-1.66 2.173-.893.447-2.075.702-3.34.702-.278 0-.55-.012-.816-.036a.75.75 0 01.133-1.494c.22.02.45.03.683.03 1.082 0 2.025-.221 2.67-.543.69-.345.83-.682.83-.832V7.503L8.307 8.934a.75.75 0 01-.614 0L4 7.28v1.663c.296.105.575.275.812.512.438.438.688 1.059.688 1.796v3a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75v-3c0-.737.25-1.358.688-1.796.237-.237.516-.407.812-.512V6.606L.443 5.684a.75.75 0 010-1.368l7.25-3.25zM2.583 5L8 7.428 13.416 5 8 2.572 2.583 5zM2.5 11.25c0-.388.125-.611.25-.735a.704.704 0 01.5-.203c.19 0 .37.071.5.203.125.124.25.347.25.735v2.25H2.5v-2.25z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">QUICK</span> <span class="pre">TUTORIALS</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of  QUICK TUTORIALS</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/how-to-install-python-on-ubuntu-linux-system/"><svg aria-hidden="true" class="sd-octicon sd-octicon-telescope sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M14.184 1.143a1.75 1.75 0 00-2.502-.57L.912 7.916a1.75 1.75 0 00-.53 2.32l.447.775a1.75 1.75 0 002.275.702l11.745-5.656a1.75 1.75 0 00.757-2.451l-1.422-2.464zm-1.657.669a.25.25 0 01.358.081l1.422 2.464a.25.25 0 01-.108.35l-2.016.97-1.505-2.605 1.85-1.26zM9.436 3.92l1.391 2.41-5.42 2.61-.942-1.63 4.97-3.39zM3.222 8.157l-1.466 1a.25.25 0 00-.075.33l.447.775a.25.25 0 00.325.1l1.598-.769-.83-1.436zm6.253 2.306a.75.75 0 00-.944-.252l-1.809.87a.75.75 0 00-.293.253L4.38 14.326a.75.75 0 101.238.848l1.881-2.75v2.826a.75.75 0 001.5 0v-2.826l1.881 2.75a.75.75 0 001.238-.848l-2.644-3.863z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">HOW</span> <span class="pre">TO</span> <span class="pre">INSTALL</span> <span class="pre">PYTHON</span> <span class="pre">3.10</span> <span class="pre">ON</span> <span class="pre">UBUNTU</span> <span class="pre">20.04</span> <span class="pre">LTS</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/how-to-remove-trash-icon-from-ubuntu-desktop/"><svg aria-hidden="true" class="sd-octicon sd-octicon-telescope sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M14.184 1.143a1.75 1.75 0 00-2.502-.57L.912 7.916a1.75 1.75 0 00-.53 2.32l.447.775a1.75 1.75 0 002.275.702l11.745-5.656a1.75 1.75 0 00.757-2.451l-1.422-2.464zm-1.657.669a.25.25 0 01.358.081l1.422 2.464a.25.25 0 01-.108.35l-2.016.97-1.505-2.605 1.85-1.26zM9.436 3.92l1.391 2.41-5.42 2.61-.942-1.63 4.97-3.39zM3.222 8.157l-1.466 1a.25.25 0 00-.075.33l.447.775a.25.25 0 00.325.1l1.598-.769-.83-1.436zm6.253 2.306a.75.75 0 00-.944-.252l-1.809.87a.75.75 0 00-.293.253L4.38 14.326a.75.75 0 101.238.848l1.881-2.75v2.826a.75.75 0 001.5 0v-2.826l1.881 2.75a.75.75 0 001.238-.848l-2.644-3.863z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">HOW</span> <span class="pre">TO</span> <span class="pre">REMOVE</span> <span class="pre">THE</span> <span class="pre">TRASH</span> <span class="pre">ICON</span> <span class="pre">FROM</span> <span class="pre">UBUNTU</span> <span class="pre">DESKTOP</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/how-to-rename-local-and-remote-git-branch/"><svg aria-hidden="true" class="sd-octicon sd-octicon-telescope sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M14.184 1.143a1.75 1.75 0 00-2.502-.57L.912 7.916a1.75 1.75 0 00-.53 2.32l.447.775a1.75 1.75 0 002.275.702l11.745-5.656a1.75 1.75 0 00.757-2.451l-1.422-2.464zm-1.657.669a.25.25 0 01.358.081l1.422 2.464a.25.25 0 01-.108.35l-2.016.97-1.505-2.605 1.85-1.26zM9.436 3.92l1.391 2.41-5.42 2.61-.942-1.63 4.97-3.39zM3.222 8.157l-1.466 1a.25.25 0 00-.075.33l.447.775a.25.25 0 00.325.1l1.598-.769-.83-1.436zm6.253 2.306a.75.75 0 00-.944-.252l-1.809.87a.75.75 0 00-.293.253L4.38 14.326a.75.75 0 101.238.848l1.881-2.75v2.826a.75.75 0 001.5 0v-2.826l1.881 2.75a.75.75 0 001.238-.848l-2.644-3.863z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">HOW</span> <span class="pre">TO</span> <span class="pre">RENAME</span> <span class="pre">LOCAL</span> <span class="pre">AND</span> <span class="pre">REMOTE</span> <span class="pre">GIT</span> <span class="pre">BRANCH</span></code></a></li>
@@ -185,7 +183,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Package</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../"><svg aria-hidden="true" class="sd-octicon sd-octicon-beaker sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M5 5.782V2.5h-.25a.75.75 0 010-1.5h6.5a.75.75 0 010 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 01-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 019.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 01-.633 1.153H3.233a.75.75 0 01-.633-1.153z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">PYTHON</span> <span class="pre">MODULES</span></code></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../"><svg aria-hidden="true" class="sd-octicon sd-octicon-beaker sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M5 5.782V2.5h-.25a.75.75 0 010-1.5h6.5a.75.75 0 010 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 01-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 019.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 01-.633 1.153H3.233a.75.75 0 01-.633-1.153z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">PYTHON</span> <span class="pre">MODULES</span></code></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of  PYTHON MODULES</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../colors/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">COLORS</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../converts/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">CONVERTS</span></code></a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">EMOJI</span></code></a></li>
@@ -193,14 +191,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../tools/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">TOOLS</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../commands/"><svg aria-hidden="true" class="sd-octicon sd-octicon-terminal sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0114.25 15H1.75A1.75 1.75 0 010 13.25V2.75zm1.75-.25a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V2.75a.25.25 0 00-.25-.25H1.75zM7.25 8a.75.75 0 01-.22.53l-2.25 2.25a.75.75 0 11-1.06-1.06L5.44 8 3.72 6.28a.75.75 0 111.06-1.06l2.25 2.25c.141.14.22.331.22.53zm1.5 1.5a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">TERMINAL</span> <span class="pre">COMMANDS</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../commands/"><svg aria-hidden="true" class="sd-octicon sd-octicon-terminal sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0114.25 15H1.75A1.75 1.75 0 010 13.25V2.75zm1.75-.25a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V2.75a.25.25 0 00-.25-.25H1.75zM7.25 8a.75.75 0 01-.22.53l-2.25 2.25a.75.75 0 11-1.06-1.06L5.44 8 3.72 6.28a.75.75 0 111.06-1.06l2.25 2.25c.141.14.22.331.22.53zm1.5 1.5a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">TERMINAL</span> <span class="pre">COMMANDS</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of  TERMINAL COMMANDS</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../commands/converts/"><svg aria-hidden="true" class="sd-octicon sd-octicon-file-binary sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2a.75.75 0 01-1.5 0v-2zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM0 7.75C0 6.784.784 6 1.75 6h1.5C4.216 6 5 6.784 5 7.75v2.5A1.75 1.75 0 013.25 12h-1.5A1.75 1.75 0 010 10.25v-2.5zm1.75-.25a.25.25 0 00-.25.25v2.5c0 .138.112.25.25.25h1.5a.25.25 0 00.25-.25v-2.5a.25.25 0 00-.25-.25h-1.5zm5-1.5a.75.75 0 000 1.5h.75v3h-.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5H9V6.75A.75.75 0 008.25 6h-1.5z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">CONVERTS</span></code></a></li>
 </ul>
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Project</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../project/"><svg aria-hidden="true" class="sd-octicon sd-octicon-plug sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M10.276 3.09a.25.25 0 01.192-.09h.782a.25.25 0 01.25.25v8.5a.25.25 0 01-.25.25h-.782a.25.25 0 01-.192-.09l-.95-1.14a.75.75 0 00-.483-.264l-3.124-.39a.25.25 0 01-.219-.249V5.133a.25.25 0 01.219-.248l3.124-.39a.75.75 0 00.483-.265l.95-1.14zM4 8v1.867a1.75 1.75 0 001.533 1.737l2.83.354.761.912c.332.4.825.63 1.344.63h.782A1.75 1.75 0 0013 11.75V11h2.25a.75.75 0 000-1.5H13v-4h2.25a.75.75 0 000-1.5H13v-.75a1.75 1.75 0 00-1.75-1.75h-.782c-.519 0-1.012.23-1.344.63l-.76.913-2.831.353A1.75 1.75 0 004 5.133V6.5H2.5A2.5 2.5 0 000 9v5.25a.75.75 0 001.5 0V9a1 1 0 011-1H4z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">INFORMATION</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../project/"><svg aria-hidden="true" class="sd-octicon sd-octicon-plug sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M10.276 3.09a.25.25 0 01.192-.09h.782a.25.25 0 01.25.25v8.5a.25.25 0 01-.25.25h-.782a.25.25 0 01-.192-.09l-.95-1.14a.75.75 0 00-.483-.264l-3.124-.39a.25.25 0 01-.219-.249V5.133a.25.25 0 01.219-.248l3.124-.39a.75.75 0 00.483-.265l.95-1.14zM4 8v1.867a1.75 1.75 0 001.533 1.737l2.83.354.761.912c.332.4.825.63 1.344.63h.782A1.75 1.75 0 0013 11.75V11h2.25a.75.75 0 000-1.5H13v-4h2.25a.75.75 0 000-1.5H13v-.75a1.75 1.75 0 00-1.75-1.75h-.782c-.519 0-1.012.23-1.344.63l-.76.913-2.831.353A1.75 1.75 0 004 5.133V6.5H2.5A2.5 2.5 0 000 9v5.25a.75.75 0 001.5 0V9a1 1 0 011-1H4z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">INFORMATION</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of  INFORMATION</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../project/about/"><svg aria-hidden="true" class="sd-octicon sd-octicon-organization sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">ABOUT</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../project/badge/"><svg aria-hidden="true" class="sd-octicon sd-octicon-tools sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">BADGE</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../project/reference/"><svg aria-hidden="true" class="sd-octicon sd-octicon-paper-airplane sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M1.592 2.712L2.38 7.25h4.87a.75.75 0 110 1.5H2.38l-.788 4.538L13.929 8 1.592 2.712zM.989 8L.064 2.68a1.341 1.341 0 011.85-1.462l13.402 5.744a1.13 1.13 0 010 2.076L1.913 14.782a1.341 1.341 0 01-1.85-1.463L.99 8z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">REFERENCE</span></code></a></li>
@@ -208,7 +206,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../project/theme/"><svg aria-hidden="true" class="sd-octicon sd-octicon-gear sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M7.429 1.525a6.593 6.593 0 011.142 0c.036.003.108.036.137.146l.289 1.105c.147.56.55.967.997 1.189.174.086.341.183.501.29.417.278.97.423 1.53.27l1.102-.303c.11-.03.175.016.195.046.219.31.41.641.573.989.014.031.022.11-.059.19l-.815.806c-.411.406-.562.957-.53 1.456a4.588 4.588 0 010 .582c-.032.499.119 1.05.53 1.456l.815.806c.08.08.073.159.059.19a6.494 6.494 0 01-.573.99c-.02.029-.086.074-.195.045l-1.103-.303c-.559-.153-1.112-.008-1.529.27-.16.107-.327.204-.5.29-.449.222-.851.628-.998 1.189l-.289 1.105c-.029.11-.101.143-.137.146a6.613 6.613 0 01-1.142 0c-.036-.003-.108-.037-.137-.146l-.289-1.105c-.147-.56-.55-.967-.997-1.189a4.502 4.502 0 01-.501-.29c-.417-.278-.97-.423-1.53-.27l-1.102.303c-.11.03-.175-.016-.195-.046a6.492 6.492 0 01-.573-.989c-.014-.031-.022-.11.059-.19l.815-.806c.411-.406.562-.957.53-1.456a4.587 4.587 0 010-.582c.032-.499-.119-1.05-.53-1.456l-.815-.806c-.08-.08-.073-.159-.059-.19a6.44 6.44 0 01.573-.99c.02-.029.086-.075.195-.045l1.103.303c.559.153 1.112.008 1.529-.27.16-.107.327-.204.5-.29.449-.222.851-.628.998-1.189l.289-1.105c.029-.11.101-.143.137-.146zM8 0c-.236 0-.47.01-.701.03-.743.065-1.29.615-1.458 1.261l-.29 1.106c-.017.066-.078.158-.211.224a5.994 5.994 0 00-.668.386c-.123.082-.233.09-.3.071L3.27 2.776c-.644-.177-1.392.02-1.82.63a7.977 7.977 0 00-.704 1.217c-.315.675-.111 1.422.363 1.891l.815.806c.05.048.098.147.088.294a6.084 6.084 0 000 .772c.01.147-.038.246-.088.294l-.815.806c-.474.469-.678 1.216-.363 1.891.2.428.436.835.704 1.218.428.609 1.176.806 1.82.63l1.103-.303c.066-.019.176-.011.299.071.213.143.436.272.668.386.133.066.194.158.212.224l.289 1.106c.169.646.715 1.196 1.458 1.26a8.094 8.094 0 001.402 0c.743-.064 1.29-.614 1.458-1.26l.29-1.106c.017-.066.078-.158.211-.224a5.98 5.98 0 00.668-.386c.123-.082.233-.09.3-.071l1.102.302c.644.177 1.392-.02 1.82-.63.268-.382.505-.789.704-1.217.315-.675.111-1.422-.364-1.891l-.814-.806c-.05-.048-.098-.147-.088-.294a6.1 6.1 0 000-.772c-.01-.147.039-.246.088-.294l.814-.806c.475-.469.679-1.216.364-1.891a7.992 7.992 0 00-.704-1.218c-.428-.609-1.176-.806-1.82-.63l-1.103.303c-.066.019-.176.011-.299-.071a5.991 5.991 0 00-.668-.386c-.133-.066-.194-.158-.212-.224L10.16 1.29C9.99.645 9.444.095 8.701.031A8.094 8.094 0 008 0zm1.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM11 8a3 3 0 11-6 0 3 3 0 016 0z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">THEME</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../development/"><svg aria-hidden="true" class="sd-octicon sd-octicon-rocket sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M14.064 0a8.75 8.75 0 00-6.187 2.563l-.459.458c-.314.314-.616.641-.904.979H3.31a1.75 1.75 0 00-1.49.833L.11 7.607a.75.75 0 00.418 1.11l3.102.954c.037.051.079.1.124.145l2.429 2.428c.046.046.094.088.145.125l.954 3.102a.75.75 0 001.11.418l2.774-1.707a1.75 1.75 0 00.833-1.49V9.485c.338-.288.665-.59.979-.904l.458-.459A8.75 8.75 0 0016 1.936V1.75A1.75 1.75 0 0014.25 0h-.186zM10.5 10.625c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 00.119-.213v-2.066zM3.678 8.116L5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 00-.213.119l-1.2 1.95 1.782.547zm5.26-4.493A7.25 7.25 0 0114.063 1.5h.186a.25.25 0 01.25.25v.186a7.25 7.25 0 01-2.123 5.127l-.459.458a15.21 15.21 0 01-2.499 2.02l-2.317 1.5-2.143-2.143 1.5-2.317a15.25 15.25 0 012.02-2.5l.458-.458h.002zM12 5a1 1 0 11-2 0 1 1 0 012 0zm-8.44 9.56a1.5 1.5 0 10-2.12-2.12c-.734.73-1.047 2.332-1.15 3.003a.23.23 0 00.265.265c.671-.103 2.273-.416 3.005-1.148z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">DEVELOPMENT</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../development/"><svg aria-hidden="true" class="sd-octicon sd-octicon-rocket sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M14.064 0a8.75 8.75 0 00-6.187 2.563l-.459.458c-.314.314-.616.641-.904.979H3.31a1.75 1.75 0 00-1.49.833L.11 7.607a.75.75 0 00.418 1.11l3.102.954c.037.051.079.1.124.145l2.429 2.428c.046.046.094.088.145.125l.954 3.102a.75.75 0 001.11.418l2.774-1.707a1.75 1.75 0 00.833-1.49V9.485c.338-.288.665-.59.979-.904l.458-.459A8.75 8.75 0 0016 1.936V1.75A1.75 1.75 0 0014.25 0h-.186zM10.5 10.625c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 00.119-.213v-2.066zM3.678 8.116L5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 00-.213.119l-1.2 1.95 1.782.547zm5.26-4.493A7.25 7.25 0 0114.063 1.5h.186a.25.25 0 01.25.25v.186a7.25 7.25 0 01-2.123 5.127l-.459.458a15.21 15.21 0 01-2.499 2.02l-2.317 1.5-2.143-2.143 1.5-2.317a15.25 15.25 0 012.02-2.5l.458-.458h.002zM12 5a1 1 0 11-2 0 1 1 0 012 0zm-8.44 9.56a1.5 1.5 0 10-2.12-2.12c-.734.73-1.047 2.332-1.15 3.003a.23.23 0 00.265.265c.671-.103 2.273-.416 3.005-1.148z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">DEVELOPMENT</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of  DEVELOPMENT</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../development/workflow/"><svg aria-hidden="true" class="sd-octicon sd-octicon-workflow sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M0 1.75C0 .784.784 0 1.75 0h3.5C6.216 0 7 .784 7 1.75v3.5A1.75 1.75 0 015.25 7H4v4a1 1 0 001 1h4v-1.25C9 9.784 9.784 9 10.75 9h3.5c.966 0 1.75.784 1.75 1.75v3.5A1.75 1.75 0 0114.25 16h-3.5A1.75 1.75 0 019 14.25v-.75H5A2.5 2.5 0 012.5 11V7h-.75A1.75 1.75 0 010 5.25v-3.5zm1.75-.25a.25.25 0 00-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 00.25-.25v-3.5a.25.25 0 00-.25-.25h-3.5zm9 9a.25.25 0 00-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 00.25-.25v-3.5a.25.25 0 00-.25-.25h-3.5z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">WORKFLOW</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../development/changelog/"><svg aria-hidden="true" class="sd-octicon sd-octicon-checklist sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M2.5 1.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v7.736a.75.75 0 101.5 0V1.75A1.75 1.75 0 0011.25 0h-8.5A1.75 1.75 0 001 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 000-1.5H2.75a.25.25 0 01-.25-.25V1.75zM4.75 4a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zM4 7.75A.75.75 0 014.75 7h2a.75.75 0 010 1.5h-2A.75.75 0 014 7.75zm11.774 3.537a.75.75 0 00-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 00-1.062 1.058l1.943 1.95a.75.75 0 001.055.008l4.557-4.45z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">CHANGELOG</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../development/license/"><svg aria-hidden="true" class="sd-octicon sd-octicon-law sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">LICENSE</span></code></a></li>
@@ -233,7 +231,9 @@
           </svg>
           <span>Back to top</span>
         </a>
-        <div class="content-icon-container"><div class="theme-toggle-container theme-toggle-content">
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -248,27 +248,27 @@
         </div>
         <article role="main">
           <section id="module-mdsanima_dev.emoji">
-<span id="svg-version-1-1-width-1-0em-height-1-0em-class-sd-octicon-sd-octicon-file-code-sd-text-secondary-viewbox-0-0-16-16-aria-hidden-true-path-fill-rule-evenodd-d-m4-1-75c4-784-4-784-0-5-75-0h5-586c-464-0-909-184-1-237-513l2-914-2-914c-329-328-513-773-513-1-237v8-586a1-75-1-75-0-0114-25-15h-9a-75-75-0-010-1-5h9a-25-25-0-00-25-25v6h-2-75a1-75-1-75-0-0110-4-25v1-5h5-75a-25-25-0-00-25-25v2-5a-75-75-0-01-1-5-0v-2-5zm7-5-188v4-25c0-138-112-25-25-25h2-688a-252-252-0-00-011-013l-2-914-2-914a-272-272-0-00-013-011zm5-72-6-72a-75-75-0-000-1-06l1-47-1-47-1-47-1-47a-75-75-0-101-06-1-06l2-2a-75-75-0-000-1-06l-2-2a-75-75-0-00-1-06-0zm3-28-7-78a-75-75-0-00-1-06-1-06l-2-2a-75-75-0-000-1-06l2-2a-75-75-0-001-06-1-06l1-81-9-25l1-47-1-47z-path-svg-emoji"></span><h1><svg aria-hidden="true" class="sd-octicon sd-octicon-file-code sd-text-secondary" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z" fill-rule="evenodd"></path></svg> <code class="docutils literal notranslate"><span class="pre">EMOJI</span></code><a class="headerlink" href="#module-mdsanima_dev.emoji" title="Permalink to this headline">#</a></h1>
+<span id="emoji"></span><h1><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-file-code sd-text-secondary" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z"></path></svg> <code class="docutils literal notranslate"><span class="pre">EMOJI</span></code><a class="headerlink" href="#module-mdsanima_dev.emoji" title="Link to this heading">#</a></h1>
 <p>Module <code class="docutils literal notranslate"><span class="pre">emoji</span></code> is for request data of emoji from
-<a class="reference external" href="https://unicode.org">unicode.org</a> <svg aria-hidden="true" class="sd-octicon sd-octicon-link-external" height="0.8em" version="1.1" viewbox="0 0 16 16" width="0.8em"><path d="M9.6036 1H13.75C13.8881 1 14 1.11193 14 1.25V5.39645C14 5.61917 13.7307 5.73072 13.5732 5.57322L12.0303 4.03033L8.28033 7.78033C7.98744 8.07322 7.51256 8.07322 7.21967 7.78033C6.92678 7.48744 6.92678 7.01256 7.21967 6.71967L10.9697 2.96967L9.4268 1.42678C9.2693 1.26929 9.3808 1 9.6036 1ZM2.75 2C1.7835 2 1 2.7835 1 3.75V12.25C1 13.2165 1.7835 14 2.75 14H11.25C12.2165 14 13 13.2165 13 12.25V8.75C13 8.33579 12.6642 8 12.25 8C11.8358 8 11.5 8.33579 11.5 8.75V12.25C11.5 12.3881 11.3881 12.5 11.25 12.5H2.75C2.61193 12.5 2.5 12.3881 2.5 12.25V3.75C2.5 3.61193 2.61193 3.5 2.75 3.5H6.25C6.66421 3.5 7 3.16421 7 2.75C7 2.33579 6.66421 2 6.25 2H2.75Z" fill-rule="evenodd"></path></svg> site and
+<a class="reference external" href="https://unicode.org">unicode.org</a> <svg version="1.1" width="0.8em" height="0.8em" class="sd-octicon sd-octicon-link-external" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path></svg> site and
 store all emoji data inside <cite>.josn</cite> file on this <em>Python</em> package as
 dictionary.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>This module only get data from
 <a class="reference external" href="https://unicode.org/emoji/charts/full-emoji-list.html">Full Emoji List</a>
-<svg aria-hidden="true" class="sd-octicon sd-octicon-link-external" height="0.8em" version="1.1" viewbox="0 0 16 16" width="0.8em"><path d="M9.6036 1H13.75C13.8881 1 14 1.11193 14 1.25V5.39645C14 5.61917 13.7307 5.73072 13.5732 5.57322L12.0303 4.03033L8.28033 7.78033C7.98744 8.07322 7.51256 8.07322 7.21967 7.78033C6.92678 7.48744 6.92678 7.01256 7.21967 6.71967L10.9697 2.96967L9.4268 1.42678C9.2693 1.26929 9.3808 1 9.6036 1ZM2.75 2C1.7835 2 1 2.7835 1 3.75V12.25C1 13.2165 1.7835 14 2.75 14H11.25C12.2165 14 13 13.2165 13 12.25V8.75C13 8.33579 12.6642 8 12.25 8C11.8358 8 11.5 8.33579 11.5 8.75V12.25C11.5 12.3881 11.3881 12.5 11.25 12.5H2.75C2.61193 12.5 2.5 12.3881 2.5 12.25V3.75C2.5 3.61193 2.61193 3.5 2.75 3.5H6.25C6.66421 3.5 7 3.16421 7 2.75C7 2.33579 6.66421 2 6.25 2H2.75Z" fill-rule="evenodd"></path></svg> and
+<svg version="1.1" width="0.8em" height="0.8em" class="sd-octicon sd-octicon-link-external" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path></svg> and
 <a class="reference external" href="https://unicode.org/emoji/charts/full-emoji-modifiers.html">Full Emoji Modifiers</a>
-<svg aria-hidden="true" class="sd-octicon sd-octicon-link-external" height="0.8em" version="1.1" viewbox="0 0 16 16" width="0.8em"><path d="M9.6036 1H13.75C13.8881 1 14 1.11193 14 1.25V5.39645C14 5.61917 13.7307 5.73072 13.5732 5.57322L12.0303 4.03033L8.28033 7.78033C7.98744 8.07322 7.51256 8.07322 7.21967 7.78033C6.92678 7.48744 6.92678 7.01256 7.21967 6.71967L10.9697 2.96967L9.4268 1.42678C9.2693 1.26929 9.3808 1 9.6036 1ZM2.75 2C1.7835 2 1 2.7835 1 3.75V12.25C1 13.2165 1.7835 14 2.75 14H11.25C12.2165 14 13 13.2165 13 12.25V8.75C13 8.33579 12.6642 8 12.25 8C11.8358 8 11.5 8.33579 11.5 8.75V12.25C11.5 12.3881 11.3881 12.5 11.25 12.5H2.75C2.61193 12.5 2.5 12.3881 2.5 12.25V3.75C2.5 3.61193 2.61193 3.5 2.75 3.5H6.25C6.66421 3.5 7 3.16421 7 2.75C7 2.33579 6.66421 2 6.25 2H2.75Z" fill-rule="evenodd"></path></svg> links.</p>
+<svg version="1.1" width="0.8em" height="0.8em" class="sd-octicon sd-octicon-link-external" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path></svg> links.</p>
 </div>
 <figure class="align-default" id="show-python-emoji-a">
-<img alt="../../_images/mdsanima_dev_python_emoji_a.gif" src="../../_images/mdsanima_dev_python_emoji_a.gif"/>
+<img alt="../../_images/mdsanima_dev_python_emoji_a.gif" src="../../_images/mdsanima_dev_python_emoji_a.gif" />
 </figure>
 <section id="function-emoji-get-url-data">
-<h2>FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_get_url_data</span></code><a class="headerlink" href="#function-emoji-get-url-data" title="Permalink to this headline">#</a></h2>
+<h2>FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_get_url_data</span></code><a class="headerlink" href="#function-emoji-get-url-data" title="Link to this heading">#</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji_get_url_data">
-<span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">emoji_get_url_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">emoji_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji_get_url_data" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">emoji_get_url_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">emoji_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji_get_url_data" title="Link to this definition">#</a></dt>
 <dd><p>This function request emoji data url and waiting raise for status.
 If status ok returning data text for further processing.</p>
 <div class="admonition warning">
@@ -277,16 +277,16 @@ If status ok returning data text for further processing.</p>
 <a class="reference external" href="#function-emoji-clean-url-data">emoji_clean_url_data</a> function.</p>
 </div>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>emoji_url</strong> (<em>str</em>) – Link to emoticons.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>HTML code as string text.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
-<dt class="field-even">Usage</dt>
+<dt class="field-even">Usage<span class="colon">:</span></dt>
 <dd class="field-even"><p>Assigning a function by calling to a variable:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">emoji_url_data</span> <span class="o">=</span> <span class="n">emoji_get_url_data</span><span class="p">(</span><span class="n">emoji_lis_url</span><span class="p">)</span>
 </pre></div>
@@ -294,12 +294,13 @@ If status ok returning data text for further processing.</p>
 </dd>
 </dl>
 </dd></dl>
+
 </section>
 <section id="function-emoji-clean-url-data">
-<h2>FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_clean_url_data</span></code><a class="headerlink" href="#function-emoji-clean-url-data" title="Permalink to this headline">#</a></h2>
+<h2>FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_clean_url_data</span></code><a class="headerlink" href="#function-emoji-clean-url-data" title="Link to this heading">#</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji_clean_url_data">
-<span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">emoji_clean_url_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bhead</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mhead</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ucode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emoji</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emoji_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'http://www.unicode.org/emoji/charts/full-emoji-list.html'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji_clean_url_data" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">emoji_clean_url_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bhead</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mhead</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ucode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emoji</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emoji_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'http://www.unicode.org/emoji/charts/full-emoji-list.html'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji_clean_url_data" title="Link to this definition">#</a></dt>
 <dd><p>This funciton is used to clean up previously requested data and store in
 dictionary <code class="docutils literal notranslate"><span class="pre">.json</span></code> file and saved in to <code class="docutils literal notranslate"><span class="pre">json</span></code> folder. These folder
 also included in <em>Python</em> package. Default save a first link
@@ -315,7 +316,7 @@ parameters. Debug mode show cool colors from extracting url.</p>
 please check this in the beginning on this page.</p>
 </div>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>bhead</strong> (<em>bool</em><em>, </em><em>optional</em>) – Debug mode show big head, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 <li><p><strong>mhead</strong> (<em>bool</em><em>, </em><em>optional</em>) – Debug mode show medium head, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
@@ -325,13 +326,13 @@ please check this in the beginning on this page.</p>
 <li><p><strong>emoji_url</strong> (<em>str</em><em>, </em><em>optional</em>) – Link to extract data, defaults to <code class="docutils literal notranslate"><span class="pre">emoji_lis_url</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Save dictionary data in to <code class="docutils literal notranslate"><span class="pre">.json</span></code> file.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>dict</p>
 </dd>
-<dt class="field-even">Usage</dt>
+<dt class="field-even">Usage<span class="colon">:</span></dt>
 <dd class="field-even"><p>Function call extract and save defaults data in debug mode and second
 example also save second ling in debug mode:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">emoji_clean_url_data</span><span class="p">(</span><span class="n">bhead</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -341,23 +342,24 @@ example also save second ling in debug mode:</p>
 </dd>
 </dl>
 </dd></dl>
+
 </section>
 <section id="function-emoji-load-json-data">
-<h2>FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_load_json_data</span></code><a class="headerlink" href="#function-emoji-load-json-data" title="Permalink to this headline">#</a></h2>
+<h2>FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_load_json_data</span></code><a class="headerlink" href="#function-emoji-load-json-data" title="Link to this heading">#</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji_load_json_data">
-<span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">emoji_load_json_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji_load_json_data" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">emoji_load_json_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji_load_json_data" title="Link to this definition">#</a></dt>
 <dd><p>This function loading the json data generated on previous
 <a class="reference external" href="#function-emoji-clean-url-data">emoji_clean_url_data</a> function.</p>
 <dl class="field-list">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Dictionary json on all emoji with joining two json <code class="docutils literal notranslate"><span class="pre">emoji_list</span></code>
 and <code class="docutils literal notranslate"><span class="pre">emoji_modifiers</span></code>.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>dict</p>
 </dd>
-<dt class="field-odd">Usage</dt>
+<dt class="field-odd">Usage<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Assigning a function by calling to a variable:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">emo</span> <span class="o">=</span> <span class="n">emoji_load_json_data</span><span class="p">()</span>
 </pre></div>
@@ -365,15 +367,16 @@ and <code class="docutils literal notranslate"><span class="pre">emoji_modifiers
 </dd>
 </dl>
 </dd></dl>
+
 <figure class="align-default" id="show-python-emoji-b">
-<img alt="../../_images/mdsanima_dev_python_emoji_b.gif" src="../../_images/mdsanima_dev_python_emoji_b.gif"/>
+<img alt="../../_images/mdsanima_dev_python_emoji_b.gif" src="../../_images/mdsanima_dev_python_emoji_b.gif" />
 </figure>
 </section>
 <section id="class-emoji">
-<h2>CLASS <code class="docutils literal notranslate"><span class="pre">emoji</span></code><a class="headerlink" href="#class-emoji" title="Permalink to this headline">#</a></h2>
+<h2>CLASS <code class="docutils literal notranslate"><span class="pre">emoji</span></code><a class="headerlink" href="#class-emoji" title="Link to this heading">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">emoji</span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">emoji</span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji" title="Link to this definition">#</a></dt>
 <dd><p>This class has methods for printing various emoji functions.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -384,36 +387,38 @@ just only one <cite>emoji</cite>.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji.emo_all">
-<span class="sig-name descname"><span class="pre">emo_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_all" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">emo_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_all" title="Link to this definition">#</a></dt>
 <dd><p>This method prints all available emojis, sorted by heads.
 You can use arguments to print number of emoji and names of emoji.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>number</strong> (<em>bool</em><em>, </em><em>optional</em>) – Print emoji numbers, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 <li><p><strong>names</strong> (<em>bool</em><em>, </em><em>optional</em>) – Print emoji names, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Prints all available emojis.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
 </dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji.emo_big_head">
-<span class="sig-name descname"><span class="pre">emo_big_head</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_big_head" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">emo_big_head</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_big_head" title="Link to this definition">#</a></dt>
 <dd><p>This method printing all big head text value of emoji in the table
 with colored table and colored text.</p>
 </dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji.emo_head">
-<span class="sig-name descname"><span class="pre">emo_head</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bhead</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mhead</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_head" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">emo_head</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bhead</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mhead</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_head" title="Link to this definition">#</a></dt>
 <dd><p>This method printing all emoji in to a given group.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>bhead</strong> (<em>str</em>) – Name of big head emoji.</p></li>
 <li><p><strong>mhead</strong> (<em>str</em>) – Name of medium head emoji.</p></li>
@@ -421,612 +426,618 @@ with colored table and colored text.</p>
 <li><p><strong>names</strong> (<em>bool</em><em>, </em><em>optional</em>) – Print emoji names, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Printing all emoji in to a given group.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
 </dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji.emo_medium_head">
-<span class="sig-name descname"><span class="pre">emo_medium_head</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_medium_head" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">emo_medium_head</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_medium_head" title="Link to this definition">#</a></dt>
 <dd><p>This method printing all medium head text value of emoji in the
 table with colored table and colored text.</p>
 </dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji.emo_stats">
-<span class="sig-name descname"><span class="pre">emo_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_stats" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">emo_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emo_stats" title="Link to this definition">#</a></dt>
 <dd><p>This method printing the statistic of emoji in the table with
 colored table and colored text.</p>
 </dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.emoji.emoji">
-<span class="sig-name descname"><span class="pre">emoji</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emoji" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">emoji</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mdsanima_dev.emoji.emoji.emoji" title="Link to this definition">#</a></dt>
 <dd><p>Printing only one emoji.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>number</strong> (<em>int</em>) – Emoji number to printing.</p></li>
 <li><p><strong>end</strong> (<em>str</em><em>, </em><em>optional</em>) – Ends of print, defaults to empty string, that’s set a print
 two or more emoji in the same line.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Print one emoji.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
 </dd></dl>
+
 </dd></dl>
+
 </section>
 <section id="class-show">
-<h2>CLASS <code class="docutils literal notranslate"><span class="pre">show</span></code><a class="headerlink" href="#class-show" title="Permalink to this headline">#</a></h2>
+<h2>CLASS <code class="docutils literal notranslate"><span class="pre">show</span></code><a class="headerlink" href="#class-show" title="Link to this heading">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="mdsanima_dev.emoji.show">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">emo_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mdsanima_dev.emoji.show" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mdsanima_dev.emoji.</span></span><span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">emo_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mdsanima_dev.emoji.show" title="Link to this definition">#</a></dt>
 <dd><p>This class show all emoji or just only one. See documentation for more
 information and screenshot.</p>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>emoji</strong> (<em>class</em>) – Master class of emoji.</p>
 </dd>
-<dt class="field-even">Usage</dt>
+<dt class="field-even">Usage<span class="colon">:</span></dt>
 <dd class="field-even"><p>Assigning a function by calling to a variable:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">show_me</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">show_me</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="n">show_me</span><span class="o">.</span><span class="n">emo_stats</span><span class="p">()</span>
 <span class="n">show_me</span><span class="o">.</span><span class="n">emo_big_head</span><span class="p">()</span>
 <span class="n">show_me</span><span class="o">.</span><span class="n">emo_medium_head</span><span class="p">()</span>
 <span class="n">show_me</span><span class="o">.</span><span class="n">emo_all</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
-<span class="n">show_me</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"objects"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">show_me</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;objects&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 <span class="n">show_me</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="mi">986</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Calling method with arguments in to class:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="s2">"emoji_modifiers"</span><span class="p">)</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"people_body"</span><span class="p">,</span> <span class="s2">"hands"</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_modifiers&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;people_body&quot;</span><span class="p">,</span> <span class="s2">&quot;hands&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd>
 </dl>
 </dd></dl>
+
 <p>Now I will show you how to use class <a class="reference external" href="#class-show">show(emoji)</a> method to find
 out what number each emoji has so that you can use in your code:</p>
 <figure class="align-default" id="show-python-emoji-c">
-<img alt="../../_images/mdsanima_dev_python_emoji_c.gif" src="../../_images/mdsanima_dev_python_emoji_c.gif"/>
+<img alt="../../_images/mdsanima_dev_python_emoji_c.gif" src="../../_images/mdsanima_dev_python_emoji_c.gif" />
 </figure>
 <section id="method-emo-stats">
-<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_stats()</span></code><a class="headerlink" href="#method-emo-stats" title="Permalink to this headline">#</a></h3>
+<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_stats()</span></code><a class="headerlink" href="#method-emo-stats" title="Link to this heading">#</a></h3>
 <p>This method show statistic about emoji published on <em>.json</em> files which was
 retrieved on the <a class="reference external" href="#function-emoji-clean-url-data">emoji_clean_url_data</a>
 function. You can use <em>emoji_list</em> or <em>emoji_modifiers</em> only:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emo_stats</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="fa7da687-9d4c-4490-9ce4-560f3a0ba760" name="39af9e2d-a22b-4dae-8b17-16e04a8e60f6" type="radio"/>
-<label class="sd-tab-label" for="fa7da687-9d4c-4490-9ce4-560f3a0ba760">
+<input id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-01-ac-a">
-<img alt="../../_images/emoji_show_01_acrylic_a.webp" src="../../_images/emoji_show_01_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_01_acrylic_a.webp" src="../../_images/emoji_show_01_acrylic_a.webp" />
 </figure>
 </div>
-<input id="51f1af91-bcdd-4f90-b2c3-fe10e0417b68" name="39af9e2d-a22b-4dae-8b17-16e04a8e60f6" type="radio"/>
-<label class="sd-tab-label" for="51f1af91-bcdd-4f90-b2c3-fe10e0417b68">
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-01-dk-a">
-<img alt="../../_images/emoji_show_01_dark_a.webp" src="../../_images/emoji_show_01_dark_a.webp"/>
+<img alt="../../_images/emoji_show_01_dark_a.webp" src="../../_images/emoji_show_01_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="39dab833-cfe4-4520-aa31-6541c4c164b1" name="39af9e2d-a22b-4dae-8b17-16e04a8e60f6" type="radio"/>
-<label class="sd-tab-label" for="39dab833-cfe4-4520-aa31-6541c4c164b1">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-01-ac-b">
-<img alt="../../_images/emoji_show_01_acrylic_b.webp" src="../../_images/emoji_show_01_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_01_acrylic_b.webp" src="../../_images/emoji_show_01_acrylic_b.webp" />
 </figure>
 </div>
-<input id="c0ed913d-d087-4419-af74-27cee832a5a4" name="39af9e2d-a22b-4dae-8b17-16e04a8e60f6" type="radio"/>
-<label class="sd-tab-label" for="c0ed913d-d087-4419-af74-27cee832a5a4">
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-01-dk-b">
-<img alt="../../_images/emoji_show_01_dark_b.webp" src="../../_images/emoji_show_01_dark_b.webp"/>
+<img alt="../../_images/emoji_show_01_dark_b.webp" src="../../_images/emoji_show_01_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 <section id="method-emo-all">
-<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_all()</span></code><a class="headerlink" href="#method-emo-all" title="Permalink to this headline">#</a></h3>
+<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_all()</span></code><a class="headerlink" href="#method-emo-all" title="Link to this heading">#</a></h3>
 <p>This method will display all the available emoji from the list you have
 selected. All emoji in the given group will be displayed on one line:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emo_all</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="da9a6431-c127-4eec-9fb6-21ad80dffc01" name="4f703661-de68-4f8c-a09c-2353177434ca" type="radio"/>
-<label class="sd-tab-label" for="da9a6431-c127-4eec-9fb6-21ad80dffc01">
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-04-ac-a">
-<img alt="../../_images/emoji_show_04_acrylic_a.webp" src="../../_images/emoji_show_04_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_04_acrylic_a.webp" src="../../_images/emoji_show_04_acrylic_a.webp" />
 </figure>
 </div>
-<input id="edcb28ca-3342-4816-b374-78f830c0146f" name="4f703661-de68-4f8c-a09c-2353177434ca" type="radio"/>
-<label class="sd-tab-label" for="edcb28ca-3342-4816-b374-78f830c0146f">
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-04-dk-a">
-<img alt="../../_images/emoji_show_04_dark_a.webp" src="../../_images/emoji_show_04_dark_a.webp"/>
+<img alt="../../_images/emoji_show_04_dark_a.webp" src="../../_images/emoji_show_04_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="e82006ea-d8cd-4903-8289-d5db4c434e9a" name="4f703661-de68-4f8c-a09c-2353177434ca" type="radio"/>
-<label class="sd-tab-label" for="e82006ea-d8cd-4903-8289-d5db4c434e9a">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-6">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-04-ac-b">
-<img alt="../../_images/emoji_show_04_acrylic_b.webp" src="../../_images/emoji_show_04_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_04_acrylic_b.webp" src="../../_images/emoji_show_04_acrylic_b.webp" />
 </figure>
 </div>
-<input id="1cc52fc0-1510-4ffb-adae-f257e6bf0b70" name="4f703661-de68-4f8c-a09c-2353177434ca" type="radio"/>
-<label class="sd-tab-label" for="1cc52fc0-1510-4ffb-adae-f257e6bf0b70">
+<input id="sd-tab-item-7" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-7">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-04-dk-b">
-<img alt="../../_images/emoji_show_04_dark_b.webp" src="../../_images/emoji_show_04_dark_b.webp"/>
+<img alt="../../_images/emoji_show_04_dark_b.webp" src="../../_images/emoji_show_04_dark_b.webp" />
 </figure>
 </div>
 </div>
 <section id="method-emo-all-true-false">
-<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emo_all(True,</span> <span class="pre">False)</span></code><a class="headerlink" href="#method-emo-all-true-false" title="Permalink to this headline">#</a></h4>
+<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emo_all(True,</span> <span class="pre">False)</span></code><a class="headerlink" href="#method-emo-all-true-false" title="Link to this heading">#</a></h4>
 <p>The first argument is true so it will show us all the emoji and a number that
 is assigned to the emoji. All emoji in the given group will be displayed on
 one line:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emo_all</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="731e3fe5-8c4b-45bc-8dea-d431bc3a9e82" name="97088f38-2ec8-4942-aa62-b7b621be46ab" type="radio"/>
-<label class="sd-tab-label" for="731e3fe5-8c4b-45bc-8dea-d431bc3a9e82">
+<input id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-8">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-05-ac-a">
-<img alt="../../_images/emoji_show_05_acrylic_a.webp" src="../../_images/emoji_show_05_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_05_acrylic_a.webp" src="../../_images/emoji_show_05_acrylic_a.webp" />
 </figure>
 </div>
-<input id="298fa939-cd74-49da-9e9f-c2b395adf0f9" name="97088f38-2ec8-4942-aa62-b7b621be46ab" type="radio"/>
-<label class="sd-tab-label" for="298fa939-cd74-49da-9e9f-c2b395adf0f9">
+<input id="sd-tab-item-9" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-9">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-05-dk-a">
-<img alt="../../_images/emoji_show_05_dark_a.webp" src="../../_images/emoji_show_05_dark_a.webp"/>
+<img alt="../../_images/emoji_show_05_dark_a.webp" src="../../_images/emoji_show_05_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="b5ca7e8d-565e-4237-b486-fe7e87d75fa9" name="97088f38-2ec8-4942-aa62-b7b621be46ab" type="radio"/>
-<label class="sd-tab-label" for="b5ca7e8d-565e-4237-b486-fe7e87d75fa9">
+<input checked="checked" id="sd-tab-item-10" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-10">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-05-ac-b">
-<img alt="../../_images/emoji_show_05_acrylic_b.webp" src="../../_images/emoji_show_05_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_05_acrylic_b.webp" src="../../_images/emoji_show_05_acrylic_b.webp" />
 </figure>
 </div>
-<input id="4b34c0e7-0ed7-4a15-979f-384c570dfec6" name="97088f38-2ec8-4942-aa62-b7b621be46ab" type="radio"/>
-<label class="sd-tab-label" for="4b34c0e7-0ed7-4a15-979f-384c570dfec6">
+<input id="sd-tab-item-11" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-11">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-05-dk-b">
-<img alt="../../_images/emoji_show_05_dark_b.webp" src="../../_images/emoji_show_05_dark_b.webp"/>
+<img alt="../../_images/emoji_show_05_dark_b.webp" src="../../_images/emoji_show_05_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 <section id="method-emo-all-false-true">
-<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emo_all(False,</span> <span class="pre">True)</span></code><a class="headerlink" href="#method-emo-all-false-true" title="Permalink to this headline">#</a></h4>
+<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emo_all(False,</span> <span class="pre">True)</span></code><a class="headerlink" href="#method-emo-all-false-true" title="Link to this heading">#</a></h4>
 <p>The second argument is true so it will show us all the emojis and a name thats
 is assigned to the emoji. All emoticons in a given group will be displayed
 individually, each on a separate line:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emo_all</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="1b327c7d-8590-4f7a-bd0c-76339216615c" name="5530b453-292f-4b33-ab90-698159bc6df3" type="radio"/>
-<label class="sd-tab-label" for="1b327c7d-8590-4f7a-bd0c-76339216615c">
+<input id="sd-tab-item-12" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-12">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-06-ac-a">
-<img alt="../../_images/emoji_show_06_acrylic_a.webp" src="../../_images/emoji_show_06_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_06_acrylic_a.webp" src="../../_images/emoji_show_06_acrylic_a.webp" />
 </figure>
 </div>
-<input id="6ba1ec9b-6b05-491e-86dd-1672864b3feb" name="5530b453-292f-4b33-ab90-698159bc6df3" type="radio"/>
-<label class="sd-tab-label" for="6ba1ec9b-6b05-491e-86dd-1672864b3feb">
+<input id="sd-tab-item-13" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-13">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-06-dk-a">
-<img alt="../../_images/emoji_show_06_dark_a.webp" src="../../_images/emoji_show_06_dark_a.webp"/>
+<img alt="../../_images/emoji_show_06_dark_a.webp" src="../../_images/emoji_show_06_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="766b7126-3191-45f5-95ec-b3b20e17f8e3" name="5530b453-292f-4b33-ab90-698159bc6df3" type="radio"/>
-<label class="sd-tab-label" for="766b7126-3191-45f5-95ec-b3b20e17f8e3">
+<input checked="checked" id="sd-tab-item-14" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-14">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-06-ac-b">
-<img alt="../../_images/emoji_show_06_acrylic_b.webp" src="../../_images/emoji_show_06_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_06_acrylic_b.webp" src="../../_images/emoji_show_06_acrylic_b.webp" />
 </figure>
 </div>
-<input id="da65c885-49b5-4d25-b817-883481802915" name="5530b453-292f-4b33-ab90-698159bc6df3" type="radio"/>
-<label class="sd-tab-label" for="da65c885-49b5-4d25-b817-883481802915">
+<input id="sd-tab-item-15" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-15">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-06-dk-b">
-<img alt="../../_images/emoji_show_06_dark_b.webp" src="../../_images/emoji_show_06_dark_b.webp"/>
+<img alt="../../_images/emoji_show_06_dark_b.webp" src="../../_images/emoji_show_06_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 <section id="method-emo-all-true-true">
-<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emo_all(True,</span> <span class="pre">True)</span></code><a class="headerlink" href="#method-emo-all-true-true" title="Permalink to this headline">#</a></h4>
+<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emo_all(True,</span> <span class="pre">True)</span></code><a class="headerlink" href="#method-emo-all-true-true" title="Link to this heading">#</a></h4>
 <p>Both arguments are true so I will show us the number assigned to the emoji
 and its name. All emoticons in a given group will be displayed individually,
 each on a separate line:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emo_all</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="affa82f4-eb1f-406a-8e87-fe5dfb809d6e" name="00a5441e-49ba-45e0-9574-b34a6587b7df" type="radio"/>
-<label class="sd-tab-label" for="affa82f4-eb1f-406a-8e87-fe5dfb809d6e">
+<input id="sd-tab-item-16" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-16">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-07-ac-a">
-<img alt="../../_images/emoji_show_07_acrylic_a.webp" src="../../_images/emoji_show_07_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_07_acrylic_a.webp" src="../../_images/emoji_show_07_acrylic_a.webp" />
 </figure>
 </div>
-<input id="8cbbaaaa-3e90-4582-bef0-fd1cb5613df6" name="00a5441e-49ba-45e0-9574-b34a6587b7df" type="radio"/>
-<label class="sd-tab-label" for="8cbbaaaa-3e90-4582-bef0-fd1cb5613df6">
+<input id="sd-tab-item-17" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-17">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-07-dk-a">
-<img alt="../../_images/emoji_show_07_dark_a.webp" src="../../_images/emoji_show_07_dark_a.webp"/>
+<img alt="../../_images/emoji_show_07_dark_a.webp" src="../../_images/emoji_show_07_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="b2621a9f-cc41-4e1e-ba5b-755e0c3b63e4" name="00a5441e-49ba-45e0-9574-b34a6587b7df" type="radio"/>
-<label class="sd-tab-label" for="b2621a9f-cc41-4e1e-ba5b-755e0c3b63e4">
+<input checked="checked" id="sd-tab-item-18" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-18">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-07-ac-b">
-<img alt="../../_images/emoji_show_07_acrylic_b.webp" src="../../_images/emoji_show_07_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_07_acrylic_b.webp" src="../../_images/emoji_show_07_acrylic_b.webp" />
 </figure>
 </div>
-<input id="dd485fc7-786a-4029-9bed-83bf5b132f90" name="00a5441e-49ba-45e0-9574-b34a6587b7df" type="radio"/>
-<label class="sd-tab-label" for="dd485fc7-786a-4029-9bed-83bf5b132f90">
+<input id="sd-tab-item-19" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-19">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-07-dk-b">
-<img alt="../../_images/emoji_show_07_dark_b.webp" src="../../_images/emoji_show_07_dark_b.webp"/>
+<img alt="../../_images/emoji_show_07_dark_b.webp" src="../../_images/emoji_show_07_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 </section>
 <section id="method-emo-big-head">
-<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_big_head()</span></code><a class="headerlink" href="#method-emo-big-head" title="Permalink to this headline">#</a></h3>
+<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_big_head()</span></code><a class="headerlink" href="#method-emo-big-head" title="Link to this heading">#</a></h3>
 <p>This method shows all available big heads from the list you’re selected:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emo_big_head</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="8fd12373-f871-4a2a-95fb-8ac37b61e813" name="1ce1a7c2-c3de-407a-8bd3-645fda37e2ef" type="radio"/>
-<label class="sd-tab-label" for="8fd12373-f871-4a2a-95fb-8ac37b61e813">
+<input id="sd-tab-item-20" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-20">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-02-ac-a">
-<img alt="../../_images/emoji_show_02_acrylic_a.webp" src="../../_images/emoji_show_02_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_02_acrylic_a.webp" src="../../_images/emoji_show_02_acrylic_a.webp" />
 </figure>
 </div>
-<input id="9b9acf52-1f81-4f36-8af3-23d9a7838f9b" name="1ce1a7c2-c3de-407a-8bd3-645fda37e2ef" type="radio"/>
-<label class="sd-tab-label" for="9b9acf52-1f81-4f36-8af3-23d9a7838f9b">
+<input id="sd-tab-item-21" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-21">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-02-dk-a">
-<img alt="../../_images/emoji_show_02_dark_a.webp" src="../../_images/emoji_show_02_dark_a.webp"/>
+<img alt="../../_images/emoji_show_02_dark_a.webp" src="../../_images/emoji_show_02_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="58ba54a8-9461-4042-a774-92525d2e6a71" name="1ce1a7c2-c3de-407a-8bd3-645fda37e2ef" type="radio"/>
-<label class="sd-tab-label" for="58ba54a8-9461-4042-a774-92525d2e6a71">
+<input checked="checked" id="sd-tab-item-22" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-22">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-02-ac-b">
-<img alt="../../_images/emoji_show_02_acrylic_b.webp" src="../../_images/emoji_show_02_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_02_acrylic_b.webp" src="../../_images/emoji_show_02_acrylic_b.webp" />
 </figure>
 </div>
-<input id="c74d8c5e-1483-4a54-8f00-690d54b315e9" name="1ce1a7c2-c3de-407a-8bd3-645fda37e2ef" type="radio"/>
-<label class="sd-tab-label" for="c74d8c5e-1483-4a54-8f00-690d54b315e9">
+<input id="sd-tab-item-23" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-23">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-02-dk-b">
-<img alt="../../_images/emoji_show_02_dark_b.webp" src="../../_images/emoji_show_02_dark_b.webp"/>
+<img alt="../../_images/emoji_show_02_dark_b.webp" src="../../_images/emoji_show_02_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 <section id="method-emo-head">
-<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_head()</span></code><a class="headerlink" href="#method-emo-head" title="Permalink to this headline">#</a></h3>
+<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_head()</span></code><a class="headerlink" href="#method-emo-head" title="Link to this heading">#</a></h3>
 <p>This method displays all emojis from a given big head and medium head.
 You always need to enter these two arguments <em>big_head</em> and <em>medium_head</em>.
 The next two arguments are for displaying emoji numbers and their names:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"objects"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"objects"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"objects"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"objects"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;objects&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;objects&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;objects&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;objects&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="d5e3a2ea-31a7-4b2c-ad3a-6babe54fdebc" name="37330b84-99ea-4ee7-889d-b4cf5466b8ef" type="radio"/>
-<label class="sd-tab-label" for="d5e3a2ea-31a7-4b2c-ad3a-6babe54fdebc">
+<input id="sd-tab-item-24" name="sd-tab-set-6" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-24">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-08-ac-a">
-<img alt="../../_images/emoji_show_08_acrylic_a.webp" src="../../_images/emoji_show_08_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_08_acrylic_a.webp" src="../../_images/emoji_show_08_acrylic_a.webp" />
 </figure>
 </div>
-<input id="3479ce09-97d4-454c-8d89-8c779406e989" name="37330b84-99ea-4ee7-889d-b4cf5466b8ef" type="radio"/>
-<label class="sd-tab-label" for="3479ce09-97d4-454c-8d89-8c779406e989">
+<input id="sd-tab-item-25" name="sd-tab-set-6" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-25">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-08-dk-a">
-<img alt="../../_images/emoji_show_08_dark_a.webp" src="../../_images/emoji_show_08_dark_a.webp"/>
+<img alt="../../_images/emoji_show_08_dark_a.webp" src="../../_images/emoji_show_08_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="75860fb1-46ec-4928-b7a5-ad836b681747" name="37330b84-99ea-4ee7-889d-b4cf5466b8ef" type="radio"/>
-<label class="sd-tab-label" for="75860fb1-46ec-4928-b7a5-ad836b681747">
+<input checked="checked" id="sd-tab-item-26" name="sd-tab-set-6" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-26">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-08-ac-b">
-<img alt="../../_images/emoji_show_08_acrylic_b.webp" src="../../_images/emoji_show_08_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_08_acrylic_b.webp" src="../../_images/emoji_show_08_acrylic_b.webp" />
 </figure>
 </div>
-<input id="62afb1b4-0851-43e2-a1ab-9346591c5257" name="37330b84-99ea-4ee7-889d-b4cf5466b8ef" type="radio"/>
-<label class="sd-tab-label" for="62afb1b4-0851-43e2-a1ab-9346591c5257">
+<input id="sd-tab-item-27" name="sd-tab-set-6" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-27">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-08-dk-b">
-<img alt="../../_images/emoji_show_08_dark_b.webp" src="../../_images/emoji_show_08_dark_b.webp"/>
+<img alt="../../_images/emoji_show_08_dark_b.webp" src="../../_images/emoji_show_08_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 <section id="method-emo-medium-head">
-<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_medium_head()</span></code><a class="headerlink" href="#method-emo-medium-head" title="Permalink to this headline">#</a></h3>
+<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emo_medium_head()</span></code><a class="headerlink" href="#method-emo-medium-head" title="Link to this heading">#</a></h3>
 <p>This method shows all available medium heads from the list you’re selected:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emo_medium_head</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="e2a50927-b518-49bf-9568-83987b7080b0" name="20c6c7a8-e8b4-4798-a0b6-494d0d0a97ef" type="radio"/>
-<label class="sd-tab-label" for="e2a50927-b518-49bf-9568-83987b7080b0">
+<input id="sd-tab-item-28" name="sd-tab-set-7" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-28">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-03-ac-a">
-<img alt="../../_images/emoji_show_03_acrylic_a.webp" src="../../_images/emoji_show_03_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_03_acrylic_a.webp" src="../../_images/emoji_show_03_acrylic_a.webp" />
 </figure>
 </div>
-<input id="dcbed237-552c-410d-8287-0ab19cdf4e06" name="20c6c7a8-e8b4-4798-a0b6-494d0d0a97ef" type="radio"/>
-<label class="sd-tab-label" for="dcbed237-552c-410d-8287-0ab19cdf4e06">
+<input id="sd-tab-item-29" name="sd-tab-set-7" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-29">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-03-dk-a">
-<img alt="../../_images/emoji_show_03_dark_a.webp" src="../../_images/emoji_show_03_dark_a.webp"/>
+<img alt="../../_images/emoji_show_03_dark_a.webp" src="../../_images/emoji_show_03_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="498df4d7-2efb-4993-88da-1370f1cef1db" name="20c6c7a8-e8b4-4798-a0b6-494d0d0a97ef" type="radio"/>
-<label class="sd-tab-label" for="498df4d7-2efb-4993-88da-1370f1cef1db">
+<input checked="checked" id="sd-tab-item-30" name="sd-tab-set-7" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-30">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-03-ac-b">
-<img alt="../../_images/emoji_show_03_acrylic_b.webp" src="../../_images/emoji_show_03_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_03_acrylic_b.webp" src="../../_images/emoji_show_03_acrylic_b.webp" />
 </figure>
 </div>
-<input id="d4027312-d1b1-4b33-b676-a640dbf6f344" name="20c6c7a8-e8b4-4798-a0b6-494d0d0a97ef" type="radio"/>
-<label class="sd-tab-label" for="d4027312-d1b1-4b33-b676-a640dbf6f344">
+<input id="sd-tab-item-31" name="sd-tab-set-7" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-31">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-03-dk-b">
-<img alt="../../_images/emoji_show_03_dark_b.webp" src="../../_images/emoji_show_03_dark_b.webp"/>
+<img alt="../../_images/emoji_show_03_dark_b.webp" src="../../_images/emoji_show_03_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 <section id="method-emoji">
-<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emoji()</span></code><a class="headerlink" href="#method-emoji" title="Permalink to this headline">#</a></h3>
+<h3>METHOD <code class="docutils literal notranslate"><span class="pre">emoji()</span></code><a class="headerlink" href="#method-emoji" title="Link to this heading">#</a></h3>
 <p>Now you know what numbers each emoji has, so you can use this method for your
-code. If you want to print on a new line use this argument <code class="docutils literal notranslate"><span class="pre">end</span> <span class="pre">=</span> <span class="pre">"\n"</span></code>
-or just simple <code class="docutils literal notranslate"><span class="pre">show("emoji_list").emoji(86,</span> <span class="pre">"\n")</span></code> thats it:</p>
+code. If you want to print on a new line use this argument <code class="docutils literal notranslate"><span class="pre">end</span> <span class="pre">=</span> <span class="pre">&quot;\n&quot;</span></code>
+or just simple <code class="docutils literal notranslate"><span class="pre">show(&quot;emoji_list&quot;).emoji(86,</span> <span class="pre">&quot;\n&quot;)</span></code> thats it:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="mi">1132</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="mi">86</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="mi">86</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="be9a1dd6-e9f6-4860-916d-73a0e9941e72" name="04b4fe4b-2950-4e28-b8ae-ba8e8d7bc465" type="radio"/>
-<label class="sd-tab-label" for="be9a1dd6-e9f6-4860-916d-73a0e9941e72">
+<input id="sd-tab-item-32" name="sd-tab-set-8" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-32">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-09-ac-a">
-<img alt="../../_images/emoji_show_09_acrylic_a.webp" src="../../_images/emoji_show_09_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_09_acrylic_a.webp" src="../../_images/emoji_show_09_acrylic_a.webp" />
 </figure>
 </div>
-<input id="6c9ceaba-4d88-4d3e-9521-96d2ac806925" name="04b4fe4b-2950-4e28-b8ae-ba8e8d7bc465" type="radio"/>
-<label class="sd-tab-label" for="6c9ceaba-4d88-4d3e-9521-96d2ac806925">
+<input id="sd-tab-item-33" name="sd-tab-set-8" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-33">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-09-dk-a">
-<img alt="../../_images/emoji_show_09_dark_a.webp" src="../../_images/emoji_show_09_dark_a.webp"/>
+<img alt="../../_images/emoji_show_09_dark_a.webp" src="../../_images/emoji_show_09_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="fb0586c8-db26-43e2-8ee3-29dc65b25467" name="04b4fe4b-2950-4e28-b8ae-ba8e8d7bc465" type="radio"/>
-<label class="sd-tab-label" for="fb0586c8-db26-43e2-8ee3-29dc65b25467">
+<input checked="checked" id="sd-tab-item-34" name="sd-tab-set-8" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-34">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-09-ac-b">
-<img alt="../../_images/emoji_show_09_acrylic_b.webp" src="../../_images/emoji_show_09_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_09_acrylic_b.webp" src="../../_images/emoji_show_09_acrylic_b.webp" />
 </figure>
 </div>
-<input id="b12ffe36-c9d9-4f3a-88ab-914a991ad1df" name="04b4fe4b-2950-4e28-b8ae-ba8e8d7bc465" type="radio"/>
-<label class="sd-tab-label" for="b12ffe36-c9d9-4f3a-88ab-914a991ad1df">
+<input id="sd-tab-item-35" name="sd-tab-set-8" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-35">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-09-dk-b">
-<img alt="../../_images/emoji_show_09_dark_b.webp" src="../../_images/emoji_show_09_dark_b.webp"/>
+<img alt="../../_images/emoji_show_09_dark_b.webp" src="../../_images/emoji_show_09_dark_b.webp" />
 </figure>
 </div>
 </div>
 <section id="method-emoji-for-loop-emoji-list-first">
-<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emoji()</span></code> FOR LOOP <code class="docutils literal notranslate"><span class="pre">emoji_list</span></code> FIRST<a class="headerlink" href="#method-emoji-for-loop-emoji-list-first" title="Permalink to this headline">#</a></h4>
+<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emoji()</span></code> FOR LOOP <code class="docutils literal notranslate"><span class="pre">emoji_list</span></code> FIRST<a class="headerlink" href="#method-emoji-for-loop-emoji-list-first" title="Link to this heading">#</a></h4>
 <p>This way you can now print the first 67 emojis from the list selected:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">167</span><span class="p">):</span>
     <span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="8d1b50eb-12a1-442d-8bd0-6477c658ad8e" name="e98b45aa-d23e-44b8-8fc9-9d4b08bee7d1" type="radio"/>
-<label class="sd-tab-label" for="8d1b50eb-12a1-442d-8bd0-6477c658ad8e">
+<input id="sd-tab-item-36" name="sd-tab-set-9" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-36">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-10-ac-a">
-<img alt="../../_images/emoji_show_10_acrylic_a.webp" src="../../_images/emoji_show_10_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_10_acrylic_a.webp" src="../../_images/emoji_show_10_acrylic_a.webp" />
 </figure>
 </div>
-<input id="0785c421-e8cd-4c76-82f2-eb147e5fdc99" name="e98b45aa-d23e-44b8-8fc9-9d4b08bee7d1" type="radio"/>
-<label class="sd-tab-label" for="0785c421-e8cd-4c76-82f2-eb147e5fdc99">
+<input id="sd-tab-item-37" name="sd-tab-set-9" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-37">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-10-dk-a">
-<img alt="../../_images/emoji_show_10_dark_a.webp" src="../../_images/emoji_show_10_dark_a.webp"/>
+<img alt="../../_images/emoji_show_10_dark_a.webp" src="../../_images/emoji_show_10_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="3e50cec2-6375-4f7e-8d3a-54f6b17910b2" name="e98b45aa-d23e-44b8-8fc9-9d4b08bee7d1" type="radio"/>
-<label class="sd-tab-label" for="3e50cec2-6375-4f7e-8d3a-54f6b17910b2">
+<input checked="checked" id="sd-tab-item-38" name="sd-tab-set-9" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-38">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-10-ac-b">
-<img alt="../../_images/emoji_show_10_acrylic_b.webp" src="../../_images/emoji_show_10_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_10_acrylic_b.webp" src="../../_images/emoji_show_10_acrylic_b.webp" />
 </figure>
 </div>
-<input id="dcf8df4f-5477-42a1-aa4a-ca732d458454" name="e98b45aa-d23e-44b8-8fc9-9d4b08bee7d1" type="radio"/>
-<label class="sd-tab-label" for="dcf8df4f-5477-42a1-aa4a-ca732d458454">
+<input id="sd-tab-item-39" name="sd-tab-set-9" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-39">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-10-dk-b">
-<img alt="../../_images/emoji_show_10_dark_b.webp" src="../../_images/emoji_show_10_dark_b.webp"/>
+<img alt="../../_images/emoji_show_10_dark_b.webp" src="../../_images/emoji_show_10_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 <section id="method-emoji-for-loop-emoji-list-all">
-<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emoji()</span></code> FOR LOOP <code class="docutils literal notranslate"><span class="pre">emoji_list</span></code> ALL<a class="headerlink" href="#method-emoji-for-loop-emoji-list-all" title="Permalink to this headline">#</a></h4>
+<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emoji()</span></code> FOR LOOP <code class="docutils literal notranslate"><span class="pre">emoji_list</span></code> ALL<a class="headerlink" href="#method-emoji-for-loop-emoji-list-all" title="Link to this heading">#</a></h4>
 <p>This way you can print all available emojis from the list selected:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_list"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_list&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1816</span><span class="p">):</span>
     <span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="5a18b01a-a67f-4764-bb03-fa051d5aee03" name="7ae35e04-0d9b-400b-98dd-a428a7ac95a4" type="radio"/>
-<label class="sd-tab-label" for="5a18b01a-a67f-4764-bb03-fa051d5aee03">
+<input id="sd-tab-item-40" name="sd-tab-set-10" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-40">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-11-ac-a">
-<img alt="../../_images/emoji_show_11_acrylic_a.webp" src="../../_images/emoji_show_11_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_11_acrylic_a.webp" src="../../_images/emoji_show_11_acrylic_a.webp" />
 </figure>
 </div>
-<input id="f3ef8151-7e48-4dc4-8804-1a09f69ddbd1" name="7ae35e04-0d9b-400b-98dd-a428a7ac95a4" type="radio"/>
-<label class="sd-tab-label" for="f3ef8151-7e48-4dc4-8804-1a09f69ddbd1">
+<input id="sd-tab-item-41" name="sd-tab-set-10" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-41">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-11-dk-a">
-<img alt="../../_images/emoji_show_11_dark_a.webp" src="../../_images/emoji_show_11_dark_a.webp"/>
+<img alt="../../_images/emoji_show_11_dark_a.webp" src="../../_images/emoji_show_11_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="bbfca9f7-bd47-40df-97a2-a4c0357def16" name="7ae35e04-0d9b-400b-98dd-a428a7ac95a4" type="radio"/>
-<label class="sd-tab-label" for="bbfca9f7-bd47-40df-97a2-a4c0357def16">
+<input checked="checked" id="sd-tab-item-42" name="sd-tab-set-10" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-42">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-11-ac-b">
-<img alt="../../_images/emoji_show_11_acrylic_b.webp" src="../../_images/emoji_show_11_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_11_acrylic_b.webp" src="../../_images/emoji_show_11_acrylic_b.webp" />
 </figure>
 </div>
-<input id="2778f19a-7387-4f3a-8e54-4e46bba9c385" name="7ae35e04-0d9b-400b-98dd-a428a7ac95a4" type="radio"/>
-<label class="sd-tab-label" for="2778f19a-7387-4f3a-8e54-4e46bba9c385">
+<input id="sd-tab-item-43" name="sd-tab-set-10" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-43">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-11-dk-b">
-<img alt="../../_images/emoji_show_11_dark_b.webp" src="../../_images/emoji_show_11_dark_b.webp"/>
+<img alt="../../_images/emoji_show_11_dark_b.webp" src="../../_images/emoji_show_11_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 <section id="method-emoji-for-loop-emoji-modifiers-all">
-<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emoji()</span></code> FOR LOOP <code class="docutils literal notranslate"><span class="pre">emoji_modifiers</span></code> ALL<a class="headerlink" href="#method-emoji-for-loop-emoji-modifiers-all" title="Permalink to this headline">#</a></h4>
+<h4>METHOD <code class="docutils literal notranslate"><span class="pre">emoji()</span></code> FOR LOOP <code class="docutils literal notranslate"><span class="pre">emoji_modifiers</span></code> ALL<a class="headerlink" href="#method-emoji-for-loop-emoji-modifiers-all" title="Link to this heading">#</a></h4>
 <p>This way you can print all available emojis from the list selected:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_modifiers"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_modifiers&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1705</span><span class="p">):</span>
     <span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="b7fa7d1c-ca56-43a2-8d2a-ce1b1802074c" name="1dff25b7-1eff-4023-9a22-635e3ab9ba3a" type="radio"/>
-<label class="sd-tab-label" for="b7fa7d1c-ca56-43a2-8d2a-ce1b1802074c">
+<input id="sd-tab-item-44" name="sd-tab-set-11" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-44">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-12-ac-a">
-<img alt="../../_images/emoji_show_12_acrylic_a.webp" src="../../_images/emoji_show_12_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_12_acrylic_a.webp" src="../../_images/emoji_show_12_acrylic_a.webp" />
 </figure>
 </div>
-<input id="80372d8e-d67e-4ba3-8418-606a01075701" name="1dff25b7-1eff-4023-9a22-635e3ab9ba3a" type="radio"/>
-<label class="sd-tab-label" for="80372d8e-d67e-4ba3-8418-606a01075701">
+<input id="sd-tab-item-45" name="sd-tab-set-11" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-45">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-12-dk-a">
-<img alt="../../_images/emoji_show_12_dark_a.webp" src="../../_images/emoji_show_12_dark_a.webp"/>
+<img alt="../../_images/emoji_show_12_dark_a.webp" src="../../_images/emoji_show_12_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="074c1091-b868-42f2-be32-e535d0321ce1" name="1dff25b7-1eff-4023-9a22-635e3ab9ba3a" type="radio"/>
-<label class="sd-tab-label" for="074c1091-b868-42f2-be32-e535d0321ce1">
+<input checked="checked" id="sd-tab-item-46" name="sd-tab-set-11" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-46">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-12-ac-b">
-<img alt="../../_images/emoji_show_12_acrylic_b.webp" src="../../_images/emoji_show_12_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_12_acrylic_b.webp" src="../../_images/emoji_show_12_acrylic_b.webp" />
 </figure>
 </div>
-<input id="0b7585b3-69d8-475a-b24e-2d977e1ab460" name="1dff25b7-1eff-4023-9a22-635e3ab9ba3a" type="radio"/>
-<label class="sd-tab-label" for="0b7585b3-69d8-475a-b24e-2d977e1ab460">
+<input id="sd-tab-item-47" name="sd-tab-set-11" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-47">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-12-dk-b">
-<img alt="../../_images/emoji_show_12_dark_b.webp" src="../../_images/emoji_show_12_dark_b.webp"/>
+<img alt="../../_images/emoji_show_12_dark_b.webp" src="../../_images/emoji_show_12_dark_b.webp" />
 </figure>
 </div>
 </div>
 </section>
 </section>
 <section id="all-method">
-<h3>ALL <code class="docutils literal notranslate"><span class="pre">METHOD</span></code><a class="headerlink" href="#all-method" title="Permalink to this headline">#</a></h3>
+<h3>ALL <code class="docutils literal notranslate"><span class="pre">METHOD</span></code><a class="headerlink" href="#all-method" title="Link to this heading">#</a></h3>
 <p>Show all methods to get the correct number for your emoji:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mdsanima_dev.emoji</span> <span class="kn">import</span> <span class="n">show</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">"emoji_modifiers"</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">show</span><span class="p">(</span><span class="s2">&quot;emoji_modifiers&quot;</span><span class="p">)</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emo_big_head</span><span class="p">()</span>
 <span class="n">s</span><span class="o">.</span><span class="n">emo_medium_head</span><span class="p">()</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"component"</span><span class="p">,</span> <span class="s2">"skin_tone"</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"component"</span><span class="p">,</span> <span class="s2">"skin_tone"</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"component"</span><span class="p">,</span> <span class="s2">"skin_tone"</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">"component"</span><span class="p">,</span> <span class="s2">"skin_tone"</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="mi">1704</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;component&quot;</span><span class="p">,</span> <span class="s2">&quot;skin_tone&quot;</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;component&quot;</span><span class="p">,</span> <span class="s2">&quot;skin_tone&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;component&quot;</span><span class="p">,</span> <span class="s2">&quot;skin_tone&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emo_head</span><span class="p">(</span><span class="s2">&quot;component&quot;</span><span class="p">,</span> <span class="s2">&quot;skin_tone&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="mi">1704</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sd-tab-set docutils">
-<input id="9aeb9d28-b09e-4a05-821e-d69329be3706" name="e694cb25-df18-4313-996b-fead8e6ccdfa" type="radio"/>
-<label class="sd-tab-label" for="9aeb9d28-b09e-4a05-821e-d69329be3706">
+<input id="sd-tab-item-48" name="sd-tab-set-12" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-48">
 Shell Acrylic</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-13-ac-a">
-<img alt="../../_images/emoji_show_13_acrylic_a.webp" src="../../_images/emoji_show_13_acrylic_a.webp"/>
+<img alt="../../_images/emoji_show_13_acrylic_a.webp" src="../../_images/emoji_show_13_acrylic_a.webp" />
 </figure>
 </div>
-<input id="ef9eed02-6d6b-4888-8238-d5c3b4b54e32" name="e694cb25-df18-4313-996b-fead8e6ccdfa" type="radio"/>
-<label class="sd-tab-label" for="ef9eed02-6d6b-4888-8238-d5c3b4b54e32">
+<input id="sd-tab-item-49" name="sd-tab-set-12" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-49">
 Shell Dark</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-13-dk-a">
-<img alt="../../_images/emoji_show_13_dark_a.webp" src="../../_images/emoji_show_13_dark_a.webp"/>
+<img alt="../../_images/emoji_show_13_dark_a.webp" src="../../_images/emoji_show_13_dark_a.webp" />
 </figure>
 </div>
-<input checked="checked" id="be21fae0-0b5c-443f-b0f9-6f9e63be1fe6" name="e694cb25-df18-4313-996b-fead8e6ccdfa" type="radio"/>
-<label class="sd-tab-label" for="be21fae0-0b5c-443f-b0f9-6f9e63be1fe6">
+<input checked="checked" id="sd-tab-item-50" name="sd-tab-set-12" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-50">
 Shell Acrylic Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-13-ac-b">
-<img alt="../../_images/emoji_show_13_acrylic_b.webp" src="../../_images/emoji_show_13_acrylic_b.webp"/>
+<img alt="../../_images/emoji_show_13_acrylic_b.webp" src="../../_images/emoji_show_13_acrylic_b.webp" />
 </figure>
 </div>
-<input id="962da628-2934-4b58-b412-9b3496a82ed2" name="e694cb25-df18-4313-996b-fead8e6ccdfa" type="radio"/>
-<label class="sd-tab-label" for="962da628-2934-4b58-b412-9b3496a82ed2">
+<input id="sd-tab-item-51" name="sd-tab-set-12" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-51">
 Shell Dark Border</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="show-emoji-13-dk-b">
-<img alt="../../_images/emoji_show_13_dark_b.webp" src="../../_images/emoji_show_13_dark_b.webp"/>
+<img alt="../../_images/emoji_show_13_dark_b.webp" src="../../_images/emoji_show_13_dark_b.webp" />
 </figure>
 </div>
 </div>
@@ -1046,10 +1057,10 @@ Shell Dark Border</label><div class="sd-tab-content docutils">
                 </div>
                 <div class="title"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-file-code sd-text-secondary" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z"></path></svg> <code class="docutils literal notranslate"><span class="pre">TABLE</span></code></div>
               </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
           <a class="prev-page" href="../converts/">
-              <svg><use href="#svg-arrow-right"></use></svg>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
@@ -1063,13 +1074,13 @@ Shell Dark Border</label><div class="sd-tab-content docutils">
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2021 - 2023 MDSANIMA
+                Copyright &#169; 2021-2023 MDSANIMA
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on 12 November 2023, at 23:05:38</div>
+              Last updated on 13 November 2023, at 16:31:35</div>
           </div>
           <div class="right-details">
             <div class="icons">
@@ -1087,18 +1098,39 @@ Shell Dark Border</label><div class="sd-tab-content docutils">
       <div class="toc-sticky toc-scroll">
         <div class="toc-title-container">
           <span class="toc-title">
-            Contents
+            On this page
           </span>
         </div>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-file-code sd-text-secondary" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0114.25 15h-9a.75.75 0 010-1.5h9a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 0110 4.25V1.5H5.75a.25.25 0 00-.25.25v2.5a.75.75 0 01-1.5 0v-2.5zm7.5-.188V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM5.72 6.72a.75.75 0 000 1.06l1.47 1.47-1.47 1.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM3.28 7.78a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 001.06-1.06L1.81 9.25l1.47-1.47z"></path></svg> <code class="docutils literal notranslate"><span class="pre">EMOJI</span></code></a><ul>
-<li><a class="reference internal" href="#function-emoji-get-url-data">FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_get_url_data</span></code></a></li>
-<li><a class="reference internal" href="#function-emoji-clean-url-data">FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_clean_url_data</span></code></a></li>
-<li><a class="reference internal" href="#function-emoji-load-json-data">FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_load_json_data</span></code></a></li>
-<li><a class="reference internal" href="#class-emoji">CLASS <code class="docutils literal notranslate"><span class="pre">emoji</span></code></a></li>
+<li><a class="reference internal" href="#function-emoji-get-url-data">FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_get_url_data</span></code></a><ul>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji_get_url_data"><code class="docutils literal notranslate"><span class="pre">emoji_get_url_data()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#function-emoji-clean-url-data">FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_clean_url_data</span></code></a><ul>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji_clean_url_data"><code class="docutils literal notranslate"><span class="pre">emoji_clean_url_data()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#function-emoji-load-json-data">FUNCTION <code class="docutils literal notranslate"><span class="pre">emoji_load_json_data</span></code></a><ul>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji_load_json_data"><code class="docutils literal notranslate"><span class="pre">emoji_load_json_data()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#class-emoji">CLASS <code class="docutils literal notranslate"><span class="pre">emoji</span></code></a><ul>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji"><code class="docutils literal notranslate"><span class="pre">emoji</span></code></a><ul>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji.emo_all"><code class="docutils literal notranslate"><span class="pre">emoji.emo_all()</span></code></a></li>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji.emo_big_head"><code class="docutils literal notranslate"><span class="pre">emoji.emo_big_head()</span></code></a></li>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji.emo_head"><code class="docutils literal notranslate"><span class="pre">emoji.emo_head()</span></code></a></li>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji.emo_medium_head"><code class="docutils literal notranslate"><span class="pre">emoji.emo_medium_head()</span></code></a></li>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji.emo_stats"><code class="docutils literal notranslate"><span class="pre">emoji.emo_stats()</span></code></a></li>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.emoji.emoji"><code class="docutils literal notranslate"><span class="pre">emoji.emoji()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a class="reference internal" href="#class-show">CLASS <code class="docutils literal notranslate"><span class="pre">show</span></code></a><ul>
+<li><a class="reference internal" href="#mdsanima_dev.emoji.show"><code class="docutils literal notranslate"><span class="pre">show</span></code></a></li>
 <li><a class="reference internal" href="#method-emo-stats">METHOD <code class="docutils literal notranslate"><span class="pre">emo_stats()</span></code></a></li>
 <li><a class="reference internal" href="#method-emo-all">METHOD <code class="docutils literal notranslate"><span class="pre">emo_all()</span></code></a><ul>
 <li><a class="reference internal" href="#method-emo-all-true-false">METHOD <code class="docutils literal notranslate"><span class="pre">emo_all(True,</span> <span class="pre">False)</span></code></a></li>
@@ -1129,14 +1161,13 @@ Shell Dark Border</label><div class="sd-tab-content docutils">
       
     </aside>
   </div>
-</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/scripts/furo.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script src="../../_static/mdsanima.js"></script>
+</div><script src="../../_static/documentation_options.js?v=0274870b"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/mdsanima.js?v=04ea595b"></script>
     </body>
 </html>
