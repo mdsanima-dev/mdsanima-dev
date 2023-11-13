@@ -14,7 +14,7 @@ build:
 	python -m build
 
 sphinx:
-	python setup.py build_sphinx
+	sphinx-build -M dirhtml docs build
 
 clean:
 	rm -rf build/dirhtml build/doctrees
