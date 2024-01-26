@@ -91,7 +91,7 @@ classifiers = [
 
 [project.optional-dependencies]
 dev = [
-    "black==23.12.1",
+    "black==24.1.0",
     "build==1.0.3",
     "flake8==7.0.0",
     "ipython==8.20.0",
